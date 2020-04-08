@@ -16,7 +16,7 @@ import org.isoron.uhabits.activities.common.views.HistoryChart;
 public class HistoryCard_ViewBinding implements Unbinder {
   private HistoryCard target;
 
-  private View view7f0900b2;
+  private View view7f0900c2;
 
   @UiThread
   public HistoryCard_ViewBinding(HistoryCard target) {
@@ -31,7 +31,7 @@ public class HistoryCard_ViewBinding implements Unbinder {
     target.chart = Utils.findRequiredViewAsType(source, R.id.historyChart, "field 'chart'", HistoryChart.class);
     target.title = Utils.findRequiredViewAsType(source, R.id.title, "field 'title'", TextView.class);
     view = Utils.findRequiredView(source, R.id.edit, "method 'onClickEditButton'");
-    view7f0900b2 = view;
+    view7f0900c2 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class HistoryCard_ViewBinding implements Unbinder {
     target.chart = null;
     target.title = null;
 
-    view7f0900b2.setOnClickListener(null);
-    view7f0900b2 = null;
+    view7f0900c2.setOnClickListener(null);
+    view7f0900c2 = null;
   }
 }

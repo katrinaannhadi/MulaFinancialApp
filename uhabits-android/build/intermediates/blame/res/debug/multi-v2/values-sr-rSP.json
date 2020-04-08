@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr-rSP/values-sr-rSP.xml",
+            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr-rSP/values-sr-rSP.xml",
             "map": [
                 {
-                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/res/values-sr-rSP/strings.xml",
+                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values-sr-rSP/strings.xml",
                     "from": {
                         "startLines": "102,23,28,116,95,94,21,26,84,109,133,59,107,42,99,29,123,124,57,110,121,143,46,25,91,92,43,104,48,98,24,58,117,118,151,153,152,131,129,132,97,125,120,106,127,134,40,126,122,136,89,90,88,41,128,130,140,70,72,73,71,74,75,63,65,67,69,62,64,66,68,112,114,113,115,83,52,22,145,85,137,51,156,111,39,79,80,78,77,76,82,81,139,146,47,53,155,44,141,142,49,154,100,101,96,86,60,87,50,108,150,45,37,35,36,30,31,32,38,34,33,103,135,119,27,138,56,54,55,105,144,93,147",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

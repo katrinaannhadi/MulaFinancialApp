@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/292fd78c54d6ff1a622d5490c4235695/material-1.0.0/res/values-land/values-land.xml",
+                    "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/db346f4e09792e54909c432b4a24b600/material-1.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/cef02af0463b03417a97a408e3f088fb/appcompat-1.1.0/res/values-land/values-land.xml",
+                    "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3513d0cb82dd496d9d371a7f2b6b40ca/appcompat-1.1.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

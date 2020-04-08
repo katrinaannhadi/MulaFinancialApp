@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ug-rCN/values-ug-rCN.xml",
+            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ug-rCN/values-ug-rCN.xml",
             "map": [
                 {
-                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/res/values-ug-rCN/strings.xml",
+                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values-ug-rCN/strings.xml",
                     "from": {
                         "startLines": "22,27,25,28,24,23,21,34,32,29,30,31,26",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",

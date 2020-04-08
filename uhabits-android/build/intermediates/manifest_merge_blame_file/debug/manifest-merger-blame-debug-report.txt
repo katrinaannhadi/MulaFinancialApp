@@ -24,393 +24,429 @@
 24
 25    <uses-sdk
 26        android:minSdkVersion="21"
-26-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml
+26-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
 27        android:targetSdkVersion="29" />
-27-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml
+27-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
 28
 29    <uses-permission android:name="android.permission.VIBRATE" />
-29-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:24:5-65
-29-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:24:22-63
+29-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:24:5-65
+29-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:24:22-63
 30    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-30-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:26:5-80
-30-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:26:22-78
+30-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:26:5-80
+30-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:26:22-78
 31    <uses-permission android:name="android.permission.INTERNET" />
-31-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:28:5-66
-31-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:28:22-64
+31-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:28:5-66
+31-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:28:22-64
 32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-32-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:30:5-79
-32-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:30:22-76
+32-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:30:5-79
+32-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:30:22-76
 33
 34    <application
-34-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:32:5-227:19
+34-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:32:5-238:19
 35        android:name="org.isoron.uhabits.HabitsApplication"
-35-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:33:9-42
+35-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:33:9-42
 36        android:allowBackup="true"
-36-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:34:9-35
+36-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:34:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.1.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/1bf8ed470959cd87a6288d69d894f3e6/core-1.1.0/AndroidManifest.xml:24:18-86
+37-->[androidx.core:core:1.1.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/ab8f8951b99ab5b5d332022d857e3989/core-1.1.0/AndroidManifest.xml:24:18-86
 38        android:backupAgent="org.isoron.uhabits.HabitsBackupAgent"
-38-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:35:9-49
+38-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:35:9-49
 39        android:debuggable="true"
 40        android:icon="@mipmap/ic_launcher"
-40-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:36:9-43
+40-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:36:9-43
 41        android:label="@string/main_activity_title"
-41-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:37:9-52
+41-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:37:9-52
 42        android:supportsRtl="true"
-42-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:38:9-35
+42-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:38:9-35
 43        android:testOnly="true"
 44        android:theme="@style/AppBaseTheme" >
-44-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:39:9-44
+44-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:39:9-44
 45        <meta-data
-45-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:40:9-42:81
+45-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:40:9-42:81
 46            android:name="com.google.android.backup.api_key"
-46-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:41:13-61
+46-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:41:13-61
 47            android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
-47-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:42:13-79
+47-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:42:13-79
 48
 49        <activity
-49-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:44:9-48:45
-50            android:name="org.isoron.uhabits.activities.habits.list.ListHabitsActivity"
-50-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:45:13-70
+49-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:45:9-49:45
+50            android:name="org.isoron.uhabits.activities.MainActivity"
+50-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:46:13-52
 51            android:exported="true"
-51-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:46:13-36
+51-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:47:13-36
 52            android:label="@string/main_activity_title"
-52-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:47:13-56
+52-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:48:13-56
 53            android:launchMode="singleTop" />
-53-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:48:13-43
+53-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:49:13-43
 54
 55        <activity-alias
-55-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:50:9-59:26
+55-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:51:9-60:26
 56            android:name="org.isoron.uhabits.MainActivity"
-56-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:51:13-41
+56-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:52:13-41
 57            android:label="@string/main_activity_title"
-57-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:52:13-56
+57-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:53:13-56
 58            android:launchMode="singleTop"
-58-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:53:13-43
-59            android:targetActivity="org.isoron.uhabits.activities.habits.list.ListHabitsActivity" >
-59-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:54:13-80
+58-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:54:13-43
+59            android:targetActivity="org.isoron.uhabits.activities.MainActivity" >
+59-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:55:13-62
 60            <intent-filter android:label="@string/main_activity_title" >
-60-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:55:13-58:29
-60-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:55:28-71
+60-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:56:13-59:29
+60-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:56:28-71
 61                <action android:name="android.intent.action.MAIN" />
-61-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:56:17-68
-61-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:56:25-66
+61-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:57:17-68
+61-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:57:25-66
 62
 63                <category android:name="android.intent.category.LAUNCHER" />
-63-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:57:17-76
-63-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:57:27-74
+63-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:58:17-76
+63-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:58:27-74
 64            </intent-filter>
 65        </activity-alias>
 66
 67        <activity
-67-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:61:9-67:20
-68            android:name="org.isoron.uhabits.activities.habits.show.ShowHabitActivity"
-68-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:62:13-69
-69            android:label="@string/title_activity_show_habit" >
-69-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:63:13-62
-70            <meta-data
-70-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:64:13-66:77
-71                android:name="android.support.PARENT_ACTIVITY"
-71-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:65:17-63
-72                android:value=".activities.habits.list.ListHabitsActivity" />
-72-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:66:17-75
-73        </activity>
-74        <activity
-74-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:68:9-74:20
-75            android:name="org.isoron.uhabits.activities.settings.SettingsActivity"
-75-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:69:13-65
-76            android:label="@string/settings" >
-76-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:70:13-45
-77            <meta-data
-77-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:64:13-66:77
-78                android:name="android.support.PARENT_ACTIVITY"
-78-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:65:17-63
-79                android:value=".activities.habits.list.ListHabitsActivity" />
-79-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:66:17-75
-80        </activity>
-81        <activity
-81-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:75:9-78:71
-82            android:name="org.isoron.uhabits.activities.intro.IntroActivity"
-82-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:76:13-59
-83            android:label=""
-83-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:77:13-29
-84            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-84-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:78:13-69
-85        <activity
-85-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:79:9-85:20
-86            android:name="org.isoron.uhabits.widgets.HabitPickerDialog"
-86-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:80:13-54
-87            android:theme="@style/Theme.AppCompat.Light.Dialog" >
-87-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:81:13-64
-88            <intent-filter>
-88-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:82:13-84:29
-89                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
-89-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:83:17-86
-89-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:83:25-84
-90            </intent-filter>
-91        </activity>
-92        <activity
-92-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:86:9-92:20
-93            android:name="org.isoron.uhabits.activities.about.AboutActivity"
-93-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:87:13-59
-94            android:label="@string/about" >
-94-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:88:13-42
-95            <meta-data
-95-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:64:13-66:77
-96                android:name="android.support.PARENT_ACTIVITY"
-96-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:65:17-63
-97                android:value=".activities.habits.list.ListHabitsActivity" />
-97-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:66:17-75
-98        </activity>
-99        <activity
-99-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:93:9-97:20
-100            android:name="org.isoron.uhabits.notifications.SnoozeDelayPickerActivity"
-100-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:93:19-74
-101            android:excludeFromRecents="true"
-101-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:94:13-46
-102            android:launchMode="singleInstance"
-102-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:95:13-48
-103            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-103-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:96:13-72
-104        </activity>
-105
-106        <receiver
-106-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:99:9-109:20
-107            android:name="org.isoron.uhabits.widgets.CheckmarkWidgetProvider"
-107-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:100:13-60
-108            android:label="@string/checkmark" >
-108-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:101:13-46
-109            <intent-filter>
-109-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
-110                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-110-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
-110-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
-111            </intent-filter>
-112
-113            <meta-data
-113-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
-114                android:name="android.appwidget.provider"
-114-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
-115                android:resource="@xml/widget_checkmark_info" />
-115-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
-116        </receiver>
-117
-118        <service
-118-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:110:9-112:40
-119            android:name="org.isoron.uhabits.widgets.StackWidgetService"
-119-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:110:18-60
-120            android:exported="false"
-120-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:112:13-37
-121            android:permission="android.permission.BIND_REMOTEVIEWS" />
-121-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:111:13-69
-122
-123        <receiver
-123-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:113:9-123:20
-124            android:name="org.isoron.uhabits.widgets.HistoryWidgetProvider"
-124-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:114:13-58
-125            android:label="@string/history" >
-125-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:115:13-44
-126            <intent-filter>
-126-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
-127                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-127-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
-127-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
-128            </intent-filter>
-129
-130            <meta-data
-130-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
-131                android:name="android.appwidget.provider"
-131-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
-132                android:resource="@xml/widget_history_info" />
-132-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
-133        </receiver>
-134        <receiver
-134-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:124:9-134:20
-135            android:name="org.isoron.uhabits.widgets.ScoreWidgetProvider"
-135-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:125:13-56
-136            android:label="@string/habit_strength" >
-136-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:126:13-51
-137            <intent-filter>
-137-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
-138                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-138-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
-138-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
-139            </intent-filter>
-140
-141            <meta-data
-141-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
-142                android:name="android.appwidget.provider"
-142-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
-143                android:resource="@xml/widget_score_info" />
-143-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
-144        </receiver>
-145        <receiver
-145-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:135:9-145:20
-146            android:name="org.isoron.uhabits.widgets.StreakWidgetProvider"
-146-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:136:13-57
-147            android:label="@string/streaks" >
-147-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:137:13-44
-148            <intent-filter>
-148-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
-149                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-149-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
-149-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
-150            </intent-filter>
-151
-152            <meta-data
-152-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
-153                android:name="android.appwidget.provider"
-153-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
-154                android:resource="@xml/widget_streak_info" />
-154-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
-155        </receiver>
-156        <receiver
-156-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:146:9-156:20
-157            android:name="org.isoron.uhabits.widgets.FrequencyWidgetProvider"
-157-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:147:13-60
-158            android:label="@string/frequency" >
-158-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:148:13-46
-159            <intent-filter>
-159-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
-160                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-160-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
-160-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
-161            </intent-filter>
-162
-163            <meta-data
-163-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
-164                android:name="android.appwidget.provider"
-164-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
-165                android:resource="@xml/widget_frequency_info" />
-165-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
-166        </receiver>
-167        <receiver android:name="org.isoron.uhabits.receivers.ReminderReceiver" >
-167-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:157:9-161:20
-167-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:157:19-61
-168            <intent-filter>
-168-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:158:13-160:29
-169                <action android:name="android.intent.action.BOOT_COMPLETED" />
-169-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:159:17-78
-169-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:159:25-76
-170            </intent-filter>
-171        </receiver>
-172        <receiver android:name="org.isoron.uhabits.receivers.WidgetReceiver" >
-172-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:162:9-190:20
-172-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:162:19-59
-173            <intent-filter>
-173-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:163:13-171:29
-174                <category android:name="android.intent.category.DEFAULT" />
-174-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:17-75
-174-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:27-73
-175
-176                <action android:name="org.isoron.uhabits.ACTION_TOGGLE_REPETITION" />
-176-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:166:17-85
-176-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:166:25-83
-177
-178                <data
-178-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:168:17-170:47
-179                    android:host="org.isoron.uhabits"
-179-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:169:21-54
-180                    android:scheme="content" />
-180-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:170:21-45
-181            </intent-filter>
-182            <intent-filter>
-182-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:172:13-180:29
-183                <category android:name="android.intent.category.DEFAULT" />
-183-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:17-75
-183-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:27-73
-184
-185                <action android:name="org.isoron.uhabits.ACTION_ADD_REPETITION" />
-185-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:175:17-82
-185-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:175:25-80
-186
-187                <data
-187-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:168:17-170:47
-188                    android:host="org.isoron.uhabits"
-188-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:169:21-54
-189                    android:scheme="content" />
-189-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:170:21-45
-190            </intent-filter>
-191            <intent-filter>
-191-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:181:13-189:29
-192                <category android:name="android.intent.category.DEFAULT" />
-192-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:17-75
-192-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:27-73
-193
-194                <action android:name="org.isoron.uhabits.ACTION_REMOVE_REPETITION" />
-194-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:184:17-85
-194-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:184:25-83
-195
-196                <data
-196-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:168:17-170:47
-197                    android:host="org.isoron.uhabits"
-197-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:169:21-54
-198                    android:scheme="content" />
-198-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:170:21-45
-199            </intent-filter>
-200        </receiver>
+67-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:62:9-66:45
+68            android:name="org.isoron.uhabits.activities.habits.list.ListHabitsActivity"
+68-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:63:13-70
+69            android:exported="true"
+69-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:64:13-36
+70            android:label="@string/main_activity_title"
+70-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:65:13-56
+71            android:launchMode="singleTop" />
+71-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:66:13-43
+72        <activity android:name="org.isoron.uhabits.activities.InvestmentCalculatorActivity" />
+72-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:68:9-77
+72-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:68:19-74
+73        <activity android:name="org.isoron.uhabits.activities.TaxCalculatorActivity" />
+73-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:69:9-70
+73-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:69:19-67
+74        <activity android:name="org.isoron.uhabits.activities.QuizActivity" />
+74-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:70:9-60
+74-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:70:19-58
+75        <activity
+75-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:72:9-78:20
+76            android:name="org.isoron.uhabits.activities.habits.show.ShowHabitActivity"
+76-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:73:13-69
+77            android:label="@string/title_activity_show_habit" >
+77-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:74:13-62
+78            <meta-data
+78-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:75:13-77:77
+79                android:name="android.support.PARENT_ACTIVITY"
+79-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:76:17-63
+80                android:value=".activities.habits.list.ListHabitsActivity" />
+80-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:77:17-75
+81        </activity>
+82        <activity
+82-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:79:9-85:20
+83            android:name="org.isoron.uhabits.activities.settings.SettingsActivity"
+83-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:80:13-65
+84            android:label="@string/settings" >
+84-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:81:13-45
+85            <meta-data
+85-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:75:13-77:77
+86                android:name="android.support.PARENT_ACTIVITY"
+86-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:76:17-63
+87                android:value=".activities.habits.list.ListHabitsActivity" />
+87-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:77:17-75
+88        </activity>
+89        <activity
+89-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:86:9-89:71
+90            android:name="org.isoron.uhabits.activities.intro.IntroActivity"
+90-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:87:13-59
+91            android:label=""
+91-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:88:13-29
+92            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+92-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:89:13-69
+93        <activity
+93-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:90:9-96:20
+94            android:name="org.isoron.uhabits.widgets.HabitPickerDialog"
+94-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:91:13-54
+95            android:theme="@style/Theme.AppCompat.Light.Dialog" >
+95-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:92:13-64
+96            <intent-filter>
+96-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:93:13-95:29
+97                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+97-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:94:17-86
+97-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:94:25-84
+98            </intent-filter>
+99        </activity>
+100        <activity
+100-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:97:9-103:20
+101            android:name="org.isoron.uhabits.activities.about.AboutActivity"
+101-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:98:13-59
+102            android:label="@string/about" >
+102-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:99:13-42
+103            <meta-data
+103-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:75:13-77:77
+104                android:name="android.support.PARENT_ACTIVITY"
+104-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:76:17-63
+105                android:value=".activities.habits.list.ListHabitsActivity" />
+105-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:77:17-75
+106        </activity>
+107        <activity
+107-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:104:9-108:20
+108            android:name="org.isoron.uhabits.notifications.SnoozeDelayPickerActivity"
+108-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:104:19-74
+109            android:excludeFromRecents="true"
+109-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:105:13-46
+110            android:launchMode="singleInstance"
+110-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:106:13-48
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+111-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:107:13-72
+112        </activity>
+113
+114        <receiver
+114-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:9-120:20
+115            android:name="org.isoron.uhabits.widgets.CheckmarkWidgetProvider"
+115-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:111:13-60
+116            android:label="@string/checkmark" >
+116-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:112:13-46
+117            <intent-filter>
+117-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:29
+118                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+118-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-83
+118-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:25-81
+119            </intent-filter>
+120
+121            <meta-data
+121-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:13-119:64
+122                android:name="android.appwidget.provider"
+122-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:118:17-58
+123                android:resource="@xml/widget_checkmark_info" />
+123-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:119:17-62
+124        </receiver>
+125
+126        <service
+126-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:121:9-123:40
+127            android:name="org.isoron.uhabits.widgets.StackWidgetService"
+127-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:121:18-60
+128            android:exported="false"
+128-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:123:13-37
+129            android:permission="android.permission.BIND_REMOTEVIEWS" />
+129-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:122:13-69
+130
+131        <receiver
+131-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:124:9-134:20
+132            android:name="org.isoron.uhabits.widgets.HistoryWidgetProvider"
+132-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:125:13-58
+133            android:label="@string/history" >
+133-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:126:13-44
+134            <intent-filter>
+134-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:29
+135                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+135-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-83
+135-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:25-81
+136            </intent-filter>
+137
+138            <meta-data
+138-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:13-119:64
+139                android:name="android.appwidget.provider"
+139-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:118:17-58
+140                android:resource="@xml/widget_history_info" />
+140-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:119:17-62
+141        </receiver>
+142        <receiver
+142-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:135:9-145:20
+143            android:name="org.isoron.uhabits.widgets.ScoreWidgetProvider"
+143-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:136:13-56
+144            android:label="@string/habit_strength" >
+144-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:137:13-51
+145            <intent-filter>
+145-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:29
+146                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+146-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-83
+146-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:25-81
+147            </intent-filter>
+148
+149            <meta-data
+149-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:13-119:64
+150                android:name="android.appwidget.provider"
+150-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:118:17-58
+151                android:resource="@xml/widget_score_info" />
+151-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:119:17-62
+152        </receiver>
+153        <receiver
+153-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:146:9-156:20
+154            android:name="org.isoron.uhabits.widgets.StreakWidgetProvider"
+154-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:147:13-57
+155            android:label="@string/streaks" >
+155-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:148:13-44
+156            <intent-filter>
+156-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:29
+157                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+157-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-83
+157-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:25-81
+158            </intent-filter>
+159
+160            <meta-data
+160-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:13-119:64
+161                android:name="android.appwidget.provider"
+161-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:118:17-58
+162                android:resource="@xml/widget_streak_info" />
+162-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:119:17-62
+163        </receiver>
+164        <receiver
+164-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:157:9-167:20
+165            android:name="org.isoron.uhabits.widgets.FrequencyWidgetProvider"
+165-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:158:13-60
+166            android:label="@string/frequency" >
+166-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:159:13-46
+167            <intent-filter>
+167-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:29
+168                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+168-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-83
+168-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:25-81
+169            </intent-filter>
+170
+171            <meta-data
+171-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:13-119:64
+172                android:name="android.appwidget.provider"
+172-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:118:17-58
+173                android:resource="@xml/widget_frequency_info" />
+173-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:119:17-62
+174        </receiver>
+175        <receiver android:name="org.isoron.uhabits.receivers.ReminderReceiver" >
+175-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:168:9-172:20
+175-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:168:19-61
+176            <intent-filter>
+176-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:169:13-171:29
+177                <action android:name="android.intent.action.BOOT_COMPLETED" />
+177-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:170:17-78
+177-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:170:25-76
+178            </intent-filter>
+179        </receiver>
+180        <receiver android:name="org.isoron.uhabits.receivers.WidgetReceiver" >
+180-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:173:9-201:20
+180-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:173:19-59
+181            <intent-filter>
+181-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:174:13-182:29
+182                <category android:name="android.intent.category.DEFAULT" />
+182-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:17-75
+182-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:27-73
+183
+184                <action android:name="org.isoron.uhabits.ACTION_TOGGLE_REPETITION" />
+184-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:177:17-85
+184-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:177:25-83
+185
+186                <data
+186-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:179:17-181:47
+187                    android:host="org.isoron.uhabits"
+187-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:180:21-54
+188                    android:scheme="content" />
+188-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:181:21-45
+189            </intent-filter>
+190            <intent-filter>
+190-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:183:13-191:29
+191                <category android:name="android.intent.category.DEFAULT" />
+191-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:17-75
+191-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:27-73
+192
+193                <action android:name="org.isoron.uhabits.ACTION_ADD_REPETITION" />
+193-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:186:17-82
+193-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:186:25-80
+194
+195                <data
+195-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:179:17-181:47
+196                    android:host="org.isoron.uhabits"
+196-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:180:21-54
+197                    android:scheme="content" />
+197-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:181:21-45
+198            </intent-filter>
+199            <intent-filter>
+199-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:192:13-200:29
+200                <category android:name="android.intent.category.DEFAULT" />
+200-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:17-75
+200-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:27-73
 201
-202        <!-- Locale/Tasker -->
-203        <activity
-203-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:193:9-201:20
-204            android:name="org.isoron.uhabits.automation.EditSettingActivity"
-204-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:194:13-59
-205            android:exported="true"
-205-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:195:13-36
-206            android:icon="@mipmap/ic_launcher"
-206-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:196:13-47
-207            android:label="@string/app_name" >
-207-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:197:13-45
-208            <intent-filter>
-208-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:198:13-200:29
-209                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
-209-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:199:17-94
-209-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:199:25-92
-210            </intent-filter>
-211        </activity>
-212
-213        <!-- Locale/Tasker -->
-214        <receiver
-214-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:204:9-210:20
-215            android:name="org.isoron.uhabits.automation.FireSettingReceiver"
-215-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:205:13-59
-216            android:exported="true" >
-216-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:206:13-36
-217            <intent-filter>
-217-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:207:13-209:29
-218                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
-218-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:208:17-94
-218-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:208:25-92
-219            </intent-filter>
-220        </receiver>
-221
-222        <provider
-222-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:212:9-220:20
-223            android:name="androidx.core.content.FileProvider"
-223-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:213:13-62
-224            android:authorities="org.isoron.uhabits"
-224-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:214:13-53
-225            android:exported="false"
-225-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:215:13-37
-226            android:grantUriPermissions="true" >
-226-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:216:13-47
-227            <meta-data
-227-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:217:13-219:53
-228                android:name="android.support.FILE_PROVIDER_PATHS"
-228-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:218:17-67
-229                android:resource="@xml/file_paths" />
-229-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:219:17-51
-230        </provider>
-231
-232        <service
-232-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:222:9-226:19
-233            android:name="org.isoron.uhabits.sync.SyncService"
-233-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:223:13-45
-234            android:enabled="true"
-234-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:224:13-35
-235            android:exported="false" >
-235-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:225:13-37
-236        </service>
-237    </application>
-238
-239</manifest>
+202                <action android:name="org.isoron.uhabits.ACTION_REMOVE_REPETITION" />
+202-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:195:17-85
+202-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:195:25-83
+203
+204                <data
+204-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:179:17-181:47
+205                    android:host="org.isoron.uhabits"
+205-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:180:21-54
+206                    android:scheme="content" />
+206-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:181:21-45
+207            </intent-filter>
+208        </receiver>
+209
+210        <!-- Locale/Tasker -->
+211        <activity
+211-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:204:9-212:20
+212            android:name="org.isoron.uhabits.automation.EditSettingActivity"
+212-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:205:13-59
+213            android:exported="true"
+213-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:206:13-36
+214            android:icon="@mipmap/ic_launcher"
+214-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:207:13-47
+215            android:label="@string/app_name" >
+215-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:208:13-45
+216            <intent-filter>
+216-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:209:13-211:29
+217                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+217-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:210:17-94
+217-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:210:25-92
+218            </intent-filter>
+219        </activity>
+220
+221        <!-- Locale/Tasker -->
+222        <receiver
+222-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:215:9-221:20
+223            android:name="org.isoron.uhabits.automation.FireSettingReceiver"
+223-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:216:13-59
+224            android:exported="true" >
+224-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:217:13-36
+225            <intent-filter>
+225-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:218:13-220:29
+226                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+226-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:219:17-94
+226-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:219:25-92
+227            </intent-filter>
+228        </receiver>
+229
+230        <provider
+230-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:223:9-231:20
+231            android:name="androidx.core.content.FileProvider"
+231-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:224:13-62
+232            android:authorities="org.isoron.uhabits"
+232-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:225:13-53
+233            android:exported="false"
+233-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:226:13-37
+234            android:grantUriPermissions="true" >
+234-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:227:13-47
+235            <meta-data
+235-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:228:13-230:53
+236                android:name="android.support.FILE_PROVIDER_PATHS"
+236-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:229:17-67
+237                android:resource="@xml/file_paths" />
+237-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:230:17-51
+238        </provider>
+239
+240        <service
+240-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:233:9-237:19
+241            android:name="org.isoron.uhabits.sync.SyncService"
+241-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:234:13-45
+242            android:enabled="true"
+242-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:235:13-35
+243            android:exported="false" >
+243-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:236:13-37
+244        </service>
+245        <service
+245-->[androidx.room:room-runtime:2.2.1] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/070938d54ddb782f19975c379db75655/room-runtime-2.2.1/AndroidManifest.xml:25:9-27:40
+246            android:name="androidx.room.MultiInstanceInvalidationService"
+246-->[androidx.room:room-runtime:2.2.1] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/070938d54ddb782f19975c379db75655/room-runtime-2.2.1/AndroidManifest.xml:26:13-74
+247            android:exported="false" />
+247-->[androidx.room:room-runtime:2.2.1] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/070938d54ddb782f19975c379db75655/room-runtime-2.2.1/AndroidManifest.xml:27:13-37
+248
+249        <provider
+249-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+250            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+250-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+251            android:authorities="org.isoron.uhabits.lifecycle-process"
+251-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+252            android:exported="false"
+252-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+253            android:multiprocess="true" />
+253-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+254    </application>
+255
+256</manifest>

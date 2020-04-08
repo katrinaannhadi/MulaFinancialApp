@@ -27,6 +27,13 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fragment_close_enter
+anim fragment_close_exit
+anim fragment_fade_enter
+anim fragment_fade_exit
+anim fragment_fast_out_extra_slow_in
+anim fragment_open_enter
+anim fragment_open_exit
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1711,6 +1718,8 @@ drawable widget_preview_score
 drawable widget_preview_streaks
 id ALT
 id CTRL
+id EditText1
+id EditText2
 id FUNCTION
 id META
 id NO_DEBUG
@@ -1821,12 +1830,23 @@ id boolSpinner
 id bottom
 id bottom_separator
 id bounce
+id bt_calculate
+id bt_refresh
 id button
+id button2
 id buttonDiscard
 id buttonOverlay
 id buttonPanel
 id buttonPickColor
 id buttonSave
+id button_category_one
+id button_category_three
+id button_category_two
+id button_continue
+id button_goals
+id button_invest
+id button_submit
+id button_tax
 id cancel_action
 id center
 id center_horizontal
@@ -1847,7 +1867,10 @@ id collapseActionView
 id color_picker
 id color_picker_checkmark
 id color_picker_swatch
+id constraint_daily_quiz
+id constraint_start_quiz
 id container
+id container_popup
 id content
 id contentPanel
 id coordinator
@@ -1906,7 +1929,11 @@ id flip
 id forever
 id formPanel
 id fragment
+id fragment_container_view_tag
+id fragment_layout
 id frame
+id frameLayout
+id frame_start_quiz
 id frequencyCard
 id frequencyChart
 id frequencyIcon
@@ -1915,10 +1942,12 @@ id frequencyPanel
 id frequencyStackWidgetEmptyView
 id frequencyStackWidgetView
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
 id group_divider
+id group_options
 id groups
 id habitNotes
 id habitSpinner
@@ -1957,6 +1986,8 @@ id left
 id line
 id line1
 id line3
+id lineFragment
+id lineView
 id linear
 id listItemHabitCheckbox
 id listItemHabitName
@@ -1982,7 +2013,10 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id namePanel
+id nav_investment
+id nav_startquiz
 id navigation_header_container
+id navigation_view
 id never
 id next
 id none
@@ -1995,6 +2029,7 @@ id numerator
 id numericalSpinner
 id off
 id on
+id options_quiz
 id outline
 id overviewCard
 id packed
@@ -2008,13 +2043,22 @@ id pathRelative
 id percent
 id picker
 id picker2
+id pieFragment
+id pieView
 id pin
 id position
 id postLayout
 id progress_circular
 id progress_horizontal
 id questionLabel
+id quiz_constraint_layout
 id radio
+id radio_answer_1
+id radio_answer_2
+id radio_answer_3
+id radio_quiz_a
+id radio_quiz_b
+id radio_quiz_c
 id ratio
 id rectangles
 id recycler_view
@@ -2095,6 +2139,7 @@ id stretch
 id submenuarrow
 id submit_area
 id subtitleCard
+id switch1
 id switchWidget
 id tabMode
 id tag_accessibility_actions
@@ -2111,7 +2156,20 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
+id textView3
+id textView4
+id textView5
+id textViewR2
+id textViewR3
+id textViewR4
 id text_input_password_toggle
+id text_lineChart
+id text_pieChart
+id text_question
+id text_score
+id text_test
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2124,7 +2182,17 @@ id time_picker
 id time_picker_dialog
 id timestamp_key
 id title
+id titleAdditionalContributions
 id titleDividerNoCustom
+id titleFutureValue
+id titleInterestContributions
+id titleInterestPrincipal
+id titleReturnRate
+id titleStartingAmount
+id titleTimesCompounded
+id titleTotalContributions
+id titleTotalInterest
+id titleYears
 id title_template
 id toggle
 id toolbar
@@ -2156,6 +2224,16 @@ id tvTargetCount
 id tvTranslate
 id tvUnit
 id tvVersion
+id tv_AdditionalContributions
+id tv_FutureValue
+id tv_InterestContributions
+id tv_InterestPrincipal
+id tv_ReturnRate
+id tv_StartingAmount
+id tv_TimesCompounded
+id tv_TotalContributions
+id tv_TotalInterest
+id tv_Years
 id unchecked
 id uniform
 id unlabeled
@@ -2164,6 +2242,7 @@ id useLogo
 id view_offset_helper
 id view_pager
 id visible
+id visible_removing_fragment_view_tag
 id withText
 id wrap
 id wrap_content
@@ -2223,6 +2302,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout about
+layout activity_investment_calculator
+layout activity_main
+layout activity_quiz
+layout activity_taxcalc
 layout automation
 layout checkmark_stackview_widget
 layout color_picker_dialog
@@ -2255,7 +2338,14 @@ layout edit_habit_reminder
 layout edit_habit_target
 layout expand_button
 layout filter
+layout fragment_calculator
+layout fragment_daily_quiz
 layout fragment_intro
+layout fragment_investment_calculator
+layout fragment_line_chart
+layout fragment_pie_chart
+layout fragment_start_quiz
+layout fragment_tax_calculator
 layout frequency_stackview_widget
 layout habit_checkbox_list_item
 layout history_stackview_widget
@@ -2327,6 +2417,7 @@ layout widget_error
 layout widget_graph
 layout widget_wrapper
 layout year_label_text_view
+menu bottom_nav_bar
 menu list_habits
 menu list_habits_selection
 menu show_habit
@@ -2426,6 +2517,16 @@ string done_label
 string download
 string edit
 string edit_habit
+string et_additional_contribution
+string et_end_amount
+string et_interest_contribution
+string et_interest_principal
+string et_return_amount
+string et_start_amount
+string et_times_compounded
+string et_total_contribution
+string et_total_interest
+string et_years
 string every_day
 string every_week
 string every_x_days
@@ -2463,6 +2564,7 @@ string habit_key
 string habit_not_found
 string habit_strength
 string habits_imported
+string hello_blank_fragment
 string help
 string helpURL
 string help_translate
@@ -2475,6 +2577,17 @@ string hint_title
 string history
 string history_stack_widget
 string hour_picker_description
+string ic_additional_contribution
+string ic_contribute
+string ic_end_amount
+string ic_interest_contribution
+string ic_interest_principal
+string ic_return_rate
+string ic_start_amount
+string ic_times_compounded
+string ic_total_contribution
+string ic_total_interest
+string ic_years
 string import_data
 string import_data_summary
 string interface_preferences
@@ -3255,6 +3368,8 @@ styleable FlowLayout_LayoutParams android_layout_gravity layout_newLine layout_w
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
+styleable Fragment android_name android_id android_tag
+styleable FragmentContainerView android_name android_tag
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc brightness contrast crossfade overlay round roundPercent saturation warmth
