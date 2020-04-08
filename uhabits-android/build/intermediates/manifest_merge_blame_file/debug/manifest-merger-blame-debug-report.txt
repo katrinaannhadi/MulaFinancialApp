@@ -1,0 +1,416 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (C) 2016 Álinson Santos Xavier <isoron@gmail.com>
+4  ~
+5  ~ This file is part of Loop Habit Tracker.
+6  ~
+7  ~ Loop Habit Tracker is free software: you can redistribute it and/or modify
+8  ~ it under the terms of the GNU General Public License as published by the
+9  ~ Free Software Foundation, either version 3 of the License, or (at your
+10  ~ option) any later version.
+11  ~
+12  ~ Loop Habit Tracker is distributed in the hope that it will be useful, but
+13  ~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+14  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+15  ~ more details.
+16  ~
+17  ~ You should have received a copy of the GNU General Public License along
+18  ~ with this program. If not, see <http://www.gnu.org/licenses/>.
+19-->
+20<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+21    package="org.isoron.uhabits"
+22    android:versionCode="50"
+23    android:versionName="1.8.7" >
+24
+25    <uses-sdk
+26        android:minSdkVersion="21"
+26-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml
+27        android:targetSdkVersion="29" />
+27-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml
+28
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:24:5-65
+29-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:24:22-63
+30    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+30-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:26:5-80
+30-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:26:22-78
+31    <uses-permission android:name="android.permission.INTERNET" />
+31-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:28:5-66
+31-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:28:22-64
+32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+32-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:30:5-79
+32-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:30:22-76
+33
+34    <application
+34-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:32:5-227:19
+35        android:name="org.isoron.uhabits.HabitsApplication"
+35-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:33:9-42
+36        android:allowBackup="true"
+36-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:34:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.1.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/1bf8ed470959cd87a6288d69d894f3e6/core-1.1.0/AndroidManifest.xml:24:18-86
+38        android:backupAgent="org.isoron.uhabits.HabitsBackupAgent"
+38-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:35:9-49
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:36:9-43
+41        android:label="@string/main_activity_title"
+41-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:37:9-52
+42        android:supportsRtl="true"
+42-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:38:9-35
+43        android:testOnly="true"
+44        android:theme="@style/AppBaseTheme" >
+44-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:39:9-44
+45        <meta-data
+45-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:40:9-42:81
+46            android:name="com.google.android.backup.api_key"
+46-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:41:13-61
+47            android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
+47-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:42:13-79
+48
+49        <activity
+49-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:44:9-48:45
+50            android:name="org.isoron.uhabits.activities.habits.list.ListHabitsActivity"
+50-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:45:13-70
+51            android:exported="true"
+51-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:46:13-36
+52            android:label="@string/main_activity_title"
+52-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:47:13-56
+53            android:launchMode="singleTop" />
+53-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:48:13-43
+54
+55        <activity-alias
+55-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:50:9-59:26
+56            android:name="org.isoron.uhabits.MainActivity"
+56-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:51:13-41
+57            android:label="@string/main_activity_title"
+57-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:52:13-56
+58            android:launchMode="singleTop"
+58-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:53:13-43
+59            android:targetActivity="org.isoron.uhabits.activities.habits.list.ListHabitsActivity" >
+59-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:54:13-80
+60            <intent-filter android:label="@string/main_activity_title" >
+60-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:55:13-58:29
+60-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:55:28-71
+61                <action android:name="android.intent.action.MAIN" />
+61-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:56:17-68
+61-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:56:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:57:17-76
+63-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:57:27-74
+64            </intent-filter>
+65        </activity-alias>
+66
+67        <activity
+67-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:61:9-67:20
+68            android:name="org.isoron.uhabits.activities.habits.show.ShowHabitActivity"
+68-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:62:13-69
+69            android:label="@string/title_activity_show_habit" >
+69-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:63:13-62
+70            <meta-data
+70-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:64:13-66:77
+71                android:name="android.support.PARENT_ACTIVITY"
+71-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:65:17-63
+72                android:value=".activities.habits.list.ListHabitsActivity" />
+72-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:66:17-75
+73        </activity>
+74        <activity
+74-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:68:9-74:20
+75            android:name="org.isoron.uhabits.activities.settings.SettingsActivity"
+75-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:69:13-65
+76            android:label="@string/settings" >
+76-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:70:13-45
+77            <meta-data
+77-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:64:13-66:77
+78                android:name="android.support.PARENT_ACTIVITY"
+78-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:65:17-63
+79                android:value=".activities.habits.list.ListHabitsActivity" />
+79-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:66:17-75
+80        </activity>
+81        <activity
+81-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:75:9-78:71
+82            android:name="org.isoron.uhabits.activities.intro.IntroActivity"
+82-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:76:13-59
+83            android:label=""
+83-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:77:13-29
+84            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+84-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:78:13-69
+85        <activity
+85-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:79:9-85:20
+86            android:name="org.isoron.uhabits.widgets.HabitPickerDialog"
+86-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:80:13-54
+87            android:theme="@style/Theme.AppCompat.Light.Dialog" >
+87-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:81:13-64
+88            <intent-filter>
+88-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:82:13-84:29
+89                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+89-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:83:17-86
+89-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:83:25-84
+90            </intent-filter>
+91        </activity>
+92        <activity
+92-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:86:9-92:20
+93            android:name="org.isoron.uhabits.activities.about.AboutActivity"
+93-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:87:13-59
+94            android:label="@string/about" >
+94-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:88:13-42
+95            <meta-data
+95-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:64:13-66:77
+96                android:name="android.support.PARENT_ACTIVITY"
+96-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:65:17-63
+97                android:value=".activities.habits.list.ListHabitsActivity" />
+97-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:66:17-75
+98        </activity>
+99        <activity
+99-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:93:9-97:20
+100            android:name="org.isoron.uhabits.notifications.SnoozeDelayPickerActivity"
+100-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:93:19-74
+101            android:excludeFromRecents="true"
+101-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:94:13-46
+102            android:launchMode="singleInstance"
+102-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:95:13-48
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+103-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:96:13-72
+104        </activity>
+105
+106        <receiver
+106-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:99:9-109:20
+107            android:name="org.isoron.uhabits.widgets.CheckmarkWidgetProvider"
+107-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:100:13-60
+108            android:label="@string/checkmark" >
+108-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:101:13-46
+109            <intent-filter>
+109-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
+110                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+110-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
+110-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
+111            </intent-filter>
+112
+113            <meta-data
+113-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
+114                android:name="android.appwidget.provider"
+114-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
+115                android:resource="@xml/widget_checkmark_info" />
+115-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
+116        </receiver>
+117
+118        <service
+118-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:110:9-112:40
+119            android:name="org.isoron.uhabits.widgets.StackWidgetService"
+119-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:110:18-60
+120            android:exported="false"
+120-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:112:13-37
+121            android:permission="android.permission.BIND_REMOTEVIEWS" />
+121-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:111:13-69
+122
+123        <receiver
+123-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:113:9-123:20
+124            android:name="org.isoron.uhabits.widgets.HistoryWidgetProvider"
+124-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:114:13-58
+125            android:label="@string/history" >
+125-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:115:13-44
+126            <intent-filter>
+126-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
+127                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+127-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
+127-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
+128            </intent-filter>
+129
+130            <meta-data
+130-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
+131                android:name="android.appwidget.provider"
+131-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
+132                android:resource="@xml/widget_history_info" />
+132-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
+133        </receiver>
+134        <receiver
+134-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:124:9-134:20
+135            android:name="org.isoron.uhabits.widgets.ScoreWidgetProvider"
+135-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:125:13-56
+136            android:label="@string/habit_strength" >
+136-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:126:13-51
+137            <intent-filter>
+137-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
+138                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+138-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
+138-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
+139            </intent-filter>
+140
+141            <meta-data
+141-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
+142                android:name="android.appwidget.provider"
+142-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
+143                android:resource="@xml/widget_score_info" />
+143-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
+144        </receiver>
+145        <receiver
+145-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:135:9-145:20
+146            android:name="org.isoron.uhabits.widgets.StreakWidgetProvider"
+146-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:136:13-57
+147            android:label="@string/streaks" >
+147-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:137:13-44
+148            <intent-filter>
+148-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
+149                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+149-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
+149-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
+150            </intent-filter>
+151
+152            <meta-data
+152-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
+153                android:name="android.appwidget.provider"
+153-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
+154                android:resource="@xml/widget_streak_info" />
+154-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
+155        </receiver>
+156        <receiver
+156-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:146:9-156:20
+157            android:name="org.isoron.uhabits.widgets.FrequencyWidgetProvider"
+157-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:147:13-60
+158            android:label="@string/frequency" >
+158-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:148:13-46
+159            <intent-filter>
+159-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:102:13-104:29
+160                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+160-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:17-83
+160-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:103:25-81
+161            </intent-filter>
+162
+163            <meta-data
+163-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:106:13-108:64
+164                android:name="android.appwidget.provider"
+164-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:107:17-58
+165                android:resource="@xml/widget_frequency_info" />
+165-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:108:17-62
+166        </receiver>
+167        <receiver android:name="org.isoron.uhabits.receivers.ReminderReceiver" >
+167-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:157:9-161:20
+167-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:157:19-61
+168            <intent-filter>
+168-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:158:13-160:29
+169                <action android:name="android.intent.action.BOOT_COMPLETED" />
+169-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:159:17-78
+169-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:159:25-76
+170            </intent-filter>
+171        </receiver>
+172        <receiver android:name="org.isoron.uhabits.receivers.WidgetReceiver" >
+172-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:162:9-190:20
+172-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:162:19-59
+173            <intent-filter>
+173-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:163:13-171:29
+174                <category android:name="android.intent.category.DEFAULT" />
+174-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:17-75
+174-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:27-73
+175
+176                <action android:name="org.isoron.uhabits.ACTION_TOGGLE_REPETITION" />
+176-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:166:17-85
+176-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:166:25-83
+177
+178                <data
+178-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:168:17-170:47
+179                    android:host="org.isoron.uhabits"
+179-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:169:21-54
+180                    android:scheme="content" />
+180-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:170:21-45
+181            </intent-filter>
+182            <intent-filter>
+182-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:172:13-180:29
+183                <category android:name="android.intent.category.DEFAULT" />
+183-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:17-75
+183-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:27-73
+184
+185                <action android:name="org.isoron.uhabits.ACTION_ADD_REPETITION" />
+185-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:175:17-82
+185-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:175:25-80
+186
+187                <data
+187-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:168:17-170:47
+188                    android:host="org.isoron.uhabits"
+188-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:169:21-54
+189                    android:scheme="content" />
+189-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:170:21-45
+190            </intent-filter>
+191            <intent-filter>
+191-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:181:13-189:29
+192                <category android:name="android.intent.category.DEFAULT" />
+192-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:17-75
+192-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:164:27-73
+193
+194                <action android:name="org.isoron.uhabits.ACTION_REMOVE_REPETITION" />
+194-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:184:17-85
+194-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:184:25-83
+195
+196                <data
+196-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:168:17-170:47
+197                    android:host="org.isoron.uhabits"
+197-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:169:21-54
+198                    android:scheme="content" />
+198-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:170:21-45
+199            </intent-filter>
+200        </receiver>
+201
+202        <!-- Locale/Tasker -->
+203        <activity
+203-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:193:9-201:20
+204            android:name="org.isoron.uhabits.automation.EditSettingActivity"
+204-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:194:13-59
+205            android:exported="true"
+205-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:195:13-36
+206            android:icon="@mipmap/ic_launcher"
+206-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:196:13-47
+207            android:label="@string/app_name" >
+207-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:197:13-45
+208            <intent-filter>
+208-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:198:13-200:29
+209                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+209-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:199:17-94
+209-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:199:25-92
+210            </intent-filter>
+211        </activity>
+212
+213        <!-- Locale/Tasker -->
+214        <receiver
+214-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:204:9-210:20
+215            android:name="org.isoron.uhabits.automation.FireSettingReceiver"
+215-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:205:13-59
+216            android:exported="true" >
+216-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:206:13-36
+217            <intent-filter>
+217-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:207:13-209:29
+218                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+218-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:208:17-94
+218-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:208:25-92
+219            </intent-filter>
+220        </receiver>
+221
+222        <provider
+222-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:212:9-220:20
+223            android:name="androidx.core.content.FileProvider"
+223-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:213:13-62
+224            android:authorities="org.isoron.uhabits"
+224-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:214:13-53
+225            android:exported="false"
+225-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:215:13-37
+226            android:grantUriPermissions="true" >
+226-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:216:13-47
+227            <meta-data
+227-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:217:13-219:53
+228                android:name="android.support.FILE_PROVIDER_PATHS"
+228-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:218:17-67
+229                android:resource="@xml/file_paths" />
+229-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:219:17-51
+230        </provider>
+231
+232        <service
+232-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:222:9-226:19
+233            android:name="org.isoron.uhabits.sync.SyncService"
+233-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:223:13-45
+234            android:enabled="true"
+234-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:224:13-35
+235            android:exported="false" >
+235-->/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/AndroidManifest.xml:225:13-37
+236        </service>
+237    </application>
+238
+239</manifest>

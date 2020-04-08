@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ug-rCN/values-ug-rCN.xml",
+            "map": [
+                {
+                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/res/values-ug-rCN/strings.xml",
+                    "from": {
+                        "startLines": "22,27,25,28,24,23,21,34,32,29,30,31,26",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "937,1176,1074,1228,1031,988,883,1587,1491,1296,1358,1422,1120",
+                        "endColumns": "50,51,45,67,42,42,53,43,65,61,63,68,55",
+                        "endOffsets": "983,1223,1115,1291,1069,1026,932,1626,1552,1353,1417,1486,1171"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,106,158,204,272,315,358,412,456,522,584,648,717",
+                        "endColumns": "50,51,45,67,42,42,53,43,65,61,63,68,55",
+                        "endOffsets": "101,153,199,267,310,353,407,451,517,579,643,712,768"
+                    }
+                }
+            ]
+        }
+    ]
+}
