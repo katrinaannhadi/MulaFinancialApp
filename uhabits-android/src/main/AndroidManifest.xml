@@ -41,8 +41,9 @@
             android:name="com.google.android.backup.api_key"
             android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw"/>
 
+
         <activity
-            android:name=".activities.habits.list.ListHabitsActivity"
+            android:name=".activities.MainActivity"
             android:exported="true"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"/>
@@ -51,12 +52,22 @@
             android:name=".MainActivity"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
-            android:targetActivity=".activities.habits.list.ListHabitsActivity">
+            android:targetActivity=".activities.MainActivity">
             <intent-filter android:label="@string/main_activity_title">
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity-alias>
+
+        <activity
+            android:name=".activities.habits.list.ListHabitsActivity"
+            android:exported="true"
+            android:label="@string/main_activity_title"
+            android:launchMode="singleTop"/>
+
+        <activity android:name=".activities.InvestmentCalculatorActivity" />
+        <activity android:name=".activities.TaxCalculatorActivity" />
+        <activity android:name=".activities.QuizActivity"/>
 
         <activity
             android:name=".activities.habits.show.ShowHabitActivity"

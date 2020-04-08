@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eo-rUY/values-eo-rUY.xml",
+            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eo-rUY/values-eo-rUY.xml",
             "map": [
                 {
-                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/res/values-eo-rUY/strings.xml",
+                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values-eo-rUY/strings.xml",
                     "from": {
                         "startLines": "54,88,23,28,65,48,47,21,26,92,91,29,87,75,33,25,45,56,35,51,93,24,66,67,94,50,71,83,69,58,72,89,32,70,85,84,42,43,41,61,63,62,64,22,77,74,82,60,78,34,38,86,36,52,53,49,44,39,90,37,59,31,30,55,73,68,27,57,76,46,79",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

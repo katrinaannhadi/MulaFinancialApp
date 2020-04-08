@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi-rFI/values-fi-rFI.xml",
+            "outputFile": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi-rFI/values-fi-rFI.xml",
             "map": [
                 {
-                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/Mula/android/uhabits-android/src/main/res/values-fi-rFI/strings.xml",
+                    "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values-fi-rFI/strings.xml",
                     "from": {
                         "startLines": "23,27,21,26,81,56,39,86,28,54,94,97,43,25,40,88,45,85,24,55,90,91,93,37,84,38,67,69,73,70,68,71,72,60,62,64,66,59,61,63,65,80,49,22,99,82,95,48,36,76,77,75,74,79,78,100,44,50,41,46,83,57,47,42,34,32,33,29,30,31,35,102,87,92,96,53,51,52,89,98,101",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
