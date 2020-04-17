@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
-INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
-INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
-INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
+INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
+INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
+INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
 MERGED from [:android-base] /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/android-base/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:android-pickers] /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/android-pickers/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/db346f4e09792e54909c432b4a24b600/material-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -60,20 +60,20 @@ MERGED from [androidx.print:print:1.0.0] /Users/katrinaann/.gradle/caches/transf
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/c355d0c7d8ce2f26b63f2a88ff16c036/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/7d532485ab554d60dd6e4a983910186f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3ea58ab14d775683d196fb065ef5de1d/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
-INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
-INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
+INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
+INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
+INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
 	package
 		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:21:5-33
 		INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
 		INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
 		INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-240:12
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:1-234:12
 		INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:22:5-63
@@ -94,7 +94,7 @@ ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialA
 	android:name
 		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:30:22-76
 application
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:32:5-238:19
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:32:5-232:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/db346f4e09792e54909c432b4a24b600/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/db346f4e09792e54909c432b4a24b600/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta4] /Users/katrinaann/.gradle/caches/transforms-2/files-2.1/cd458bfb7121013799be13523d001ab9/constraintlayout-2.0.0-beta4/AndroidManifest.xml:9:5-20
@@ -229,166 +229,160 @@ action#android.appwidget.action.APPWIDGET_CONFIGURE
 ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:94:17-86
 	android:name
 		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:94:25-84
-activity#org.isoron.uhabits.activities.about.AboutActivity
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:97:9-103:20
-	android:label
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:99:13-42
-	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:98:13-59
 activity#org.isoron.uhabits.notifications.SnoozeDelayPickerActivity
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:104:9-108:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:98:9-102:20
 	android:excludeFromRecents
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:105:13-46
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:99:13-46
 	android:launchMode
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:106:13-48
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:100:13-48
 	android:theme
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:107:13-72
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:101:13-72
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:104:19-74
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:98:19-74
 receiver#org.isoron.uhabits.widgets.CheckmarkWidgetProvider
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:9-120:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:104:9-114:20
 	android:label
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:112:13-46
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:106:13-46
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:111:13-60
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:105:13-60
 intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:29
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:107:13-109:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-83
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:108:17-83
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:25-81
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:108:25-81
 meta-data#android.appwidget.provider
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:13-119:64
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:111:13-113:64
 	android:resource
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:119:17-62
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:17-62
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:118:17-58
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:112:17-58
 service#org.isoron.uhabits.widgets.StackWidgetService
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:121:9-123:40
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:115:9-117:40
 	android:exported
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:123:13-37
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:13-37
 	android:permission
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:122:13-69
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:116:13-69
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:121:18-60
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:115:18-60
 receiver#org.isoron.uhabits.widgets.HistoryWidgetProvider
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:124:9-134:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:118:9-128:20
 	android:label
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:126:13-44
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:120:13-44
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:125:13-58
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:119:13-58
 receiver#org.isoron.uhabits.widgets.ScoreWidgetProvider
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:135:9-145:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:129:9-139:20
 	android:label
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:137:13-51
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:131:13-51
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:136:13-56
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:130:13-56
 receiver#org.isoron.uhabits.widgets.StreakWidgetProvider
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:146:9-156:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:140:9-150:20
 	android:label
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:148:13-44
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:142:13-44
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:147:13-57
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:141:13-57
 receiver#org.isoron.uhabits.widgets.FrequencyWidgetProvider
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:157:9-167:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:151:9-161:20
 	android:label
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:159:13-46
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:153:13-46
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:158:13-60
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:152:13-60
 receiver#org.isoron.uhabits.receivers.ReminderReceiver
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:168:9-172:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:162:9-166:20
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:168:19-61
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:162:19-61
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:169:13-171:29
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:163:13-165:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:170:17-78
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:164:17-78
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:170:25-76
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:164:25-76
 receiver#org.isoron.uhabits.receivers.WidgetReceiver
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:173:9-201:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:167:9-195:20
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:173:19-59
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:167:19-59
 intent-filter#action:name:org.isoron.uhabits.ACTION_TOGGLE_REPETITION+category:name:android.intent.category.DEFAULT+data:host:org.isoron.uhabits+data:scheme:content
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:174:13-182:29
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:168:13-176:29
 category#android.intent.category.DEFAULT
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:17-75
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:169:17-75
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:27-73
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:169:27-73
 action#org.isoron.uhabits.ACTION_TOGGLE_REPETITION
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:177:17-85
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:171:17-85
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:177:25-83
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:171:25-83
 data
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:179:17-181:47
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:173:17-175:47
 	android:host
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:180:21-54
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:174:21-54
 	android:scheme
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:181:21-45
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:21-45
 intent-filter#action:name:org.isoron.uhabits.ACTION_ADD_REPETITION+category:name:android.intent.category.DEFAULT+data:host:org.isoron.uhabits+data:scheme:content
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:183:13-191:29
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:177:13-185:29
 action#org.isoron.uhabits.ACTION_ADD_REPETITION
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:186:17-82
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:180:17-82
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:186:25-80
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:180:25-80
 intent-filter#action:name:org.isoron.uhabits.ACTION_REMOVE_REPETITION+category:name:android.intent.category.DEFAULT+data:host:org.isoron.uhabits+data:scheme:content
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:192:13-200:29
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:186:13-194:29
 action#org.isoron.uhabits.ACTION_REMOVE_REPETITION
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:195:17-85
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:189:17-85
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:195:25-83
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:189:25-83
 activity#org.isoron.uhabits.automation.EditSettingActivity
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:204:9-212:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:198:9-206:20
 	android:label
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:208:13-45
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:202:13-45
 	android:exported
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:206:13-36
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:200:13-36
 	android:icon
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:207:13-47
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:201:13-47
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:205:13-59
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:199:13-59
 intent-filter#action:name:com.twofortyfouram.locale.intent.action.EDIT_SETTING
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:209:13-211:29
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:203:13-205:29
 action#com.twofortyfouram.locale.intent.action.EDIT_SETTING
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:210:17-94
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:204:17-94
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:210:25-92
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:204:25-92
 receiver#org.isoron.uhabits.automation.FireSettingReceiver
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:215:9-221:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:209:9-215:20
 	android:exported
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:217:13-36
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:211:13-36
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:216:13-59
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:210:13-59
 intent-filter#action:name:com.twofortyfouram.locale.intent.action.FIRE_SETTING
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:218:13-220:29
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:212:13-214:29
 action#com.twofortyfouram.locale.intent.action.FIRE_SETTING
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:219:17-94
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:213:17-94
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:219:25-92
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:213:25-92
 provider#androidx.core.content.FileProvider
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:223:9-231:20
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:217:9-225:20
 	android:grantUriPermissions
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:227:13-47
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:221:13-47
 	android:authorities
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:225:13-53
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:219:13-53
 	android:exported
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:226:13-37
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:220:13-37
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:224:13-62
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:218:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:228:13-230:53
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:222:13-224:53
 	android:resource
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:230:17-51
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:224:17-51
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:229:17-67
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:223:17-67
 service#org.isoron.uhabits.sync.SyncService
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:233:9-237:19
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:227:9-231:19
 	android:enabled
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:235:13-35
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:229:13-35
 	android:exported
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:236:13-37
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:230:13-37
 	android:name
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:234:13-45
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:228:13-45
 uses-sdk
 INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml

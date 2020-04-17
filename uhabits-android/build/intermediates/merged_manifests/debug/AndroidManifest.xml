@@ -98,13 +98,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.isoron.uhabits.activities.about.AboutActivity"
-            android:label="@string/about" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.habits.list.ListHabitsActivity" />
-        </activity>
-        <activity
             android:name="org.isoron.uhabits.notifications.SnoozeDelayPickerActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
