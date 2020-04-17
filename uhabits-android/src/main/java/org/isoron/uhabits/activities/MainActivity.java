@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 import org.isoron.uhabits.Databases.QuestionDatabase;
 import org.isoron.uhabits.Fragments.CalculatorFragment;
 import org.isoron.uhabits.Fragments.DailyQuizFragment;
+import org.isoron.uhabits.Fragments.HomeFragment;
 import org.isoron.uhabits.Fragments.InvestmentCalculatorFragment;
 import org.isoron.uhabits.Fragments.StartQuizFragment;
 import org.isoron.uhabits.Fragments.TaxCalculatorFragment;
@@ -39,9 +40,8 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
     private View popupView;
 
     private Fragment startQuizFragment;
-    private Fragment taxCalculatorFragment;
-    private Fragment investmentCalculatorFragment;
     private Fragment calculatorFragment;
+    private Fragment homeFragment;
 
     private BottomNavigationView bottomNav;
 
@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
 
         bottomNav = findViewById(R.id.navigation_view);
         startQuizFragment = new StartQuizFragment();
-        taxCalculatorFragment = new TaxCalculatorFragment();
-        investmentCalculatorFragment = new InvestmentCalculatorFragment();
+        homeFragment = new HomeFragment();
         calculatorFragment = new CalculatorFragment();
+
 
         pref = this.getSharedPreferences("My Pref", 0);
         editor = pref.edit();
@@ -90,9 +90,9 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
                     case R.id.nav_investment:
                         swapMenuFragment(calculatorFragment);
                         break;
-                   // case R.id.nav_tax:
-                       // swapMenuFragment(taxCalculatorFragment);
-                      //  break;
+                    case R.id.nav_home:
+                        swapMenuFragment(homeFragment);
+                        break;
                     case R.id.nav_startquiz:
                         swapMenuFragment(startQuizFragment);
                         break;

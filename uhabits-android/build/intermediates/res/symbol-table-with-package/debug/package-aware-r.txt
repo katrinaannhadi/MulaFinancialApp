@@ -1678,6 +1678,7 @@ drawable ic_navigate_next_white_24dp
 drawable ic_notification
 drawable ic_repeat_black
 drawable ic_repeat_white
+drawable image_investment
 drawable indicator_dot_grey
 drawable indicator_dot_white
 drawable intro_icon_1
@@ -1841,9 +1842,11 @@ id button_category_two
 id button_continue
 id button_goals
 id button_invest
+id button_refresh
 id button_submit
 id button_tax
 id cancel_action
+id candle_stick_chart
 id center
 id center_horizontal
 id center_vertical
@@ -1955,6 +1958,7 @@ id historyStackWidgetEmptyView
 id historyStackWidgetView
 id home
 id homeAsUp
+id home_contraint
 id honorRequest
 id hour_space
 id hours
@@ -2009,6 +2013,7 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id namePanel
+id nav_home
 id nav_investment
 id nav_startquiz
 id navigation_header_container
@@ -2066,6 +2071,7 @@ id right
 id right_icon
 id right_side
 id rtl
+id rv_quiz
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -2160,10 +2166,14 @@ id textView5
 id textViewR2
 id textViewR3
 id textViewR4
+id text_calculator
+id text_high_score
 id text_input_password_toggle
 id text_lineChart
+id text_percentage
 id text_pieChart
 id text_question
+id text_quiz_average
 id text_score
 id text_test
 id textinput_counter
@@ -2296,6 +2306,7 @@ layout activity_quiz
 layout activity_taxcalc
 layout automation
 layout checkmark_stackview_widget
+layout chunk_calculator
 layout color_picker_dialog
 layout color_picker_swatch
 layout custom_dialog
@@ -2328,6 +2339,7 @@ layout expand_button
 layout filter
 layout fragment_calculator
 layout fragment_daily_quiz
+layout fragment_home
 layout fragment_intro
 layout fragment_investment_calculator
 layout fragment_line_chart

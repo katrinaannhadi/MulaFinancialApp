@@ -8,6 +8,8 @@ plugins {
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION as Integer
+    compileOptions.encoding = 'UTF-8' // write your encoding here
+
 
     def secretPropsFile = file("../../.secret/gradle.properties")
     if (secretPropsFile.exists()) {
@@ -133,6 +135,11 @@ android {
             androidTestImplementation 'androidx.test.ext:junit:1.1.0'
             androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
             implementation 'com.android.support:design:28.0.0'
+            implementation 'com.android.volley:volley:1.1.1'
+
+
+
+
 
 
             implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
