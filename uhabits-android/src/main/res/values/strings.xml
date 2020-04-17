@@ -19,7 +19,7 @@
   -->
 
 <resources>
-    <string name="app_name">Loop Habit Tracker</string>
+    <string name="app_name">Mula</string>
     <string name="app_short_name" translatable="false">Loop</string>
     <string name="main_activity_title">Mula</string>
     <string name="action_settings">Settings</string>
@@ -66,16 +66,16 @@
 
     <!-- App introduction -->
     <string name="intro_title_1">Welcome</string>
-    <string name="intro_description_1">Loop Habit Tracker helps you create and maintain good habits.</string>
+    <string name="intro_description_1">Financial Tracker to Help You with your Personal Finance Goals.</string>
 
-    <string name="intro_title_2">Create some new habits</string>
-    <string name="intro_description_2">Every day, after performing your habit, put a checkmark on the app.</string>
+    <string name="intro_title_2">Create some smart money habits</string>
+    <string name="intro_description_2">Use the expense tracker to track your goals</string>
 
     <string name="intro_title_3">Keep doing it</string>
-    <string name="intro_description_3">Habits performed consistently for a long time will earn a full star.</string>
+    <string name="intro_description_3">Make healthy financial choices a good thing</string>
 
-    <string name="intro_title_4">Track your progress</string>
-    <string name="intro_description_4">Detailed graphs show you how your habits improved over time.</string>
+    <string name="intro_title_4">Test your knowledge</string>
+    <string name="intro_description_4">Through our quiz feature</string>
 
     <string name="interval_15_minutes">15 minutes</string>
     <string name="interval_30_minutes">30 minutes</string>
