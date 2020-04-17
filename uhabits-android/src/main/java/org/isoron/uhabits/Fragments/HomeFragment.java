@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,7 +57,7 @@ public class HomeFragment extends Fragment {
     private Company company;
 
     private Button refreshButton;
-
+    private String TAG = "HomeFragment";
     private ArrayList<CandleEntry> yValsCandleStick;
 
 
@@ -85,6 +86,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        Log.d(TAG, "HomeFragment: SUCCESS");
 
         candleStickChart = view.findViewById(R.id.candle_stick_chart);
         refreshButton = view.findViewById(R.id.button_refresh);

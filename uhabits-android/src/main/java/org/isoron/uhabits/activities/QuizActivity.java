@@ -2,6 +2,7 @@ package org.isoron.uhabits.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -33,6 +34,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     private TextView scoreText;
     // private QuizActivity quizActivity = this;
 
+    private String TAG = "QuizActivity";
     private QuestionDatabase db;
 
     private int score = 0;
@@ -47,6 +49,8 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        Log.d(TAG, "QuizActivity: SUCCESS");
 
         ConstraintLayout quizConstraintLayout = findViewById(R.id.quiz_constraint_layout);
 

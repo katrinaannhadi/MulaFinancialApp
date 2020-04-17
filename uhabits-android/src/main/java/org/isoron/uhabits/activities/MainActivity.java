@@ -2,6 +2,7 @@ package org.isoron.uhabits.activities;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -29,12 +30,13 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity implements DailyQuizFragment.OnFragmentInteractionListener {
 
 
+
     //TODO:// to remove
     private Button tax;
     private Button temp;
     private Button temp2;
     private EditText difficulty;
-
+    private String TAG = "MainActivity";
 
     //keep
     private View popupView;
@@ -80,7 +82,11 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         lastDay = pref.getInt("LAST_DATE", 0);
         streak = pref.getInt("QUIZ_STREAK", 0);
 
+        Log.d(TAG, "MainActivity: SUCCESS");
+
         swapMenuFragment(calculatorFragment);
+
+
 
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 
