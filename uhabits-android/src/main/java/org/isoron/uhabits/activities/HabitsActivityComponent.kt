@@ -22,7 +22,6 @@ package org.isoron.uhabits.activities
 import dagger.*
 import org.isoron.androidbase.activities.*
 import org.isoron.uhabits.*
-import org.isoron.uhabits.activities.about.*
 import org.isoron.uhabits.activities.common.dialogs.*
 import org.isoron.uhabits.activities.habits.list.*
 import org.isoron.uhabits.activities.habits.list.views.*
@@ -34,15 +33,12 @@ import org.isoron.uhabits.core.ui.screens.habits.list.*
 @Component(modules = arrayOf(
         ActivityContextModule::class,
         BaseActivityModule::class,
-        AboutModule::class,
         HabitsActivityModule::class,
         ListHabitsModule::class,
         ShowHabitModule::class,
         HabitModule::class
 ), dependencies = arrayOf(HabitsApplicationComponent::class))
 interface HabitsActivityComponent {
-    val aboutRootView: AboutRootView
-    val aboutScreen: AboutScreen
     val colorPickerDialogFactory: ColorPickerDialogFactory
     val habitCardListAdapter: HabitCardListAdapter
     val listHabitsBehavior: ListHabitsBehavior

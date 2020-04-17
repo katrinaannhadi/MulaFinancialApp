@@ -62,7 +62,7 @@ public final class EditSettingRootView extends org.isoron.androidbase.activities
         return 0;
     }
     
-    @butterknife.OnClick(value = {2131296378})
+    @butterknife.OnClick(value = {2131296374})
     public final void onClickSave() {
     }
     

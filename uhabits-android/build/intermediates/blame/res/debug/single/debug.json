@@ -1904,6 +1904,10 @@
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3513d0cb82dd496d9d371a7f2b6b40ca/appcompat-1.1.0/res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xxxhdpi_intro_icon_1.png.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-xxxhdpi/intro_icon_1.png"
+    },
+    {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/layout-sw600dp-v13_mtrl_layout_snackbar.xml.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/db346f4e09792e54909c432b4a24b600/material-1.0.0/res/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
     },
@@ -1934,10 +1938,6 @@
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3513d0cb82dd496d9d371a7f2b6b40ca/appcompat-1.1.0/res/color/abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable_intro_icon_1.png.flat",
-        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable/intro_icon_1.png"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -2094,10 +2094,6 @@
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/ab8f8951b99ab5b5d332022d857e3989/core-1.1.0/res/layout-v21/notification_template_icon_group.xml"
-    },
-    {
-        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/layout_about.xml.flat",
-        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/layout/about.xml"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",

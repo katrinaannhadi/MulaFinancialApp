@@ -22,7 +22,6 @@ package org.isoron.uhabits.intents
 import android.content.*
 import android.net.*
 import org.isoron.uhabits.*
-import org.isoron.uhabits.activities.about.*
 import org.isoron.uhabits.activities.habits.show.*
 import org.isoron.uhabits.activities.intro.*
 import org.isoron.uhabits.activities.settings.*
@@ -32,25 +31,12 @@ import javax.inject.*
 class IntentFactory
 @Inject constructor() {
 
-    fun helpTranslate(context: Context) =
-            buildViewIntent(context.getString(R.string.translateURL))
 
     fun openDocument() = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
         addCategory(Intent.CATEGORY_OPENABLE)
         type = "*/*"
     }
 
-    fun rateApp(context: Context) =
-            buildViewIntent(context.getString(R.string.playStoreURL))
-
-    fun sendFeedback(context: Context) =
-            buildSendToIntent(context.getString(R.string.feedbackURL))
-
-    fun privacyPolicy(context: Context) =
-            buildViewIntent(context.getString(R.string.privacyPolicyURL))
-
-    fun startAboutActivity(context: Context) =
-            Intent(context, AboutActivity::class.java)
 
     fun startIntroActivity(context: Context) =
             Intent(context, IntroActivity::class.java)
@@ -63,11 +49,6 @@ class IntentFactory
                 data = Uri.parse(habit.uriString)
             }
 
-    fun viewFAQ(context: Context) =
-            buildViewIntent(context.getString(R.string.helpURL))
-
-    fun viewSourceCode(context: Context) =
-            buildViewIntent(context.getString(R.string.sourceCodeURL))
 
     private fun buildSendToIntent(url: String) = Intent().apply {
         action = Intent.ACTION_SENDTO
@@ -78,7 +59,4 @@ class IntentFactory
         action = Intent.ACTION_VIEW
         data = Uri.parse(url)
     }
-
-    fun codeContributors(context: Context) =
-            buildViewIntent(context.getString(R.string.codeContributorsURL))
 }

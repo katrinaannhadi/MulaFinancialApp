@@ -17,7 +17,7 @@ import org.isoron.uhabits.R;
 public class FrequencyPanel_ViewBinding implements Unbinder {
   private FrequencyPanel target;
 
-  private View view7f09018d;
+  private View view7f090189;
 
   @UiThread
   public FrequencyPanel_ViewBinding(FrequencyPanel target) {
@@ -33,7 +33,7 @@ public class FrequencyPanel_ViewBinding implements Unbinder {
     target.tvDenominator = Utils.findRequiredViewAsType(source, R.id.denominator, "field 'tvDenominator'", TextView.class);
     view = Utils.findRequiredView(source, R.id.spinner, "field 'spinner' and method 'onFrequencySelected'");
     target.spinner = Utils.castView(view, R.id.spinner, "field 'spinner'", Spinner.class);
-    view7f09018d = view;
+    view7f090189 = view;
     ((AdapterView<?>) view).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> p0, View p1, int p2, long p3) {
@@ -59,7 +59,7 @@ public class FrequencyPanel_ViewBinding implements Unbinder {
     target.spinner = null;
     target.customFreqPanel = null;
 
-    ((AdapterView<?>) view7f09018d).setOnItemSelectedListener(null);
-    view7f09018d = null;
+    ((AdapterView<?>) view7f090189).setOnItemSelectedListener(null);
+    view7f090189 = null;
   }
 }

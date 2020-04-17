@@ -36,23 +36,17 @@ class ListHabitsMenu @Inject constructor(
 ) : BaseMenu(activity){
 
     override fun onCreate(menu: Menu) {
-        val nightModeItem = menu.findItem(R.id.actionToggleNightMode)
         val hideArchivedItem = menu.findItem(R.id.actionHideArchived)
         val hideCompletedItem = menu.findItem(R.id.actionHideCompleted)
         val addNumericalHabit = menu.findItem(R.id.actionCreateNumeralHabit)
 
         addNumericalHabit.isVisible = preferences.isDeveloper
-        nightModeItem.isChecked = themeSwitcher.isNightMode
         hideArchivedItem.isChecked = !preferences.showArchived
         hideCompletedItem.isChecked = !preferences.showCompleted
     }
 
     override fun onItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.actionToggleNightMode -> {
-                behavior.onToggleNightMode()
-                return true
-            }
 
             R.id.actionCreateBooleanHabit -> {
                 behavior.onCreateBooleanHabit()
@@ -61,21 +55,6 @@ class ListHabitsMenu @Inject constructor(
 
             R.id.actionCreateNumeralHabit -> {
                 behavior.onCreateNumericalHabit()
-                return true
-            }
-
-            R.id.actionFAQ -> {
-                behavior.onViewFAQ()
-                return true
-            }
-
-            R.id.actionAbout -> {
-                behavior.onViewAbout()
-                return true
-            }
-
-            R.id.actionSettings -> {
-                behavior.onViewSettings()
                 return true
             }
 

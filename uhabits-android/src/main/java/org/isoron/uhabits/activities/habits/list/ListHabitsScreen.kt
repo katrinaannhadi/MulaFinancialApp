@@ -132,11 +132,6 @@ class ListHabitsScreen
         activity.restartWithFade(ListHabitsActivity::class.java)
     }
 
-    override fun showAboutScreen() {
-        val intent = intentFactory.startAboutActivity(activity)
-        activity.startActivity(intent)
-    }
-
     override fun showCreateBooleanHabitScreen() {
         val dialog = editHabitDialogFactory.createBoolean()
         activity.showDialog(dialog, "editHabit")
@@ -154,11 +149,6 @@ class ListHabitsScreen
     override fun showEditHabitsScreen(habits: List<Habit>) {
         val dialog = editHabitDialogFactory.edit(habits[0])
         activity.showDialog(dialog, "editNumericalHabit")
-    }
-
-    override fun showFAQScreen() {
-        val intent = intentFactory.viewFAQ(activity)
-        activity.startActivity(intent)
     }
 
     override fun showHabitScreen(habit: Habit) {

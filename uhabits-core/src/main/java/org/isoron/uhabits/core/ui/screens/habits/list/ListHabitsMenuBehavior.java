@@ -71,15 +71,6 @@ public class ListHabitsMenuBehavior
         screen.showCreateNumericalHabitScreen();
     }
 
-    public void onViewFAQ()
-    {
-        screen.showFAQScreen();
-    }
-
-    public void onViewAbout()
-    {
-        screen.showAboutScreen();
-    }
 
     public void onViewSettings()
     {
@@ -120,11 +111,6 @@ public class ListHabitsMenuBehavior
         adapter.setOrder(HabitList.Order.BY_NAME);
     }
 
-    public void onToggleNightMode()
-    {
-        themeSwitcher.toggleNightMode();
-        screen.applyTheme();
-    }
 
     private void updateAdapterFilter()
     {
@@ -148,13 +134,9 @@ public class ListHabitsMenuBehavior
     {
         void applyTheme();
 
-        void showAboutScreen();
-
         void showCreateBooleanHabitScreen();
 
         void showCreateNumericalHabitScreen();
-
-        void showFAQScreen();
 
         void showSettingsScreen();
     }

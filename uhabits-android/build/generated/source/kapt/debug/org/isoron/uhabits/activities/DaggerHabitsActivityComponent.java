@@ -14,8 +14,6 @@ import org.isoron.androidbase.activities.BaseActivity;
 import org.isoron.androidbase.activities.BaseActivityModule;
 import org.isoron.androidbase.activities.BaseActivityModule_GetBaseActivityFactory;
 import org.isoron.uhabits.HabitsApplicationComponent;
-import org.isoron.uhabits.activities.about.AboutRootView;
-import org.isoron.uhabits.activities.about.AboutScreen;
 import org.isoron.uhabits.activities.common.dialogs.ColorPickerDialogFactory;
 import org.isoron.uhabits.activities.common.dialogs.ColorPickerDialogFactory_Factory;
 import org.isoron.uhabits.activities.common.dialogs.ConfirmDeleteDialogFactory;
@@ -63,7 +61,6 @@ import org.isoron.uhabits.core.models.ModelFactory;
 import org.isoron.uhabits.core.preferences.Preferences;
 import org.isoron.uhabits.core.tasks.TaskRunner;
 import org.isoron.uhabits.core.ui.NotificationTray;
-import org.isoron.uhabits.core.ui.screens.about.AboutBehavior;
 import org.isoron.uhabits.core.ui.screens.habits.list.HabitCardListCache;
 import org.isoron.uhabits.core.ui.screens.habits.list.HintListFactory;
 import org.isoron.uhabits.core.ui.screens.habits.list.HintListFactory_Factory;
@@ -93,11 +90,7 @@ import org.isoron.uhabits.tasks.ImportDataTaskFactory_Factory;
     "rawtypes"
 })
 public final class DaggerHabitsActivityComponent implements HabitsActivityComponent {
-  private final ActivityContextModule activityContextModule;
-
   private final HabitsApplicationComponent habitsApplicationComponent;
-
-  private final BaseActivityModule baseActivityModule;
 
   private Provider<Context> getContextProvider;
 
@@ -190,18 +183,13 @@ public final class DaggerHabitsActivityComponent implements HabitsActivityCompon
   private DaggerHabitsActivityComponent(ActivityContextModule activityContextModuleParam,
       BaseActivityModule baseActivityModuleParam, HabitModule habitModuleParam,
       HabitsApplicationComponent habitsApplicationComponentParam) {
-    this.activityContextModule = activityContextModuleParam;
     this.habitsApplicationComponent = habitsApplicationComponentParam;
-    this.baseActivityModule = baseActivityModuleParam;
     initialize(activityContextModuleParam, baseActivityModuleParam, habitModuleParam, habitsApplicationComponentParam);
   }
 
   public static Builder builder() {
     return new Builder();
   }
-
-  private AboutBehavior getAboutBehavior() {
-    return new AboutBehavior(Preconditions.checkNotNull(habitsApplicationComponent.getPreferences(), "Cannot return null from a non-@Nullable component method"), getAboutScreen());}
 
   private AndroidDirFinder getAndroidDirFinder() {
     return new AndroidDirFinder(Preconditions.checkNotNull(habitsApplicationComponent.getContext(), "Cannot return null from a non-@Nullable component method"));}
@@ -264,14 +252,6 @@ public final class DaggerHabitsActivityComponent implements HabitsActivityCompon
     this.showHabitBehaviorProvider = ShowHabitBehavior_Factory.create(getHabitListProvider, getCommandRunnerProvider, getHabitProvider, (Provider) showHabitScreenProvider);
     DelegateFactory.setDelegate(showHabitScreenProvider, DoubleCheck.provider(ShowHabitScreen_Factory.create(getBaseActivityProvider, getHabitProvider, showHabitRootViewProvider, showHabitsMenuProvider, EditHabitDialogFactory_Factory.create(), confirmDeleteDialogFactoryProvider, showHabitBehaviorProvider)));
   }
-
-  @Override
-  public AboutRootView getAboutRootView() {
-    return new AboutRootView(ActivityContextModule_GetContextFactory.getContext(activityContextModule), getAboutBehavior());}
-
-  @Override
-  public AboutScreen getAboutScreen() {
-    return new AboutScreen(BaseActivityModule_GetBaseActivityFactory.getBaseActivity(baseActivityModule), Preconditions.checkNotNull(habitsApplicationComponent.getIntentFactory(), "Cannot return null from a non-@Nullable component method"));}
 
   @Override
   public ColorPickerDialogFactory getColorPickerDialogFactory() {
