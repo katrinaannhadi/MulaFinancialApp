@@ -17,7 +17,7 @@ import org.isoron.uhabits.activities.common.views.BarChart;
 public class BarCard_ViewBinding implements Unbinder {
   private BarCard target;
 
-  private View view7f090132;
+  private View view7f090136;
 
   private View view7f09006a;
 
@@ -33,7 +33,7 @@ public class BarCard_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.numericalSpinner, "field 'numericalSpinner' and method 'onNumericalItemSelected'");
     target.numericalSpinner = Utils.castView(view, R.id.numericalSpinner, "field 'numericalSpinner'", Spinner.class);
-    view7f090132 = view;
+    view7f090136 = view;
     ((AdapterView<?>) view).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> p0, View p1, int p2, long p3) {
@@ -73,8 +73,8 @@ public class BarCard_ViewBinding implements Unbinder {
     target.chart = null;
     target.title = null;
 
-    ((AdapterView<?>) view7f090132).setOnItemSelectedListener(null);
-    view7f090132 = null;
+    ((AdapterView<?>) view7f090136).setOnItemSelectedListener(null);
+    view7f090136 = null;
     ((AdapterView<?>) view7f09006a).setOnItemSelectedListener(null);
     view7f09006a = null;
   }
