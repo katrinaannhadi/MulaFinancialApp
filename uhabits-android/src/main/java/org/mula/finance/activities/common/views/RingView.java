@@ -27,12 +27,12 @@ import android.view.*;
 
 import androidx.annotation.Nullable;
 
+import org.mula.androidbase.utils.*;
 import org.mula.finance.*;
 import org.mula.finance.utils.*;
-import org.mula.androidbase.utils.ColorUtils;
-import org.mula.androidbase.utils.StyledResources;
 
 import static org.mula.finance.utils.AttributeSetUtils.*;
+import static org.mula.androidbase.utils.InterfaceUtils.*;
 
 public class RingView extends View
 {

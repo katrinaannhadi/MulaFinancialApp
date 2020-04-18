@@ -28,16 +28,16 @@ import android.view.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.mula.androidbase.utils.*;
 import org.mula.finance.*;
+import org.mula.finance.core.models.*;
+import org.mula.finance.core.utils.*;
 import org.mula.finance.utils.*;
-import org.mula.androidbase.utils.ColorUtils;
-import org.mula.androidbase.utils.StyledResources;
-import org.mula.finance.core.models.Timestamp;
-import org.mula.finance.core.utils.DateUtils;
 
 import java.text.*;
 import java.util.*;
 
+import static org.mula.androidbase.utils.InterfaceUtils.*;
 import static org.mula.finance.core.models.Checkmark.*;
 
 public class HistoryChart extends ScrollableChart

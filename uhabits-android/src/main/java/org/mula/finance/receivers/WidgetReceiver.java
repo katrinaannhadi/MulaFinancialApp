@@ -23,10 +23,10 @@ import android.content.*;
 import android.util.*;
 
 import org.mula.finance.*;
+import org.mula.finance.core.preferences.*;
+import org.mula.finance.core.ui.widgets.*;
 import org.mula.finance.intents.*;
 import org.mula.finance.sync.*;
-import org.mula.finance.core.preferences.Preferences;
-import org.mula.finance.core.ui.widgets.WidgetBehavior;
 
 import dagger.*;
 

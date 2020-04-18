@@ -18,7 +18,6 @@
  */
 
 package org.mula.finance.activities.common.dialogs;
-
 import android.app.*;
 import android.content.*;
 import android.os.*;
@@ -31,13 +30,12 @@ import android.util.*;
 
 import org.mula.finance.*;
 import org.mula.finance.activities.common.views.*;
+import org.mula.finance.core.models.*;
+import org.mula.finance.core.preferences.*;
+import org.mula.finance.core.tasks.*;
 import org.mula.finance.utils.*;
-import org.mula.finance.core.models.Habit;
-import org.mula.finance.core.models.HabitList;
-import org.mula.finance.core.models.ModelObservable;
-import org.mula.finance.core.preferences.Preferences;
-import org.mula.finance.core.tasks.Task;
-import org.mula.finance.core.tasks.TaskRunner;
+
+import static org.mula.androidbase.utils.InterfaceUtils.*;
 
 public class HistoryEditorDialog extends AppCompatDialogFragment
     implements DialogInterface.OnClickListener, ModelObservable.Listener

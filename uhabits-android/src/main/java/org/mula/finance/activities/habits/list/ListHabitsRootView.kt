@@ -25,17 +25,16 @@ import android.os.Build.VERSION_CODES.*
 import androidx.appcompat.widget.Toolbar
 import android.view.ViewGroup.LayoutParams.*
 import android.widget.*
+import org.mula.androidbase.activities.*
 import org.mula.finance.*
 import org.mula.finance.activities.common.views.*
 import org.mula.finance.activities.habits.list.views.*
+import org.mula.finance.core.models.*
+import org.mula.finance.core.preferences.*
+import org.mula.finance.core.tasks.*
+import org.mula.finance.core.ui.screens.habits.list.*
+import org.mula.finance.core.utils.*
 import org.mula.finance.utils.*
-import org.mula.androidbase.activities.ActivityContext
-import org.mula.androidbase.activities.ActivityScope
-import org.mula.androidbase.activities.BaseRootView
-import org.mula.finance.core.models.ModelObservable
-import org.mula.finance.core.preferences.Preferences
-import org.mula.finance.core.tasks.TaskRunner
-import org.mula.finance.core.utils.MidnightTimer
 import java.lang.Math.*
 import javax.inject.*
 

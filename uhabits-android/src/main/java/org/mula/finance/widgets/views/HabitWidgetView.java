@@ -30,11 +30,12 @@ import android.widget.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.mula.androidbase.utils.*;
 import org.mula.finance.*;
-import org.mula.androidbase.utils.StyledResources;
 
 import java.util.*;
 
+import static org.mula.androidbase.utils.InterfaceUtils.*;
 public abstract class HabitWidgetView extends FrameLayout
 {
     @Nullable

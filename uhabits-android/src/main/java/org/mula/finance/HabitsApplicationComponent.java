@@ -21,25 +21,24 @@ package org.mula.finance;
 
 import android.content.*;
 
+import org.mula.androidbase.*;
+
+import org.mula.androidbase.*;
+import org.mula.finance.core.*;
+import org.mula.finance.core.commands.*;
+import org.mula.finance.core.io.*;
+import org.mula.finance.core.models.*;
+import org.mula.finance.core.preferences.*;
+import org.mula.finance.core.reminders.*;
+import org.mula.finance.core.tasks.*;
+import org.mula.finance.core.ui.*;
+import org.mula.finance.core.ui.screens.habits.list.*;
+import org.mula.finance.core.utils.*;
 import org.mula.finance.intents.*;
 import org.mula.finance.receivers.*;
 import org.mula.finance.sync.*;
 import org.mula.finance.tasks.*;
 import org.mula.finance.widgets.*;
-import org.mula.androidbase.AppContext;
-import org.mula.androidbase.AppContextModule;
-import org.mula.finance.core.AppScope;
-import org.mula.finance.core.commands.CommandRunner;
-import org.mula.finance.core.io.GenericImporter;
-import org.mula.finance.core.models.HabitList;
-import org.mula.finance.core.models.ModelFactory;
-import org.mula.finance.core.preferences.Preferences;
-import org.mula.finance.core.preferences.WidgetPreferences;
-import org.mula.finance.core.reminders.ReminderScheduler;
-import org.mula.finance.core.tasks.TaskRunner;
-import org.mula.finance.core.ui.NotificationTray;
-import org.mula.finance.core.ui.screens.habits.list.HabitCardListCache;
-import org.mula.finance.core.utils.MidnightTimer;
 
 import dagger.*;
 
