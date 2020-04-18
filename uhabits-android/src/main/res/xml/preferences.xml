@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (C) 2016 Álinson Santos Xavier <isoron@gmail.com>
+  ~ Copyright (C) 2016 Álinson Santos Xavier <mula@gmail.com>
   ~
   ~ This file is part of Loop Habit Tracker.
   ~
@@ -168,8 +168,8 @@
                 app:iconSpaceReserved="false">
             <intent
                     android:action="android.intent.action.VIEW"
-                    android:targetClass="org.isoron.uhabits.activities.about.AboutActivity"
-                    android:targetPackage="org.isoron.uhabits" />
+                    android:targetClass="org.mula.finance.activities.about.AboutActivity"
+                    android:targetPackage="org.mula.finance" />
         </Preference>
 
     </PreferenceCategory>

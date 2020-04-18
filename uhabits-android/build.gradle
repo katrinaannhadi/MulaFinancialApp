@@ -32,7 +32,7 @@ android {
         minSdkVersion MIN_SDK_VERSION as Integer
         targetSdkVersion TARGET_SDK_VERSION as Integer
 
-        applicationId "org.isoron.uhabits"
+        applicationId "org.mula.finance"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
@@ -72,7 +72,7 @@ android {
             }
 
             sourceSets {
-                main.assets.srcDirs += '../uhabits-core/src/main/resources/'
+                main.assets.srcDirs += '../finance-core/src/main/resources/'
             }
         }
 //allows the gradle project to load dependencies from a repository hosted on jitpack.io

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (C) 2016 Álinson Santos Xavier <isoron@gmail.com>
+  ~ Copyright (C) 2016 Álinson Santos Xavier <mula@gmail.com>
   ~
   ~ This file is part of Loop Habit Tracker.
   ~
@@ -18,7 +18,7 @@
   ~ with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 <manifest
-    package="org.isoron.uhabits"
+    package="org.mula.finance"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -30,9 +30,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".HabitsApplication"
+        android:name="org.mula.finance.HabitsApplication"
         android:allowBackup="true"
-        android:backupAgent=".HabitsBackupAgent"
+        android:backupAgent="org.mula.finance.HabitsBackupAgent"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/main_activity_title"
         android:supportsRtl="true"
@@ -43,7 +43,7 @@
 
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name="org.mula.finance.activities.MainActivity"
             android:exported="true"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"/>
@@ -52,7 +52,7 @@
             android:name=".MainActivity"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
-            android:targetActivity=".activities.MainActivity">
+            android:targetActivity="org.mula.finance.activities.MainActivity">
             <intent-filter android:label="@string/main_activity_title">
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -60,49 +60,49 @@
         </activity-alias>
 
         <activity
-            android:name=".activities.habits.list.ListHabitsActivity"
+            android:name="org.mula.finance.activities.habits.list.ListHabitsActivity"
             android:exported="true"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"/>
 
-        <activity android:name=".activities.InvestmentCalculatorActivity" />
-        <activity android:name=".activities.TaxCalculatorActivity" />
-        <activity android:name=".activities.QuizActivity"/>
+        <activity android:name="org.mula.finance.activities.InvestmentCalculatorActivity" />
+        <activity android:name="org.mula.finance.activities.TaxCalculatorActivity" />
+        <activity android:name="org.mula.finance.activities.QuizActivity"/>
 
         <activity
-            android:name=".activities.habits.show.ShowHabitActivity"
+            android:name="org.mula.finance.activities.habits.show.ShowHabitActivity"
             android:label="@string/title_activity_show_habit">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.habits.list.ListHabitsActivity"/>
+                android:value="org.mula.finance.activities.habits.list.ListHabitsActivity"/>
         </activity>
         <activity
-            android:name=".activities.settings.SettingsActivity"
+            android:name="org.mula.finance.activities.settings.SettingsActivity"
             android:label="@string/settings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.habits.list.ListHabitsActivity"/>
+                android:value="org.mula.finance.activities.habits.list.ListHabitsActivity"/>
         </activity>
         <activity
-            android:name=".activities.intro.IntroActivity"
+            android:name="org.mula.finance.activities.intro.IntroActivity"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
-            android:name=".widgets.HabitPickerDialog"
+            android:name="org.mula.finance.widgets.HabitPickerDialog"
             android:theme="@style/Theme.AppCompat.Light.Dialog">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".notifications.SnoozeDelayPickerActivity"
+        <activity android:name="org.mula.finance.notifications.SnoozeDelayPickerActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
         </activity>
 
         <receiver
-            android:name=".widgets.CheckmarkWidgetProvider"
+            android:name="org.mula.finance.widgets.CheckmarkWidgetProvider"
             android:label="@string/checkmark">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -112,11 +112,11 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_checkmark_info"/>
         </receiver>
-        <service android:name=".widgets.StackWidgetService"
+        <service android:name="org.mula.finance.widgets.StackWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS"
             android:exported="false" />
         <receiver
-            android:name=".widgets.HistoryWidgetProvider"
+            android:name="org.mula.finance.widgets.HistoryWidgetProvider"
             android:label="@string/history">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -127,7 +127,7 @@
                 android:resource="@xml/widget_history_info"/>
         </receiver>
         <receiver
-            android:name=".widgets.ScoreWidgetProvider"
+            android:name="org.mula.finance.widgets.ScoreWidgetProvider"
             android:label="@string/habit_strength">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -138,7 +138,7 @@
                 android:resource="@xml/widget_score_info"/>
         </receiver>
         <receiver
-            android:name=".widgets.StreakWidgetProvider"
+            android:name="org.mula.finance.widgets.StreakWidgetProvider"
             android:label="@string/streaks">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -149,7 +149,7 @@
                 android:resource="@xml/widget_streak_info"/>
         </receiver>
         <receiver
-            android:name=".widgets.FrequencyWidgetProvider"
+            android:name="org.mula.finance.widgets.FrequencyWidgetProvider"
             android:label="@string/frequency">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -159,44 +159,44 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_frequency_info"/>
         </receiver>
-        <receiver android:name=".receivers.ReminderReceiver">
+        <receiver android:name="org.mula.finance.receivers.ReminderReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
-        <receiver android:name=".receivers.WidgetReceiver">
+        <receiver android:name="org.mula.finance.receivers.WidgetReceiver">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT"/>
 
-                <action android:name="org.isoron.uhabits.ACTION_TOGGLE_REPETITION"/>
+                <action android:name="org.mula.finance.ACTION_TOGGLE_REPETITION"/>
 
                 <data
-                    android:host="org.isoron.uhabits"
+                    android:host="org.mula.finance"
                     android:scheme="content"/>
             </intent-filter>
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT"/>
 
-                <action android:name="org.isoron.uhabits.ACTION_ADD_REPETITION"/>
+                <action android:name="org.mula.finance.ACTION_ADD_REPETITION"/>
 
                 <data
-                    android:host="org.isoron.uhabits"
+                    android:host="org.mula.finance"
                     android:scheme="content"/>
             </intent-filter>
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT"/>
 
-                <action android:name="org.isoron.uhabits.ACTION_REMOVE_REPETITION"/>
+                <action android:name="org.mula.finance.ACTION_REMOVE_REPETITION"/>
 
                 <data
-                    android:host="org.isoron.uhabits"
+                    android:host="org.mula.finance"
                     android:scheme="content"/>
             </intent-filter>
         </receiver>
 
         <!-- Locale/Tasker -->
         <activity
-            android:name=".automation.EditSettingActivity"
+            android:name="org.mula.finance.automation.EditSettingActivity"
             android:exported="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name">
@@ -207,7 +207,7 @@
 
         <!-- Locale/Tasker -->
         <receiver
-            android:name=".automation.FireSettingReceiver"
+            android:name="org.mula.finance.automation.FireSettingReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING"/>
@@ -216,7 +216,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="org.isoron.uhabits"
+            android:authorities="org.mula.finance"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -225,7 +225,7 @@
         </provider>
 
         <service
-            android:name=".sync.SyncService"
+            android:name="org.mula.finance.sync.SyncService"
             android:enabled="true"
             android:exported="false">
         </service>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (C) 2016 Álinson Santos Xavier <isoron@gmail.com>
+  ~ Copyright (C) 2016 Álinson Santos Xavier <mula@gmail.com>
   ~
   ~ This file is part of Loop Habit Tracker.
   ~
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5">
 
-            <org.isoron.uhabits.activities.common.views.RingView
+            <org.mula.finance.activities.common.views.RingView
                 android:id="@+id/scoreRing"
                 android:layout_width="30dp"
                 android:layout_height="30dp"

@@ -1,9 +1,9 @@
-package org.isoron.uhabits.core.ui.screens.habits.list;
+package org.mula.finance.core.ui.screens.habits.list;
 
 import javax.annotation.Generated;
 import javax.inject.Inject;
 import javax.inject.Provider;
-import org.isoron.uhabits.core.preferences.Preferences;
+import org.mula.finance.core.preferences.Preferences;
 
 @Generated(
   value = "com.google.auto.factory.processor.AutoFactoryProcessor",

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (C) 2016 Álinson Santos Xavier <isoron@gmail.com>
+  ~ Copyright (C) 2016 Álinson Santos Xavier <mula@gmail.com>
   ~
   ~ This file is part of Loop Habit Tracker.
   ~
@@ -68,7 +68,7 @@
         app1:layout_constraintStart_toStartOf="parent"
         app1:layout_constraintTop_toBottomOf="@id/tilName">
 
-        <org.isoron.uhabits.activities.habits.edit.views.ExampleEditText
+        <org.mula.finance.activities.habits.edit.views.ExampleEditText
             android:id="@+id/tvQuestion"
             style="@style/dialogFormInput"
             android:layout_width="match_parent"
@@ -86,7 +86,7 @@
         app1:layout_constraintStart_toStartOf="parent"
         app1:layout_constraintTop_toBottomOf="@id/tilQuestion">
 
-        <org.isoron.uhabits.activities.habits.edit.views.ExampleEditText
+        <org.mula.finance.activities.habits.edit.views.ExampleEditText
             android:id="@+id/tvDescription"
             style="@style/dialogFormInputMultiline"
             android:layout_width="match_parent"

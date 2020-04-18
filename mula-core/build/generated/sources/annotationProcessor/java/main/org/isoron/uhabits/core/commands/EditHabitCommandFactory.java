@@ -1,11 +1,11 @@
-package org.isoron.uhabits.core.commands;
+package org.mula.finance.core.commands;
 
 import javax.annotation.Generated;
 import javax.inject.Inject;
 import javax.inject.Provider;
-import org.isoron.uhabits.core.models.Habit;
-import org.isoron.uhabits.core.models.HabitList;
-import org.isoron.uhabits.core.models.ModelFactory;
+import org.mula.finance.core.models.Habit;
+import org.mula.finance.core.models.HabitList;
+import org.mula.finance.core.models.ModelFactory;
 
 @Generated(
   value = "com.google.auto.factory.processor.AutoFactoryProcessor",

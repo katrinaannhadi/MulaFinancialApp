@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright (C) 2017 Álinson Santos Xavier <isoron@gmail.com>
+# Copyright (C) 2017 Álinson Santos Xavier <mula@gmail.com>
 # This file is part of Loop Habit Tracker.
 #
 # Loop Habit Tracker is free software: you can redistribute it and/or modify
@@ -20,8 +20,8 @@ cd "$(dirname "$0")"
 ADB="${ANDROID_HOME}/platform-tools/adb"
 EMULATOR="${ANDROID_HOME}/tools/emulator"
 GRADLE="./gradlew --stacktrace"
-PACKAGE_NAME=org.isoron.uhabits
-OUTPUTS_DIR=uhabits-android/build/outputs
+PACKAGE_NAME=mulainance
+OUTPUTS_DIR=finance-android/build/outputs
 VERSION=$(cat gradle.properties | grep VERSION_NAME | sed -e 's/.*=//g;s/ //g')
 
 if [ ! -f "${ANDROID_HOME}/platform-tools/adb" ]; then
@@ -92,12 +92,12 @@ build_apk() {
 	if [ ! -z $RELEASE ]; then
 		log_info "Building release APK"
 		./gradlew assembleRelease
-		cp -v uhabits-android/build/outputs/apk/release/uhabits-android-release.apk build/loop-$VERSION-release.apk
+		cp -v finance-android/build/outputs/apk/release/finance-android-release.apk build/loop-$VERSION-release.apk
 	fi
 
 	log_info "Building debug APK"
 	./gradlew assembleDebug || fail
-	cp -v uhabits-android/build/outputs/apk/debug/uhabits-android-debug.apk build/loop-$VERSION-debug.apk
+	cp -v finance-android/build/outputs/apk/debug/finance-android-debug.apk build/loop-$VERSION-debug.apk
 }
 
 build_instrumentation_apk() {
@@ -133,9 +133,9 @@ install_test_butler() {
 install_apk() {
 	log_info "Installing APK"
 	if [ ! -z $RELEASE ]; then
-		$ADB install -r ${OUTPUTS_DIR}/apk/release/uhabits-android-release.apk || fail
+		$ADB install -r ${OUTPUTS_DIR}/apk/release/finance-android-release.apk || fail
 	else
-		$ADB install -t -r ${OUTPUTS_DIR}/apk/debug/uhabits-android-debug.apk || fail
+		$ADB install -t -r ${OUTPUTS_DIR}/apk/debug/finance-android-debug.apk || fail
 	fi
 }
 
@@ -144,7 +144,7 @@ install_test_apk() {
 	$ADB uninstall ${PACKAGE_NAME}.test
 
 	log_info "Installing test APK"
-	$ADB install -r ${OUTPUTS_DIR}/apk/androidTest/debug/uhabits-android-debug-androidTest.apk || fail
+	$ADB install -r ${OUTPUTS_DIR}/apk/androidTest/debug/finance-android-debug-androidTest.apk || fail
 }
 
 run_instrumented_tests() {
@@ -175,7 +175,7 @@ parse_instrumentation_results() {
 
 generate_coverage_badge() {
 	log_info "Generating code coverage badge"
-	CORE_REPORT=uhabits-core/build/reports/jacoco/test/jacocoTestReport.xml
+	CORE_REPORT=finance-core/build/reports/jacoco/test/jacocoTestReport.xml
 	rm -f ${OUTPUTS_DIR}/coverage-badge.svg
 	python3 tools/coverage-badge/badge.py -i $CORE_REPORT -o ${OUTPUTS_DIR}/coverage-badge
 }
@@ -188,9 +188,9 @@ fetch_logcat() {
 run_jvm_tests() {
 	log_info "Running JVM tests"
 	if [ ! -z $RELEASE ]; then
-		$GRADLE testReleaseUnitTest :uhabits-core:check || fail
+		$GRADLE testReleaseUnitTest :finance-core:check || fail
 	else
-		$GRADLE testDebugUnitTest :uhabits-core:check || fail
+		$GRADLE testDebugUnitTest :finance-core:check || fail
 	fi
 }
 
@@ -208,7 +208,7 @@ fetch_images() {
 
 accept_images() {
 	find tmp/test-screenshots -name '*.expected*' -delete
-	rsync -av tmp/test-screenshots/ uhabits-android/src/androidTest/assets/
+	rsync -av tmp/test-screenshots/ finance-android/src/androidTest/assets/
 }
 
 run_tests() {
