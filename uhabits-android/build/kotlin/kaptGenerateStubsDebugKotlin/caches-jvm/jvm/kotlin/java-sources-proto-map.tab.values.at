@@ -891,310 +891,4 @@ percentage
 * 
 + 
 2 
-G û   ¾2020B J90'2;0)HJ>0'2?0"HJ@0'HJA0'HJB0'HJC0'2*00HJD0'2*00HR*00X‚R*00X‚R*00X‚R*00X‚R*00X‚R *00X‚R#*0!0!X‚R'*00X‚R	(0"X‚R**0$0$X‚R-*0 0 X‚R.*0
-0
-X‚R/*0%0%X‚R	10"X‚R2*00X‚R	30"X‚R4*0&0&X‚R6*0&0&X‚R7*0&0&X‚R	80"X‚  Ý
-org
-isoron
-uhabits
-
-activities
-MainActivity
-androidx
-	appcompat
-app
-AppCompatActivity
-	Fragments
-DailyQuizFragment
-OnFragmentInteractionListener
-TAG
-kotlin
-String
-	bottomNav
-com
-google
-android
-material
-bottomnavigation
-BottomNavigationView
-calculatorFragment
-fragment
-Fragment
-calendar
-java
-util
-Calendar
-db
-	Databases
-QuestionDatabase
-
-difficulty
-widget
-EditText
-editor
-content
-SharedPreferences
-Editor
-homeFragment
-lastDay
-Int
-	popupView
-view
-View
-pref
-	quizPopup
-random
-Random
-	randomNum
-startQuizFragment
-streak
-tax
-Button
-temp
-temp2
-today
-onCreate
-Unit
-savedInstanceState
-os
-Bundle
-onFragmentInteraction
-num
-onResume
-onStart
-setQuizPopup
-swapFragment
-swapMenuFragment  
- 
- 
-
-
- 
-
-
-
- 
-	
-	
- 
-
- 
-
- 
-
-
-
-
-
- 
-
-
- 
-
-
- 
-
- 
-
-!
-" 
-$
-% 
- & 
-) 
-+
-#, 
-0 
-5 
-: 
-<
-(= Å   2020
-20B J.(02$ 
-*00*
-*0000HJ*02+*00HJ.,02$ 
-*00*
-*0000HJ-02.0HJ10220HJ302+*002&0HJ)8 
-*00*
-*0000HÀ>R*00X‚R*00X‚R*00X‚R*00X‚R*00X‚R*00X‚R*00X‚R' 
-*00*
-*0000X‚R	!0X‚R#*00X‚R%*00X‚R	&0X‚R'*00X‚R*4 
-*00*
-*000 0 X†À>  Í
-org
-isoron
-uhabits
-
-activities
-QuizActivity
-androidx
-	appcompat
-app
-AppCompatActivity
-
-AsyncTasks
-!QuestionCategoryAsyncTaskDelegate
-QuestionAsyncTaskDelegate
-TAG
-kotlin
-String
-continueBtn
-android
-widget
-Button
-currentQuestion
-Models
-Question
-db
-	Databases
-QuestionDatabase
-optionA
-RadioButton
-optionB
-optionC
-questionList
-collections
-MutableList
-List
-questionNum
-Int
-questionText
-TextView
-quizActivity
-score
-	scoreText
-handleQuestionListReturned
-Unit
-handleQuestionReturned
-question
-insertQuestionListInDatabase
-onCreate
-savedInstanceState
-os
-Bundle
- retrieveQuestionListFromDatabase
-questionCategory
-setQuestion
-scoreHistoryList
-java
-util
-	ArrayList
-getQuestionList   Ü
- 
- 
-
-
- 
-
-
-
- 
-	
-	
- 
-	 
-
- 
-
-
- 
-
- 
-
- 
- 
-
- 
-  
-" 
-$ 
-) 
-/
-0 
-5
-6
-7 Ø    ã20BJ"0HJ$02%0HJ&(02)0 2+0!2%0HJ-*00HÀ>R	*0
-0
-X‚R*00X‚R*00X‚R*00X‚R*00X‚R' 
-*00*
-*0000X‚  Ï
-org
-isoron
-uhabits
-	Fragments
-HomeFragment
-androidx
-fragment
-app
-Fragment
-TAG
-kotlin
-String
-candleStickChart
-com
-github
-mikephil
-charting
-charts
-CandleStickChart
-company
-Models
-Company
-refreshButton
-android
-widget
-Button
-view
-View
-yValsCandleStick
-java
-util
-	ArrayList
-data
-CandleEntry
-getStockPricesOnline
-Unit
-onCreate
-savedInstanceState
-os
-Bundle
-onCreateView
-inflater
-LayoutInflater
-	container
-	ViewGroup
-newInstance   Ú
- 
- 
-
-
- 
-
-
-
- 
-
-
-	 
-
-
-
-
-
- 
-
- 
-
-
- 
-
- 
-
-
- 
- 
-! 
-	# 
-&
-' 
-* 
-, 
+G 
