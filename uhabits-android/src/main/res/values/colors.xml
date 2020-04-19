@@ -69,5 +69,20 @@
         <item>@color/black_aa</item>
     </array>
 
+    <color name="purple_300">#6663A4</color>
+    <color name="pink_300">#D767CD</color>
+    <color name="green_300">#48C4B6</color>
+    <color name="pink_dark_primary_300">#FF3467</color>
+    <color name="light_grey_300">#98989B</color>
+    <color name="light_blue_300">#48C4B6</color>
+    <color name="light_green_300">#A0DCE0</color>
+    <color name="dark_green_300">#33909F</color>
+    <color name="light_lilac_300">#B2B1D1</color>
+    <color name="lilac_300">#B789BA</color>
+    <color name="dark_lilac_300">#6663A4</color>
+    <color name="blue_300">#8CC8E6</color>
+    <color name="medium_blue_300">#1992CE</color>
+    <color name="dark_blue_300">#011F6A</color>
+
     <color name="ic_launcher_background">#1976D2</color>
 </resources>
