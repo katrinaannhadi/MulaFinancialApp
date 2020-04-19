@@ -2,11 +2,8 @@ package org.mula.finance.activities;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +16,7 @@ import org.mula.finance.Databases.QuestionDatabase;
 import org.mula.finance.Fragments.CalculatorFragment;
 import org.mula.finance.Fragments.DailyQuizFragment;
 import org.mula.finance.Fragments.HomeFragment;
-import org.mula.finance.Fragments.StartQuizFragment;
+import org.mula.finance.Fragments.InformationFragment;
 import org.mula.finance.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -35,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
     //keep
     private View popupView;
 
-    private Fragment startQuizFragment;
+    private Fragment infoFragment;
     private Fragment calculatorFragment;
     private Fragment homeFragment;
 
@@ -61,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         setContentView(R.layout.activity_main);
 
         bottomNav = findViewById(R.id.navigation_view);
-        startQuizFragment = new StartQuizFragment();
+        infoFragment = new InformationFragment();
         homeFragment = new HomeFragment();
         calculatorFragment = new CalculatorFragment();
 
@@ -88,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
                         swapMenuFragment(calculatorFragment);
                         break;
                     case R.id.nav_startquiz:
-                        swapMenuFragment(startQuizFragment);
+                        swapMenuFragment(infoFragment);
                         break;
 
                 }
@@ -107,6 +104,12 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
     private void swapMenuFragment(Fragment fragment) {
         FragmentManager fragmentManager =  getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+       /* if(fragment == homeFragment && today != lastDay){
+            Random ran = new Random();
+            int num = ran.nextInt(10);
+            editor.putInt("Article", num);
+            editor.commit();
+        } */
         fragmentTransaction.replace(R.id.fragment_layout, fragment);
         fragmentTransaction.commit();
     }

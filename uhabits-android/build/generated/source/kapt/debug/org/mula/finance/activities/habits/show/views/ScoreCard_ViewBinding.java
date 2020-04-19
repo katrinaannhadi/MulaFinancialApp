@@ -17,7 +17,7 @@ import org.mula.finance.activities.common.views.ScoreChart;
 public class ScoreCard_ViewBinding implements Unbinder {
   private ScoreCard target;
 
-  private View view7f09018c;
+  private View view7f09018a;
 
   @UiThread
   public ScoreCard_ViewBinding(ScoreCard target) {
@@ -31,7 +31,7 @@ public class ScoreCard_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.spinner, "field 'spinner' and method 'onItemSelected'");
     target.spinner = Utils.castView(view, R.id.spinner, "field 'spinner'", Spinner.class);
-    view7f09018c = view;
+    view7f09018a = view;
     ((AdapterView<?>) view).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> p0, View p1, int p2, long p3) {
@@ -57,7 +57,7 @@ public class ScoreCard_ViewBinding implements Unbinder {
     target.chart = null;
     target.title = null;
 
-    ((AdapterView<?>) view7f09018c).setOnItemSelectedListener(null);
-    view7f09018c = null;
+    ((AdapterView<?>) view7f09018a).setOnItemSelectedListener(null);
+    view7f09018a = null;
   }
 }

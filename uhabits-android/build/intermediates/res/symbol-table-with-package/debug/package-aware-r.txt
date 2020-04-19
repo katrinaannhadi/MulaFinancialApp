@@ -1836,10 +1836,8 @@ id buttonOverlay
 id buttonPanel
 id buttonPickColor
 id buttonSave
-id button_category_one
-id button_category_three
-id button_category_two
 id button_continue
+id button_goals
 id button_refresh
 id button_submit
 id cancel_action

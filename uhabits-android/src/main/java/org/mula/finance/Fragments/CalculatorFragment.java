@@ -145,6 +145,7 @@ public class CalculatorFragment extends Fragment {
         getStockPricesOnline();
 
 
+
         refreshButton.setOnClickListener(v -> getStockPricesOnline());
 
         rv = view.findViewById(R.id.rv_calculator);

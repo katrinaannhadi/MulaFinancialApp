@@ -3,6 +3,7 @@ package org.mula.finance.Adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +65,10 @@ public class CalculatorAdapter extends RecyclerView.Adapter<CalculatorAdapter.Ca
             public void onClick(View view){
                 Context c = view.getContext();
                 Intent intent = intentLink.getLinkIntent();
+                //TODO:// change once pop up menu is a thing
+                if(intentLink.getLinkName() == "Quiz"){
+                    intent.putExtra("Difficulty", 1);
+                }
                 c.startActivity(intent);
             }
         });

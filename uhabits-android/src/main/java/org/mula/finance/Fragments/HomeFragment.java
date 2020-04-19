@@ -1,5 +1,7 @@
 package org.mula.finance.Fragments;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -31,6 +33,7 @@ import com.google.gson.GsonBuilder;
 import org.mula.finance.Models.Company;
 import org.mula.finance.Models.DailyPrice;
 import org.mula.finance.R;
+import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -43,12 +46,9 @@ import java.util.Collection;
 public class HomeFragment extends Fragment {
 
     private View view;
-    private CandleStickChart candleStickChart;
-    private Company company;
+    private Button goalsButton;
+    private Context context;
 
-    private Button refreshButton;
-    private String TAG = "HomeFragment";
-    private ArrayList<CandleEntry> yValsCandleStick;
 
 
 
@@ -76,6 +76,18 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_home, container, false);
+        context = view.getContext();
+
+        goalsButton = view.findViewById(R.id.button_goals);
+        goalsButton.setText("Goals");
+
+        goalsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ListHabitsActivity.class);
+                context.startActivity(intent);
+            }
+        });
 
 
 

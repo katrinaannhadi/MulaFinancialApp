@@ -2,6 +2,7 @@ package org.mula.finance.Fragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,22 +10,37 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import org.mula.finance.Adapters.CalculatorAdapter;
+import org.mula.finance.Models.IntentLink;
+import org.mula.finance.activities.InvestmentCalculatorActivity;
 import org.mula.finance.activities.QuizActivity;
 import org.mula.finance.R;
+import org.mula.finance.activities.TaxCalculatorActivity;
+
+import java.util.ArrayList;
 
 //Information Fragment
-public class StartQuizFragment extends Fragment {
+public class InformationFragment extends Fragment {
 
 
 
     private View view;
+    private RecyclerView rv;
+    private ArrayList<IntentLink> calc;
+    private Context context;
+    private RecyclerView.LayoutManager layoutManager;
+
     private Button categoryOne;
     private Button categoryTwo;
     private Button categoryThree;
     private int value;
 
-    public StartQuizFragment() {
+
+
+    public InformationFragment() {
         // Required empty public constructor
     }
 
@@ -44,14 +60,33 @@ public class StartQuizFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_start_quiz, container, false);
 
-        categoryOne = view.findViewById(R.id.button_category_one);
+        rv = view.findViewById(R.id.rv_quiz);
+        layoutManager = new LinearLayoutManager(view.getContext());
+        rv.setLayoutManager(layoutManager);
+        context = view.getContext();
+
+        calc = new ArrayList<>();
+
+        calc.add(new IntentLink("Quiz",
+                new Intent(context, QuizActivity.class),
+                R.drawable.image_investment, Color.parseColor("#B233FF")));
+
+        //TODO:// change to articles intent
+        calc.add(new IntentLink("Articles",
+                new Intent(context, TaxCalculatorActivity.class),
+                R.drawable.image_investment, Color.parseColor("#69FA8F")));
+
+        CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);
+        rv.setAdapter(calcAdapter);
+
+       /* categoryOne = view.findViewById(R.id.button_category_one);
         categoryTwo = view.findViewById(R.id.button_category_two);
         categoryThree = view.findViewById(R.id.button_category_three);
         categoryOne.setText("Credit");
         categoryTwo.setText("Tax");
-        categoryThree.setText("Investment");
+        categoryThree.setText("Investment");*/
 
-        categoryOne.setOnClickListener(new View.OnClickListener() {
+       /* categoryOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startQuiz(1);
@@ -70,7 +105,7 @@ public class StartQuizFragment extends Fragment {
             public void onClick(View view) {
                 startQuiz(3);
             }
-        });
+        }); */
 
         return view;
     }
