@@ -1,4 +1,4 @@
-#Sat Apr 18 15:35:32 AEST 2020
+#Sun Apr 19 15:12:31 AEST 2020
 path.3=classes_1.dex
 path.2=classes_0.dex
 path.1=classes.dex
@@ -7,10 +7,10 @@ path.0=classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
-base.4=/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_2.dex
+base.4=C\:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_2.dex
 renamed.0=classes.dex
-base.3=/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_1.dex
-base.2=/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_0.dex
-base.1=/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
-base.0=/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+base.3=C\:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_1.dex
+base.2=C\:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_0.dex
+base.1=C\:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.0=C\:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.4=classes_2.dex

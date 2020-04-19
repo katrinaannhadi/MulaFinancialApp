@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -29,12 +30,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
 
 
 
-    //TODO:// to remove
-    private Button tax;
-    private Button temp;
-    private Button temp2;
-    private EditText difficulty;
-    private String TAG = "MainActivity";
+
 
     //keep
     private View popupView;
@@ -45,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
 
     private BottomNavigationView bottomNav;
 
-    private DailyQuizFragment quizPopup;
     private QuestionDatabase db;
 
     //for the question num
@@ -70,7 +65,6 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         homeFragment = new HomeFragment();
         calculatorFragment = new CalculatorFragment();
 
-
         pref = this.getSharedPreferences("My Pref", 0);
         editor = pref.edit();
         calendar = Calendar.getInstance();
@@ -80,22 +74,18 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         lastDay = pref.getInt("LAST_DATE", 0);
         streak = pref.getInt("QUIZ_STREAK", 0);
 
-        Log.d(TAG, "MainActivity: SUCCESS");
-
-        swapMenuFragment(calculatorFragment);
-
-
+        swapMenuFragment(homeFragment);
 
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
-                    case R.id.nav_investment:
-                        swapMenuFragment(calculatorFragment);
-                        break;
                     case R.id.nav_home:
                         swapMenuFragment(homeFragment);
+                        break;
+                    case R.id.nav_investment:
+                        swapMenuFragment(calculatorFragment);
                         break;
                     case R.id.nav_startquiz:
                         swapMenuFragment(startQuizFragment);
@@ -106,28 +96,14 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
             }
         });
 
-
-
-        quizPopup = new DailyQuizFragment();
-        setQuizPopup();
+        showQuizPopup();
 
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        setQuizPopup();
-    }
-
-    @Override
-    public void onResume(){
-        super.onResume();
-        setQuizPopup();
-    }
 
 
-
+    //swap fragment for the ui
     private void swapMenuFragment(Fragment fragment) {
         FragmentManager fragmentManager =  getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -141,43 +117,36 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         // quizPopup.setQuestion(question);
     }
 
+    //swap fragment for quiz popup
+    private void showQuizPopup() {
 
-    private void swapFragment(Fragment fragment) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.container_popup, fragment);
-        fragmentTransaction.commit();
-    }
+        if (today == lastDay || pref.getInt("ANSWERED", 0) != 0) {
 
-    private void setQuizPopup(){
-        if (pref.getInt("ANSWERED", 0) == 0) {
+        } else {
             if (lastDay != today - 1) {
                 streak = 0;
                 editor.putInt("QUIZ_STREAK", streak);
             }
-            //TODO::// change to method
-            Bundle bundle = new Bundle();
-            randomNum = random.nextInt(10);
-            bundle.putInt("question", randomNum);
-            quizPopup.setArguments(bundle);
-            swapFragment(quizPopup);
-            editor.putInt("LAST_DATE", today);
-            editor.commit();
 
-        } else if (lastDay != today) {
-            if (lastDay != today - 1) {
-                streak = 0;
-                editor.putInt("QUIZ_STREAK", streak);
-            }
-            Bundle bundle = new Bundle();
             randomNum = random.nextInt(10);
-            bundle.putInt("question", randomNum);
-            quizPopup.setArguments(bundle);
-            swapFragment(quizPopup);
+
             editor.putInt("LAST_DATE", today);
             editor.commit();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            Fragment previous = fragmentManager.findFragmentByTag("quiz");
+            if (previous != null) {
+                fragmentTransaction.remove(previous);
+            }
+            fragmentTransaction.addToBackStack(null);
+
+            DialogFragment quizPopup = DailyQuizFragment.newInstance(randomNum);
+            quizPopup.show(fragmentManager, "quiz");
+
         }
+
     }
+
 
 
 }

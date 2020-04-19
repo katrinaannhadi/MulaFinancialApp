@@ -2,18 +2,46 @@ package org.mula.finance.Fragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.github.mikephil.charting.charts.CandleStickChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.CandleData;
+import com.github.mikephil.charting.data.CandleDataSet;
+import com.github.mikephil.charting.data.CandleEntry;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import org.mula.finance.Adapters.CalculatorAdapter;
+import org.mula.finance.Models.Company;
+import org.mula.finance.Models.DailyPrice;
+import org.mula.finance.Models.IntentLink;
 import org.mula.finance.activities.InvestmentCalculatorActivity;
 import org.mula.finance.activities.TaxCalculatorActivity;
 import org.mula.finance.R;
 import org.mula.finance.activities.habits.list.ListHabitsActivity;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,9 +59,19 @@ public class CalculatorFragment extends Fragment {
     private String mParam2;
 
     private View view;
-    private Button investButton;
-    private Button taxButton;
-    private Button goalsButton;
+    private Button refreshButton;
+    private CandleStickChart candleStickChart;
+
+
+    private String TAG = "HomeFragment";
+    private ArrayList<CandleEntry> yValsCandleStick;
+
+    private RecyclerView rv;
+    private ArrayList<IntentLink> calc;
+    private Context context;
+
+    private LinearLayoutManager layoutManager;
+
 
     public CalculatorFragment() {
         // Required empty public constructor
@@ -70,41 +108,139 @@ public class CalculatorFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_calculator, container, false);
-        view = inflater.inflate(R.layout.fragment_calculator, container, false);
-        investButton = view.findViewById(R.id.button_invest);
-        taxButton = view.findViewById(R.id.button_tax);
-        goalsButton = view.findViewById(R.id.button_goals);
-        investButton.setText("Investment Calculator");
-        taxButton.setText("Tax Calculator");
-        goalsButton.setText("Goals");
+        Log.d(TAG, "HomeFragment: SUCCESS");
 
-        investButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context c = view.getContext();
-                Intent intent = new Intent(c, InvestmentCalculatorActivity.class);
-                c.startActivity(intent);
-            }
-        });
+        candleStickChart = view.findViewById(R.id.candle_stick_chart);
+        refreshButton = view.findViewById(R.id.button_refresh);
+        refreshButton.setText("Refresh");
 
-        taxButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context c = view.getContext();
-                Intent intent = new Intent(c, TaxCalculatorActivity.class);
-                c.startActivity(intent);
-            }
-        });
+        yValsCandleStick = new ArrayList<CandleEntry>();
 
-        goalsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context c = view.getContext();
-                Intent intent = new Intent(c, ListHabitsActivity.class);
-                c.startActivity(intent);
-            }
-        });
+        candleStickChart.setHighlightPerDragEnabled(true);
+        candleStickChart.setDrawBorders(true);
+
+        candleStickChart.setBorderColor(getResources().getColor(android.R.color.holo_blue_dark));
+        YAxis yAxis = candleStickChart.getAxisLeft();
+        YAxis rightAxis = candleStickChart.getAxisRight();
+        yAxis.setDrawGridLines(false);
+        rightAxis.setDrawGridLines(false);
+        candleStickChart.requestDisallowInterceptTouchEvent(true);
+
+        XAxis xAxis = candleStickChart.getXAxis();
+
+        xAxis.setDrawGridLines(false);// disable x axis grid lines
+        xAxis.setDrawLabels(true);
+        xAxis.setTextColor(Color.BLACK);
+        rightAxis.setTextColor(Color.BLACK);
+        yAxis.setDrawLabels(true);
+        xAxis.setGranularity(1f);
+        xAxis.setGranularityEnabled(true);
+        xAxis.setAvoidFirstLastClipping(true);
+
+        Legend l = candleStickChart.getLegend();
+        l.setEnabled(false);
+
+
+
+        getStockPricesOnline();
+
+
+        refreshButton.setOnClickListener(v -> getStockPricesOnline());
+
+        rv = view.findViewById(R.id.rv_calculator);
+        layoutManager = new LinearLayoutManager(view.getContext());
+        rv.setLayoutManager(layoutManager);
+        context = view.getContext();
+
+        calc = new ArrayList<>();
+
+        calc.add(new IntentLink("Investment",
+                new Intent(context, InvestmentCalculatorActivity.class),
+                R.drawable.image_investment, Color.parseColor("#B233FF")));
+
+        calc.add(new IntentLink("Tax",
+                new Intent(context, TaxCalculatorActivity.class),
+                R.drawable.image_investment, Color.parseColor("#69FA8F")));
+
+        //calc.add(new IntentLink("Goals",
+           //     new Intent(context, ListHabitsActivity.class),
+          //      R.drawable.image_investment, Color.parseColor("#B233FF")));
+
+
+
+        CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);
+        rv.setAdapter(calcAdapter);
+
+
 
         return view;
+
+    }
+
+    private void getStockPricesOnline(){
+        String url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&outputsize=compact&symbol=IBM&interval=60min&apikey=FD82S5VDRDGNB16U";
+
+
+        Response.Listener<String> responseListener = response -> {
+
+            GsonBuilder gsonBuilder = new GsonBuilder();
+            Gson gson = gsonBuilder.create();
+            String jsonString = response;
+
+
+            Company company = gson.fromJson(jsonString, Company.class);
+            Collection<DailyPrice> values = company.getCompanyStockPrices().values();
+            System.out.println(company.getCompanyStockPrices().keySet());
+            ArrayList<DailyPrice> dailyPrices = new ArrayList<DailyPrice>(values);
+
+            int size = dailyPrices.size();
+            for(int i = 0; i < size; i++) {
+                DailyPrice dailyPrice = dailyPrices.get(i);
+                float j = (float) i;
+                CandleEntry candleEntry = new CandleEntry(j,
+                        Float.parseFloat(dailyPrice.getDailyHigh()),
+                        Float.parseFloat(dailyPrice.getDailyLow()),
+                        Float.parseFloat(dailyPrice.getDailyOpen()),
+                        Float.parseFloat(dailyPrice.getDailyClose()));
+                yValsCandleStick.add(candleEntry);
+            }
+
+
+            CandleDataSet set1 = new CandleDataSet(yValsCandleStick, "DataSet 1");
+            set1.setColor(Color.rgb(80, 80, 80));
+            set1.setShadowColor(getResources().getColor(android.R.color.darker_gray));
+            set1.setDecreasingColor(getResources().getColor(android.R.color.holo_red_light));
+            set1.setDecreasingPaintStyle(Paint.Style.FILL);
+            set1.setIncreasingColor(getResources().getColor(android.R.color.background_light));
+            set1.setIncreasingPaintStyle(Paint.Style.FILL);
+            set1.setNeutralColor(Color.LTGRAY);
+            set1.setDrawValues(false);
+
+
+
+            // create a data object with the datasets
+            CandleData data = new CandleData(set1);
+
+
+            // set data
+            candleStickChart.setData(data);
+            candleStickChart.invalidate();
+            candleStickChart.setVisibleXRangeMaximum(7);
+            candleStickChart.moveViewToX(yValsCandleStick.size());
+
+        };
+
+        Response.ErrorListener errorListener = new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.println("The request failed.");
+            }
+        };
+
+        RequestQueue requestQueue = Volley.newRequestQueue(view.getContext());
+        StringRequest stringRequest =
+                new StringRequest(Request.Method.GET, url, responseListener, errorListener);
+        requestQueue.add(stringRequest);
+
     }
 }

@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import org.mula.finance.activities.QuizActivity;
 import org.mula.finance.R;
 
-
+//Information Fragment
 public class StartQuizFragment extends Fragment {
 
 

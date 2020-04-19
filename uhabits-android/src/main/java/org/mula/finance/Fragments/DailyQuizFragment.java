@@ -56,11 +56,19 @@ public class DailyQuizFragment extends DialogFragment implements QuestionAsyncTa
         // Required empty public constructor
     }
 
+    public static DailyQuizFragment newInstance(int num){
+        DailyQuizFragment f = new DailyQuizFragment();
+        Bundle args = new Bundle();
+        args.putInt("num", num);
+        f.setArguments(args);
+        return f;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_daily_quiz, container, false);
+        view = inflater.inflate(R.layout.fragment_daily_quiz, container);
         question = view.findViewById(R.id.text_question);
         options = view.findViewById(R.id.group_options);
         optionA = view.findViewById(R.id.radio_answer_1);
@@ -80,7 +88,7 @@ public class DailyQuizFragment extends DialogFragment implements QuestionAsyncTa
         insertQuestionsInDatabase(QuizActivity.getQuestionList());
 
         Bundle bundle = this.getArguments();
-        retrieveQuestionFromDatabase(bundle.getInt("question"));
+        retrieveQuestionFromDatabase(bundle.getInt("num"));
 
 
         return view;
@@ -147,7 +155,7 @@ public class DailyQuizFragment extends DialogFragment implements QuestionAsyncTa
 
                     }
                 } catch (NullPointerException e) {
-                   // Toast.makeText(getContext(), "Choose an answer!", Toast.LENGTH_LONG).show();
+                    // Toast.makeText(getContext(), "Choose an answer!", Toast.LENGTH_LONG).show();
                 } finally {
                     editor.putInt("QUIZ_STREAK", streak);
                     editor.putInt("ANSWERED", 1).commit();

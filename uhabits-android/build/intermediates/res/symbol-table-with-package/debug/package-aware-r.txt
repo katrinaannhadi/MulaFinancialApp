@@ -1840,11 +1840,8 @@ id button_category_one
 id button_category_three
 id button_category_two
 id button_continue
-id button_goals
-id button_invest
 id button_refresh
 id button_submit
-id button_tax
 id cancel_action
 id candle_stick_chart
 id center
@@ -2071,6 +2068,7 @@ id right
 id right_icon
 id right_side
 id rtl
+id rv_calculator
 id rv_quiz
 id save_image_matrix
 id save_non_transition_alpha
