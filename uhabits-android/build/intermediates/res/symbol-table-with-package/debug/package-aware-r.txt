@@ -955,7 +955,10 @@ color cyan_A100
 color cyan_A200
 color cyan_A400
 color cyan_A700
+color dark_blue_300
 color dark_gray
+color dark_green_300
+color dark_lilac_300
 color darker_blue
 color date_picker_selector
 color date_picker_text_normal
@@ -1088,6 +1091,9 @@ color light_green_A100
 color light_green_A200
 color light_green_A400
 color light_green_A700
+color light_grey_300
+color light_lilac_300
+color lilac_300
 color lime_100
 color lime_200
 color lime_300
@@ -1116,6 +1122,7 @@ color material_grey_600
 color material_grey_800
 color material_grey_850
 color material_grey_900
+color medium_blue_300
 color mtrl_bottom_nav_colored_item_tint
 color mtrl_bottom_nav_item_tint
 color mtrl_btn_bg_color_disabled
@@ -1175,6 +1182,7 @@ color pink_A100
 color pink_A200
 color pink_A400
 color pink_A700
+color pink_dark_primary_300
 color preference_fallback_accent_color
 color primary_dark_material_dark
 color primary_dark_material_light
@@ -1669,8 +1677,11 @@ drawable ic_alarm_black
 drawable ic_alarm_white
 drawable ic_arrow_down_24dp
 drawable ic_arrow_forward_white_24px
+drawable ic_background
+drawable ic_background_purple
 drawable ic_colorpicker_swatch_selected
 drawable ic_done_white_24px
+drawable ic_grand
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle

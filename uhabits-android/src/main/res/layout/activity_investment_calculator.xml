@@ -4,36 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="?toolbarPopupTheme" />
 
     <TextView
         android:id="@+id/titleStartingAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="@string/ic_start_amount"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <EditText
         android:id="@+id/tv_StartingAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="112dp"
-        android:layout_marginRight="112dp"
         android:autofillHints=""
         android:hint="10,000"
+        android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="12sp"
-        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/titleStartingAmount" />
 
@@ -42,11 +49,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
         android:layout_marginTop="16dp"
+        android:text="@string/ic_additional_contribution"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="12sp"
-        android:text="@string/ic_additional_contribution"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleStartingAmount" />
 
@@ -69,11 +75,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
         android:layout_marginTop="16dp"
+        android:text="@string/ic_return_rate"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="12sp"
-        android:text="@string/ic_return_rate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleAdditionalContributions" />
 
@@ -93,11 +98,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
         android:layout_marginTop="16dp"
+        android:text="@string/ic_times_compounded"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="12sp"
-        android:text="@string/ic_times_compounded"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleReturnRate" />
 
@@ -118,11 +122,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
         android:layout_marginTop="16dp"
+        android:text="@string/ic_years"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="12sp"
-        android:text="@string/ic_years"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTimesCompounded" />
 

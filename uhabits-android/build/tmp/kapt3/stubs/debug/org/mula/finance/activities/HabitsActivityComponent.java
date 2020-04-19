@@ -1,5 +1,6 @@
 package org.mula.finance.activities;
 
+import com.google.android.material.bottomnavigation.BottomNavigationMenu;
 import org.mula.finance.*;
 import org.mula.finance.activities.common.dialogs.*;
 import org.mula.finance.activities.habits.list.*;

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="700dp"
-    tools:context=".Fragments.LineChartFragment">
+    tools:context=".Fragments.LineChartFragment"
+    android:background="@drawable/ic_background_purple">
 
     <TextView
         android:id="@+id/text_lineChart"

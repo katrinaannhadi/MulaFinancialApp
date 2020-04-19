@@ -5,7 +5,8 @@
     android:id="@+id/constraint_daily_quiz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.DailyQuizFragment" >
+    tools:context=".Fragments.DailyQuizFragment"
+    android:background="@drawable/ic_background_purple">
 
     <TextView
         android:id="@+id/text_question"

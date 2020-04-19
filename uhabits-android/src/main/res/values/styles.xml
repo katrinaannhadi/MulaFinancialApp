@@ -50,6 +50,8 @@
         <item name="aboutScreenColor">@color/blue_800</item>
         <item name="widgetShadowAlpha">0.25</item>
         <item name="widgetBackgroundAlpha">1</item>
+        <item name="background">@drawable/ic_background_purple</item>
+
 
         <item name="scrollableRecyclerViewStyle">@style/ScrollableRecyclerViewStyle</item>
     </style>
