@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-    <!--
+<?xml version="1.0" encoding="utf-8"?><!--
       ~ MULA Financial Application INFS3634
       -->
 
@@ -25,7 +24,7 @@
     <string name="toast_habit_archived">Habits archived</string>
     <string name="toast_habit_unarchived">Habits unarchived</string>
 
-    <string name="title_activity_show_habit" translatable="false"/>
+    <string name="title_activity_show_habit" translatable="false" />
     <string name="overview">Overview</string>
     <string name="habit_strength">Habit strength</string>
     <string name="history">History</string>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--       ~ MULA Financial Application INFS3634 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.mula.finance"
     android:targetSandboxVersion="2"
@@ -26,6 +25,20 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppBaseTheme" >
+        <activity android:name="org.mula.finance.activities.MainActivity" />
+
+        <activity-alias
+            android:name="org.mula.finance.MainActivity"
+            android:label="@string/main_activity_title"
+            android:launchMode="singleTop"
+            android:targetActivity="org.mula.finance.activities.MainActivity" >
+            <intent-filter android:label="@string/main_activity_title" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
         <meta-data
             android:name="com.google.android.backup.api_key"
             android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
@@ -35,19 +48,6 @@
             android:exported="true"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop" />
-
-        <activity-alias
-            android:name="org.mula.finance.MainActivity"
-            android:label="@string/main_activity_title"
-            android:launchMode="singleTop"
-            android:targetActivity="org.mula.finance.activities.habits.list.ListHabitsActivity" >
-            <intent-filter android:label="@string/main_activity_title" >
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity-alias>
-
         <activity android:name="org.mula.finance.activities.InvestmentCalculatorActivity" />
         <activity android:name="org.mula.finance.activities.TaxCalculatorActivity" />
         <activity android:name="org.mula.finance.activities.QuizActivity" />
@@ -80,8 +80,7 @@
             android:name="org.mula.finance.notifications.SnoozeDelayPickerActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="org.mula.finance.widgets.CheckmarkWidgetProvider"
@@ -177,9 +176,7 @@
                     android:host="org.mula.finance"
                     android:scheme="content" />
             </intent-filter>
-        </receiver>
-
-        <!-- Locale/Tasker -->
+        </receiver> <!-- Locale/Tasker -->
         <activity
             android:name="org.mula.finance.automation.EditSettingActivity"
             android:exported="true"
@@ -188,9 +185,7 @@
             <intent-filter>
                 <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
             </intent-filter>
-        </activity>
-
-        <!-- Locale/Tasker -->
+        </activity> <!-- Locale/Tasker -->
         <receiver
             android:name="org.mula.finance.automation.FireSettingReceiver"
             android:exported="true" >
@@ -212,8 +207,7 @@
         <service
             android:name="org.mula.finance.sync.SyncService"
             android:enabled="true"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
             android:exported="false" />

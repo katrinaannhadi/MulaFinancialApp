@@ -138,11 +138,6 @@ android {
             implementation 'com.android.volley:volley:1.1.1'
 
 
-
-
-
-
-
             implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
             implementation 'com.github.razerdp:AnimatedPieView:1.2.4'
 
@@ -176,4 +171,10 @@ android {
             track = "alpha"
         }
     }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:+'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }
