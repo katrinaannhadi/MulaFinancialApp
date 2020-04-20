@@ -1836,6 +1836,7 @@ id beginning
 id blocking
 id boolSpinner
 id bottom
+id bottom_nav
 id bottom_separator
 id bounce
 id bt_calculate
@@ -1848,7 +1849,6 @@ id buttonPanel
 id buttonPickColor
 id buttonSave
 id button_continue
-id button_goals
 id button_refresh
 id button_submit
 id cancel_action
@@ -1875,7 +1875,6 @@ id color_picker_swatch
 id constraint_daily_quiz
 id constraint_start_quiz
 id container
-id container_popup
 id content
 id contentPanel
 id coordinator
@@ -1935,7 +1934,6 @@ id forever
 id formPanel
 id fragment
 id fragment_container_view_tag
-id fragment_layout
 id frame
 id frameLayout
 id frame_start_quiz
@@ -1964,7 +1962,6 @@ id historyStackWidgetEmptyView
 id historyStackWidgetView
 id home
 id homeAsUp
-id home_contraint
 id honorRequest
 id hour_space
 id hours
@@ -2019,11 +2016,10 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id namePanel
-id nav_home
-id nav_investment
-id nav_startquiz
+id navArticles
+id navCalculators
+id navQuiz
 id navigation_header_container
-id navigation_view
 id never
 id next
 id none
@@ -2308,10 +2304,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_investment_calculator
-layout activity_main
 layout activity_quiz
 layout activity_taxcalc
 layout automation
+layout bottom_nav
 layout checkmark_stackview_widget
 layout chunk_calculator
 layout color_picker_dialog
@@ -2346,7 +2342,6 @@ layout expand_button
 layout filter
 layout fragment_calculator
 layout fragment_daily_quiz
-layout fragment_home
 layout fragment_intro
 layout fragment_investment_calculator
 layout fragment_line_chart

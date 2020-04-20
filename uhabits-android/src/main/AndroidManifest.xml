@@ -27,17 +27,11 @@
             android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw"/>
 
 
-        <activity
-            android:name="org.mula.finance.activities.MainActivity"
-            android:exported="true"
-            android:label="@string/main_activity_title"
-            android:launchMode="singleTop"/>
-
         <activity-alias
             android:name=".MainActivity"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
-            android:targetActivity="org.mula.finance.activities.MainActivity">
+            android:targetActivity="org.mula.finance.activities.habits.list.ListHabitsActivity">
             <intent-filter android:label="@string/main_activity_title">
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

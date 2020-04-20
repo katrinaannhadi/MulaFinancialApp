@@ -3,6 +3,7 @@ package org.mula.finance.activities.habits.list;
 import android.content.*;
 import androidx.appcompat.widget.Toolbar;
 import android.widget.*;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import org.mula.androidbase.activities.*;
 import org.mula.finance.*;
 import org.mula.finance.activities.common.views.*;

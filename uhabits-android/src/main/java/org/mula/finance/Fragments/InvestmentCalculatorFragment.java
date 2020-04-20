@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.mula.finance.activities.MainActivity;
 import org.mula.finance.R;
 
 
@@ -28,7 +27,7 @@ public class InvestmentCalculatorFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private MainActivity context;
+//    private MainActivity context;
 
 
     private EditText tvInvestmentAmount;
@@ -129,30 +128,30 @@ public class InvestmentCalculatorFragment extends Fragment {
             tvInterestContribution.setText(String.format("%.2f", interestContributions));
             tvTotalInterest.setText(String.format("%.2f", totalInterest));
 
-            FragmentManager fragmentManager = context.getSupportFragmentManager();
-            FragmentTransaction transaction = fragmentManager.beginTransaction();
-            Bundle arguments = new Bundle();
-            arguments.putDouble("Future Value", futureValue);
-            arguments.putDouble("Interest Principle", interestPrincipal);
-            arguments.putDouble("Interest Contributions", interestContributions);
-            PieChartFragment fragment = new PieChartFragment();
-            fragment.setArguments(arguments);
-            transaction.replace(R.id.pieFragment,fragment);
-            transaction.commit();
-
-            FragmentManager fragmentManager2 = context.getSupportFragmentManager();
-            FragmentTransaction transaction2 = fragmentManager2.beginTransaction();
-            Bundle arguments2 = new Bundle();
-            arguments2.putDouble("Interest Rate", r);
-            arguments2.putDouble("Year", t);
-            arguments2.putDouble("Initial Investment", P);
-            arguments2.putDouble("Additional Contributions", PMT);
-            arguments2.putDouble("Times Compounded",n);
-            LineChartFragment fragment2 = new LineChartFragment();
-            fragment2.setArguments(arguments2);
-            transaction2.replace(R.id.lineFragment,fragment2);
-            transaction2.commit();
-
+//            FragmentManager fragmentManager = context.getSupportFragmentManager();
+//            FragmentTransaction transaction = fragmentManager.beginTransaction();
+//            Bundle arguments = new Bundle();
+//            arguments.putDouble("Future Value", futureValue);
+//            arguments.putDouble("Interest Principle", interestPrincipal);
+//            arguments.putDouble("Interest Contributions", interestContributions);
+//            PieChartFragment fragment = new PieChartFragment();
+//            fragment.setArguments(arguments);
+//            transaction.replace(R.id.pieFragment,fragment);
+//            transaction.commit();
+//
+//            FragmentManager fragmentManager2 = context.getSupportFragmentManager();
+//            FragmentTransaction transaction2 = fragmentManager2.beginTransaction();
+//            Bundle arguments2 = new Bundle();
+//            arguments2.putDouble("Interest Rate", r);
+//            arguments2.putDouble("Year", t);
+//            arguments2.putDouble("Initial Investment", P);
+//            arguments2.putDouble("Additional Contributions", PMT);
+//            arguments2.putDouble("Times Compounded",n);
+//            LineChartFragment fragment2 = new LineChartFragment();
+//            fragment2.setArguments(arguments2);
+//            transaction2.replace(R.id.lineFragment,fragment2);
+//            transaction2.commit();
+//
 
 
         } catch (Exception e) {
@@ -178,35 +177,35 @@ public class InvestmentCalculatorFragment extends Fragment {
         double interestPrincipal = 0;
         double interestContributions = 0;
 
-        FragmentManager fragmentManager = context.getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        Bundle arguments = new Bundle();
-        arguments.putDouble("Future Value", futureValue);
-        arguments.putDouble("Interest Principle", interestPrincipal);
-        arguments.putDouble("Interest Contributions", interestContributions);
-        PieChartFragment fragment = new PieChartFragment();
-        fragment.setArguments(arguments);
-        transaction.replace(R.id.pieFragment,fragment);
-        transaction.commit();
+//        FragmentManager fragmentManager = context.getSupportFragmentManager();
+//        FragmentTransaction transaction = fragmentManager.beginTransaction();
+//        Bundle arguments = new Bundle();
+//        arguments.putDouble("Future Value", futureValue);
+//        arguments.putDouble("Interest Principle", interestPrincipal);
+//        arguments.putDouble("Interest Contributions", interestContributions);
+//        PieChartFragment fragment = new PieChartFragment();
+//        fragment.setArguments(arguments);
+//        transaction.replace(R.id.pieFragment,fragment);
+//        transaction.commit();
 
         double r = 0;
         double t = 0;
         double P = 0;
         double PMT = 0;
         double n = 0;
-
-        FragmentManager fragmentManager2 = context.getSupportFragmentManager();
-        FragmentTransaction transaction2 = fragmentManager2.beginTransaction();
-        Bundle arguments2 = new Bundle();
-        arguments2.putDouble("Interest Rate", r);
-        arguments2.putDouble("Year", t);
-        arguments2.putDouble("Initial Investment", P);
-        arguments2.putDouble("Additional Contributions", PMT);
-        arguments2.putDouble("Times Compounded", n);
-        LineChartFragment fragment2 = new LineChartFragment();
-        fragment2.setArguments(arguments2);
-        transaction2.replace(R.id.lineFragment,fragment2);
-        transaction2.commit();
+//
+//        FragmentManager fragmentManager2 = context.getSupportFragmentManager();
+//        FragmentTransaction transaction2 = fragmentManager2.beginTransaction();
+//        Bundle arguments2 = new Bundle();
+//        arguments2.putDouble("Interest Rate", r);
+//        arguments2.putDouble("Year", t);
+//        arguments2.putDouble("Initial Investment", P);
+//        arguments2.putDouble("Additional Contributions", PMT);
+//        arguments2.putDouble("Times Compounded", n);
+//        LineChartFragment fragment2 = new LineChartFragment();
+//        fragment2.setArguments(arguments2);
+//        transaction2.replace(R.id.lineFragment,fragment2);
+//        transaction2.commit();
 
     }
 

@@ -9,6 +9,7 @@ import android.view.*
 import android.view.ViewGroup.LayoutParams.*
 import android.widget.*
 import android.widget.RelativeLayout.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
 import org.mula.finance.*
 import org.mula.androidbase.utils.InterfaceUtils
@@ -54,6 +55,13 @@ fun ViewGroup.buildToolbar(): Toolbar {
     val inflater = LayoutInflater.from(context)
     return inflater.inflate(R.layout.toolbar, null) as Toolbar
 }
+
+fun ViewGroup.buildBottomNav(): BottomNavigationView {
+    val inflater = LayoutInflater.from(context)
+    return inflater.inflate(R.layout.bottom_nav, null) as BottomNavigationView
+}
+
+
 
 fun View.showMessage(@StringRes stringId: Int) {
     try {

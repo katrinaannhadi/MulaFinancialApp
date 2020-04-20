@@ -8,6 +8,7 @@ import android.os.Build.VERSION_CODES.*
 import androidx.appcompat.widget.Toolbar
 import android.view.ViewGroup.LayoutParams.*
 import android.widget.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import org.mula.androidbase.activities.*
 import org.mula.finance.*
 import org.mula.finance.activities.common.views.*
@@ -37,6 +38,7 @@ class ListHabitsRootView @Inject constructor(
     val listView: HabitCardListView = habitCardListViewFactory.create()
     val llEmpty = EmptyListView(context)
     val tbar = buildToolbar()
+    val bmenu = buildBottomNav()
     val progressBar = TaskProgressBar(context, runner)
     val hintView: HintView
     val header = HeaderView(context, preferences, midnightTimer)
@@ -55,11 +57,13 @@ class ListHabitsRootView @Inject constructor(
             addBelow(progressBar, header) {
                 it.topMargin = dp(-6.0f).toInt()
             }
-            addAtBottom(hintView)
-            if (SDK_INT < LOLLIPOP) {
-                addBelow(ShadowView(context), tbar)
-                addBelow(ShadowView(context), header)
-            }
+            addAtBottom(bmenu)
+
+//            addAtBottom(hintView)
+//            if (SDK_INT < LOLLIPOP) {
+//                addBelow(ShadowView(context), tbar)
+//                addBelow(ShadowView(context), header)
+//            }
         }, MATCH_PARENT, MATCH_PARENT)
 
         listAdapter.setListView(listView)
@@ -68,6 +72,10 @@ class ListHabitsRootView @Inject constructor(
 
     override fun getToolbar(): Toolbar {
         return tbar
+    }
+
+    override fun getBottomNav(): BottomNavigationView {
+        return bmenu;
     }
 
     override fun onModelChange() {

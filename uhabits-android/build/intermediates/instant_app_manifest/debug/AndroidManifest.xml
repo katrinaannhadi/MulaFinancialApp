@@ -31,7 +31,7 @@
             android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
 
         <activity
-            android:name="org.mula.finance.activities.MainActivity"
+            android:name="org.mula.finance.activities.habits.list.ListHabitsActivity"
             android:exported="true"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop" />
@@ -40,7 +40,7 @@
             android:name="org.mula.finance.MainActivity"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
-            android:targetActivity="org.mula.finance.activities.MainActivity" >
+            android:targetActivity="org.mula.finance.activities.habits.list.ListHabitsActivity" >
             <intent-filter android:label="@string/main_activity_title" >
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,11 +48,6 @@
             </intent-filter>
         </activity-alias>
 
-        <activity
-            android:name="org.mula.finance.activities.habits.list.ListHabitsActivity"
-            android:exported="true"
-            android:label="@string/main_activity_title"
-            android:launchMode="singleTop" />
         <activity android:name="org.mula.finance.activities.InvestmentCalculatorActivity" />
         <activity android:name="org.mula.finance.activities.TaxCalculatorActivity" />
         <activity android:name="org.mula.finance.activities.QuizActivity" />

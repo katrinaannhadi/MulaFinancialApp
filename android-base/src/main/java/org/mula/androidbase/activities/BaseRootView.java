@@ -10,6 +10,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.*;
 import android.widget.*;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import org.mula.androidbase.R;
 import org.mula.androidbase.utils.InterfaceUtils;
 import org.mula.androidbase.utils.StyledResources;
@@ -79,6 +81,22 @@ public abstract class BaseRootView extends FrameLayout
             view = findViewById(R.id.headerShadow);
             if (view != null) view.setVisibility(GONE);
         }
+    }
+
+    @NonNull
+    public BottomNavigationView getBottomNav()
+    {
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_nav);
+        if (bottomNavigationView == null) throw new RuntimeException(
+                "Your BaseRootView should have a " +
+                        "toolbar with id R.id.toolbar");
+        return bottomNavigationView;
+    }
+
+    public int getBottomNavColor()
+    {
+        StyledResources res = new StyledResources(context);
+        return res.getColor(R.attr.colorPrimary);
     }
 
     public void onAttachedToScreen(BaseScreen screen)

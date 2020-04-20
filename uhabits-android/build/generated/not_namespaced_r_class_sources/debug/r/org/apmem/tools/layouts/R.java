@@ -21,8 +21,8 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int ltr = 0x7f090113;
-        public static final int rtl = 0x7f09015c;
+        public static final int ltr = 0x7f090110;
+        public static final int rtl = 0x7f090158;
     }
     public static final class styleable {
         private styleable() {}
