@@ -1,0 +1,445 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (C) 2016 Álinson Santos Xavier <isoron@gmail.com>
+4  ~
+5  ~ This file is part of Loop Habit Tracker.
+6  ~
+7  ~ Loop Habit Tracker is free software: you can redistribute it and/or modify
+8  ~ it under the terms of the GNU General Public License as published by the
+9  ~ Free Software Foundation, either version 3 of the License, or (at your
+10  ~ option) any later version.
+11  ~
+12  ~ Loop Habit Tracker is distributed in the hope that it will be useful, but
+13  ~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+14  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+15  ~ more details.
+16  ~
+17  ~ You should have received a copy of the GNU General Public License along
+18  ~ with this program. If not, see <http://www.gnu.org/licenses/>.
+19-->
+20<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+21    package="org.isoron.uhabits"
+22    android:versionCode="50"
+23    android:versionName="1.8.7" >
+24
+25    <uses-sdk
+26        android:minSdkVersion="21"
+26-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
+27        android:targetSdkVersion="29" />
+27-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml
+28
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:24:5-65
+29-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:24:22-63
+30    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+30-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:26:5-80
+30-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:26:22-78
+31    <uses-permission android:name="android.permission.INTERNET" />
+31-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:28:5-66
+31-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:28:22-64
+32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+32-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:30:5-79
+32-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:30:22-76
+33
+34    <application
+34-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:32:5-234:19
+35        android:name="org.isoron.uhabits.HabitsApplication"
+35-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:33:9-42
+36        android:allowBackup="true"
+36-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:34:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.1.0] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/ab8f8951b99ab5b5d332022d857e3989/core-1.1.0/AndroidManifest.xml:24:18-86
+38        android:backupAgent="org.isoron.uhabits.HabitsBackupAgent"
+38-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:35:9-49
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:36:9-43
+41        android:label="@string/main_activity_title"
+41-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:37:9-52
+42        android:supportsRtl="true"
+42-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:38:9-35
+43        android:testOnly="true"
+44        android:theme="@style/AppBaseTheme" >
+44-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:39:9-44
+45        <meta-data
+45-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:40:9-42:81
+46            android:name="com.google.android.backup.api_key"
+46-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:41:13-61
+47            android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
+47-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:42:13-79
+48
+49        <activity
+49-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:45:9-49:45
+50            android:name="org.isoron.uhabits.activities.MainActivity"
+50-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:46:13-52
+51            android:exported="true"
+51-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:47:13-36
+52            android:label="@string/main_activity_title"
+52-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:48:13-56
+53            android:launchMode="singleTop" />
+53-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:49:13-43
+54
+55        <activity-alias
+55-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:51:9-60:26
+56            android:name="org.isoron.uhabits.MainActivity"
+56-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:52:13-41
+57            android:label="@string/main_activity_title"
+57-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:53:13-56
+58            android:launchMode="singleTop"
+58-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:54:13-43
+59            android:targetActivity="org.isoron.uhabits.activities.MainActivity" >
+59-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:55:13-62
+60            <intent-filter android:label="@string/main_activity_title" >
+60-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:56:13-59:29
+60-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:56:28-71
+61                <action android:name="android.intent.action.MAIN" />
+61-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:57:17-68
+61-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:57:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:58:17-76
+63-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:58:27-74
+64            </intent-filter>
+65        </activity-alias>
+66
+67        <activity
+67-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:62:9-66:45
+68            android:name="org.isoron.uhabits.activities.habits.list.ListHabitsActivity"
+68-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:63:13-70
+69            android:exported="true"
+69-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:64:13-36
+70            android:label="@string/main_activity_title"
+70-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:65:13-56
+71            android:launchMode="singleTop" />
+71-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:66:13-43
+72        <activity android:name="org.isoron.uhabits.activities.InvestmentCalculatorActivity" />
+72-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:68:9-77
+72-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:68:19-74
+73        <activity android:name="org.isoron.uhabits.activities.TaxCalculatorActivity" />
+73-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:69:9-70
+73-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:69:19-67
+74        <activity android:name="org.isoron.uhabits.activities.QuizActivity" />
+74-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:70:9-60
+74-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:70:19-58
+75        <activity
+75-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:72:9-78:20
+76            android:name="org.isoron.uhabits.activities.habits.show.ShowHabitActivity"
+76-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:73:13-69
+77            android:label="@string/title_activity_show_habit" >
+77-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:74:13-62
+78            <meta-data
+78-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:75:13-77:77
+79                android:name="android.support.PARENT_ACTIVITY"
+79-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:76:17-63
+80                android:value=".activities.habits.list.ListHabitsActivity" />
+80-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:77:17-75
+81        </activity>
+82        <activity
+82-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:79:9-85:20
+83            android:name="org.isoron.uhabits.activities.settings.SettingsActivity"
+83-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:80:13-65
+84            android:label="@string/settings" >
+84-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:81:13-45
+85            <meta-data
+85-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:75:13-77:77
+86                android:name="android.support.PARENT_ACTIVITY"
+86-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:76:17-63
+87                android:value=".activities.habits.list.ListHabitsActivity" />
+87-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:77:17-75
+88        </activity>
+89        <activity
+89-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:86:9-89:71
+90            android:name="org.isoron.uhabits.activities.intro.IntroActivity"
+90-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:87:13-59
+91            android:label=""
+91-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:88:13-29
+92            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+92-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:89:13-69
+93        <activity
+93-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:90:9-96:20
+94            android:name="org.isoron.uhabits.widgets.HabitPickerDialog"
+94-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:91:13-54
+95            android:theme="@style/Theme.AppCompat.Light.Dialog" >
+95-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:92:13-64
+96            <intent-filter>
+96-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:93:13-95:29
+97                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+97-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:94:17-86
+97-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:94:25-84
+98            </intent-filter>
+99        </activity>
+100        <activity
+100-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:98:9-102:20
+101            android:name="org.isoron.uhabits.notifications.SnoozeDelayPickerActivity"
+101-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:98:19-74
+102            android:excludeFromRecents="true"
+102-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:99:13-46
+103            android:launchMode="singleInstance"
+103-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:100:13-48
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+104-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:101:13-72
+105        </activity>
+106        <activity android:name="org.isoron.uhabits.activities.ExpenseTrackerActivity" />
+106-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:103:9-70
+106-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:103:19-68
+107        <activity android:name="org.isoron.uhabits.activities.AddExpenseActivity" />
+107-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:104:9-66
+107-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:104:19-64
+108
+109        <receiver
+109-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:106:9-116:20
+110            android:name="org.isoron.uhabits.widgets.CheckmarkWidgetProvider"
+110-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:107:13-60
+111            android:label="@string/checkmark" >
+111-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:108:13-46
+112            <intent-filter>
+112-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:109:13-111:29
+113                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+113-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:17-83
+113-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:25-81
+114            </intent-filter>
+115
+116            <meta-data
+116-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:64
+117                android:name="android.appwidget.provider"
+117-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-58
+118                android:resource="@xml/widget_checkmark_info" />
+118-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:115:17-62
+119        </receiver>
+120
+121        <service
+121-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:9-119:40
+122            android:name="org.isoron.uhabits.widgets.StackWidgetService"
+122-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:117:18-60
+123            android:exported="false"
+123-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:119:13-37
+124            android:permission="android.permission.BIND_REMOTEVIEWS" />
+124-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:118:13-69
+125
+126        <receiver
+126-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:120:9-130:20
+127            android:name="org.isoron.uhabits.widgets.HistoryWidgetProvider"
+127-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:121:13-58
+128            android:label="@string/history" >
+128-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:122:13-44
+129            <intent-filter>
+129-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:109:13-111:29
+130                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+130-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:17-83
+130-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:25-81
+131            </intent-filter>
+132
+133            <meta-data
+133-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:64
+134                android:name="android.appwidget.provider"
+134-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-58
+135                android:resource="@xml/widget_history_info" />
+135-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:115:17-62
+136        </receiver>
+137        <receiver
+137-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:131:9-141:20
+138            android:name="org.isoron.uhabits.widgets.ScoreWidgetProvider"
+138-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:132:13-56
+139            android:label="@string/habit_strength" >
+139-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:133:13-51
+140            <intent-filter>
+140-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:109:13-111:29
+141                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+141-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:17-83
+141-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:25-81
+142            </intent-filter>
+143
+144            <meta-data
+144-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:64
+145                android:name="android.appwidget.provider"
+145-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-58
+146                android:resource="@xml/widget_score_info" />
+146-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:115:17-62
+147        </receiver>
+148        <receiver
+148-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:142:9-152:20
+149            android:name="org.isoron.uhabits.widgets.StreakWidgetProvider"
+149-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:143:13-57
+150            android:label="@string/streaks" >
+150-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:144:13-44
+151            <intent-filter>
+151-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:109:13-111:29
+152                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+152-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:17-83
+152-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:25-81
+153            </intent-filter>
+154
+155            <meta-data
+155-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:64
+156                android:name="android.appwidget.provider"
+156-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-58
+157                android:resource="@xml/widget_streak_info" />
+157-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:115:17-62
+158        </receiver>
+159        <receiver
+159-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:153:9-163:20
+160            android:name="org.isoron.uhabits.widgets.FrequencyWidgetProvider"
+160-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:154:13-60
+161            android:label="@string/frequency" >
+161-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:155:13-46
+162            <intent-filter>
+162-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:109:13-111:29
+163                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+163-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:17-83
+163-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:110:25-81
+164            </intent-filter>
+165
+166            <meta-data
+166-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:113:13-115:64
+167                android:name="android.appwidget.provider"
+167-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:114:17-58
+168                android:resource="@xml/widget_frequency_info" />
+168-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:115:17-62
+169        </receiver>
+170        <receiver android:name="org.isoron.uhabits.receivers.ReminderReceiver" >
+170-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:164:9-168:20
+170-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:164:19-61
+171            <intent-filter>
+171-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:165:13-167:29
+172                <action android:name="android.intent.action.BOOT_COMPLETED" />
+172-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:166:17-78
+172-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:166:25-76
+173            </intent-filter>
+174        </receiver>
+175        <receiver android:name="org.isoron.uhabits.receivers.WidgetReceiver" >
+175-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:169:9-197:20
+175-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:169:19-59
+176            <intent-filter>
+176-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:170:13-178:29
+177                <category android:name="android.intent.category.DEFAULT" />
+177-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:171:17-75
+177-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:171:27-73
+178
+179                <action android:name="org.isoron.uhabits.ACTION_TOGGLE_REPETITION" />
+179-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:173:17-85
+179-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:173:25-83
+180
+181                <data
+181-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:17-177:47
+182                    android:host="org.isoron.uhabits"
+182-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:176:21-54
+183                    android:scheme="content" />
+183-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:177:21-45
+184            </intent-filter>
+185            <intent-filter>
+185-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:179:13-187:29
+186                <category android:name="android.intent.category.DEFAULT" />
+186-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:171:17-75
+186-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:171:27-73
+187
+188                <action android:name="org.isoron.uhabits.ACTION_ADD_REPETITION" />
+188-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:182:17-82
+188-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:182:25-80
+189
+190                <data
+190-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:17-177:47
+191                    android:host="org.isoron.uhabits"
+191-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:176:21-54
+192                    android:scheme="content" />
+192-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:177:21-45
+193            </intent-filter>
+194            <intent-filter>
+194-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:188:13-196:29
+195                <category android:name="android.intent.category.DEFAULT" />
+195-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:171:17-75
+195-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:171:27-73
+196
+197                <action android:name="org.isoron.uhabits.ACTION_REMOVE_REPETITION" />
+197-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:191:17-85
+197-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:191:25-83
+198
+199                <data
+199-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:175:17-177:47
+200                    android:host="org.isoron.uhabits"
+200-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:176:21-54
+201                    android:scheme="content" />
+201-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:177:21-45
+202            </intent-filter>
+203        </receiver>
+204
+205        <!-- Locale/Tasker -->
+206        <activity
+206-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:200:9-208:20
+207            android:name="org.isoron.uhabits.automation.EditSettingActivity"
+207-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:201:13-59
+208            android:exported="true"
+208-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:202:13-36
+209            android:icon="@mipmap/ic_launcher"
+209-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:203:13-47
+210            android:label="@string/app_name" >
+210-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:204:13-45
+211            <intent-filter>
+211-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:205:13-207:29
+212                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+212-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:206:17-94
+212-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:206:25-92
+213            </intent-filter>
+214        </activity>
+215
+216        <!-- Locale/Tasker -->
+217        <receiver
+217-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:211:9-217:20
+218            android:name="org.isoron.uhabits.automation.FireSettingReceiver"
+218-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:212:13-59
+219            android:exported="true" >
+219-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:213:13-36
+220            <intent-filter>
+220-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:214:13-216:29
+221                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+221-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:215:17-94
+221-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:215:25-92
+222            </intent-filter>
+223        </receiver>
+224
+225        <provider
+225-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:219:9-227:20
+226            android:name="androidx.core.content.FileProvider"
+226-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:220:13-62
+227            android:authorities="org.isoron.uhabits"
+227-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:221:13-53
+228            android:exported="false"
+228-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:222:13-37
+229            android:grantUriPermissions="true" >
+229-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:223:13-47
+230            <meta-data
+230-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:224:13-226:53
+231                android:name="android.support.FILE_PROVIDER_PATHS"
+231-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:225:17-67
+232                android:resource="@xml/file_paths" />
+232-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:226:17-51
+233        </provider>
+234
+235        <service
+235-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:229:9-233:19
+236            android:name="org.isoron.uhabits.sync.SyncService"
+236-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:230:13-45
+237            android:enabled="true"
+237-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:231:13-35
+238            android:exported="false" >
+238-->/Users/emilyli/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:232:13-37
+239        </service>
+240        <service
+240-->[androidx.room:room-runtime:2.2.1] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/070938d54ddb782f19975c379db75655/room-runtime-2.2.1/AndroidManifest.xml:25:9-27:40
+241            android:name="androidx.room.MultiInstanceInvalidationService"
+241-->[androidx.room:room-runtime:2.2.1] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/070938d54ddb782f19975c379db75655/room-runtime-2.2.1/AndroidManifest.xml:26:13-74
+242            android:exported="false" />
+242-->[androidx.room:room-runtime:2.2.1] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/070938d54ddb782f19975c379db75655/room-runtime-2.2.1/AndroidManifest.xml:27:13-37
+243
+244        <provider
+244-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+245            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+245-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+246            android:authorities="org.isoron.uhabits.lifecycle-process"
+246-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+247            android:exported="false"
+247-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+248            android:multiprocess="true" />
+248-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/emilyli/.gradle/caches/transforms-2/files-2.1/f40de77382666bd1ce072385385aa8df/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+249    </application>
+250
+251</manifest>
