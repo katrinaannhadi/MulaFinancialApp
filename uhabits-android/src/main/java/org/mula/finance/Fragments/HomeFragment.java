@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -48,6 +49,8 @@ public class HomeFragment extends Fragment {
     private View view;
     private Button goalsButton;
     private Context context;
+    private MediaPlayer mp;
+
 
 
     public HomeFragment() {
@@ -74,6 +77,9 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_home, container, false);
         context = view.getContext();
+        mp = MediaPlayer.create(context, R.raw.hero_decorative_celebration_01);
+
+
 
         goalsButton = view.findViewById(R.id.button_goals);
         goalsButton.setText("Goals");
@@ -81,6 +87,7 @@ public class HomeFragment extends Fragment {
         goalsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mp.start();
                 Intent intent = new Intent(context, ListHabitsActivity.class);
                 context.startActivity(intent);
             }

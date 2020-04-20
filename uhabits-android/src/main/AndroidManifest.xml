@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.mula.finance">
 
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -14,12 +15,17 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/main_activity_title"
         android:supportsRtl="true"
+        tools:replace="android:label"
         android:theme="@style/AppBaseTheme">
         <activity android:name=".activities.MainActivity"></activity>
+
 
         <meta-data
             android:name="com.google.android.backup.api_key"
             android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name=".activities.habits.list.ListHabitsActivity"
@@ -28,8 +34,20 @@
             android:launchMode="singleTop" />
 
 
+      <!--  <activity-alias
+            android:name=".activities.habits.list.ListHabitsActivity"
+            android:label="@string/main_activity_title"
+            android:launchMode="singleTop"
+            android:targetActivity=".activities.habits.list.ListHabitsActivity">
+            <intent-filter android:label="@string/main_activity_title">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias> -->
+
         <activity-alias
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
             android:targetActivity=".activities.MainActivity">

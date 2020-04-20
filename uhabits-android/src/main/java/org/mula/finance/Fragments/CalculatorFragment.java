@@ -32,6 +32,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import org.mula.finance.Adapters.CalculatorAdapter;
+import org.mula.finance.Models.Category;
 import org.mula.finance.Models.Company;
 import org.mula.finance.Models.DailyPrice;
 import org.mula.finance.Models.IntentLink;
@@ -42,6 +43,7 @@ import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -154,14 +156,15 @@ public class CalculatorFragment extends Fragment {
         context = view.getContext();
 
         calc = new ArrayList<>();
+        List<Category> blank = new ArrayList<>();
 
         calc.add(new IntentLink("Investment",
                 new Intent(context, InvestmentCalculatorActivity.class),
-                R.drawable.image_investment, Color.parseColor("#B233FF")));
+                R.drawable.image_investment, Color.parseColor("#B233FF"), blank));
 
         calc.add(new IntentLink("Tax",
                 new Intent(context, TaxCalculatorActivity.class),
-                R.drawable.image_investment, Color.parseColor("#69FA8F")));
+                R.drawable.image_investment, Color.parseColor("#69FA8F"), blank));
 
         //calc.add(new IntentLink("Goals",
            //     new Intent(context, ListHabitsActivity.class),

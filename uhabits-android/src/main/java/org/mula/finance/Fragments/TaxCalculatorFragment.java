@@ -51,7 +51,7 @@ public class TaxCalculatorFragment extends Fragment {
         EditText2 = (EditText) view.findViewById(R.id.EditText2);
         textViewR2 = view.findViewById(R.id.textViewR2);
         textViewR3 = view.findViewById(R.id.textViewR3);
-        textViewR4 = view.findViewById(R.id.textViewR4);
+        textViewR4 = view.findViewById(R.id.textView4);
         button = view.findViewById(R.id.button);
         switch1 = (Switch) view.findViewById(R.id.switch1);
 

@@ -26,9 +26,21 @@
         android:testOnly="true"
         android:theme="@style/AppBaseTheme" >
         <activity android:name="org.mula.finance.activities.MainActivity" />
+        <!--
+  <activity-alias
+            android:name=".activities.habits.list.ListHabitsActivity"
+            android:label="@string/main_activity_title"
+            android:launchMode="singleTop"
+            android:targetActivity=".activities.habits.list.ListHabitsActivity">
+            <intent-filter android:label="@string/main_activity_title">
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        -->
         <activity-alias
-            android:name="org.mula.finance.MainActivity"
+            android:name="org.mula.finance.activities.MainActivity"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
             android:targetActivity="org.mula.finance.activities.MainActivity" >
@@ -42,6 +54,9 @@
         <meta-data
             android:name="com.google.android.backup.api_key"
             android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name="org.mula.finance.activities.habits.list.ListHabitsActivity"

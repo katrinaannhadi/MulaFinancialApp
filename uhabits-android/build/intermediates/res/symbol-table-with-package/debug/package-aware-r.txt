@@ -45,11 +45,15 @@ animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array actions
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
 array darkPalette
 array frequencyQuickSelect
 array habitTypes
 array hints
 array lightPalette
+array preloaded_fonts
 array snooze_interval_names
 array snooze_interval_values
 array snooze_picker_names
@@ -1644,6 +1648,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_image
 drawable card_amoled_background
 drawable card_dark_background
 drawable card_light_background
@@ -1728,6 +1733,9 @@ drawable widget_preview_frequency
 drawable widget_preview_history
 drawable widget_preview_score
 drawable widget_preview_streaks
+font karla
+font mandali
+font palanquin_extralight
 id ALT
 id CTRL
 id EditText1
@@ -1833,6 +1841,7 @@ id barChart
 id barrier
 id baseline
 id beginning
+id bg_light
 id blocking
 id boolSpinner
 id bottom
@@ -1876,6 +1885,7 @@ id color_picker_swatch
 id constraint_daily_quiz
 id constraint_home
 id constraint_start_quiz
+id constraint_tax
 id container
 id container_popup
 id content
@@ -1992,6 +2002,7 @@ id layout
 id left
 id line
 id line1
+id line2
 id line3
 id lineFragment
 id lineView
@@ -2173,8 +2184,8 @@ id textView4
 id textView5
 id textViewR2
 id textViewR3
-id textViewR4
 id text_calculator
+id text_category
 id text_high_score
 id text_input_password_toggle
 id text_lineChart
@@ -2246,6 +2257,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id view
 id view_offset_helper
 id view_pager
 id visible
@@ -2316,6 +2328,7 @@ layout automation
 layout bottom_nav
 layout checkmark_stackview_widget
 layout chunk_calculator
+layout chunk_category
 layout color_picker_dialog
 layout color_picker_swatch
 layout custom_dialog
@@ -2432,6 +2445,10 @@ menu list_habits_selection
 menu show_habit
 mipmap ic_launcher
 mipmap ic_launcher_foreground
+raw hero_decorative_celebration_01
+raw navigation_backward_selection
+raw notification_high_intensity
+raw state_change_confirm_up
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

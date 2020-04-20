@@ -1,6 +1,7 @@
 package org.mula.finance.activities;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -34,6 +35,8 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     private TextView scoreText;
     // private QuizActivity quizActivity = this;
 
+    private MediaPlayer mp;
+
     private String TAG = "QuizActivity";
     private QuestionDatabase db;
 
@@ -60,6 +63,8 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         optionA = quizConstraintLayout.findViewById(R.id.radio_quiz_a);
         optionB = quizConstraintLayout.findViewById(R.id.radio_quiz_b);
         optionC = quizConstraintLayout.findViewById(R.id.radio_quiz_c);
+
+        mp = MediaPlayer.create(getApplicationContext(), R.raw.notification_high_intensity);
 
         continueBtn = quizConstraintLayout.findViewById(R.id.button_continue);
         continueBtn.setText("Continue");
@@ -129,6 +134,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
                         //scoreHistoryList.add(score);
                         //Toast to check for score at the end
                         Toast.makeText(getApplicationContext(), Integer.toString(score), Toast.LENGTH_LONG).show();
+                        mp.start();
                         finish();
                     }
 

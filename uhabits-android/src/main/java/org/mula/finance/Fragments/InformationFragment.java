@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.mula.finance.Adapters.CalculatorAdapter;
+import org.mula.finance.Adapters.CategoryAdapter;
+import org.mula.finance.Models.Category;
 import org.mula.finance.Models.IntentLink;
 import org.mula.finance.activities.InvestmentCalculatorActivity;
 import org.mula.finance.activities.QuizActivity;
@@ -32,6 +34,7 @@ public class InformationFragment extends Fragment {
     private ArrayList<IntentLink> calc;
     private Context context;
     private RecyclerView.LayoutManager layoutManager;
+    private ArrayList<Category> categoryList;
 
     private Button categoryOne;
     private Button categoryTwo;
@@ -66,18 +69,26 @@ public class InformationFragment extends Fragment {
         context = view.getContext();
 
         calc = new ArrayList<>();
+        ArrayList<Category> blank = new ArrayList<>();
+        categoryList = new ArrayList<>();
+        categoryList.add(new Category("Credit", 1));
+        categoryList.add(new Category("Investment", 2));
+        categoryList.add(new Category("Tax", 3));
+
 
         calc.add(new IntentLink("Quiz",
                 new Intent(context, QuizActivity.class),
-                R.drawable.image_investment, Color.parseColor("#B233FF")));
+                R.drawable.image_investment, Color.parseColor("#B233FF"), categoryList));
 
         //TODO:// change to articles intent
         calc.add(new IntentLink("Articles",
                 new Intent(context, TaxCalculatorActivity.class),
-                R.drawable.image_investment, Color.parseColor("#69FA8F")));
+                R.drawable.image_investment, Color.parseColor("#69FA8F"), blank));
 
-        CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);
-        rv.setAdapter(calcAdapter);
+
+        //CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);
+        CategoryAdapter categoryAdapter = new CategoryAdapter(calc);
+        rv.setAdapter(categoryAdapter);
 
        /* categoryOne = view.findViewById(R.id.button_category_one);
         categoryTwo = view.findViewById(R.id.button_category_two);

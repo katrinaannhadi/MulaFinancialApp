@@ -1,6 +1,8 @@
 package org.mula.finance.activities;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,14 +14,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import org.mula.finance.R;
 
+import java.io.File;
 import java.text.DecimalFormat;
 
 public class TaxCalculatorActivity extends AppCompatActivity {
 
         private EditText EditText1, EditText2;
         private TextView textViewR2, textViewR3, textViewR4;
-        private Button button;
+        private Button calcBtn;
+        private Button clearBtn;
         private Switch switch1;
+        private MediaPlayer mp;
+        private MediaPlayer mp2;
 
 
         @Override
@@ -31,9 +37,15 @@ public class TaxCalculatorActivity extends AppCompatActivity {
             EditText2 = (EditText) findViewById(R.id.EditText2);
             textViewR2 = findViewById(R.id.textViewR2);
             textViewR3 = findViewById(R.id.textViewR3);
-            textViewR4 = findViewById(R.id.textViewR4);
-            button = findViewById(R.id.button);
+            textViewR4 = findViewById(R.id.textView4);
+            calcBtn = findViewById(R.id.button);
+            clearBtn = findViewById(R.id.button2);
             switch1 = (Switch) findViewById(R.id.switch1);
+            switch1.setText("Weekly");
+
+            mp = MediaPlayer.create(getApplicationContext(), R.raw.state_change_confirm_up);
+            mp2 = MediaPlayer.create(getApplicationContext(), R.raw.navigation_backward_selection);
+
 
             switch1.setOnClickListener(new View.OnClickListener() {
 
@@ -41,15 +53,40 @@ public class TaxCalculatorActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     String statusSwitch1;
                     if (switch1.isChecked()) {//ON is yearly
+                        switch1.setText("Yearly");
                         statusSwitch1 = switch1.getTextOn().toString();
                         Toast.makeText(getApplicationContext(), "Switch1 :" + statusSwitch1, Toast.LENGTH_LONG).show();
                     } else { //OFF is weekly
+                        switch1.setText("Weekly");
                         statusSwitch1 = switch1.getTextOff().toString();
                         Toast.makeText(getApplicationContext(), "Switch1 :" + statusSwitch1, Toast.LENGTH_LONG).show();
                     }
                 }
             });
+
+            calcBtn.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    calculateTax(calcBtn);
+                    mp.start();
+                }
+            });
+
+
+            clearBtn.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    clearText(clearBtn);
+                    mp2.start();
+
+                }
+            });
+
         }
+
+
 
 
         public void calculateTax (View view) {
@@ -387,4 +424,6 @@ public class TaxCalculatorActivity extends AppCompatActivity {
             EditText2.getText().clear();
 
         }
+
+
     }

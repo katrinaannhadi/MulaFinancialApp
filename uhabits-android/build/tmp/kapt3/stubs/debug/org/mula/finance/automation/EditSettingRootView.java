@@ -62,7 +62,7 @@ public final class EditSettingRootView extends org.mula.androidbase.activities.B
         return 0;
     }
     
-    @butterknife.OnClick(value = {2131296375})
+    @butterknife.OnClick(value = {2131361912})
     public final void onClickSave() {
     }
     
