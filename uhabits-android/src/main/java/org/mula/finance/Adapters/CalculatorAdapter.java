@@ -3,6 +3,7 @@ package org.mula.finance.Adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,7 +58,10 @@ public class CalculatorAdapter extends RecyclerView.Adapter<CalculatorAdapter.Ca
     public void onBindViewHolder(@NonNull CalculatorViewHolder calcViewHolder, int position){
 
         final IntentLink intentLink = data.get(position);
-        calcViewHolder.view.setBackgroundResource(intentLink.getLinkDrawable());
+
+        Drawable icon = calcViewHolder.view.getResources().getDrawable(intentLink.getLinkDrawable());
+        calcViewHolder.view.setBackground(icon);
+        icon.mutate();
         calcViewHolder.view.getBackground().setColorFilter(intentLink.getLinkColourTint(), PorterDuff.Mode.MULTIPLY);
         calcViewHolder.textView.setText(intentLink.getLinkName());
         calcViewHolder.view.setOnClickListener(new View.OnClickListener(){

@@ -167,11 +167,11 @@ public class CalculatorFragment extends Fragment {
 
         calc.add(new IntentLink("Investment",
                 new Intent(context, InvestmentCalculatorActivity.class),
-                R.drawable.image_investment, Color.parseColor("#B233FF"), blank));
+                R.drawable.image_investment, R.color.light_blue_300, blank));
 
         calc.add(new IntentLink("Tax",
                 new Intent(context, TaxCalculatorActivity.class),
-                R.drawable.image_investment, Color.parseColor("#69FA8F"), blank));
+                R.drawable.image_investment, R.color.amber_50, blank));
 
         //calc.add(new IntentLink("Goals",
            //     new Intent(context, ListHabitsActivity.class),

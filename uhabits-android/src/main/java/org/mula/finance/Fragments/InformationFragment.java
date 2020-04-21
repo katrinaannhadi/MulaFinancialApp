@@ -78,12 +78,12 @@ public class InformationFragment extends Fragment {
 
         calc.add(new IntentLink("Quiz",
                 new Intent(context, QuizActivity.class),
-                R.drawable.image_investment, Color.parseColor("#B233FF"), categoryList));
+                R.drawable.image_investment, R.color.dark_lilac_300, categoryList));
 
         //TODO:// change to articles intent
         calc.add(new IntentLink("Articles",
                 new Intent(context, TaxCalculatorActivity.class),
-                R.drawable.image_investment, Color.parseColor("#69FA8F"), blank));
+                R.drawable.image_investment, R.color.green_300, blank));
 
 
         //CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);

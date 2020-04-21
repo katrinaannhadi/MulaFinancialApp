@@ -1,6 +1,7 @@
 package org.mula.finance.Adapters;
 
 import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -22,7 +23,10 @@ public class IntentLinkViewHolder extends GroupViewHolder {
 
     public void bind(IntentLink intentLink) {
         mTextView.setText(intentLink.getLinkName());
-        view.setBackgroundResource(intentLink.getLinkDrawable());
+
+        Drawable icon = view.getResources().getDrawable(intentLink.getLinkDrawable());
+        view.setBackground(icon);
+        icon.mutate();
         view.getBackground().setColorFilter(intentLink.getLinkColourTint(), PorterDuff.Mode.MULTIPLY);
     }
 

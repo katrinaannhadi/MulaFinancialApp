@@ -16,9 +16,9 @@ import org.mula.finance.R;
 public class ReminderPanel_ViewBinding implements Unbinder {
   private ReminderPanel target;
 
-  private View view7f0a01f6;
+  private View view7f0a01fc;
 
-  private View view7f0a01f5;
+  private View view7f0a01fb;
 
   @UiThread
   public ReminderPanel_ViewBinding(ReminderPanel target) {
@@ -32,7 +32,7 @@ public class ReminderPanel_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.tvReminderTime, "field 'tvReminderTime' and method 'onDateSpinnerClick'");
     target.tvReminderTime = Utils.castView(view, R.id.tvReminderTime, "field 'tvReminderTime'", TextView.class);
-    view7f0a01f6 = view;
+    view7f0a01fc = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class ReminderPanel_ViewBinding implements Unbinder {
     target.llReminderDays = Utils.findRequiredViewAsType(source, R.id.llReminderDays, "field 'llReminderDays'", ViewGroup.class);
     view = Utils.findRequiredView(source, R.id.tvReminderDays, "field 'tvReminderDays' and method 'onWeekdayClicked'");
     target.tvReminderDays = Utils.castView(view, R.id.tvReminderDays, "field 'tvReminderDays'", TextView.class);
-    view7f0a01f5 = view;
+    view7f0a01fb = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,9 +62,9 @@ public class ReminderPanel_ViewBinding implements Unbinder {
     target.llReminderDays = null;
     target.tvReminderDays = null;
 
-    view7f0a01f6.setOnClickListener(null);
-    view7f0a01f6 = null;
-    view7f0a01f5.setOnClickListener(null);
-    view7f0a01f5 = null;
+    view7f0a01fc.setOnClickListener(null);
+    view7f0a01fc = null;
+    view7f0a01fb.setOnClickListener(null);
+    view7f0a01fb = null;
   }
 }
