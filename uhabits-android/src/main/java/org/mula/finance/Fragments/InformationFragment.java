@@ -71,9 +71,9 @@ public class InformationFragment extends Fragment {
         calc = new ArrayList<>();
         ArrayList<Category> blank = new ArrayList<>();
         categoryList = new ArrayList<>();
-        categoryList.add(new Category("Credit", 1));
-        categoryList.add(new Category("Investment", 2));
-        categoryList.add(new Category("Tax", 3));
+        categoryList.add(new Category("Credit", 1, new Intent(context, QuizActivity.class)));
+        categoryList.add(new Category("Investment", 2, new Intent(context, QuizActivity.class)));
+        categoryList.add(new Category("Tax", 3, new Intent(context, QuizActivity.class)));
 
 
         calc.add(new IntentLink("Quiz",

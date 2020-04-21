@@ -1,5 +1,6 @@
 package org.mula.finance.Fragments;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -10,11 +11,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.NoConnectionError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -28,6 +31,7 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.CandleData;
 import com.github.mikephil.charting.data.CandleDataSet;
 import com.github.mikephil.charting.data.CandleEntry;
+import com.github.mikephil.charting.utils.EntryXComparator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -43,6 +47,7 @@ import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -73,6 +78,7 @@ public class CalculatorFragment extends Fragment {
     private Context context;
 
     private LinearLayoutManager layoutManager;
+    private CandleDataSet set1;
 
 
     public CalculatorFragment() {
@@ -141,10 +147,11 @@ public class CalculatorFragment extends Fragment {
 
         Legend l = candleStickChart.getLegend();
         l.setEnabled(false);
-
-
+        System.out.println("does this work");
 
         getStockPricesOnline();
+
+
 
 
 
@@ -185,59 +192,21 @@ public class CalculatorFragment extends Fragment {
         String url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&outputsize=compact&symbol=IBM&interval=60min&apikey=FD82S5VDRDGNB16U";
 
 
-        Response.Listener<String> responseListener = response -> {
-
-            GsonBuilder gsonBuilder = new GsonBuilder();
-            Gson gson = gsonBuilder.create();
-            String jsonString = response;
-
-
-            Company company = gson.fromJson(jsonString, Company.class);
-            Collection<DailyPrice> values = company.getCompanyStockPrices().values();
-            System.out.println(company.getCompanyStockPrices().keySet());
-            ArrayList<DailyPrice> dailyPrices = new ArrayList<DailyPrice>(values);
-
-            int size = dailyPrices.size();
-            for(int i = 0; i < size; i++) {
-                DailyPrice dailyPrice = dailyPrices.get(i);
-                float j = (float) i;
-                CandleEntry candleEntry = new CandleEntry(j,
-                        Float.parseFloat(dailyPrice.getDailyHigh()),
-                        Float.parseFloat(dailyPrice.getDailyLow()),
-                        Float.parseFloat(dailyPrice.getDailyOpen()),
-                        Float.parseFloat(dailyPrice.getDailyClose()));
-                yValsCandleStick.add(candleEntry);
-            }
-
-
-            CandleDataSet set1 = new CandleDataSet(yValsCandleStick, "DataSet 1");
-            set1.setColor(Color.rgb(80, 80, 80));
-            set1.setShadowColor(getResources().getColor(android.R.color.darker_gray));
-            set1.setDecreasingColor(getResources().getColor(android.R.color.holo_red_light));
-            set1.setDecreasingPaintStyle(Paint.Style.FILL);
-            set1.setIncreasingColor(getResources().getColor(android.R.color.background_light));
-            set1.setIncreasingPaintStyle(Paint.Style.FILL);
-            set1.setNeutralColor(Color.LTGRAY);
-            set1.setDrawValues(false);
-
-
-
-            // create a data object with the datasets
-            CandleData data = new CandleData(set1);
-
-
-            // set data
-            candleStickChart.setData(data);
-            candleStickChart.invalidate();
-            candleStickChart.setVisibleXRangeMaximum(7);
-            candleStickChart.moveViewToX(yValsCandleStick.size());
-
-        };
+        Response.Listener<String> responseListener = // set data
+                this::onResponse;
 
         Response.ErrorListener errorListener = new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 System.out.println("The request failed.");
+                Activity activity = getActivity();
+                if(activity != null && isAdded())
+
+                if (error instanceof NoConnectionError) {
+                    String errormsg = "No Internet";
+                    Toast.makeText(activity, errormsg, Toast.LENGTH_LONG).show();
+                }
+
             }
         };
 
@@ -245,6 +214,81 @@ public class CalculatorFragment extends Fragment {
         StringRequest stringRequest =
                 new StringRequest(Request.Method.GET, url, responseListener, errorListener);
         requestQueue.add(stringRequest);
+
+    }
+
+    private void onResponse(String response) {
+        Activity activity = getActivity();
+        if (isAdded() && activity != null) {
+            GsonBuilder gsonBuilder = new GsonBuilder();
+            Gson gson = gsonBuilder.create();
+            String jsonString = response;
+
+
+            Company company = gson.fromJson(jsonString, Company.class);
+
+            try {
+                Collection<DailyPrice> values = company.getCompanyStockPrices().values();
+                ArrayList<DailyPrice> dailyPrices = new ArrayList<DailyPrice>(values);
+
+
+                int size = dailyPrices.size();
+                for (int i = 0; i < size; i++) {
+                    DailyPrice dailyPrice = dailyPrices.get(i);
+                    float j = (float) i;
+                    CandleEntry candleEntry = new CandleEntry(j,
+                            Float.parseFloat(dailyPrice.getDailyHigh()),
+                            Float.parseFloat(dailyPrice.getDailyLow()),
+                            Float.parseFloat(dailyPrice.getDailyOpen()),
+                            Float.parseFloat(dailyPrice.getDailyClose()));
+                    yValsCandleStick.add(candleEntry);
+                }
+                Collections.sort(yValsCandleStick, new EntryXComparator());
+                if (set1 != null) {
+                    set1 = new CandleDataSet(yValsCandleStick, "DataSet 1");
+                    set1.setColor(Color.rgb(80, 80, 80));
+                    set1.setShadowColor(getResources().getColor(android.R.color.darker_gray));
+                    set1.setDecreasingColor(getResources().getColor(android.R.color.holo_red_light));
+                    set1.setDecreasingPaintStyle(Paint.Style.FILL);
+                    set1.setIncreasingColor(getResources().getColor(android.R.color.background_light));
+                    set1.setIncreasingPaintStyle(Paint.Style.FILL);
+                    set1.setNeutralColor(Color.LTGRAY);
+                    set1.setDrawValues(false);
+
+                    candleStickChart.notifyDataSetChanged();
+                    CandleData candleData = new CandleData(set1);
+                    candleStickChart.setData(candleData);
+                    candleStickChart.invalidate();
+                    candleStickChart.setVisibleXRangeMaximum(7);
+                    candleStickChart.moveViewToX(yValsCandleStick.size());
+
+                } else if (set1 == null) {
+                    set1 = new CandleDataSet(yValsCandleStick, "DataSet 1");
+                    set1.setColor(Color.rgb(80, 80, 80));
+                    set1.setShadowColor(getResources().getColor(android.R.color.darker_gray));
+                    set1.setDecreasingColor(getResources().getColor(android.R.color.holo_red_light));
+                    set1.setDecreasingPaintStyle(Paint.Style.FILL);
+                    set1.setIncreasingColor(getResources().getColor(android.R.color.background_light));
+                    set1.setIncreasingPaintStyle(Paint.Style.FILL);
+                    set1.setNeutralColor(Color.LTGRAY);
+                    set1.setDrawValues(false);
+                    System.out.println("Is this where it fails");
+
+                    CandleData data = new CandleData(set1);
+
+
+                    // set data
+                    candleStickChart.setData(data);
+                    candleStickChart.invalidate();
+                    candleStickChart.setVisibleXRangeMaximum(7);
+                    candleStickChart.moveViewToX(yValsCandleStick.size());
+                }
+
+            } catch (NullPointerException e){
+
+            }
+
+        }
 
     }
 }

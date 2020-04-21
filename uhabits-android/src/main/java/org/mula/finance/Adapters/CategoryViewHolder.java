@@ -10,14 +10,18 @@ import org.mula.finance.R;
 
 public class CategoryViewHolder extends ChildViewHolder {
 
+    public View view;
+
     private TextView mTextView;
 
     public CategoryViewHolder(View itemView) {
         super(itemView);
+        view = itemView;
         mTextView = itemView.findViewById(R.id.text_category);
     }
 
     public void bind(Category category){
         mTextView.setText(category.name);
+
     }
 }
