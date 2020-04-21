@@ -13,7 +13,8 @@
         android:id="@+id/constraint_start_quiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/amber_900">
+        android:backgroundTint="@color/amber_900"
+        android:paddingBottom = "24dp">
 
         <TextView
             android:id="@+id/text_quiz_average"

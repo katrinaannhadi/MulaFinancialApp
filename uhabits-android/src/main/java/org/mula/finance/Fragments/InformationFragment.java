@@ -2,12 +2,14 @@ package org.mula.finance.Fragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -36,10 +38,10 @@ public class InformationFragment extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private ArrayList<Category> categoryList;
 
-    private Button categoryOne;
-    private Button categoryTwo;
-    private Button categoryThree;
-    private int value;
+    private TextView titleAverage, titleTopCategory, textAverage, textTopCategory;
+
+    private SharedPreferences pref;
+    private SharedPreferences.Editor editor;
 
 
 
@@ -67,6 +69,49 @@ public class InformationFragment extends Fragment {
         layoutManager = new LinearLayoutManager(view.getContext());
         rv.setLayoutManager(layoutManager);
         context = view.getContext();
+
+        titleAverage = view.findViewById(R.id.text_quiz_average);
+        titleTopCategory = view.findViewById(R.id.text_high_score);
+        textAverage = view.findViewById(R.id.text_score);
+        textTopCategory = view.findViewById(R.id.text_percentage);
+        titleAverage.setText("Accuracy Rate:");
+        titleTopCategory.setText("Top Category:");
+
+        pref = context.getSharedPreferences("My Pref", 0);
+        editor = pref.edit();
+
+        switch (pref.getInt("CATEGORY", 0)){
+            case 1:
+                textTopCategory.setText("Credit");
+                break;
+            case 2:
+                textTopCategory.setText("Investment");
+                break;
+            case 3:
+                textTopCategory.setText("Tax");
+                break;
+            default:
+                textTopCategory.setText("N/A");
+                break;
+        }
+
+        //TODO:// change this to QuizActivity
+        int total = 0;
+        int divisor = 0;
+        for(int i = 0; i < QuizActivity.scoreHistoryList.size(); i++){
+            total += QuizActivity.scoreHistoryList.get(i);
+            divisor = i;
+        }
+
+        try {
+            int average = total/divisor;
+            textAverage.setText(average + "%");
+        } catch (ArithmeticException e){
+            textAverage.setText("0%");
+        }
+
+
+
 
         calc = new ArrayList<>();
         ArrayList<Category> blank = new ArrayList<>();

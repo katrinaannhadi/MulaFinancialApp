@@ -1,6 +1,8 @@
 package org.mula.finance.activities;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
@@ -46,7 +48,12 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     private List<Question> questionList;
     private QuizActivity quizActivity = this;
 
+    private SharedPreferences pref;
+    private SharedPreferences.Editor editor;
+    private int difficulty;
+
     public static ArrayList<Integer> scoreHistoryList = new ArrayList<>();
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +71,10 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         optionB = quizConstraintLayout.findViewById(R.id.radio_quiz_b);
         optionC = quizConstraintLayout.findViewById(R.id.radio_quiz_c);
 
+        context = this;
+        pref = context.getSharedPreferences("My Pref", 0);
+        editor = pref.edit();
+
         mp = MediaPlayer.create(getApplicationContext(), R.raw.notification_high_intensity);
 
         continueBtn = quizConstraintLayout.findViewById(R.id.button_continue);
@@ -71,7 +82,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
         //TODO:: change to category
         Intent quizIntent = getIntent();
-        int difficulty = quizIntent.getIntExtra("Difficulty", 1);
+        difficulty = quizIntent.getIntExtra("Difficulty", 1);
 
         db = db.getInstance(this);
 
@@ -98,6 +109,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         currentQuestion = questionList.get(0);
         setQuestion(currentQuestion, score);
         final List<Question> questions = questionList;
+
 
 
         continueBtn.setOnClickListener(new View.OnClickListener() {
@@ -134,6 +146,22 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
                         //scoreHistoryList.add(score);
                         //Toast to check for score at the end
                         Toast.makeText(getApplicationContext(), Integer.toString(score), Toast.LENGTH_LONG).show();
+                        scoreHistoryList.add((score/(questionNum+2))*100);
+                        int highscore = 0;
+                        int check = -1;
+                        for(int i = 0; i < scoreHistoryList.size(); i++){
+                            if(highscore <= scoreHistoryList.get(i)){
+                                highscore = scoreHistoryList.get(i);
+                                editor.putInt("HIGH_SCORE", highscore);
+                                check++;
+                            }
+                        }
+                        if (check != -1){
+                            editor.putInt("CATEGORY", difficulty).commit();
+                        } else {
+                            editor.commit();
+                        }
+
                         mp.start();
                         finish();
                     }
