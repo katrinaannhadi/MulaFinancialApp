@@ -37,13 +37,13 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int notification_action_color_filter = 0x7f060188;
-        public static final int notification_icon_bg_color = 0x7f060189;
-        public static final int notification_material_background_media_default_color = 0x7f06018a;
-        public static final int primary_text_default_material_dark = 0x7f0601ae;
-        public static final int ripple_material_light = 0x7f0601d1;
-        public static final int secondary_text_default_material_dark = 0x7f0601d2;
-        public static final int secondary_text_default_material_light = 0x7f0601d3;
+        public static final int notification_action_color_filter = 0x7f060189;
+        public static final int notification_icon_bg_color = 0x7f06018a;
+        public static final int notification_material_background_media_default_color = 0x7f06018b;
+        public static final int primary_text_default_material_dark = 0x7f0601af;
+        public static final int ripple_material_light = 0x7f0601d2;
+        public static final int secondary_text_default_material_dark = 0x7f0601d3;
+        public static final int secondary_text_default_material_light = 0x7f0601d4;
     }
     public static final class dimen {
         private dimen() {}
@@ -180,7 +180,7 @@ public final class R {
         public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f13019b;
         public static final int Widget_Compat_NotificationActionContainer = 0x7f13028b;
         public static final int Widget_Compat_NotificationActionText = 0x7f13028c;
-        public static final int Widget_Support_CoordinatorLayout = 0x7f1302f3;
+        public static final int Widget_Support_CoordinatorLayout = 0x7f1302f5;
     }
     public static final class styleable {
         private styleable() {}

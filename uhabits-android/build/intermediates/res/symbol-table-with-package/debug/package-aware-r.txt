@@ -1051,6 +1051,7 @@ color blue_grey_600
 color blue_grey_700
 color blue_grey_800
 color blue_grey_900
+color bottom_nav_item
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2054,6 +2055,7 @@ drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
 drawable ripple
 drawable ripple_transparent
+drawable seekbar_track
 drawable selected_box
 drawable selected_box_amoled
 drawable selected_box_dark
@@ -4001,6 +4003,8 @@ style Widget_MaterialComponents_Toolbar
 style Widget_MaterialComponents_Toolbar_Primary
 style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
+style Widget_Mula_BottomNavigationView
+style Widget_Mula_SeekBar
 style Widget_Support_CoordinatorLayout
 style WidgetTheme
 style ampm_label

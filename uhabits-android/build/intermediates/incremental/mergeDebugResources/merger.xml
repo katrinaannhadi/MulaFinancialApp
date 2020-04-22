@@ -6225,8 +6225,8 @@
         <item name="android:navigationBarColor">@color/nav_bar</item>
         <item name="android:statusBarColor">@color/immersive_sys_ui</item>
 
-
-
+        
+        <item name="bottomNavigationStyle">@style/Widget.Mula.BottomNavigationView</item>
 
     </style><style name="SmallSpinner">
         <item name="android:textColor">?mediumContrastTextColor</item>
@@ -6400,6 +6400,18 @@
         <item name="colorPrimaryVariant">@color/mula_blue_800</item>
         <item name="colorSecondary">@color/mula_yellow_500</item>
         <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+    </style><style name="Widget.Mula.BottomNavigationView" parent="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+        <item name="labelVisibilityMode">selected</item>
+        <item name="itemIconTint">@color/bottom_nav_item</item>
+        <item name="itemTextColor">@color/bottom_nav_item</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.Mula.BottomNavigation</item>
+    </style><style name="Widget.Mula.SeekBar" parent="@style/Widget.AppCompat.SeekBar">
+        <item name="android:progressTint">@color/mula_yellow_500</item>
+        <item name="android:secondaryProgressTint">#99ffffff</item>
+        <item name="android:thumbTint">@color/mula_yellow_500</item>
+        <item name="android:progressDrawable">@drawable/seekbar_track</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
     </style></file><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/constants.xml" qualifiers=""><string name="helpURL">http://loophabits.org/faq.html</string><string name="playStoreURL">market://details?id=org.mula.finance</string><string formatted="false" name="feedbackURL">mailto:dev@loophabits.org?subject=Feedback%20about%20Loop%20Habit%20Tracker</string><string formatted="false" name="bugReportURL">mailto:dev@loophabits.org?subject=Bug%20Report%20-%20Loop%20Habit%20Tracker</string><string formatted="false" name="privacyPolicyURL">http://loophabits.org/privacy</string><string formatted="false" name="codeContributorsURL">https://github.com/iSoron/uhabits/graphs/contributors</string><string name="sourceCodeURL">https://github.com/iSoron/uhabits</string><string name="translateURL">http://translate.loophabits.org/</string><string name="bugReportTo">dev@loophabits.org</string><string name="bugReportSubject">Bug Report - Loop Habit Tracker</string><string-array name="snooze_interval_names">
         <item>@string/interval_15_minutes</item>
         <item>@string/interval_30_minutes</item>
@@ -6615,7 +6627,7 @@
   </style><style name="TextAppearance.Mula.BottomNavigation" parent="TextAppearance.Mula.Caption">
     <item name="android:textAllCaps">true</item>
     <item name="android:letterSpacing">0.08</item>
-  </style></file><file name="rubik" path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/font/rubik.xml" qualifiers="" type="font"/></source><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/generated/res/rs/debug"/><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+  </style></file><file name="rubik" path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/font/rubik.xml" qualifiers="" type="font"/><file name="seekbar_track" path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/seekbar_track.xml" qualifiers="hdpi-v4" type="drawable"/><file name="bottom_nav_item" path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/color/bottom_nav_item.xml" qualifiers="" type="color"/></source><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/generated/res/rs/debug"/><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

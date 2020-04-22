@@ -83,10 +83,29 @@
         <item name="android:navigationBarColor">@color/nav_bar</item>
         <item name="android:statusBarColor">@color/immersive_sys_ui</item>
 
-<!--        &lt;!&ndash;Default styles&ndash;&gt;-->
-<!--        <item name="bottomNavigationStyle">@style/Widget.Mula.BottomNavigationView</item>-->
+        <!--Default styles-->
+        <item name="bottomNavigationStyle">@style/Widget.Mula.BottomNavigationView</item>
 
     </style>
+
+    <style
+        name="Widget.Mula.BottomNavigationView"
+        parent="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+        <item name="labelVisibilityMode">selected</item>
+        <item name="itemIconTint">@color/bottom_nav_item</item>
+        <item name="itemTextColor">@color/bottom_nav_item</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.Mula.BottomNavigation</item>
+    </style>
+
+    <style name="Widget.Mula.SeekBar" parent="@style/Widget.AppCompat.SeekBar">
+        <item name="android:progressTint">@color/mula_yellow_500</item>
+        <item name="android:secondaryProgressTint">#99ffffff</item>
+        <item name="android:thumbTint">@color/mula_yellow_500</item>
+        <item name="android:progressDrawable">@drawable/seekbar_track</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+    </style>
+
 
     <style name="Mula" parent="@style/Base.Mula"/>
 
