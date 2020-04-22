@@ -6206,20 +6206,20 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Mula.MediumComponent</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Mula.LargeComponent</item>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Mula.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Mula.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Mula.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Mula.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Mula.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Mula.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Mula.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Mula.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Mula.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Mula.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Mula.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Mula.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Mula.Overline</item>
 
         
         <item name="android:navigationBarColor">@color/nav_bar</item>
@@ -6574,7 +6574,48 @@
     <item name="cornerSizeBottomLeft">16dp</item>
   </style><style name="ShapeAppearance.Mula.MinimizedSheet" parent="ShapeAppearance.Mula.MediumComponent">
     <item name="cornerSizeTopLeft">@dimen/minimized_sheet_top_left_radius</item>
-  </style><dimen name="small_component_top_left_radius">28dp</dimen><dimen name="minimized_sheet_top_left_radius">48dp</dimen></file></source><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/generated/res/rs/debug"/><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+  </style><dimen name="small_component_top_left_radius">28dp</dimen><dimen name="minimized_sheet_top_left_radius">48dp</dimen></file><file name="rubik_medium" path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/font/rubik_medium.xml" qualifiers="" type="font"/><file name="rubik_bold" path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/font/rubik_bold.xml" qualifiers="" type="font"/><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/type.xml" qualifiers=""><style name="TextAppearance.Mula.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+    <item name="fontFamily">@font/rubik_bold</item>
+    <item name="android:textStyle">bold</item>
+  </style><style name="TextAppearance.Mula.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+    <item name="fontFamily">@font/rubik_bold</item>
+    <item name="android:textStyle">bold</item>
+  </style><style name="TextAppearance.Mula.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+    <item name="fontFamily">@font/rubik_bold</item>
+    <item name="android:textStyle">bold</item>
+  </style><style name="TextAppearance.Mula.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+    <item name="fontFamily">@font/rubik_bold</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">?android:attr/textColorPrimary</item>
+    <item name="lineHeight">40sp</item>
+  </style><style name="TextAppearance.Mula.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+    <item name="fontFamily">@font/rubik_bold</item>
+    <item name="android:textStyle">bold</item>
+  </style><style name="TextAppearance.Mula.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+    <item name="fontFamily">@font/rubik_medium</item>
+    <item name="lineHeight">28sp</item>
+  </style><style name="TextAppearance.Mula.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+    <item name="fontFamily">@font/rubik_medium</item>
+    <item name="lineHeight">22sp</item>
+  </style><style name="TextAppearance.Mula.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+    <item name="fontFamily">@font/rubik_medium</item>
+  </style><style name="TextAppearance.Mula.Body1" parent="TextAppearance.MaterialComponents.Body1">
+    <item name="fontFamily">@font/rubik</item>
+    <item name="lineHeight">28sp</item>
+  </style><style name="TextAppearance.Mula.Body2" parent="TextAppearance.MaterialComponents.Body2">
+    <item name="fontFamily">@font/rubik</item>
+    <item name="lineHeight">16sp</item>
+  </style><style name="TextAppearance.Mula.Button" parent="TextAppearance.MaterialComponents.Button">
+    <item name="fontFamily">@font/rubik_bold</item>
+    <item name="android:textStyle">bold</item>
+  </style><style name="TextAppearance.Mula.Caption" parent="TextAppearance.MaterialComponents.Caption">
+    <item name="fontFamily">@font/rubik</item>
+  </style><style name="TextAppearance.Mula.Overline" parent="TextAppearance.MaterialComponents.Overline">
+    <item name="fontFamily">@font/rubik</item>
+  </style><style name="TextAppearance.Mula.BottomNavigation" parent="TextAppearance.Mula.Caption">
+    <item name="android:textAllCaps">true</item>
+    <item name="android:letterSpacing">0.08</item>
+  </style></file><file name="rubik" path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/font/rubik.xml" qualifiers="" type="font"/></source><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/generated/res/rs/debug"/><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>
