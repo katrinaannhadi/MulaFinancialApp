@@ -55,7 +55,7 @@ public class TaxCalculatorFragment extends Fragment {
         button = view.findViewById(R.id.button);
 
 
-      
+
         return view;
     }
 
