@@ -6129,7 +6129,7 @@
         <item>@color/black_aa</item>
         <item>@color/black_aa</item>
         <item>@color/black_aa</item>
-    </array><color name="purple_300">#6663A4</color><color name="pink_300">#D767CD</color><color name="green_300">#48C4B6</color><color name="pink_dark_primary_300">#FF3467</color><color name="light_grey_300">#98989B</color><color name="light_blue_300">#48C4B6</color><color name="light_green_300">#A0DCE0</color><color name="dark_green_300">#33909F</color><color name="light_lilac_300">#B2B1D1</color><color name="lilac_300">#B789BA</color><color name="dark_lilac_300">#6663A4</color><color name="blue_300">#8CC8E6</color><color name="medium_blue_300">#1992CE</color><color name="dark_blue_300">#011F6A</color><color name="ic_launcher_background">#1976D2</color></file><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/dimens.xml" qualifiers=""><dimen name="baseSize">20dp</dimen><dimen name="checkmarkWidth">48dp</dimen><dimen name="checkmarkHeight">48dp</dimen><dimen name="history_editor_max_height">450dp</dimen><dimen name="history_editor_padding">8dp</dimen><dimen name="history_max_font_size">@dimen/regularTextSize</dimen><dimen name="regularTextSize">16sp</dimen><dimen name="smallTextSize">14sp</dimen><dimen name="smallerTextSize">12sp</dimen><dimen name="tinyTextSize">10sp</dimen><dimen name="habitNameWidth">160dp</dimen><dimen name="progressbarOffset">-6dp</dimen><dimen name="checkmarkWidget_heightBreakpoint">55dp</dimen></file><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/keys.xml" qualifiers=""><string name="habit_key" translatable="false"/><string name="offset_key" translatable="false"/><string name="toggle_key" translatable="false"/><item name="timestamp_key" type="id"/></file><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/font_certs.xml" qualifiers=""><array name="com_google_android_gms_fonts_certs">
+    </array><color name="purple_300">#6663A4</color><color name="pink_300">#D767CD</color><color name="green_300">#48C4B6</color><color name="pink_dark_primary_300">#FF3467</color><color name="light_grey_300">#98989B</color><color name="light_blue_300">#48C4B6</color><color name="light_green_300">#A0DCE0</color><color name="dark_green_300">#33909F</color><color name="light_lilac_300">#B2B1D1</color><color name="lilac_300">#B789BA</color><color name="dark_lilac_300">#6663A4</color><color name="blue_300">#8CC8E6</color><color name="medium_blue_300">#1992CE</color><color name="dark_blue_300">#011F6A</color><color name="ic_launcher_background">#1976D2</color><color name="mula_pink_500">#ffc000</color><color name="mula_blue_200">#91a4fc</color><color name="mula_pink_600">#ffde03</color><color name="mula_yellow_200">#13F28A</color><color name="mula_yellow_400">#018786</color><color name="mula_blue_700">#0336ff</color><color name="mula_blue_800">#0035c9</color><color name="colorPrimaryDark">#3700B3</color><color name="immersive_sys_ui">#33000000</color><color name="mula_pink_dark_primary">#24191c</color><color name="mula_blue_dark_primary">#1c1d24</color><color name="mula_yellow_500">#AAFFBF</color><color name="mula_yellow_dark_primary">#242316</color><color name="colorPrimary">#6200EE</color><color name="colorAccent">#03DAC5</color><color name="nav_bar">@color/immersive_sys_ui</color><color name="mula_pink_200">#ffeb46</color></file><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/dimens.xml" qualifiers=""><dimen name="baseSize">20dp</dimen><dimen name="checkmarkWidth">48dp</dimen><dimen name="checkmarkHeight">48dp</dimen><dimen name="history_editor_max_height">450dp</dimen><dimen name="history_editor_padding">8dp</dimen><dimen name="history_max_font_size">@dimen/regularTextSize</dimen><dimen name="regularTextSize">16sp</dimen><dimen name="smallTextSize">14sp</dimen><dimen name="smallerTextSize">12sp</dimen><dimen name="tinyTextSize">10sp</dimen><dimen name="habitNameWidth">160dp</dimen><dimen name="progressbarOffset">-6dp</dimen><dimen name="checkmarkWidget_heightBreakpoint">55dp</dimen></file><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/keys.xml" qualifiers=""><string name="habit_key" translatable="false"/><string name="offset_key" translatable="false"/><string name="toggle_key" translatable="false"/><item name="timestamp_key" type="id"/></file><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/font_certs.xml" qualifiers=""><array name="com_google_android_gms_fonts_certs">
         <item>@array/com_google_android_gms_fonts_certs_dev</item>
         <item>@array/com_google_android_gms_fonts_certs_prod</item>
     </array><string-array name="com_google_android_gms_fonts_certs_dev">
@@ -6200,6 +6200,31 @@
 
         <item name="scrollableRecyclerViewStyle">@style/ScrollableRecyclerViewStyle</item>
     </style><style name="Base.Mula" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:statusBarColor">@color/immersive_sys_ui</item>
+
 
 
 
@@ -6348,6 +6373,33 @@
         <item name="windowNoTitle">false</item>
     </style><style name="ScrollableRecyclerViewStyle" parent="android:Widget">
         <item name="android:scrollbars">vertical</item>
+    </style><style name="Mula.Yellow">
+        <item name="colorPrimary">@color/mula_yellow_500</item>
+        <item name="colorPrimaryVariant">@color/mula_yellow_400</item>
+        <item name="colorSecondary">@color/mula_blue_700</item>
+        <item name="colorSecondaryVariant">@color/mula_blue_800</item>
+    </style><style name="ThemeOverlay.Mula.Blue.Dark" parent="@style/ThemeOverlay.MaterialComponents.Dark">
+        <item name="colorPrimary">@color/mula_blue_700</item>
+        <item name="colorPrimaryVariant">@color/mula_blue_800</item>
+        <item name="colorSecondary">@color/mula_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+        <item name="colorOnPrimary">#fff</item>
+    </style><style name="Mula.Pink">
+        <item name="colorPrimary">@color/mula_pink_500</item>
+        <item name="colorSecondary">@color/mula_pink_500</item>
+        <item name="colorPrimaryVariant">@color/mula_pink_600</item>
+        <item name="colorOnPrimary">#000</item>
+    </style><style name="ThemeOverlay.Mula.Blue" parent="@style/ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/mula_blue_700</item>
+        <item name="colorPrimaryVariant">@color/mula_blue_800</item>
+        <item name="colorSecondary">@color/mula_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+        <item name="colorOnPrimary">#fff</item>
+    </style><style name="Mula" parent="@style/Base.Mula"/><style name="Mula.Blue">
+        <item name="colorPrimary">@color/mula_blue_700</item>
+        <item name="colorPrimaryVariant">@color/mula_blue_800</item>
+        <item name="colorSecondary">@color/mula_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
     </style></file><file path="/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/values/constants.xml" qualifiers=""><string name="helpURL">http://loophabits.org/faq.html</string><string name="playStoreURL">market://details?id=org.mula.finance</string><string formatted="false" name="feedbackURL">mailto:dev@loophabits.org?subject=Feedback%20about%20Loop%20Habit%20Tracker</string><string formatted="false" name="bugReportURL">mailto:dev@loophabits.org?subject=Bug%20Report%20-%20Loop%20Habit%20Tracker</string><string formatted="false" name="privacyPolicyURL">http://loophabits.org/privacy</string><string formatted="false" name="codeContributorsURL">https://github.com/iSoron/uhabits/graphs/contributors</string><string name="sourceCodeURL">https://github.com/iSoron/uhabits</string><string name="translateURL">http://translate.loophabits.org/</string><string name="bugReportTo">dev@loophabits.org</string><string name="bugReportSubject">Bug Report - Loop Habit Tracker</string><string-array name="snooze_interval_names">
         <item>@string/interval_15_minutes</item>
         <item>@string/interval_30_minutes</item>

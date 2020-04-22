@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
     <array name="lightPalette">
         <item>@color/red_700</item>
         <item>@color/deep_orange_700</item>
@@ -68,6 +73,27 @@
         <item>@color/black_aa</item>
         <item>@color/black_aa</item>
     </array>
+
+
+    <!--theme colors-->
+    <color name="mula_yellow_200">#13F28A</color>
+    <color name="mula_yellow_400">#018786</color>
+    <color name="mula_yellow_500">#AAFFBF</color>
+    <color name="mula_yellow_dark_primary">#242316</color>
+
+    <color name="mula_blue_200">#91a4fc</color>
+    <color name="mula_blue_700">#0336ff</color>
+    <color name="mula_blue_800">#0035c9</color>
+    <color name="mula_blue_dark_primary">#1c1d24</color>
+
+    <color name="mula_pink_200">#ffeb46</color>
+    <color name="mula_pink_500">#ffc000</color>
+    <color name="mula_pink_600">#ffde03</color>
+    <color name="mula_pink_dark_primary">#24191c</color>
+
+    <!--background protection for nav-bar, varied on Q+-->
+    <color name="immersive_sys_ui">#33000000</color>
+    <color name="nav_bar">@color/immersive_sys_ui</color>
 
     <color name="purple_300">#6663A4</color>
     <color name="pink_300">#D767CD</color>

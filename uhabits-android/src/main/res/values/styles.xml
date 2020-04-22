@@ -56,10 +56,75 @@
         <item name="scrollableRecyclerViewStyle">@style/ScrollableRecyclerViewStyle</item>
     </style>
 
+//insert another theme here
     <style name="Base.Mula" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
+        <!--Material shape attributes-->
+<!--        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Mula.SmallComponent</item>-->
+<!--        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Mula.MediumComponent</item>-->
+<!--        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Mula.LargeComponent</item>-->
 
+<!--        &lt;!&ndash;Material type attributes&ndash;&gt;-->
+<!--        <item name="textAppearanceHeadline1">@style/TextAppearance.Mula.Headline1</item>-->
+<!--        <item name="textAppearanceHeadline2">@style/TextAppearance.Mula.Headline2</item>-->
+<!--        <item name="textAppearanceHeadline3">@style/TextAppearance.Mula.Headline3</item>-->
+<!--        <item name="textAppearanceHeadline4">@style/TextAppearance.Mula.Headline4</item>-->
+<!--        <item name="textAppearanceHeadline5">@style/TextAppearance.Mula.Headline5</item>-->
+<!--        <item name="textAppearanceHeadline6">@style/TextAppearance.Mula.Headline6</item>-->
+<!--        <item name="textAppearanceSubtitle1">@style/TextAppearance.Mula.Subtitle1</item>-->
+<!--        <item name="textAppearanceSubtitle2">@style/TextAppearance.Mula.Subtitle2</item>-->
+<!--        <item name="textAppearanceBody1">@style/TextAppearance.Mula.Body1</item>-->
+<!--        <item name="textAppearanceBody2">@style/TextAppearance.Mula.Body2</item>-->
+<!--        <item name="textAppearanceButton">@style/TextAppearance.Mula.Button</item>-->
+<!--        <item name="textAppearanceCaption">@style/TextAppearance.Mula.Caption</item>-->
+<!--        <item name="textAppearanceOverline">@style/TextAppearance.Mula.Overline</item>-->
 
+        <!--Platform attributes-->
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:statusBarColor">@color/immersive_sys_ui</item>
+
+<!--        &lt;!&ndash;Default styles&ndash;&gt;-->
+<!--        <item name="bottomNavigationStyle">@style/Widget.Mula.BottomNavigationView</item>-->
+
+    </style>
+
+    <style name="Mula" parent="@style/Base.Mula"/>
+
+    <style name="Mula.Yellow">
+        <item name="colorPrimary">@color/mula_yellow_500</item>
+        <item name="colorPrimaryVariant">@color/mula_yellow_400</item>
+        <item name="colorSecondary">@color/mula_blue_700</item>
+        <item name="colorSecondaryVariant">@color/mula_blue_800</item>
+    </style>
+
+    <style name="Mula.Blue">
+        <item name="colorPrimary">@color/mula_blue_700</item>
+        <item name="colorPrimaryVariant">@color/mula_blue_800</item>
+        <item name="colorSecondary">@color/mula_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+    </style>
+
+    <style name="ThemeOverlay.Mula.Blue" parent="@style/ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/mula_blue_700</item>
+        <item name="colorPrimaryVariant">@color/mula_blue_800</item>
+        <item name="colorSecondary">@color/mula_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+        <item name="colorOnPrimary">#fff</item>
+    </style>
+
+    <style name="ThemeOverlay.Mula.Blue.Dark" parent="@style/ThemeOverlay.MaterialComponents.Dark">
+        <item name="colorPrimary">@color/mula_blue_700</item>
+        <item name="colorPrimaryVariant">@color/mula_blue_800</item>
+        <item name="colorSecondary">@color/mula_yellow_500</item>
+        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+        <item name="colorOnPrimary">#fff</item>
+    </style>
+
+    <style name="Mula.Pink">
+        <item name="colorPrimary">@color/mula_pink_500</item>
+        <item name="colorSecondary">@color/mula_pink_500</item>
+        <item name="colorPrimaryVariant">@color/mula_pink_600</item>
+        <item name="colorOnPrimary">#000</item>
     </style>
 
 
