@@ -1694,6 +1694,7 @@ drawable ic_navigate_next_white_24dp
 drawable ic_notification
 drawable ic_repeat_black
 drawable ic_repeat_white
+drawable icon_mula
 drawable image_articles
 drawable image_investment
 drawable image_quiz
@@ -1861,6 +1862,7 @@ id buttonPanel
 id buttonPickColor
 id buttonSave
 id button_continue
+id button_end
 id button_goals
 id button_refresh
 id button_submit
@@ -1887,6 +1889,7 @@ id color_picker_checkmark
 id color_picker_swatch
 id constraint_daily_quiz
 id constraint_home
+id constraint_new_hs
 id constraint_start_quiz
 id constraint_tax
 id container
@@ -1990,6 +1993,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id indicator_container
 id info
 id innerFrame
@@ -2197,6 +2201,7 @@ id text_enter_hecs
 id text_high_score
 id text_input_password_toggle
 id text_lineChart
+id text_new_high_score
 id text_percentage
 id text_pieChart
 id text_question
@@ -2456,6 +2461,7 @@ menu show_habit
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 raw hero_decorative_celebration_01
+raw hero_simple_celebration_03
 raw navigation_backward_selection
 raw notification_high_intensity
 raw state_change_confirm_up

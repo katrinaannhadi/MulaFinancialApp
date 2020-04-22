@@ -1,6 +1,7 @@
 package org.mula.finance.activities;
 
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import org.mula.finance.Databases.QuestionDatabase;
 import org.mula.finance.Fragments.CalculatorFragment;
+import org.mula.finance.Fragments.CompleteQuizFragment;
 import org.mula.finance.Fragments.DailyQuizFragment;
 import org.mula.finance.Fragments.HomeFragment;
 import org.mula.finance.Fragments.InformationFragment;
@@ -96,6 +98,18 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         showQuizPopup();
 
 
+
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        if(pref.getInt("NEW_HIGH", 0)== 1){
+            MediaPlayer winMP = MediaPlayer.create(getApplicationContext(), R.raw.hero_simple_celebration_03);
+            winMP.start();
+            showNewHighScore();
+            editor.putInt("NEW_HIGH", 0).apply();
+        }
     }
 
 
@@ -148,6 +162,19 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
 
         }
 
+    }
+
+    private void showNewHighScore(){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        Fragment previous = fragmentManager.findFragmentByTag("new");
+        if (previous != null) {
+            fragmentTransaction.remove(previous);
+        }
+        fragmentTransaction.addToBackStack(null);
+
+        DialogFragment newHighScore = new CompleteQuizFragment();
+        newHighScore.show(fragmentManager, "new");
     }
 
 

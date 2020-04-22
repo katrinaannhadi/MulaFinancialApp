@@ -740,6 +740,10 @@
         "source": "C:\\Users\\Ines\\.gradle\\caches\\transforms-2\\files-2.1\\3513d0cb82dd496d9d371a7f2b6b40ca\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\res\\merged\\debug\\drawable_icon_mula.png.flat",
+        "source": "C:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\src\\main\\res\\drawable\\icon_mula.png"
+    },
+    {
         "merged": "C:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
         "source": "C:\\Users\\Ines\\.gradle\\caches\\transforms-2\\files-2.1\\3513d0cb82dd496d9d371a7f2b6b40ca\\appcompat-1.1.0\\res\\layout\\abc_cascading_menu_item_layout.xml"
     },
@@ -758,6 +762,10 @@
     {
         "merged": "C:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Ines\\.gradle\\caches\\transforms-2\\files-2.1\\3513d0cb82dd496d9d371a7f2b6b40ca\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\res\\merged\\debug\\raw_hero_simple_celebration_03.wav.flat",
+        "source": "C:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\src\\main\\res\\raw\\hero_simple_celebration_03.wav"
     },
     {
         "merged": "C:\\Users\\Ines\\AndroidStudioProjects\\MulaFinancialApp\\uhabits-android\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",

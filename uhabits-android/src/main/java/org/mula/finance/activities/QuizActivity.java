@@ -15,12 +15,18 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import org.mula.finance.AsyncTasks.QuestionAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.QuestionCategoryAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.QuestionCategoryRetrieveAsyncTask;
 import org.mula.finance.AsyncTasks.QuestionInsertAsyncTask;
 import org.mula.finance.Databases.QuestionDatabase;
+import org.mula.finance.Fragments.CompleteQuizFragment;
+import org.mula.finance.Fragments.DailyQuizFragment;
 import org.mula.finance.Models.Question;
 import org.mula.finance.R;
 
@@ -143,21 +149,22 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
                         continueBtn.setText("Finish Quiz");
                     } else {
-                        //scoreHistoryList.add(score);
-                        //Toast to check for score at the end
                         Toast.makeText(getApplicationContext(), Integer.toString(score), Toast.LENGTH_LONG).show();
                         scoreHistoryList.add((score/(questionNum+1))*100);
-                        int highscore = 0;
+                        int highScore = pref.getInt("HIGH_SCORE",0);
                         int check = -1;
                         for(int i = 0; i < scoreHistoryList.size(); i++){
-                            if(highscore <= scoreHistoryList.get(i)){
-                                highscore = scoreHistoryList.get(i);
-                                editor.putInt("HIGH_SCORE", highscore);
+                            if(highScore <= scoreHistoryList.get(i)){
+                                highScore = scoreHistoryList.get(i);
+                                editor.putInt("HIGH_SCORE", highScore);
                                 check++;
                             }
                         }
                         if (check != -1){
-                            editor.putInt("CATEGORY", difficulty).commit();
+                            editor.putInt("CATEGORY", difficulty);
+                            editor.putInt("NEW_CHECK", 1).commit();
+
+
                         } else {
                             editor.commit();
                         }
