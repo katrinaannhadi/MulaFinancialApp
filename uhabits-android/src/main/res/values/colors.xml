@@ -77,7 +77,7 @@
 
     <!--theme colors-->
     <color name="mula_turqoise_200">#13F28A</color>
-    <color name="mula_turqoise_400">#018786</color>
+    <color name="mula_turqoise_400">#03BAB9</color>
     <color name="mula_turqoise_500">#AAFFBF</color>
     <color name="mula_turqoise_dark_primary">#242316</color>
 
@@ -94,6 +94,7 @@
     <color name="mula_purple_200">#B2B1D1</color>
     <color name="mula_purple_500">#B789BA</color>
     <color name="mula_purple_600">#6663A4</color>
+    <color name="mula_grey_200">#98989B</color>
     <color name="mula_purple_dark_primary">#24191c</color>
     <color name="mula_purple_bright_accent">#FF3467</color>
     <color name="mula_purple_blue_accent">#48C4B6</color>

@@ -5,9 +5,9 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mula_yellow_500"
     android:clipChildren="false"
     android:orientation="vertical"
+    android:background="@color/mula_yellow_500"
     tools:targetApi="o">
 
     <ImageView
@@ -21,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread_inside"
-        app:srcCompat="@drawable/ic_piggy_bank"
         tools:ignore="MissingPrefix" />
 
     <TextView

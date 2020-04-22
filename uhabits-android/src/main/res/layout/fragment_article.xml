@@ -7,9 +7,8 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/grid_0_5"
     android:background="@color/mula_yellow_500"
-    android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
     android:transitionName="@{course.name}"
-    tools:context=".ui.article.ArticleDetailActivity">
+    >
 
     <ImageView
         android:id="@+id/imageView"

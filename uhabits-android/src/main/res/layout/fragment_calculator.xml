@@ -5,8 +5,9 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mula_turqoise_400"
     tools:context=".Fragments.CalculatorFragment"
-    android:background="@drawable/ic_background_purple">
+    >
 
     <com.github.mikephil.charting.charts.CandleStickChart
         android:id="@+id/candle_stick_chart"

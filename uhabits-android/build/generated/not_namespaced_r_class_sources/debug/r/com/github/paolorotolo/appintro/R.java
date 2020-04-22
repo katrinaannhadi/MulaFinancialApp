@@ -291,26 +291,26 @@ public final class R {
         public static final int material_grey_800 = 0x7f06013b;
         public static final int material_grey_850 = 0x7f06013c;
         public static final int material_grey_900 = 0x7f06013d;
-        public static final int primary_dark_material_dark = 0x7f0601b2;
-        public static final int primary_dark_material_light = 0x7f0601b3;
-        public static final int primary_material_dark = 0x7f0601b4;
-        public static final int primary_material_light = 0x7f0601b5;
-        public static final int primary_text_default_material_dark = 0x7f0601b7;
-        public static final int primary_text_default_material_light = 0x7f0601b8;
-        public static final int primary_text_disabled_material_dark = 0x7f0601b9;
-        public static final int primary_text_disabled_material_light = 0x7f0601ba;
-        public static final int ripple_material_dark = 0x7f0601d9;
-        public static final int ripple_material_light = 0x7f0601da;
-        public static final int secondary_text_default_material_dark = 0x7f0601db;
-        public static final int secondary_text_default_material_light = 0x7f0601dc;
-        public static final int secondary_text_disabled_material_dark = 0x7f0601dd;
-        public static final int secondary_text_disabled_material_light = 0x7f0601de;
-        public static final int switch_thumb_disabled_material_dark = 0x7f0601df;
-        public static final int switch_thumb_disabled_material_light = 0x7f0601e0;
-        public static final int switch_thumb_material_dark = 0x7f0601e1;
-        public static final int switch_thumb_material_light = 0x7f0601e2;
-        public static final int switch_thumb_normal_material_dark = 0x7f0601e3;
-        public static final int switch_thumb_normal_material_light = 0x7f0601e4;
+        public static final int primary_dark_material_dark = 0x7f0601b3;
+        public static final int primary_dark_material_light = 0x7f0601b4;
+        public static final int primary_material_dark = 0x7f0601b5;
+        public static final int primary_material_light = 0x7f0601b6;
+        public static final int primary_text_default_material_dark = 0x7f0601b8;
+        public static final int primary_text_default_material_light = 0x7f0601b9;
+        public static final int primary_text_disabled_material_dark = 0x7f0601ba;
+        public static final int primary_text_disabled_material_light = 0x7f0601bb;
+        public static final int ripple_material_dark = 0x7f0601da;
+        public static final int ripple_material_light = 0x7f0601db;
+        public static final int secondary_text_default_material_dark = 0x7f0601dc;
+        public static final int secondary_text_default_material_light = 0x7f0601dd;
+        public static final int secondary_text_disabled_material_dark = 0x7f0601de;
+        public static final int secondary_text_disabled_material_light = 0x7f0601df;
+        public static final int switch_thumb_disabled_material_dark = 0x7f0601e0;
+        public static final int switch_thumb_disabled_material_light = 0x7f0601e1;
+        public static final int switch_thumb_material_dark = 0x7f0601e2;
+        public static final int switch_thumb_material_light = 0x7f0601e3;
+        public static final int switch_thumb_normal_material_dark = 0x7f0601e4;
+        public static final int switch_thumb_normal_material_light = 0x7f0601e5;
     }
     public static final class dimen {
         private dimen() {}
@@ -450,11 +450,11 @@ public final class R {
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f0800e9;
         public static final int abc_textfield_search_material = 0x7f0800ea;
         public static final int ic_arrow_forward_white_24px = 0x7f080120;
-        public static final int ic_done_white_24px = 0x7f080129;
-        public static final int ic_navigate_next_white_24dp = 0x7f080138;
-        public static final int indicator_dot_grey = 0x7f080140;
-        public static final int indicator_dot_white = 0x7f080141;
-        public static final int notification_template_icon_bg = 0x7f080157;
+        public static final int ic_done_white_24px = 0x7f08012e;
+        public static final int ic_navigate_next_white_24dp = 0x7f080140;
+        public static final int indicator_dot_grey = 0x7f080149;
+        public static final int indicator_dot_white = 0x7f08014a;
+        public static final int notification_template_icon_bg = 0x7f080160;
     }
     public static final class id {
         private id() {}

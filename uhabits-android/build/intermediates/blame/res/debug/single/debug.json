@@ -4,12 +4,12 @@
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/ab8f8951b99ab5b5d332022d857e3989/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
     },
     {
-        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_add_light.png.flat",
-        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-xxxhdpi/ic_action_add_light.png"
-    },
-    {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3513d0cb82dd496d9d371a7f2b6b40ca/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_add_light.png.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-xxxhdpi/ic_action_add_light.png"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
@@ -220,6 +220,10 @@
         "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/layout/activity_article.xml"
     },
     {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_invest_online.png.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_invest_online.png"
+    },
+    {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_avd_my_courses_on.xml.flat",
         "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/avd_my_courses_on.xml"
     },
@@ -262,6 +266,10 @@
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_navigate_next_white_24dp.png.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/f7f1832b2b6f4381043aeeb36efafcdf/jetified-appintro-3.4.0/res/drawable-xxhdpi-v4/ic_navigate_next_white_24dp.png"
+    },
+    {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_background_dark.jpg.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_background_dark.jpg"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/anim_fragment_close_enter.xml.flat",
@@ -928,6 +936,10 @@
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3513d0cb82dd496d9d371a7f2b6b40ca/appcompat-1.1.0/res/color/abc_tint_switch_track.xml"
     },
     {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_automate.png.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_automate.png"
+    },
+    {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/layout_preference_recyclerview.xml.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/c9e94e3eb7c023bf22f440b119a2eb20/preference-1.0.0/res/layout/preference_recyclerview.xml"
     },
@@ -1106,6 +1118,10 @@
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3513d0cb82dd496d9d371a7f2b6b40ca/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_bank.png.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_bank.png"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_dark.xml.flat",
@@ -1834,6 +1850,10 @@
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_background_dark2.jpg.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_background_dark2.jpg"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/layout_date_picker_selected_date.xml.flat",
@@ -2640,6 +2660,10 @@
         "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/xml/file_paths.xml"
     },
     {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_spend.png.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_spend.png"
+    },
+    {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/df147187274982a06205b37a165ff25c/material-1.1.0/res/drawable-xxhdpi-v4/design_ic_visibility.png"
     },
@@ -3392,6 +3416,10 @@
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3513d0cb82dd496d9d371a7f2b6b40ca/appcompat-1.1.0/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_background.jpg.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_background.jpg"
+    },
+    {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/layout_edit_habit_target.xml.flat",
         "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/layout/edit_habit_target.xml"
     },
@@ -3408,12 +3436,20 @@
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/df147187274982a06205b37a165ff25c/material-1.1.0/res/layout/design_menu_item_action_area.xml"
     },
     {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_background_light.jpg.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_background_light.jpg"
+    },
+    {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/layout_activity_article_detail.xml.flat",
         "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/layout/activity_article_detail.xml"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/3513d0cb82dd496d9d371a7f2b6b40ca/appcompat-1.1.0/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_invest_simply.png.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_invest_simply.png"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/anim-v21_mtrl_bottom_sheet_slide_in.xml.flat",
@@ -3610,6 +3646,10 @@
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility.png.flat",
         "source": "/Users/katrinaann/.gradle/caches/transforms-2/files-2.1/df147187274982a06205b37a165ff25c/material-1.1.0/res/drawable-xhdpi-v4/design_ic_visibility.png"
+    },
+    {
+        "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-hdpi_ic_investment.png.flat",
+        "source": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/res/drawable-hdpi/ic_investment.png"
     },
     {
         "merged": "/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",

@@ -6,10 +6,10 @@
     tools:context=".MainActivity">
 
     <item
-        android:id="@+id/navLearn"
+        android:id="@+id/navGoals"
         android:enabled="true"
         android:icon="@drawable/asl_my_courses"
-        android:title="Learn"
+        android:title="Goals"
         app:showAsAction="always"/>
 
     <item
@@ -21,10 +21,10 @@
 
 
     <item
-        android:id="@+id/navGoals"
+        android:id="@+id/navLearn"
         android:enabled="true"
-        android:icon="@drawable/asl_search"
-        android:title="Goals"
+        android:icon="@drawable/ic_search"
+        android:title="Learn"
         app:showAsAction="always"/>
 
 </menu>

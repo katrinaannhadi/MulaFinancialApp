@@ -27,6 +27,5 @@
     android:layout_height="?actionBarSize"
     android:layout_gravity="bottom"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    app:itemBackground="@color/amber_300"
     app:menu="@menu/bottom_nav_bar"
     />

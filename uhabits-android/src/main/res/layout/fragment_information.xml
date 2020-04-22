@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/mula_yellow_500"
     tools:context=".Fragments.InformationFragment"
-    android:background="@drawable/ic_background_purple">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_start_quiz"
