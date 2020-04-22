@@ -1,5 +1,7 @@
 package org.mula.finance.Adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.view.View;
@@ -26,8 +28,16 @@ public class IntentLinkViewHolder extends GroupViewHolder {
 
         Drawable icon = view.getResources().getDrawable(intentLink.getLinkDrawable());
         view.setBackground(icon);
-        //icon.mutate();
-        //view.getBackground().setColorFilter(intentLink.getLinkColourTint(), PorterDuff.Mode.OVERLAY);
+        if (intentLink.getLinkName()=="Articles"){
+            view.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view){
+                    Context c = view.getContext();
+                    Intent intent = intentLink.getLinkIntent();
+                    c.startActivity(intent);
+                }
+            });
+        }
     }
 
 }

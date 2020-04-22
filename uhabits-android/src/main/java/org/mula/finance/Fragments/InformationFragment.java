@@ -9,19 +9,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.mula.finance.Adapters.CategoryAdapter;
+import org.mula.finance.Databases.ScoreDatabase;
 import org.mula.finance.Models.Category;
 import org.mula.finance.Models.IntentLink;
+import org.mula.finance.Models.Score;
 import org.mula.finance.activities.QuizActivity;
 import org.mula.finance.R;
 import org.mula.finance.activities.category.ArticleSelectionActivity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 //Information Fragment
 public class InformationFragment extends Fragment {
@@ -40,6 +44,10 @@ public class InformationFragment extends Fragment {
     private Button categoryThree;
     private int value;
     private ImageButton buttonViewPager;
+
+    private TextView titleAverage, titleTopCategory, textAverage, textTopCategory;
+
+    private ScoreDatabase db;
 
 
 
@@ -80,54 +88,66 @@ public class InformationFragment extends Fragment {
                 new Intent(context, QuizActivity.class),
                 R.drawable.ic_investment_pink, Color.parseColor("#D767CD"), categoryList));
 
-        //TODO:// change to articles intent
+
         calc.add(new IntentLink("Articles",
                 new Intent(context, ArticleSelectionActivity.class),
                 R.drawable.ic_super, Color.parseColor("#48C4B6"), blank));
 
-        buttonViewPager = view.findViewById(R.id.button_to_viewpager);
-
-        buttonViewPager.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context c = view.getContext();
-                Intent intent = new Intent(c, ArticleSelectionActivity.class);
-                c.startActivity(intent);
-            }
-        });
 
 
-        //CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);
+
+
         CategoryAdapter categoryAdapter = new CategoryAdapter(calc);
         rv.setAdapter(categoryAdapter);
 
-       /* categoryOne = view.findViewById(R.id.button_category_one);
-        categoryTwo = view.findViewById(R.id.button_category_two);
-        categoryThree = view.findViewById(R.id.button_category_three);
-        categoryOne.setText("Credit");
-        categoryTwo.setText("Tax");
-        categoryThree.setText("Investment");*/
+        titleAverage = view.findViewById(R.id.text_quiz_average);
+        titleTopCategory = view.findViewById(R.id.text_high_score);
+        textAverage = view.findViewById(R.id.text_score);
+        textTopCategory = view.findViewById(R.id.text_percentage);
+        titleAverage.setText("Top Score:");
+        titleTopCategory.setText("Top Category:");
 
-       /* categoryOne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startQuiz(1);
-            }
-        });
+        db = db.getInstance(context);
+        List<Score> scores = db.scoreDao().getAllScores();
 
-        categoryTwo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startQuiz(2);
-            }
-        });
+        try{
 
-        categoryThree.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startQuiz(3);
+            int topCategory = 0;
+            int highScore = 0;
+
+            for(int i = 0; i < scores.size(); i++){
+                if(highScore < scores.get(i).getScore()){
+                    topCategory = scores.get(i).getCategory();
+                    highScore = scores.get(i).getScore();
+                }
             }
-        }); */
+
+
+            try {
+                textAverage.setText(Integer.toString(highScore));
+            } catch (ArithmeticException e){
+                textAverage.setText(0);
+            }
+
+            switch (topCategory){
+                case 1:
+                    textTopCategory.setText("Credit");
+                    break;
+                case 2:
+                    textTopCategory.setText("Investment");
+                    break;
+                case 3:
+                    textTopCategory.setText("Tax");
+                    break;
+                default:
+                    textTopCategory.setText("N/A");
+                    break;
+            }
+
+        }catch(NullPointerException e) {
+
+        }
+
 
         return view;
     }

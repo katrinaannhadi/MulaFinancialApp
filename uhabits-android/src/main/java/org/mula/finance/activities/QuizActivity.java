@@ -19,7 +19,9 @@ import org.mula.finance.AsyncTasks.QuestionCategoryAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.QuestionCategoryRetrieveAsyncTask;
 import org.mula.finance.AsyncTasks.QuestionInsertAsyncTask;
 import org.mula.finance.Databases.QuestionDatabase;
+import org.mula.finance.Databases.ScoreDatabase;
 import org.mula.finance.Models.Question;
+import org.mula.finance.Models.Score;
 import org.mula.finance.R;
 
 import java.util.ArrayList;
@@ -39,6 +41,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
     private String TAG = "QuizActivity";
     private QuestionDatabase db;
+    private ScoreDatabase scoreDb;
 
     private int score = 0;
     private int questionNum = 0;
@@ -46,7 +49,8 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     private List<Question> questionList;
     private QuizActivity quizActivity = this;
 
-    public static ArrayList<Integer> scoreHistoryList = new ArrayList<>();
+    private int difficulty;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,9 +75,10 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
         //TODO:: change to category
         Intent quizIntent = getIntent();
-        int difficulty = quizIntent.getIntExtra("Difficulty", 1);
+        difficulty = quizIntent.getIntExtra("Difficulty", 1);
 
         db = db.getInstance(this);
+        scoreDb = scoreDb.getInstance(this);
 
         insertQuestionListInDatabase(getQuestionList());
         retrieveQuestionListFromDatabase(difficulty);
@@ -111,9 +116,6 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
                     if (currentQuestion.getAnswer().equals(answer.getText())) {
 
                         score++;
-                    } else {
-                        //TODO://get rid of this
-
                     }
                     answer.setChecked(false);
                     Toast.makeText(getApplicationContext(), Integer.toString(questionNum), Toast.LENGTH_LONG).show();
@@ -131,8 +133,18 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
                         continueBtn.setText("Finish Quiz");
                     } else {
-                        //scoreHistoryList.add(score);
-                        //Toast to check for score at the end
+                        try {
+
+                            List<Score> scoreCheck = scoreDb.scoreDao().getAllScores();
+                            int id = scoreCheck.size();
+                            Score currentScore = new Score(id, score, difficulty);
+                            scoreDb.scoreDao().insert(currentScore);
+
+                        } catch (NullPointerException e) {
+                            Score currentScore = new Score(0, score, difficulty);
+                            scoreDb.scoreDao().insert(currentScore);
+                        }
+
                         Toast.makeText(getApplicationContext(), Integer.toString(score), Toast.LENGTH_LONG).show();
                         mp.start();
                         finish();
