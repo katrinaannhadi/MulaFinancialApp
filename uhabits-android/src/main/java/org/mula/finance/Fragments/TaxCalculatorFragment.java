@@ -53,22 +53,9 @@ public class TaxCalculatorFragment extends Fragment {
         textViewR3 = view.findViewById(R.id.textViewR3);
         textViewR4 = view.findViewById(R.id.textView4);
         button = view.findViewById(R.id.button);
-        switch1 = (Switch) view.findViewById(R.id.switch1);
 
-        switch1.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                String statusSwitch1;
-                if (switch1.isChecked()) {//ON is yearly
-                    statusSwitch1 = switch1.getTextOn().toString();
-                    Toast.makeText(getContext(), "Switch1 :" + statusSwitch1, Toast.LENGTH_LONG).show();
-                } else { //OFF is weekly
-                    statusSwitch1 = switch1.getTextOff().toString();
-                    Toast.makeText(getContext(), "Switch1 :" + statusSwitch1, Toast.LENGTH_LONG).show();
-                }
-            }
-        });
+      
         return view;
     }
 

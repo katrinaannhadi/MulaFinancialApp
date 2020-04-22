@@ -2033,8 +2033,10 @@ drawable ic_alarm_black
 drawable ic_alarm_white
 drawable ic_arrow_down_24dp
 drawable ic_arrow_forward_white_24px
+drawable ic_automate
 drawable ic_background
 drawable ic_background_purple
+drawable ic_bank
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_colorpicker_swatch_selected
@@ -2046,6 +2048,9 @@ drawable ic_edit_black_24dp
 drawable ic_featured
 drawable ic_grand
 drawable ic_home_black_24dp
+drawable ic_invest_online
+drawable ic_invest_simply
+drawable ic_investment
 drawable ic_investment_pink
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
@@ -2062,6 +2067,7 @@ drawable ic_piggy_bank
 drawable ic_repeat_black
 drawable ic_repeat_white
 drawable ic_search
+drawable ic_spend
 drawable ic_super
 drawable image_investment
 drawable indicator_dot_grey
@@ -2511,7 +2517,11 @@ id progress_circular
 id progress_horizontal
 id questionLabel
 id quiz_constraint_layout
+id radgroup
 id radio
+id radioButton
+id radioButton2
+id radioButton3
 id radio_answer_1
 id radio_answer_2
 id radio_answer_3
@@ -2605,7 +2615,6 @@ id stretch
 id submenuarrow
 id submit_area
 id subtitleCard
-id switch1
 id switchWidget
 id tabMode
 id tag_accessibility_actions
@@ -2634,6 +2643,7 @@ id textViewR2
 id textViewR3
 id text_calculator
 id text_category
+id text_enter_hecs
 id text_high_score
 id text_input_end_icon
 id text_input_start_icon
