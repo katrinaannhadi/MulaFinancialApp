@@ -25,7 +25,18 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppBaseTheme" >
-        <activity android:name="org.mula.finance.activities.MainActivity" />
+        <activity
+            android:name="org.mula.finance.activities.category.ArticleSelectionActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name="org.mula.finance.activities.article.ArticleDetailActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name="org.mula.finance.activities.article.ArticleActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name="org.mula.finance.activities.MainActivity"
+            android:theme="@style/Mula.Purple" />
         <!--
   <activity-alias
             android:name=".activities.habits.list.ListHabitsActivity"
@@ -43,7 +54,8 @@
             android:name="org.mula.finance.activities.MainActivity"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
-            android:targetActivity="org.mula.finance.activities.MainActivity" >
+            android:targetActivity="org.mula.finance.activities.MainActivity"
+            android:theme="@style/Mula.Purple" >
             <intent-filter android:label="@string/main_activity_title" >
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,20 +74,29 @@
             android:name="org.mula.finance.activities.habits.list.ListHabitsActivity"
             android:exported="true"
             android:label="@string/main_activity_title"
-            android:launchMode="singleTop" />
-        <activity android:name="org.mula.finance.activities.InvestmentCalculatorActivity" />
-        <activity android:name="org.mula.finance.activities.TaxCalculatorActivity" />
-        <activity android:name="org.mula.finance.activities.QuizActivity" />
+            android:launchMode="singleTop"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name="org.mula.finance.activities.InvestmentCalculatorActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name="org.mula.finance.activities.TaxCalculatorActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name="org.mula.finance.activities.QuizActivity"
+            android:theme="@style/Mula.Purple" />
         <activity
             android:name="org.mula.finance.activities.habits.show.ShowHabitActivity"
-            android:label="@string/title_activity_show_habit" >
+            android:label="@string/title_activity_show_habit"
+            android:theme="@style/Mula.Purple" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.mula.finance.activities.habits.list.ListHabitsActivity" />
         </activity>
         <activity
             android:name="org.mula.finance.activities.settings.SettingsActivity"
-            android:label="@string/settings" >
+            android:label="@string/settings"
+            android:theme="@style/Mula.Purple" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.mula.finance.activities.habits.list.ListHabitsActivity" />
@@ -83,10 +104,10 @@
         <activity
             android:name="org.mula.finance.activities.intro.IntroActivity"
             android:label=""
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity
             android:name="org.mula.finance.widgets.HabitPickerDialog"
-            android:theme="@style/Theme.AppCompat.Light.Dialog" >
+            android:theme="@style/Theme.MaterialComponents.Light.Dialog" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>

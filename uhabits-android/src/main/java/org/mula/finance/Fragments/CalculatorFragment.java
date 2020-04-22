@@ -212,7 +212,7 @@ public class CalculatorFragment extends Fragment {
 
             CandleDataSet set1 = new CandleDataSet(yValsCandleStick, "DataSet 1");
             set1.setColor(Color.rgb(80, 80, 80));
-            set1.setShadowColor(getResources().getColor(android.R.color.darker_gray));
+//            set1.setShadowColor(getResources().getColor(android.R.color.darker_gray));
             set1.setDecreasingColor(getResources().getColor(android.R.color.holo_red_light));
             set1.setDecreasingPaintStyle(Paint.Style.FILL);
             set1.setIncreasingColor(getResources().getColor(android.R.color.background_light));

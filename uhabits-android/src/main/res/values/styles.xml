@@ -98,9 +98,9 @@
     </style>
 
     <style name="Widget.Mula.SeekBar" parent="@style/Widget.AppCompat.SeekBar">
-        <item name="android:progressTint">@color/mula_yellow_500</item>
+        <item name="android:progressTint">@color/mula_turqoise_500</item>
         <item name="android:secondaryProgressTint">#99ffffff</item>
-        <item name="android:thumbTint">@color/mula_yellow_500</item>
+        <item name="android:thumbTint">@color/mula_turqoise_500</item>
         <item name="android:progressDrawable">@drawable/seekbar_track</item>
         <item name="android:paddingStart">0dp</item>
         <item name="android:paddingEnd">0dp</item>
@@ -109,40 +109,40 @@
 
     <style name="Mula" parent="@style/Base.Mula"/>
 
-    <style name="Mula.Yellow">
-        <item name="colorPrimary">@color/mula_yellow_500</item>
-        <item name="colorPrimaryVariant">@color/mula_yellow_400</item>
-        <item name="colorSecondary">@color/mula_blue_700</item>
-        <item name="colorSecondaryVariant">@color/mula_blue_800</item>
+    <style name="Mula.Purple">
+        <item name="colorPrimary">@color/mula_purple_200</item>
+        <item name="colorPrimaryVariant">@color/mula_purple_600</item>
+        <item name="colorSecondary">@color/mula_purple_bright_accent</item>
+        <item name="colorSecondaryVariant">@color/mula_purple_500</item>
     </style>
 
     <style name="Mula.Blue">
         <item name="colorPrimary">@color/mula_blue_700</item>
         <item name="colorPrimaryVariant">@color/mula_blue_800</item>
-        <item name="colorSecondary">@color/mula_yellow_500</item>
-        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+        <item name="colorSecondary">@color/mula_turqoise_500</item>
+        <item name="colorSecondaryVariant">@color/mula_turqoise_400</item>
     </style>
 
     <style name="ThemeOverlay.Mula.Blue" parent="@style/ThemeOverlay.MaterialComponents.Light">
         <item name="colorPrimary">@color/mula_blue_700</item>
         <item name="colorPrimaryVariant">@color/mula_blue_800</item>
-        <item name="colorSecondary">@color/mula_yellow_500</item>
-        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+        <item name="colorSecondary">@color/mula_turqoise_500</item>
+        <item name="colorSecondaryVariant">@color/mula_turqoise_400</item>
         <item name="colorOnPrimary">#fff</item>
     </style>
 
     <style name="ThemeOverlay.Mula.Blue.Dark" parent="@style/ThemeOverlay.MaterialComponents.Dark">
         <item name="colorPrimary">@color/mula_blue_700</item>
         <item name="colorPrimaryVariant">@color/mula_blue_800</item>
-        <item name="colorSecondary">@color/mula_yellow_500</item>
-        <item name="colorSecondaryVariant">@color/mula_yellow_400</item>
+        <item name="colorSecondary">@color/mula_turqoise_500</item>
+        <item name="colorSecondaryVariant">@color/mula_turqoise_400</item>
         <item name="colorOnPrimary">#fff</item>
     </style>
 
-    <style name="Mula.Pink">
-        <item name="colorPrimary">@color/mula_pink_500</item>
-        <item name="colorSecondary">@color/mula_pink_500</item>
-        <item name="colorPrimaryVariant">@color/mula_pink_600</item>
+    <style name="Mula.Yellow">
+        <item name="colorPrimary">@color/mula_yellow_500</item>
+        <item name="colorSecondary">@color/mula_yellow_500</item>
+        <item name="colorPrimaryVariant">@color/mula_yellow_600</item>
         <item name="colorOnPrimary">#000</item>
     </style>
 

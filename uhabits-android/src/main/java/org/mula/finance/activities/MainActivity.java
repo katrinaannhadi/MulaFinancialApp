@@ -78,14 +78,14 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
-                    case R.id.navArticles:
-                        swapMenuFragment(homeFragment);
+                    case R.id.navLearn:
+                        swapMenuFragment(infoFragment);
                         break;
                     case R.id.navCalculators:
                         swapMenuFragment(calculatorFragment);
                         break;
-                    case R.id.navQuiz:
-                        swapMenuFragment(infoFragment);
+                    case R.id.navGoals:
+                        swapMenuFragment(homeFragment);
                         break;
 
                 }

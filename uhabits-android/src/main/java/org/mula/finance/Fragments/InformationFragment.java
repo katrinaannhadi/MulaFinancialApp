@@ -8,19 +8,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.mula.finance.Adapters.CalculatorAdapter;
 import org.mula.finance.Adapters.CategoryAdapter;
 import org.mula.finance.Models.Category;
 import org.mula.finance.Models.IntentLink;
-import org.mula.finance.activities.InvestmentCalculatorActivity;
 import org.mula.finance.activities.QuizActivity;
 import org.mula.finance.R;
-import org.mula.finance.activities.TaxCalculatorActivity;
+import org.mula.finance.activities.category.ArticleSelectionActivity;
 
 import java.util.ArrayList;
 
@@ -40,6 +39,7 @@ public class InformationFragment extends Fragment {
     private Button categoryTwo;
     private Button categoryThree;
     private int value;
+    private ImageButton buttonViewPager;
 
 
 
@@ -61,7 +61,7 @@ public class InformationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_start_quiz, container, false);
+        view = inflater.inflate(R.layout.fragment_information, container, false);
 
         rv = view.findViewById(R.id.rv_quiz);
         layoutManager = new LinearLayoutManager(view.getContext());
@@ -78,12 +78,23 @@ public class InformationFragment extends Fragment {
 
         calc.add(new IntentLink("Quiz",
                 new Intent(context, QuizActivity.class),
-                R.drawable.image_investment, Color.parseColor("#B233FF"), categoryList));
+                R.drawable.ic_investment_pink, Color.parseColor("#D767CD"), categoryList));
 
         //TODO:// change to articles intent
         calc.add(new IntentLink("Articles",
-                new Intent(context, TaxCalculatorActivity.class),
-                R.drawable.image_investment, Color.parseColor("#69FA8F"), blank));
+                new Intent(context, ArticleSelectionActivity.class),
+                R.drawable.ic_super, Color.parseColor("#48C4B6"), blank));
+
+        buttonViewPager = view.findViewById(R.id.button_to_viewpager);
+
+        buttonViewPager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context c = view.getContext();
+                Intent intent = new Intent(c, ArticleSelectionActivity.class);
+                c.startActivity(intent);
+            }
+        });
 
 
         //CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);

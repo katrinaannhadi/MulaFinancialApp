@@ -6,24 +6,25 @@
     tools:context=".MainActivity">
 
     <item
-        android:id="@+id/navArticles"
+        android:id="@+id/navLearn"
         android:enabled="true"
-        android:icon="?iconAdd"
-        android:title="@string/add_habit"
+        android:icon="@drawable/asl_my_courses"
+        android:title="Learn"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/navCalculators"
         android:enabled="true"
-        android:icon="?iconAdd"
-        android:title="@string/add_habit"
+        android:icon="@drawable/asl_featured"
+        android:title="Calculators"
         app:showAsAction="always"/>
 
+
     <item
-        android:id="@+id/navQuiz"
+        android:id="@+id/navGoals"
         android:enabled="true"
-        android:icon="?iconAdd"
-        android:title="@string/add_habit"
+        android:icon="@drawable/asl_search"
+        android:title="Goals"
         app:showAsAction="always"/>
 
 </menu>
