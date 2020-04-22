@@ -56,6 +56,13 @@
         <item name="scrollableRecyclerViewStyle">@style/ScrollableRecyclerViewStyle</item>
     </style>
 
+    <style name="Base.Mula" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+
+    </style>
+
+
     <style name="SmallSpinner">
         <item name="android:textColor">?mediumContrastTextColor</item>
         <item name="android:textSize">@dimen/smallTextSize</item>

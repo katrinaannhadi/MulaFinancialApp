@@ -98,6 +98,8 @@ android {
             implementation project(":android-base")
             implementation project(":android-pickers")
 
+            implementation 'com.google.android.material:material:1.1.0'
+
             implementation 'androidx.appcompat:appcompat:1.0.0'
             implementation 'com.google.android.material:material:1.0.0'
             implementation 'androidx.legacy:legacy-preference-v14:1.0.0'
