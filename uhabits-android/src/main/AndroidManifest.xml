@@ -22,6 +22,12 @@
         <activity android:name=".activities.category.ArticleSelectionActivity"
             android:theme="@style/Mula.Purple"></activity>
 
+        <activity android:name=".activities.ExpenseTrackerActivity"
+            android:theme="@style/Mula.Purple"></activity>
+
+        <activity android:name=".activities.AddExpenseActivity"
+            android:theme="@style/Mula.Purple"></activity>
+
         <activity android:name=".activities.article.ArticleDetailActivity"
             android:theme="@style/Mula.Purple"></activity>
 

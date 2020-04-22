@@ -34,6 +34,7 @@ import com.google.gson.GsonBuilder;
 import org.mula.finance.Models.Company;
 import org.mula.finance.Models.DailyPrice;
 import org.mula.finance.R;
+import org.mula.finance.activities.ExpenseTrackerActivity;
 import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
 import java.util.ArrayList;
@@ -48,6 +49,8 @@ public class HomeFragment extends Fragment {
 
     private View view;
     private Button goalsButton;
+    private Button expenseButton;
+
     private Context context;
     private MediaPlayer mp;
 
@@ -83,12 +86,23 @@ public class HomeFragment extends Fragment {
 
         goalsButton = view.findViewById(R.id.button_goals);
         goalsButton.setText("Goals");
+        expenseButton = view.findViewById(R.id.button_expense);
+        expenseButton.setText("Expense");
 
         goalsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mp.start();
                 Intent intent = new Intent(context, ListHabitsActivity.class);
+                context.startActivity(intent);
+            }
+        });
+
+        expenseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp.start();
+                Intent intent = new Intent(context, ExpenseTrackerActivity.class);
                 context.startActivity(intent);
             }
         });

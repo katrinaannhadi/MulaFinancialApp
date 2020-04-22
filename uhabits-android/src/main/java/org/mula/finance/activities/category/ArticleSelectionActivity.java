@@ -19,7 +19,7 @@ public class ArticleSelectionActivity extends AppCompatActivity {
     List<Model> models;
     Integer[] colors = null;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
-    private static final String TAG = " 2 ARTICLE SELECTION ACTIVITY ";
+    private static final String TAG = " 2 ARTICLE SELECTION ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

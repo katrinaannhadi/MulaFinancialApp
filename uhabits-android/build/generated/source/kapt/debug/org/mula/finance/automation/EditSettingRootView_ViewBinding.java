@@ -15,7 +15,7 @@ import org.mula.finance.R;
 public final class EditSettingRootView_ViewBinding implements Unbinder {
   private EditSettingRootView target;
 
-  private View view7f0a0083;
+  private View view7f0a0084;
 
   @UiThread
   public EditSettingRootView_ViewBinding(EditSettingRootView target) {
@@ -30,8 +30,8 @@ public final class EditSettingRootView_ViewBinding implements Unbinder {
     target.tbar = Utils.findRequiredViewAsType(source, R.id.toolbar, "field 'tbar'", Toolbar.class);
     target.habitSpinner = Utils.findRequiredViewAsType(source, R.id.habitSpinner, "field 'habitSpinner'", AppCompatSpinner.class);
     target.actionSpinner = Utils.findRequiredViewAsType(source, R.id.actionSpinner, "field 'actionSpinner'", AppCompatSpinner.class);
-    view = Utils.findRequiredView(source, 2131361923, "method 'onClickSave'");
-    view7f0a0083 = view;
+    view = Utils.findRequiredView(source, 2131361924, "method 'onClickSave'");
+    view7f0a0084 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public final class EditSettingRootView_ViewBinding implements Unbinder {
     target.habitSpinner = null;
     target.actionSpinner = null;
 
-    view7f0a0083.setOnClickListener(null);
-    view7f0a0083 = null;
+    view7f0a0084.setOnClickListener(null);
+    view7f0a0084 = null;
   }
 }

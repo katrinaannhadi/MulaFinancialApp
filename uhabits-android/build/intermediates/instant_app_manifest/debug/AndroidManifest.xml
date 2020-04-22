@@ -31,6 +31,12 @@
             android:name="org.mula.finance.activities.category.ArticleSelectionActivity"
             android:theme="@style/Mula.Purple" />
         <activity
+            android:name="org.mula.finance.activities.ExpenseTrackerActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name="org.mula.finance.activities.AddExpenseActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
             android:name="org.mula.finance.activities.article.ArticleDetailActivity"
             android:theme="@style/Mula.Purple" />
         <activity

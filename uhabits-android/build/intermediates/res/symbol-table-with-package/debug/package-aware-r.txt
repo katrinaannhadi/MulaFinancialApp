@@ -2218,6 +2218,7 @@ id action_unarchive_habit
 id actions
 id activity_chooser_view_content
 id add
+id add_button
 id alertTitle
 id aligned
 id all
@@ -2263,6 +2264,7 @@ id buttonPlaylist
 id buttonSave
 id buttonVideo
 id button_continue
+id button_expense
 id button_goals
 id button_refresh
 id button_submit
@@ -2309,6 +2311,7 @@ id custom
 id customFreqPanel
 id customPanel
 id cut
+id date_picker
 id date_picker_actions
 id date_picker_day
 id date_picker_header
@@ -2433,6 +2436,7 @@ id line3
 id lineFragment
 id lineView
 id linear
+id linearLayout
 id listItemHabitCheckbox
 id listItemHabitName
 id listMode
@@ -2648,6 +2652,9 @@ id textViewR2
 id textViewR3
 id text_calculator
 id text_category
+id text_date
+id text_date2
+id text_date3
 id text_high_score
 id text_input_end_icon
 id text_input_start_icon
@@ -2682,6 +2689,9 @@ id titleTimesCompounded
 id titleTotalContributions
 id titleTotalInterest
 id titleYears
+id title_add_expense
+id title_expense_tracker
+id title_layout
 id title_template
 id toggle
 id toolbar
@@ -2723,6 +2733,7 @@ id unlabeled
 id unselected
 id up
 id useLogo
+id value
 id view
 id viewPager
 id view_offset_helper
@@ -2795,8 +2806,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_expense
 layout activity_article
 layout activity_article_detail
+layout activity_expense_tracker
 layout activity_investment_calculator
 layout activity_main
 layout activity_quiz
