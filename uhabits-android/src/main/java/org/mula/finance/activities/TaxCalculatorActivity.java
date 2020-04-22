@@ -58,7 +58,10 @@ public class TaxCalculatorActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if (EditText1.getText()!= null && EditText2.getText() != null){
-                        calculateTax();
+                       try { calculateTax();
+                       } catch (NumberFormatException e){
+
+                       }
                         mp.start();
                     }
                 }
