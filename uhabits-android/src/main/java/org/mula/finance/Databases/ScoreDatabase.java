@@ -20,7 +20,7 @@ public abstract class ScoreDatabase extends RoomDatabase {
 
 
         if(instance == null){
-            instance = Room.databaseBuilder(context, ScoreDatabase.class, "scoreDB").allowMainThreadQueries().build();
+            instance = Room.databaseBuilder(context, ScoreDatabase.class, "scoreDB").build();
         }
         return instance;
     }

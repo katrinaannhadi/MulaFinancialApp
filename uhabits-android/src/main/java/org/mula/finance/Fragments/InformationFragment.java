@@ -16,6 +16,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.mula.finance.Adapters.CategoryAdapter;
+import org.mula.finance.AsyncTasks.ScoreAsyncTaskDelegate;
+import org.mula.finance.AsyncTasks.ScoreListAsyncTaskDelegate;
+import org.mula.finance.AsyncTasks.ScoreRetrieveAsyncTask;
 import org.mula.finance.Databases.ScoreDatabase;
 import org.mula.finance.Models.Category;
 import org.mula.finance.Models.IntentLink;
@@ -28,7 +31,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //Information Fragment
-public class InformationFragment extends Fragment {
+public class InformationFragment extends Fragment implements ScoreAsyncTaskDelegate, ScoreListAsyncTaskDelegate {
 
 
 
@@ -44,6 +47,7 @@ public class InformationFragment extends Fragment {
     private Button categoryThree;
     private int value;
     private ImageButton buttonViewPager;
+    private InformationFragment infoFragment = this;
 
     private TextView titleAverage, titleTopCategory, textAverage, textTopCategory;
 
@@ -81,7 +85,7 @@ public class InformationFragment extends Fragment {
         categoryList = new ArrayList<>();
         categoryList.add(new Category("Credit", 1, new Intent(context, QuizActivity.class)));
         categoryList.add(new Category("Investment", 2, new Intent(context, QuizActivity.class)));
-        categoryList.add(new Category("Tax", 3, new Intent(context, QuizActivity.class)));
+        categoryList.add(new Category("Savings", 3, new Intent(context, QuizActivity.class)));
 
 
         calc.add(new IntentLink("Quiz",
@@ -108,8 +112,22 @@ public class InformationFragment extends Fragment {
         titleTopCategory.setText("Top Category:");
 
         db = db.getInstance(context);
-        List<Score> scores = db.scoreDao().getAllScores();
 
+        retrieveScoreListFromDb();
+
+
+
+
+        return view;
+    }
+
+    @Override
+    public void handleScoreReturned(List<Score> scores){
+        int num = 0;
+    }
+
+    @Override
+    public void handleScoreListReturned(List<Score> scores){
         try{
 
             int topCategory = 0;
@@ -148,8 +166,13 @@ public class InformationFragment extends Fragment {
 
         }
 
+    }
 
-        return view;
+    public void retrieveScoreListFromDb(){
+        ScoreRetrieveAsyncTask retrieveAsyncTask = new ScoreRetrieveAsyncTask();
+        retrieveAsyncTask.setScoreDatabase(db);
+        retrieveAsyncTask.setDelegate(infoFragment);
+        retrieveAsyncTask.execute();
     }
 
     private void startQuiz(int number){

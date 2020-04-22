@@ -18,6 +18,10 @@ import org.mula.finance.AsyncTasks.QuestionAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.QuestionCategoryAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.QuestionCategoryRetrieveAsyncTask;
 import org.mula.finance.AsyncTasks.QuestionInsertAsyncTask;
+import org.mula.finance.AsyncTasks.ScoreAsyncTaskDelegate;
+import org.mula.finance.AsyncTasks.ScoreInsertAsyncTask;
+import org.mula.finance.AsyncTasks.ScoreListAsyncTaskDelegate;
+import org.mula.finance.AsyncTasks.ScoreRetrieveAsyncTask;
 import org.mula.finance.Databases.QuestionDatabase;
 import org.mula.finance.Databases.ScoreDatabase;
 import org.mula.finance.Models.Question;
@@ -27,7 +31,7 @@ import org.mula.finance.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuizActivity extends AppCompatActivity implements QuestionCategoryAsyncTaskDelegate, QuestionAsyncTaskDelegate {
+public class QuizActivity extends AppCompatActivity implements QuestionCategoryAsyncTaskDelegate, QuestionAsyncTaskDelegate, ScoreAsyncTaskDelegate, ScoreListAsyncTaskDelegate {
 
     private Button continueBtn;
     private TextView questionText;
@@ -50,6 +54,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     private QuizActivity quizActivity = this;
 
     private int difficulty;
+    private List<Score> scoreCheck;
 
 
     @Override
@@ -135,14 +140,12 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
                     } else {
                         try {
 
-                            List<Score> scoreCheck = scoreDb.scoreDao().getAllScores();
-                            int id = scoreCheck.size();
-                            Score currentScore = new Score(id, score, difficulty);
-                            scoreDb.scoreDao().insert(currentScore);
+                            retrieveScoreListFromDb();
+
 
                         } catch (NullPointerException e) {
                             Score currentScore = new Score(0, score, difficulty);
-                            scoreDb.scoreDao().insert(currentScore);
+                            insertScoreInDB(currentScore);
                         }
 
                         Toast.makeText(getApplicationContext(), Integer.toString(score), Toast.LENGTH_LONG).show();
@@ -162,6 +165,35 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         int num = question.getId();
         System.out.println(num);
     }
+
+    @Override
+    public void handleScoreReturned(List<Score> scores){
+
+    }
+
+    @Override
+    public void handleScoreListReturned(List<Score> scores){
+        scoreCheck = scores;
+        int id = scoreCheck.size();
+        Score currentScore = new Score(id, score, difficulty);
+        insertScoreInDB(currentScore);
+    }
+
+    public void insertScoreInDB(Score score){
+        ScoreInsertAsyncTask insertScoreAsyncTask = new ScoreInsertAsyncTask();
+        insertScoreAsyncTask.setScoreDatabase(scoreDb);
+        insertScoreAsyncTask.setDelegate(quizActivity);
+        insertScoreAsyncTask.execute(score);
+    }
+
+    public void retrieveScoreListFromDb(){
+        ScoreRetrieveAsyncTask retrieveAsyncTask = new ScoreRetrieveAsyncTask();
+        retrieveAsyncTask.setScoreDatabase(scoreDb);
+        retrieveAsyncTask.setDelegate(quizActivity);
+        retrieveAsyncTask.execute();
+    }
+
+
 
 
     public void insertQuestionListInDatabase(List<Question> questionList){
@@ -188,35 +220,35 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         //questions and answers from https://www.sageadvice.eu/2017/11/27/trivia-quiz-on-5th-edition-dd-rules/
         List<Question> questionList = new ArrayList<>();
         questionList.add(0, new Question(0,
-                "Can you cast underwater?",
+                "Do online banks offer better interest rates? If so, then why?",
                 "No",
-                "Yes, but fire spells deal no damage.",
-                "Yes",
-                "Yes",
+                "Yes, because they don't exist",
+                "Yes, because they have minimal overhead costs.",
+                "Yes, because they have minimal overhead costs.",
                 3));
         questionList.add(1, new Question(1,
-                "Is there alignment restriction for classes in Player's Handbook?",
-                "Yes, Paladin must be Lawful Good, Druid must be Neutral and Assassin must be evil.",
-                "No",
-                "Yes, Paladin must be Good and Monk Lawful.",
-                "No",
+                "Why is it good to have a good credit score?",
+                "Because it serves you better in the long run.",
+                "Because lenders will offer you better interest rates, saving you money.",
+                "You will receive a cheaper loan.",
+                "Because lenders will offer you better interest rates, saving you money.",
                 1));
         questionList.add(2, new Question(2,
-                "Can you knock a creature out with a melee spell attack?",
-                "Only with Spell Sniper feat.",
-                "No, only with a melee weapon.",
-                "Yes",
-                "Yes",
+                "Imagine an investment pyramid, what's at the bottom? (Which investments are more complicated?)",
+                "Stocks, bonds and cash",
+                "Index and mutual funds",
+                "Lifecycle funds",
+                "Stock, bonds and cash",
                 2));
         questionList.add(3, new Question(3,
-                "Can you use a shield with Mage Armor spell?",
-                "Only with a light shield or buckler shield.",
-                "Yes, Mage Armor spell works with a shield",
-                "Nope, they do not stack.",
-                "Yes, Mage Armor spell works with a shield.",
+                "What's one of the most effective ways to save?",
+                "Using this app.",
+                "Giving your savings to your parents for safe keep.",
+                "Making a plan consisting of your expenditure and laying down clear goals.",
+                "Making a plan consisting of your expenditure and laying down clear goals.",
                 3));
         questionList.add(4, new Question(4,
-                "A monster is immune to damage from nonmagical bludgeoning weapons. Does he still take damage from falling?",
+                "How can a credit card save you money?",
                 "Yes, but has resistance to damage.",
                 "No, fall is a bludgeoning damage.",
                 "Yes, fall is not a weapon.",

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,6 +33,7 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.CandleData;
 import com.github.mikephil.charting.data.CandleDataSet;
 import com.github.mikephil.charting.data.CandleEntry;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import com.github.mikephil.charting.utils.EntryXComparator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -45,10 +48,18 @@ import org.mula.finance.activities.TaxCalculatorActivity;
 import org.mula.finance.R;
 import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
+
+import static android.provider.UserDictionary.Words.LOCALE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -80,6 +91,9 @@ public class CalculatorFragment extends Fragment {
     private LinearLayoutManager layoutManager;
 
     private CandleDataSet set1;
+    private XAxis xAxis;
+
+    private DateTimeFormatter format;
 
 
 
@@ -113,12 +127,16 @@ public class CalculatorFragment extends Fragment {
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_calculator, container, false);
         Log.d(TAG, "HomeFragment: SUCCESS");
+
+        //format = new DateTimeFormatterBuilder().parseCaseInsensitive().appendPattern("yy-MM-dd").toFormatter(Locale.ENGLISH);
+
 
         candleStickChart = view.findViewById(R.id.candle_stick_chart);
         refreshButton = view.findViewById(R.id.button_refresh);
@@ -136,12 +154,12 @@ public class CalculatorFragment extends Fragment {
         rightAxis.setDrawGridLines(false);
         candleStickChart.requestDisallowInterceptTouchEvent(true);
 
-        XAxis xAxis = candleStickChart.getXAxis();
+        xAxis = candleStickChart.getXAxis();
 
         xAxis.setDrawGridLines(false);// disable x axis grid lines
         xAxis.setDrawLabels(true);
-        xAxis.setTextColor(Color.BLACK);
-        rightAxis.setTextColor(Color.BLACK);
+        xAxis.setTextColor(Color.WHITE);
+        rightAxis.setTextColor(Color.WHITE);
         yAxis.setDrawLabels(true);
         xAxis.setGranularity(1f);
         xAxis.setGranularityEnabled(true);
@@ -218,6 +236,7 @@ public class CalculatorFragment extends Fragment {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void onResponse(String response) {
         Activity activity = getActivity();
         if (isAdded() && activity != null) {
@@ -230,6 +249,16 @@ public class CalculatorFragment extends Fragment {
 
             try {
                 Collection<DailyPrice> values = company.getCompanyStockPrices().values();
+                Collection<String> xAxisValues = company.getCompanyStockPrices().keySet();
+                ArrayList<String> xValues = new ArrayList<>(xAxisValues);
+
+               /* for(int i = 0; i < xValues.size(); i++){
+                   LocalDateTime date = LocalDateTime.parse(xValues.get(i));
+                   xValues.set(i, date.format(format));
+                } */
+                xAxis = candleStickChart.getXAxis();
+                xAxis.setValueFormatter(new IndexAxisValueFormatter(xValues));
+
                 ArrayList<DailyPrice> dailyPrices = new ArrayList<DailyPrice>(values);
 
 
@@ -260,7 +289,7 @@ public class CalculatorFragment extends Fragment {
                     CandleData candleData = new CandleData(set1);
                     candleStickChart.setData(candleData);
                     candleStickChart.invalidate();
-                    candleStickChart.setVisibleXRangeMaximum(7);
+                    candleStickChart.setVisibleXRangeMaximum(4);
                     candleStickChart.moveViewToX(yValsCandleStick.size());
 
                 } else if (set1 == null) {
@@ -281,7 +310,7 @@ public class CalculatorFragment extends Fragment {
                     // set data
                     candleStickChart.setData(data);
                     candleStickChart.invalidate();
-                    candleStickChart.setVisibleXRangeMaximum(7);
+                    candleStickChart.setVisibleXRangeMaximum(4);
                     candleStickChart.moveViewToX(yValsCandleStick.size());
                 }
 

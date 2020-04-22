@@ -419,7 +419,6 @@ public class TaxCalculatorActivity extends AppCompatActivity {
             } else {
                 textViewR3.setText(formatter.format(fnIncome - tax/26 - test/26));
             }
-        }
 
 
 
@@ -430,8 +429,9 @@ public class TaxCalculatorActivity extends AppCompatActivity {
 
 
 
-        else {
             //weekly code
+        } else if (radioButton3.isChecked()){
+
             DecimalFormat formatter = new DecimalFormat("###,###,###.00");
 
             String s1 = EditText1.getText().toString();
@@ -600,7 +600,5 @@ public class TaxCalculatorActivity extends AppCompatActivity {
         EditText1.getText().clear();
         EditText2.getText().clear();
 
-        }
-
-
     }
+}
