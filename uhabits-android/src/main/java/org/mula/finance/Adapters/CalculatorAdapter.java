@@ -61,8 +61,7 @@ public class CalculatorAdapter extends RecyclerView.Adapter<CalculatorAdapter.Ca
 
         Drawable icon = calcViewHolder.view.getResources().getDrawable(intentLink.getLinkDrawable());
         calcViewHolder.view.setBackground(icon);
-        icon.mutate();
-        calcViewHolder.view.getBackground().setColorFilter(intentLink.getLinkColourTint(), PorterDuff.Mode.MULTIPLY);
+        calcViewHolder.view.getBackground().setColorFilter(intentLink.getLinkColourTint(), PorterDuff.Mode.OVERLAY);
         calcViewHolder.textView.setText(intentLink.getLinkName());
         calcViewHolder.view.setOnClickListener(new View.OnClickListener(){
             @Override

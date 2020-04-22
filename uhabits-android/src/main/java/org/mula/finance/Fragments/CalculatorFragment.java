@@ -158,7 +158,7 @@ public class CalculatorFragment extends Fragment {
         refreshButton.setOnClickListener(v -> getStockPricesOnline());
 
         rv = view.findViewById(R.id.rv_calculator);
-        layoutManager = new LinearLayoutManager(view.getContext());
+        layoutManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
         rv.setLayoutManager(layoutManager);
         context = view.getContext();
 
@@ -171,7 +171,7 @@ public class CalculatorFragment extends Fragment {
 
         calc.add(new IntentLink("Tax",
                 new Intent(context, TaxCalculatorActivity.class),
-                R.drawable.image_investment, R.color.amber_50, blank));
+                R.drawable.image_tax, R.color.amber_50, blank));
 
         //calc.add(new IntentLink("Goals",
            //     new Intent(context, ListHabitsActivity.class),

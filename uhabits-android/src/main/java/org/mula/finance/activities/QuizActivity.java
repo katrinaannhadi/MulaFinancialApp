@@ -146,7 +146,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
                         //scoreHistoryList.add(score);
                         //Toast to check for score at the end
                         Toast.makeText(getApplicationContext(), Integer.toString(score), Toast.LENGTH_LONG).show();
-                        scoreHistoryList.add((score/(questionNum+2))*100);
+                        scoreHistoryList.add((score/(questionNum+1))*100);
                         int highscore = 0;
                         int check = -1;
                         for(int i = 0; i < scoreHistoryList.size(); i++){

@@ -1694,7 +1694,10 @@ drawable ic_navigate_next_white_24dp
 drawable ic_notification
 drawable ic_repeat_black
 drawable ic_repeat_white
+drawable image_articles
 drawable image_investment
+drawable image_quiz
+drawable image_tax
 drawable indicator_dot_grey
 drawable indicator_dot_white
 drawable intro_icon_1
@@ -2366,6 +2369,7 @@ layout edit_habit_target
 layout expand_button
 layout filter
 layout fragment_calculator
+layout fragment_complete_quiz
 layout fragment_daily_quiz
 layout fragment_home
 layout fragment_intro

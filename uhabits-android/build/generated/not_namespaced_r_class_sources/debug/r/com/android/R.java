@@ -664,20 +664,20 @@ public final class R {
         public static final int done_background_color = 0x7f080071;
         public static final int done_background_color_dark = 0x7f080072;
         public static final int ic_colorpicker_swatch_selected = 0x7f08008a;
-        public static final int notification_action_background = 0x7f08009d;
-        public static final int notification_bg = 0x7f08009e;
-        public static final int notification_bg_low = 0x7f08009f;
-        public static final int notification_bg_low_normal = 0x7f0800a0;
-        public static final int notification_bg_low_pressed = 0x7f0800a1;
-        public static final int notification_bg_normal = 0x7f0800a2;
-        public static final int notification_bg_normal_pressed = 0x7f0800a3;
-        public static final int notification_icon_background = 0x7f0800a4;
-        public static final int notification_template_icon_bg = 0x7f0800a5;
-        public static final int notification_template_icon_low_bg = 0x7f0800a6;
-        public static final int notification_tile_bg = 0x7f0800a7;
-        public static final int notify_panel_notification_icon_bg = 0x7f0800a8;
-        public static final int tooltip_frame_dark = 0x7f0800b2;
-        public static final int tooltip_frame_light = 0x7f0800b3;
+        public static final int notification_action_background = 0x7f0800a0;
+        public static final int notification_bg = 0x7f0800a1;
+        public static final int notification_bg_low = 0x7f0800a2;
+        public static final int notification_bg_low_normal = 0x7f0800a3;
+        public static final int notification_bg_low_pressed = 0x7f0800a4;
+        public static final int notification_bg_normal = 0x7f0800a5;
+        public static final int notification_bg_normal_pressed = 0x7f0800a6;
+        public static final int notification_icon_background = 0x7f0800a7;
+        public static final int notification_template_icon_bg = 0x7f0800a8;
+        public static final int notification_template_icon_low_bg = 0x7f0800a9;
+        public static final int notification_tile_bg = 0x7f0800aa;
+        public static final int notify_panel_notification_icon_bg = 0x7f0800ab;
+        public static final int tooltip_frame_dark = 0x7f0800b5;
+        public static final int tooltip_frame_light = 0x7f0800b6;
     }
     public static final class id {
         private id() {}
@@ -863,19 +863,19 @@ public final class R {
         public static final int date_picker_header_view = 0x7f0d002a;
         public static final int date_picker_selected_date = 0x7f0d002b;
         public static final int date_picker_view_animator = 0x7f0d002c;
-        public static final int notification_action = 0x7f0d0054;
-        public static final int notification_action_tombstone = 0x7f0d0055;
-        public static final int notification_template_custom_big = 0x7f0d005c;
-        public static final int notification_template_icon_group = 0x7f0d005d;
-        public static final int notification_template_part_chronometer = 0x7f0d0061;
-        public static final int notification_template_part_time = 0x7f0d0062;
-        public static final int select_dialog_item_material = 0x7f0d0077;
-        public static final int select_dialog_multichoice_material = 0x7f0d0078;
-        public static final int select_dialog_singlechoice_material = 0x7f0d0079;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0d0088;
-        public static final int time_header_label = 0x7f0d0089;
-        public static final int time_picker_dialog = 0x7f0d008a;
-        public static final int year_label_text_view = 0x7f0d0092;
+        public static final int notification_action = 0x7f0d0055;
+        public static final int notification_action_tombstone = 0x7f0d0056;
+        public static final int notification_template_custom_big = 0x7f0d005d;
+        public static final int notification_template_icon_group = 0x7f0d005e;
+        public static final int notification_template_part_chronometer = 0x7f0d0062;
+        public static final int notification_template_part_time = 0x7f0d0063;
+        public static final int select_dialog_item_material = 0x7f0d0078;
+        public static final int select_dialog_multichoice_material = 0x7f0d0079;
+        public static final int select_dialog_singlechoice_material = 0x7f0d007a;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0d0089;
+        public static final int time_header_label = 0x7f0d008a;
+        public static final int time_picker_dialog = 0x7f0d008b;
+        public static final int year_label_text_view = 0x7f0d0093;
     }
     public static final class string {
         private string() {}

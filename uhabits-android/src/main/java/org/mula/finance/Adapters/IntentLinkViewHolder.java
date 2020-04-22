@@ -27,7 +27,7 @@ public class IntentLinkViewHolder extends GroupViewHolder {
         Drawable icon = view.getResources().getDrawable(intentLink.getLinkDrawable());
         view.setBackground(icon);
         icon.mutate();
-        view.getBackground().setColorFilter(intentLink.getLinkColourTint(), PorterDuff.Mode.MULTIPLY);
+        view.getBackground().setColorFilter(intentLink.getLinkColourTint(), PorterDuff.Mode.OVERLAY);
     }
 
 }
