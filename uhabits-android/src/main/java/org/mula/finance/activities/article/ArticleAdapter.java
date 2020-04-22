@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.mula.finance.Models.Article;
 import org.mula.finance.R;
 
 import java.util.ArrayList;
@@ -16,11 +17,13 @@ import java.util.ArrayList;
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.RestaurantViewHolder> {
     private ArrayList<Article> mArticles;
     private RecyclerViewClickListener mListener;
+    private static final String TAG = " 3 ARTICLE ADAPTER ";
 
     public ArticleAdapter(ArrayList<Article> articles, RecyclerViewClickListener listener) {
         mArticles = articles;
         mListener = listener;
     }
+
 
     public interface RecyclerViewClickListener {
         void onClick(View view, int position);

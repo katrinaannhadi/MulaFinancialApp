@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
                         swapMenuFragment(calculatorFragment);
                         break;
                     case R.id.navLearn:
-                        swapMenuFragment(videoFragment);
+                        swapMenuFragment(infoFragment);
                         break;
 
                 }

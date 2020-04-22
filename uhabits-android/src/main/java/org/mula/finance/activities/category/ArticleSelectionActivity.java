@@ -29,10 +29,9 @@ public class ArticleSelectionActivity extends AppCompatActivity {
 
         models = new ArrayList<>();
         models.add(new Model(R.drawable.ic_piggy_bank, "Savings", "Saving and investing money wisely needn’t be confined to the experts, nor does it need to be a headache. Simplify your personal finance by setting up no-fee accounts, automating savings and bill payments, and investing a little. This will allow you to stop stressing about money and sit back and let your funds grow.",1));
-        models.add(new Model(R.drawable.ic_super, "Retirement", "Saving and investing money wisely needn’t be confined to the experts, nor does it need to be a headache. Simplify your personal finance by setting up no-fee accounts, automating savings and bill payments, and investing a little. This will allow you to stop stressing about money and sit back and let your funds grow.",2));
+        models.add(new Model(R.drawable.ic_super, "Super", "Saving and investing money wisely needn’t be confined to the experts, nor does it need to be a headache. Simplify your personal finance by setting up no-fee accounts, automating savings and bill payments, and investing a little. This will allow you to stop stressing about money and sit back and let your funds grow.",2));
         models.add(new Model(R.drawable.ic_investment_pink, "Investment", "Saving and investing money wisely needn’t be confined to the experts, nor does it need to be a headache. Simplify your personal finance by setting up no-fee accounts, automating savings and bill payments, and investing a little. This will allow you to stop stressing about money and sit back and let your funds grow.",3));
         models.add(new Model(R.drawable.ic_credit_card, "Credit Card", "Saving and investing money wisely needn’t be confined to the experts, nor does it need to be a headache. Simplify your personal finance by setting up no-fee accounts, automating savings and bill payments, and investing a little. This will allow you to stop stressing about money and sit back and let your funds grow.",4));
-
         mCategoryAdapter = new CategoryAdapter(models, this);
 
         viewPager = findViewById(R.id.viewPager);
@@ -43,7 +42,7 @@ public class ArticleSelectionActivity extends AppCompatActivity {
                 getResources().getColor(R.color.purple_300),
                 getResources().getColor(R.color.green_300),
                 getResources().getColor(R.color.pink_300),
-                getResources().getColor(R.color.purple_300)
+                getResources().getColor(R.color.purple_300),
         };
 
         colors = colors_temp;
