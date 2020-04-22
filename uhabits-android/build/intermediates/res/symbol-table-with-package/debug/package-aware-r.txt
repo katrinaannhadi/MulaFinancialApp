@@ -2135,6 +2135,7 @@ id BOTTOM_START
 id CTRL
 id EditText1
 id EditText2
+id EnterAmount
 id FUNCTION
 id META
 id NO_DEBUG
@@ -2258,7 +2259,9 @@ id buttonDiscard
 id buttonOverlay
 id buttonPanel
 id buttonPickColor
+id buttonPlaylist
 id buttonSave
+id buttonVideo
 id button_continue
 id button_goals
 id button_refresh
@@ -2293,6 +2296,7 @@ id color_picker_swatch
 id confirm_button
 id constraint_daily_quiz
 id constraint_home
+id constraint_investment
 id constraint_start_quiz
 id constraint_tax
 id container
@@ -2654,6 +2658,7 @@ id text_question
 id text_quiz_average
 id text_score
 id text_test
+id text_video
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2844,6 +2849,7 @@ layout fragment_investment_calculator
 layout fragment_line_chart
 layout fragment_pie_chart
 layout fragment_tax_calculator
+layout fragment_video
 layout frequency_stackview_widget
 layout habit_checkbox_list_item
 layout history_stackview_widget

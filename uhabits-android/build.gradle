@@ -98,6 +98,9 @@ android {
             implementation project(":android-base")
             implementation project(":android-pickers")
 
+            implementation 'com.google.apis:google-api-services-youtube:v3-rev181-1.22.0'
+            implementation files ('libs/YouTubeAndroidPlayerApi.jar')
+
             implementation 'com.google.android.material:material:1.1.0'
 
             implementation 'androidx.appcompat:appcompat:1.0.0'

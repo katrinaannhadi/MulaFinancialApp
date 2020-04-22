@@ -15,7 +15,7 @@ import org.mula.finance.R;
 public class NameDescriptionPanel_ViewBinding implements Unbinder {
   private NameDescriptionPanel target;
 
-  private View view7f0a0080;
+  private View view7f0a0081;
 
   @UiThread
   public NameDescriptionPanel_ViewBinding(NameDescriptionPanel target) {
@@ -31,7 +31,7 @@ public class NameDescriptionPanel_ViewBinding implements Unbinder {
     target.tvQuestion = Utils.findRequiredViewAsType(source, R.id.tvQuestion, "field 'tvQuestion'", ExampleEditText.class);
     target.tvDescription = Utils.findRequiredViewAsType(source, R.id.tvDescription, "field 'tvDescription'", ExampleEditText.class);
     view = Utils.findRequiredView(source, R.id.buttonPickColor, "method 'showColorPicker'");
-    view7f0a0080 = view;
+    view7f0a0081 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class NameDescriptionPanel_ViewBinding implements Unbinder {
     target.tvQuestion = null;
     target.tvDescription = null;
 
-    view7f0a0080.setOnClickListener(null);
-    view7f0a0080 = null;
+    view7f0a0081.setOnClickListener(null);
+    view7f0a0081 = null;
   }
 }

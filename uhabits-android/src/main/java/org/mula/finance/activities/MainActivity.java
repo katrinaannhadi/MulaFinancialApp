@@ -18,6 +18,8 @@ import org.mula.finance.Fragments.DailyQuizFragment;
 import org.mula.finance.Fragments.HomeFragment;
 import org.mula.finance.Fragments.InformationFragment;
 import org.mula.finance.R;
+import org.mula.finance.activities.video.VideoFragment;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Calendar;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
     private Fragment infoFragment;
     private Fragment calculatorFragment;
     private Fragment homeFragment;
+    private Fragment videoFragment;
 
     private BottomNavigationView bottomNav;
 
@@ -61,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         infoFragment = new InformationFragment();
         homeFragment = new HomeFragment();
         calculatorFragment = new CalculatorFragment();
+        videoFragment = new VideoFragment();
 
         pref = this.getSharedPreferences("My Pref", 0);
         editor = pref.edit();
@@ -85,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
                         swapMenuFragment(calculatorFragment);
                         break;
                     case R.id.navLearn:
-                        swapMenuFragment(infoFragment);
+                        swapMenuFragment(videoFragment);
                         break;
 
                 }

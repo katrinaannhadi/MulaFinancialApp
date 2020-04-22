@@ -10,7 +10,7 @@ public class PieChartViewModel extends ViewModel {
 
     public PieChartViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Pie Chart Fragment");
+        mText.setValue("Tap the pie chart for values");
     }
 
     public LiveData<String> getText() {

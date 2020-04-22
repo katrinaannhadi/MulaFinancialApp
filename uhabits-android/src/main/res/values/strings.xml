@@ -241,15 +241,15 @@
     <string name="ic_additional_contribution">Additional Contribution</string>
     <string name="et_additional_contribution">Enter additional contribution</string>
     <string name="ic_total_contribution">Total Contribution</string>
-    <string name="et_total_contribution">10,000</string>
+    <string name="et_total_contribution">Eg. 1000 </string>
     <string name="ic_times_compounded">Compounds per year</string>
-    <string name="et_times_compounded">12</string>
+    <string name="et_times_compounded">Eg. 12</string>
     <string name="ic_interest_principal">Interest on Principal</string>
-    <string name="et_interest_principal">10,000</string>
+    <string name="et_interest_principal">Eg. 1000</string>
     <string name="ic_interest_contribution">Interest on Contribution</string>
-    <string name="et_interest_contribution">12</string>
+    <string name="et_interest_contribution">Eg. 12 (without percentage)</string>
     <string name="ic_total_interest">Total Interest Earned</string>
-    <string name="et_total_interest">10,000</string>
+    <string name="et_total_interest">Interest Result</string>
     <string name="ic_contribute">Future Value</string>
     <string name="hello_blank_fragment">Blank fragment</string>
 
