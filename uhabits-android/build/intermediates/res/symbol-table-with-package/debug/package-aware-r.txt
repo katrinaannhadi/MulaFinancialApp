@@ -1672,6 +1672,7 @@ dimen material_emphasis_high_type
 dimen material_emphasis_medium
 dimen material_text_view_test_line_height
 dimen material_text_view_test_line_height_override
+dimen minimized_sheet_top_left_radius
 dimen minimum_margin_sides
 dimen minimum_margin_top_bottom
 dimen month_day_label_text_size
@@ -1853,6 +1854,7 @@ dimen selected_date_month_size
 dimen selected_date_year_size
 dimen separator_padding
 dimen smallTextSize
+dimen small_component_top_left_radius
 dimen smallerTextSize
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
@@ -3561,6 +3563,10 @@ style ShapeAppearance_MaterialComponents_LargeComponent
 style ShapeAppearance_MaterialComponents_MediumComponent
 style ShapeAppearance_MaterialComponents_SmallComponent
 style ShapeAppearance_MaterialComponents_Test
+style ShapeAppearance_Mula_LargeComponent
+style ShapeAppearance_Mula_MediumComponent
+style ShapeAppearance_Mula_MinimizedSheet
+style ShapeAppearance_Mula_SmallComponent
 style ShapeAppearanceOverlay
 style ShapeAppearanceOverlay_BottomLeftDifferentCornerSize
 style ShapeAppearanceOverlay_BottomRightCut

@@ -54,21 +54,21 @@ public final class R {
         public static final int compat_control_corner_material = 0x7f070061;
         public static final int compat_notification_large_icon_max_height = 0x7f070062;
         public static final int compat_notification_large_icon_max_width = 0x7f070063;
-        public static final int notification_action_icon_size = 0x7f07014d;
-        public static final int notification_action_text_size = 0x7f07014e;
-        public static final int notification_big_circle_margin = 0x7f07014f;
-        public static final int notification_content_margin_start = 0x7f070150;
-        public static final int notification_large_icon_height = 0x7f070151;
-        public static final int notification_large_icon_width = 0x7f070152;
-        public static final int notification_main_column_padding_top = 0x7f070153;
-        public static final int notification_media_narrow_margin = 0x7f070154;
-        public static final int notification_right_icon_size = 0x7f070155;
-        public static final int notification_right_side_padding_top = 0x7f070156;
-        public static final int notification_small_icon_background_padding = 0x7f070157;
-        public static final int notification_small_icon_size_as_large = 0x7f070158;
-        public static final int notification_subtext_size = 0x7f070159;
-        public static final int notification_top_pad = 0x7f07015a;
-        public static final int notification_top_pad_large_text = 0x7f07015b;
+        public static final int notification_action_icon_size = 0x7f07014e;
+        public static final int notification_action_text_size = 0x7f07014f;
+        public static final int notification_big_circle_margin = 0x7f070150;
+        public static final int notification_content_margin_start = 0x7f070151;
+        public static final int notification_large_icon_height = 0x7f070152;
+        public static final int notification_large_icon_width = 0x7f070153;
+        public static final int notification_main_column_padding_top = 0x7f070154;
+        public static final int notification_media_narrow_margin = 0x7f070155;
+        public static final int notification_right_icon_size = 0x7f070156;
+        public static final int notification_right_side_padding_top = 0x7f070157;
+        public static final int notification_small_icon_background_padding = 0x7f070158;
+        public static final int notification_small_icon_size_as_large = 0x7f070159;
+        public static final int notification_subtext_size = 0x7f07015a;
+        public static final int notification_top_pad = 0x7f07015b;
+        public static final int notification_top_pad_large_text = 0x7f07015c;
     }
     public static final class drawable {
         private drawable() {}
@@ -183,13 +183,13 @@ public final class R {
     public static final class style {
         private style() {}
 
-        public static final int TextAppearance_Compat_Notification = 0x7f13018e;
-        public static final int TextAppearance_Compat_Notification_Info = 0x7f13018f;
-        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f130191;
-        public static final int TextAppearance_Compat_Notification_Time = 0x7f130194;
-        public static final int TextAppearance_Compat_Notification_Title = 0x7f130196;
-        public static final int Widget_Compat_NotificationActionContainer = 0x7f130279;
-        public static final int Widget_Compat_NotificationActionText = 0x7f13027a;
+        public static final int TextAppearance_Compat_Notification = 0x7f130192;
+        public static final int TextAppearance_Compat_Notification_Info = 0x7f130193;
+        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f130195;
+        public static final int TextAppearance_Compat_Notification_Time = 0x7f130198;
+        public static final int TextAppearance_Compat_Notification_Title = 0x7f13019a;
+        public static final int Widget_Compat_NotificationActionContainer = 0x7f13027d;
+        public static final int Widget_Compat_NotificationActionText = 0x7f13027e;
     }
     public static final class styleable {
         private styleable() {}

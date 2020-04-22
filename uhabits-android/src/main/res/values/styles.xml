@@ -59,10 +59,10 @@
 //insert another theme here
     <style name="Base.Mula" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
-        <!--Material shape attributes-->
-<!--        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Mula.SmallComponent</item>-->
-<!--        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Mula.MediumComponent</item>-->
-<!--        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Mula.LargeComponent</item>-->
+        Material shape attributes
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Mula.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Mula.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Mula.LargeComponent</item>
 
 <!--        &lt;!&ndash;Material type attributes&ndash;&gt;-->
 <!--        <item name="textAppearanceHeadline1">@style/TextAppearance.Mula.Headline1</item>-->
