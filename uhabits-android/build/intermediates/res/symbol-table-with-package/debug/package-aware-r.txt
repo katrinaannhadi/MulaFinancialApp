@@ -1370,6 +1370,7 @@ color mula_turqoise_dark_primary
 color mula_yellow_200
 color mula_yellow_500
 color mula_yellow_600
+color mula_yellow_700
 color mula_yellow_dark_primary
 color nav_bar
 color neutral_pressed
@@ -2050,6 +2051,8 @@ drawable ic_credit_card
 drawable ic_done_white_24px
 drawable ic_edit_black_24dp
 drawable ic_featured
+drawable ic_goal1
+drawable ic_goal2
 drawable ic_grand
 drawable ic_home_black_24dp
 drawable ic_investment
@@ -2058,6 +2061,9 @@ drawable ic_investopedia
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_khan
+drawable ic_learn1
+drawable ic_learn2
+drawable ic_learn3
 drawable ic_menu_arrow_down_black_24dp
 drawable ic_menu_arrow_up_black_24dp
 drawable ic_mtrl_checked_circle
@@ -2073,6 +2079,7 @@ drawable ic_repeat_white
 drawable ic_search
 drawable ic_spend
 drawable ic_super
+drawable ic_tax
 drawable image_investment
 drawable indicator_dot_grey
 drawable indicator_dot_white

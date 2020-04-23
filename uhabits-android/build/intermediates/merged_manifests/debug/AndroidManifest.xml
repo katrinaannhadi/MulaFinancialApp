@@ -30,6 +30,9 @@
             android:name="org.mula.finance.activities.QuizStartActivity"
             android:theme="@style/Mula.Purple" />
         <activity
+            android:name="org.mula.finance.activities.video.YoutubePlayerActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
             android:name="org.mula.finance.activities.video.VideoActivity"
             android:theme="@style/Mula.Purple" />
         <activity

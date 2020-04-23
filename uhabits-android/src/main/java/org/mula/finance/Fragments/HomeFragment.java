@@ -68,8 +68,8 @@ public class HomeFragment extends Fragment {
         context = view.getContext();
 
         mGoals = new ArrayList<>();
-        mGoals.add(new Model(R.drawable.ic_piggy_bank, "Smash your Goals", "Use our goal tracker to keep track of smart financial habits, get reminders and more!",1));
-        mGoals.add(new Model(R.drawable.ic_super, "Track your Expenses", "Use our expense tracker to help you achieve your financial goals!",2));
+        mGoals.add(new Model(R.drawable.ic_goal1, "Smash your Goals", "Use our goal tracker to keep track of smart financial habits, get reminders and more!",1));
+        mGoals.add(new Model(R.drawable.ic_goal2, "Track your Expenses", "Use our expense tracker to help you achieve your financial goals!",2));
         mGoalAdapter = new GoalAdapter(mGoals, this);
 
         viewPager = view.findViewById(R.id.viewPager);
@@ -78,7 +78,7 @@ public class HomeFragment extends Fragment {
 
         Integer[] colors_temp = {
                 getResources().getColor(R.color.mula_yellow_500),
-                getResources().getColor(R.color.green_300),
+                getResources().getColor(R.color.mula_yellow_600),
 
         };
 

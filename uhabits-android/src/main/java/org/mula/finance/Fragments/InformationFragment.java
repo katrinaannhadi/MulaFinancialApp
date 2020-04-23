@@ -76,9 +76,9 @@ public class InformationFragment extends Fragment  {
         context = view.getContext();
 
         mInformation = new ArrayList<>();
-        mInformation.add(new Model(R.drawable.ic_piggy_bank, "Educate Yourself", "Finance shouldn't be hard! Read on for hot tips and trendy articles.", 1));
-        mInformation.add(new Model(R.drawable.ic_super, "Need a Challenge", "Have some fun and test yourself with our quiz!", 2));
-        mInformation.add(new Model(R.drawable.ic_super, "Visual Learner", "We got your back. Sit back and watch informational videos on finance curated by the team!", 2));
+        mInformation.add(new Model(R.drawable.ic_learn1, "Educate Yourself", "Finance shouldn't be hard! Read on for hot tips and trendy articles.", 1));
+        mInformation.add(new Model(R.drawable.ic_learn2, "Need a Challenge", "Have some fun and test yourself with our quiz!", 2));
+        mInformation.add(new Model(R.drawable.ic_learn3, "Visual Learner", "We got your back. Sit back and watch informational videos on finance curated by the team!", 2));
         mInformationAdapter = new InformationAdapter(mInformation, this);
 
         viewPager = view.findViewById(R.id.viewPager);
@@ -86,10 +86,9 @@ public class InformationFragment extends Fragment  {
         viewPager.setPadding(130, 0, 130, 0);
 
         Integer[] colors_temp = {
-                getResources().getColor(R.color.mula_yellow_500),
+                getResources().getColor(R.color.mula_purple_200),
                 getResources().getColor(R.color.mula_purple_500),
-                getResources().getColor(R.color.green_300),
-                getResources().getColor(R.color.pink_300)
+                getResources().getColor(R.color.mula_purple_600)
 
         };
 
