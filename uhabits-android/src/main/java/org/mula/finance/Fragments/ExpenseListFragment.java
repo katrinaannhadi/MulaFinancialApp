@@ -14,6 +14,7 @@ import android.widget.TextView;
 import org.mula.finance.Adapters.ExpenseListAdapter;
 import org.mula.finance.AsyncTasks.ExpenseAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.ExpenseListRetrieveAsyncTask;
+import org.mula.finance.AsyncTasks.ExpenseRetrieveAsyncTask;
 import org.mula.finance.Databases.AppDatabase;
 import org.mula.finance.Models.Expense;
 import org.mula.finance.R;
@@ -69,10 +70,20 @@ public class ExpenseListFragment extends Fragment implements ExpenseAsyncTaskDel
 
         db = AppDatabase.getInstance(view.getContext());
 
-        ExpenseListRetrieveAsyncTask retrieve = new ExpenseListRetrieveAsyncTask();
-        retrieve.setAppDatabase(db);
-        retrieve.setDelegate(this);
-        retrieve.execute(mParam1);
+        if(mParam1 == "All Expenses"){
+            ExpenseRetrieveAsyncTask retrieve = new ExpenseRetrieveAsyncTask();
+            retrieve.setAppDatabase(db);
+            retrieve.setDelegate(this);
+            retrieve.execute();
+
+        } else {
+            ExpenseListRetrieveAsyncTask retrieve = new ExpenseListRetrieveAsyncTask();
+            retrieve.setAppDatabase(db);
+            retrieve.setDelegate(this);
+            retrieve.execute(mParam1);
+        }
+
+
 
 
 

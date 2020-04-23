@@ -38,14 +38,25 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingPrefix,RtlCompat" />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_calculator"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/choose" />
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@+id/candle_stick_chart"
+        app:layout_constraintTop_toBottomOf="@+id/choose"></androidx.viewpager.widget.ViewPager>
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_calculator"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/choose" />-->
 
 
     <com.github.mikephil.charting.charts.CandleStickChart
@@ -55,7 +66,7 @@
         android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rv_calculator" />
+        app:layout_constraintTop_toBottomOf="@id/viewPager" />
 
     <Button
         android:id="@+id/button_refresh"

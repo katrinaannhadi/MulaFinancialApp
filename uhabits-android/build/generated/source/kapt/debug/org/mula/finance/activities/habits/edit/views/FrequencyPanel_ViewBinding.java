@@ -17,7 +17,7 @@ import org.mula.finance.R;
 public class FrequencyPanel_ViewBinding implements Unbinder {
   private FrequencyPanel target;
 
-  private View view7f0a01df;
+  private View view7f0a01de;
 
   @UiThread
   public FrequencyPanel_ViewBinding(FrequencyPanel target) {
@@ -33,7 +33,7 @@ public class FrequencyPanel_ViewBinding implements Unbinder {
     target.tvDenominator = Utils.findRequiredViewAsType(source, R.id.denominator, "field 'tvDenominator'", TextView.class);
     view = Utils.findRequiredView(source, R.id.spinner, "field 'spinner' and method 'onFrequencySelected'");
     target.spinner = Utils.castView(view, R.id.spinner, "field 'spinner'", Spinner.class);
-    view7f0a01df = view;
+    view7f0a01de = view;
     ((AdapterView<?>) view).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> p0, View p1, int p2, long p3) {
@@ -59,7 +59,7 @@ public class FrequencyPanel_ViewBinding implements Unbinder {
     target.spinner = null;
     target.customFreqPanel = null;
 
-    ((AdapterView<?>) view7f0a01df).setOnItemSelectedListener(null);
-    view7f0a01df = null;
+    ((AdapterView<?>) view7f0a01de).setOnItemSelectedListener(null);
+    view7f0a01de = null;
   }
 }
