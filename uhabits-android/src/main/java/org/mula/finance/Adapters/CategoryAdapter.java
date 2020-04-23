@@ -1,5 +1,7 @@
 package org.mula.finance.Adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +23,7 @@ public class CategoryAdapter extends ExpandableRecyclerViewAdapter<IntentLinkVie
         super(groups);
     }
 
+
     @Override
     public IntentLinkViewHolder onCreateGroupViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.chunk_calculator,parent, false);
@@ -37,6 +40,18 @@ public class CategoryAdapter extends ExpandableRecyclerViewAdapter<IntentLinkVie
     public void onBindChildViewHolder(CategoryViewHolder holder, int flatPosition, ExpandableGroup group, int childIndex) {
         final Category category = (Category) group.getItems().get(childIndex);
         holder.bind(category);
+
+        holder.view.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Context c = view.getContext();
+                Intent intent = category.getCategoryIntent();
+                intent.putExtra("Difficulty", category.getCategory());
+                c.startActivity(intent);
+            }
+        });
+        holder.bind(category);
+
     }
 
     @Override

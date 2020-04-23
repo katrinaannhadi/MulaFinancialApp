@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,6 +33,7 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.CandleData;
 import com.github.mikephil.charting.data.CandleDataSet;
 import com.github.mikephil.charting.data.CandleEntry;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import com.github.mikephil.charting.utils.EntryXComparator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -45,6 +48,8 @@ import org.mula.finance.activities.TaxCalculatorActivity;
 import org.mula.finance.R;
 import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -56,14 +61,7 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class CalculatorFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     private View view;
     private Button refreshButton;
@@ -79,6 +77,12 @@ public class CalculatorFragment extends Fragment {
 
     private LinearLayoutManager layoutManager;
     private CandleDataSet set1;
+
+    private XAxis xAxis;
+
+    private DateTimeFormatter toDate;
+    private DateTimeFormatter toString;
+
 
 
     public CalculatorFragment() {
@@ -97,8 +101,6 @@ public class CalculatorFragment extends Fragment {
     public static CalculatorFragment newInstance(String param1, String param2) {
         CalculatorFragment fragment = new CalculatorFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -111,6 +113,7 @@ public class CalculatorFragment extends Fragment {
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -121,6 +124,9 @@ public class CalculatorFragment extends Fragment {
         candleStickChart = view.findViewById(R.id.candle_stick_chart);
         refreshButton = view.findViewById(R.id.button_refresh);
         refreshButton.setText("Refresh");
+
+        toDate = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        toString = DateTimeFormatter.ofPattern("MM-dd HH");
 
         yValsCandleStick = new ArrayList<CandleEntry>();
 
@@ -217,6 +223,7 @@ public class CalculatorFragment extends Fragment {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void onResponse(String response) {
         Activity activity = getActivity();
         if (isAdded() && activity != null) {
@@ -230,6 +237,16 @@ public class CalculatorFragment extends Fragment {
             try {
                 Collection<DailyPrice> values = company.getCompanyStockPrices().values();
                 ArrayList<DailyPrice> dailyPrices = new ArrayList<DailyPrice>(values);
+                Collection<String> xAxisValues = company.getCompanyStockPrices().keySet();
+                ArrayList<String> xValues = new ArrayList<>(xAxisValues);
+
+                for(int i = 0; i < xValues.size(); i++){
+                    LocalDateTime date = LocalDateTime.parse(xValues.get(i), toDate);
+                    xValues.set(i, date.format(toString));
+                }
+
+                xAxis = candleStickChart.getXAxis();
+                xAxis.setValueFormatter(new IndexAxisValueFormatter(xValues));
 
 
                 int size = dailyPrices.size();
