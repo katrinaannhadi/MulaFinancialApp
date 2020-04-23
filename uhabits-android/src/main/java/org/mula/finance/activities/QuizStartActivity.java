@@ -1,6 +1,7 @@
 package org.mula.finance.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
@@ -34,6 +35,8 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
     private TextView textTopCategory;
     private ArrayList<Category> categoryList;
     private ScoreDatabase db;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
 
 
@@ -43,8 +46,13 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
         setContentView(R.layout.activity_quiz_start);
 
 
-        rv = findViewById(R.id.rv_quiz);
 
+        titleAverage = findViewById(R.id.text_quiz_average);
+        titleTopCategory = findViewById(R.id.text_high_score);
+        textAverage = findViewById(R.id.text_score);
+        textTopCategory = findViewById(R.id.text_percentage);
+        titleAverage.setText("Top Score:");
+        titleTopCategory.setText("Top Category:");
 
         calc = new ArrayList<>();
         ArrayList<Category> blank = new ArrayList<>();
@@ -56,14 +64,12 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
 
 
         CategoryAdapter categoryAdapter = new CategoryAdapter(calc);
-        rv.setAdapter(categoryAdapter);
 
-        titleAverage = view.findViewById(R.id.text_quiz_average);
-        titleTopCategory = view.findViewById(R.id.text_high_score);
-        textAverage = view.findViewById(R.id.text_score);
-        textTopCategory = view.findViewById(R.id.text_percentage);
-        titleAverage.setText("Top Score:");
-        titleTopCategory.setText("Top Category:");
+        rv = findViewById(R.id.rv_quiz);
+        rv.setAdapter(categoryAdapter);
+        mLayoutManager = new LinearLayoutManager(this);
+        rv.setLayoutManager(mLayoutManager);
+
 
         db = db.getInstance(this);
 

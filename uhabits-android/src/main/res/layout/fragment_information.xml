@@ -73,10 +73,4 @@
         android:layout_height="wrap_content"
         />
 
-    <ImageButton
-        android:id="@+id/button_to_viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/ic_super"/>
-
 </LinearLayout>

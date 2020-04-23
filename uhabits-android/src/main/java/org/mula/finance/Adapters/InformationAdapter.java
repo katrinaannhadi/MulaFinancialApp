@@ -15,6 +15,7 @@ import org.mula.finance.Fragments.InformationFragment;
 import org.mula.finance.R;
 import org.mula.finance.activities.ExpenseTrackerActivity;
 import org.mula.finance.activities.QuizActivity;
+import org.mula.finance.activities.QuizStartActivity;
 import org.mula.finance.activities.article.ArticleActivity;
 import org.mula.finance.activities.category.Model;
 import org.mula.finance.activities.habits.list.ListHabitsActivity;
@@ -70,7 +71,7 @@ public class InformationAdapter extends PagerAdapter {
                     Intent intent = new Intent(context.getContext(), ArticleActivity.class);
                     context.startActivity(intent);
                 } else if (position == 1){
-                    Intent intent = new Intent(context.getContext(), QuizActivity.class);
+                    Intent intent = new Intent(context.getContext(), QuizStartActivity.class);
                     context.startActivity(intent);
                 } else if (position ==2){
                     Intent intent = new Intent(context.getContext(), VideoActivity.class);

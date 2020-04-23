@@ -21,7 +21,7 @@
         tools:replace="android:label">
 
         <activity android:name=".activities.QuizStartActivity"
-            android:theme="@style/Mula.Purple"></activity>
+            android:theme="@style/Mula.Purple"/>
         <activity
             android:name=".activities.video.VideoActivity"
             android:theme="@style/Mula.Purple" />

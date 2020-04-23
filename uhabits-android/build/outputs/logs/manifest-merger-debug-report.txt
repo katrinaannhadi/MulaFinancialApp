@@ -142,7 +142,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/katr
 	android:name
 		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:14:9-42
 activity#org.mula.finance.activities.QuizStartActivity
-ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:23:9-24:59
+ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:23:9-24:49
 	android:theme
 		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:24:13-47
 	android:name

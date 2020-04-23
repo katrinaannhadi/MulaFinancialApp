@@ -50,7 +50,7 @@
 28        android:theme="@style/Base.Mula" >
 28-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:20:9-41
 29        <activity
-29-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:23:9-24:59
+29-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:23:9-24:49
 30            android:name="org.mula.finance.activities.QuizStartActivity"
 30-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:23:19-63
 31            android:theme="@style/Mula.Purple" />

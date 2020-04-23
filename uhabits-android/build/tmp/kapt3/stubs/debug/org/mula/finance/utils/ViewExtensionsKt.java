@@ -15,82 +15,82 @@ import org.mula.androidbase.utils.StyledResources;
 public final class ViewExtensionsKt {
     
     public static final void addBelow(@org.jetbrains.annotations.NotNull()
-    android.widget.RelativeLayout $receiver, @org.jetbrains.annotations.NotNull()
+    android.widget.RelativeLayout $this$addBelow, @org.jetbrains.annotations.NotNull()
     android.view.View view, @org.jetbrains.annotations.NotNull()
     android.view.View subject, int width, int height, @org.jetbrains.annotations.NotNull()
     kotlin.jvm.functions.Function1<? super android.widget.RelativeLayout.LayoutParams, kotlin.Unit> applyCustomRules) {
     }
     
     public static final void addAtBottom(@org.jetbrains.annotations.NotNull()
-    android.widget.RelativeLayout $receiver, @org.jetbrains.annotations.NotNull()
+    android.widget.RelativeLayout $this$addAtBottom, @org.jetbrains.annotations.NotNull()
     android.view.View view, int width, int height) {
     }
     
     public static final void addAtTop(@org.jetbrains.annotations.NotNull()
-    android.widget.RelativeLayout $receiver, @org.jetbrains.annotations.NotNull()
+    android.widget.RelativeLayout $this$addAtTop, @org.jetbrains.annotations.NotNull()
     android.view.View view, int width, int height) {
     }
     
     @org.jetbrains.annotations.NotNull()
     public static final androidx.appcompat.widget.Toolbar buildToolbar(@org.jetbrains.annotations.NotNull()
-    android.view.ViewGroup $receiver) {
+    android.view.ViewGroup $this$buildToolbar) {
         return null;
     }
     
     @org.jetbrains.annotations.NotNull()
     public static final com.google.android.material.bottomnavigation.BottomNavigationView buildBottomNav(@org.jetbrains.annotations.NotNull()
-    android.view.ViewGroup $receiver) {
+    android.view.ViewGroup $this$buildBottomNav) {
         return null;
     }
     
     public static final void showMessage(@org.jetbrains.annotations.NotNull()
-    android.view.View $receiver, @androidx.annotation.StringRes()
+    android.view.View $this$showMessage, @androidx.annotation.StringRes()
     int stringId) {
     }
     
-    public static final int toMeasureSpec(int $receiver, int mode) {
+    public static final int toMeasureSpec(int $this$toMeasureSpec, int mode) {
         return 0;
     }
     
-    public static final int toMeasureSpec(float $receiver, int mode) {
+    public static final int toMeasureSpec(float $this$toMeasureSpec, int mode) {
         return 0;
     }
     
     public static final boolean isRTL(@org.jetbrains.annotations.NotNull()
-    android.view.View $receiver) {
+    android.view.View $this$isRTL) {
         return false;
     }
     
     @org.jetbrains.annotations.NotNull()
     public static final android.graphics.Typeface getFontAwesome(@org.jetbrains.annotations.NotNull()
-    android.view.View $receiver) {
+    android.view.View $this$getFontAwesome) {
         return null;
     }
     
     public static final float dim(@org.jetbrains.annotations.NotNull()
-    android.view.View $receiver, int id) {
+    android.view.View $this$dim, int id) {
         return 0.0F;
     }
     
     public static final float sp(@org.jetbrains.annotations.NotNull()
-    android.view.View $receiver, float value) {
+    android.view.View $this$sp, float value) {
         return 0.0F;
     }
     
     public static final float dp(@org.jetbrains.annotations.NotNull()
-    android.view.View $receiver, float value) {
+    android.view.View $this$dp, float value) {
         return 0.0F;
     }
     
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String str(@org.jetbrains.annotations.NotNull()
-    android.view.View $receiver, int id) {
+    android.view.View $this$str, int id) {
         return null;
     }
     
     @org.jetbrains.annotations.NotNull()
     public static final org.mula.androidbase.utils.StyledResources getSres(@org.jetbrains.annotations.NotNull()
-    android.view.View $receiver) {
+    android.view.View $this$sres) {
         return null;
     }
 }

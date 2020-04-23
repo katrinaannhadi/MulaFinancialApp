@@ -16,7 +16,7 @@ import org.mula.finance.activities.common.views.HistoryChart;
 public class HistoryCard_ViewBinding implements Unbinder {
   private HistoryCard target;
 
-  private View view7f0a00dc;
+  private View view7f0a00db;
 
   @UiThread
   public HistoryCard_ViewBinding(HistoryCard target) {
@@ -31,7 +31,7 @@ public class HistoryCard_ViewBinding implements Unbinder {
     target.chart = Utils.findRequiredViewAsType(source, R.id.historyChart, "field 'chart'", HistoryChart.class);
     target.title = Utils.findRequiredViewAsType(source, R.id.title, "field 'title'", TextView.class);
     view = Utils.findRequiredView(source, R.id.edit, "method 'onClickEditButton'");
-    view7f0a00dc = view;
+    view7f0a00db = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class HistoryCard_ViewBinding implements Unbinder {
     target.chart = null;
     target.title = null;
 
-    view7f0a00dc.setOnClickListener(null);
-    view7f0a00dc = null;
+    view7f0a00db.setOnClickListener(null);
+    view7f0a00db = null;
   }
 }

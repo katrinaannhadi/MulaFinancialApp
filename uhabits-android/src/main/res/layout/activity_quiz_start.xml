@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_start_quiz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.QuizStartActivity">
+    android:orientation="vertical"
+    android:background="@color/mula_yellow_500"
+    tools:context=".Fragments.InformationFragment"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_start_quiz"
@@ -64,9 +68,11 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
+        android:id="@+id/rv_quiz"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/rv_quiz"/>
+        android:layout_marginTop="70dp"
+        />
 
-</FrameLayout>
+</LinearLayout>

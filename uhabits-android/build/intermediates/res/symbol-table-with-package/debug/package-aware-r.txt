@@ -2265,7 +2265,6 @@ id button_expense
 id button_goals
 id button_refresh
 id button_submit
-id button_to_viewpager
 id cancel_action
 id cancel_button
 id candle_stick_chart
