@@ -2,6 +2,7 @@ package org.mula.finance.activities.article;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,9 +12,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
+import com.google.googlejavaformat.Indent;
 
 import org.mula.finance.Models.Article;
 import org.mula.finance.R;
@@ -43,8 +46,10 @@ public class ArticleFragment extends Fragment {
         TextView articleTitle = v.findViewById(R.id.article_title);
         TextView articleCategory = v.findViewById(R.id.article_category);
         TextView articleFull = v.findViewById(R.id.article_full);
+        TextView articleSnippet = v.findViewById(R.id.hot_snippet);
         ImageView image = v.findViewById(R.id.imageView);
         ImageView search = v.findViewById(R.id.ivSearch);
+        ConstraintLayout layout = v.findViewById(R.id.featured_item);
 
         Intent intent = getActivity().getIntent();
         position = intent.getIntExtra(ArticleActivity.EXTRA_MESSAGE,0);
@@ -54,22 +59,27 @@ public class ArticleFragment extends Fragment {
 
         if(category == 1){
             mArticle = Article.getArticleList1().get(position);
+            layout.setBackgroundColor(Color.parseColor("#6663A4"));
         }
         //TODO TURN BACK ON
         if(category == 2){
             mArticle = Article.getArticleList2().get(position);
+            layout.setBackgroundColor(Color.parseColor("#03BAB9"));
         }
         if(category == 3){
             mArticle = Article.getArticleList3().get(position);
+            layout.setBackgroundColor(Color.parseColor("#F48FB1"));
         }
         if(category == 4){
             mArticle = Article.getArticleList4().get(position);
+            layout.setBackgroundColor(Color.parseColor("#FFC000"));
         }
 
 
         articleTitle.setText(mArticle.getArticleTitle());
         articleCategory.setText(mArticle.getArticleCategory());
         articleFull.setText(String.valueOf(mArticle.getArticleFull()));
+        articleSnippet.setText(mArticle.getArticleSnippet());
 
         Glide.with(image)
                 .load(mArticle.getImageURL())

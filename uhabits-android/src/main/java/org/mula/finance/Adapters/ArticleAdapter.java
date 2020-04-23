@@ -48,7 +48,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.Restaura
             mListener = listener;
             v.setOnClickListener(this);
             articleTitle = v.findViewById(R.id.article_title);
-            articleSnippet = v.findViewById(R.id.article_snippet);
+//            articleSnippet = v.findViewById(R.id.article_snippet);
             articleImage = v.findViewById(R.id.article_image);
         }
 
@@ -77,7 +77,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.Restaura
         .into(holder.articleImage);
 
         holder.articleTitle.setText(article.getArticleTitle());
-        holder.articleSnippet.setText(article.getArticleSnippet());
+//        holder.articleSnippet.setText(article.getArticleSnippet());
 //        holder.articleImage.setImageResource(article.getImageID());
 
 

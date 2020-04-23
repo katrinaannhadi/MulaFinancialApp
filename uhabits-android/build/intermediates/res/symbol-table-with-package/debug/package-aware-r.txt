@@ -1985,6 +1985,7 @@ drawable abc_vector_test
 drawable asl_featured
 drawable asl_my_courses
 drawable asl_search
+drawable avatar_outline
 drawable avd_featured_off
 drawable avd_featured_on
 drawable avd_hide_password
@@ -2070,6 +2071,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_mula_logo
 drawable ic_my_courses
 drawable ic_navigate_next_white_24dp
 drawable ic_notification
@@ -2085,6 +2087,7 @@ drawable image_investment
 drawable image_savings
 drawable indicator_dot_grey
 drawable indicator_dot_white
+drawable inset_divider
 drawable intro_icon_1
 drawable intro_icon_2
 drawable intro_icon_4
@@ -2242,7 +2245,6 @@ id animator
 id article_category
 id article_full
 id article_image
-id article_snippet
 id article_title
 id asConfigured
 id async
@@ -2350,6 +2352,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id divider
 id done
 id doneConfigureButton
 id done_button
@@ -2397,6 +2400,7 @@ id frequencyLabel
 id frequencyPanel
 id frequencyStackWidgetEmptyView
 id frequencyStackWidgetView
+id full
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -2419,6 +2423,8 @@ id historyStackWidgetView
 id home
 id homeAsUp
 id honorRequest
+id hot_snippet
+id hot_snippet_title
 id hour_space
 id hours
 id icon
@@ -2500,6 +2506,7 @@ id mtrl_picker_text_input_date
 id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
+id mula_logo
 id multiply
 id namePanel
 id navCalculators
