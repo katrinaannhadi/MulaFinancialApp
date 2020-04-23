@@ -18,14 +18,20 @@ import org.mula.finance.AsyncTasks.QuestionAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.QuestionCategoryAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.QuestionCategoryRetrieveAsyncTask;
 import org.mula.finance.AsyncTasks.QuestionInsertAsyncTask;
+import org.mula.finance.AsyncTasks.ScoreAsyncTaskDelegate;
+import org.mula.finance.AsyncTasks.ScoreInsertAsyncTask;
+import org.mula.finance.AsyncTasks.ScoreListAsyncTaskDelegate;
+import org.mula.finance.AsyncTasks.ScoreRetrieveAsyncTask;
 import org.mula.finance.Databases.QuestionDatabase;
+import org.mula.finance.Databases.ScoreDatabase;
 import org.mula.finance.Models.Question;
+import org.mula.finance.Models.Score;
 import org.mula.finance.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuizActivity extends AppCompatActivity implements QuestionCategoryAsyncTaskDelegate, QuestionAsyncTaskDelegate {
+public class QuizActivity extends AppCompatActivity implements QuestionCategoryAsyncTaskDelegate, QuestionAsyncTaskDelegate, ScoreAsyncTaskDelegate, ScoreListAsyncTaskDelegate {
 
     private Button continueBtn;
     private TextView questionText;
@@ -39,6 +45,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
     private String TAG = "QuizActivity";
     private QuestionDatabase db;
+    private ScoreDatabase scoreDb;
 
     private int score = 0;
     private int questionNum = 0;
@@ -46,7 +53,9 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     private List<Question> questionList;
     private QuizActivity quizActivity = this;
 
-    public static ArrayList<Integer> scoreHistoryList = new ArrayList<>();
+    private int difficulty;
+    private List<Score> scoreCheck;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,9 +80,10 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
         //TODO:: change to category
         Intent quizIntent = getIntent();
-        int difficulty = quizIntent.getIntExtra("Difficulty", 1);
+        difficulty = quizIntent.getIntExtra("Difficulty", 1);
 
         db = db.getInstance(this);
+        scoreDb = scoreDb.getInstance(this);
 
         insertQuestionListInDatabase(getQuestionList());
         retrieveQuestionListFromDatabase(difficulty);
@@ -111,9 +121,6 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
                     if (currentQuestion.getAnswer().equals(answer.getText())) {
 
                         score++;
-                    } else {
-                        //TODO://get rid of this
-
                     }
                     answer.setChecked(false);
                     Toast.makeText(getApplicationContext(), Integer.toString(questionNum), Toast.LENGTH_LONG).show();
@@ -131,8 +138,16 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
                         continueBtn.setText("Finish Quiz");
                     } else {
-                        //scoreHistoryList.add(score);
-                        //Toast to check for score at the end
+                        try {
+
+                            retrieveScoreListFromDb();
+
+
+                        } catch (NullPointerException e) {
+                            Score currentScore = new Score(0, score, difficulty);
+                            insertScoreInDB(currentScore);
+                        }
+
                         Toast.makeText(getApplicationContext(), Integer.toString(score), Toast.LENGTH_LONG).show();
                         mp.start();
                         finish();
@@ -150,6 +165,35 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         int num = question.getId();
         System.out.println(num);
     }
+
+    @Override
+    public void handleScoreReturned(List<Score> scores){
+
+    }
+
+    @Override
+    public void handleScoreListReturned(List<Score> scores){
+        scoreCheck = scores;
+        int id = scoreCheck.size();
+        Score currentScore = new Score(id, score, difficulty);
+        insertScoreInDB(currentScore);
+    }
+
+    public void insertScoreInDB(Score score){
+        ScoreInsertAsyncTask insertScoreAsyncTask = new ScoreInsertAsyncTask();
+        insertScoreAsyncTask.setScoreDatabase(scoreDb);
+        insertScoreAsyncTask.setDelegate(quizActivity);
+        insertScoreAsyncTask.execute(score);
+    }
+
+    public void retrieveScoreListFromDb(){
+        ScoreRetrieveAsyncTask retrieveAsyncTask = new ScoreRetrieveAsyncTask();
+        retrieveAsyncTask.setScoreDatabase(scoreDb);
+        retrieveAsyncTask.setDelegate(quizActivity);
+        retrieveAsyncTask.execute();
+    }
+
+
 
 
     public void insertQuestionListInDatabase(List<Question> questionList){
@@ -176,74 +220,74 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         //questions and answers from https://www.sageadvice.eu/2017/11/27/trivia-quiz-on-5th-edition-dd-rules/
         List<Question> questionList = new ArrayList<>();
         questionList.add(0, new Question(0,
-                "Can you cast underwater?",
+                "Do online banks offer better interest rates? If so, then why?",
                 "No",
-                "Yes, but fire spells deal no damage.",
-                "Yes",
-                "Yes",
+                "Yes, because they don't exist",
+                "Yes, because they have minimal overhead costs.",
+                "Yes, because they have minimal overhead costs.",
                 3));
         questionList.add(1, new Question(1,
-                "Is there alignment restriction for classes in Player's Handbook?",
-                "Yes, Paladin must be Lawful Good, Druid must be Neutral and Assassin must be evil.",
-                "No",
-                "Yes, Paladin must be Good and Monk Lawful.",
-                "No",
+                "Why is it good to have a good credit score?",
+                "Because it serves you better in the long run.",
+                "Because lenders will offer you better interest rates, saving you money.",
+                "You will receive a cheaper loan.",
+                "Because lenders will offer you better interest rates, saving you money.",
                 1));
         questionList.add(2, new Question(2,
-                "Can you knock a creature out with a melee spell attack?",
-                "Only with Spell Sniper feat.",
-                "No, only with a melee weapon.",
-                "Yes",
-                "Yes",
+                "Imagine an investment pyramid, what's at the bottom? (Which investments are more complicated?)",
+                "Stocks, bonds and cash",
+                "Index and mutual funds",
+                "Lifecycle funds",
+                "Stock, bonds and cash",
                 2));
         questionList.add(3, new Question(3,
-                "Can you use a shield with Mage Armor spell?",
-                "Only with a light shield or buckler shield.",
-                "Yes, Mage Armor spell works with a shield",
-                "Nope, they do not stack.",
-                "Yes, Mage Armor spell works with a shield.",
+                "What's one of the most effective ways to save?",
+                "Using this app.",
+                "Giving your savings to your parents for safe keep.",
+                "Making a plan consisting of your expenditure and laying down clear goals.",
+                "Making a plan consisting of your expenditure and laying down clear goals.",
                 3));
         questionList.add(4, new Question(4,
-                "A monster is immune to damage from nonmagical bludgeoning weapons. Does he still take damage from falling?",
-                "Yes, but has resistance to damage.",
-                "No, fall is a bludgeoning damage.",
-                "Yes, fall is not a weapon.",
-                "Yes, fall is not a weapon.",
+                "How can a credit card save you money?",
+                "It can enable you to pay for things ahead of time, allowing you to set aside money.",
+                "It can have extra benefits such as gift cards and promotions.",
+                "All of the above.",
+                "All of the above.",
                 1));
         questionList.add(5, new Question(5,
-                "If a 5th level wizard casts a Fireball during surprise, do the enemies get disadvantage on their saving throw?",
-                "No",
-                "Only if wizard has with War Caster feat.",
-                "Yes",
-                "No",
+                "What percentage of punctual debt payoff accounts for your credit score?",
+                "35%",
+                "60%",
+                "20%",
+                "35%",
                 1));
         questionList.add(6, new Question(6,
-                "Is a 1 on an ability check an automatic failure?",
-                "No",
-                "Yes.",
-                "Yes and roll a d10 on Fumble table.",
-                "No",
+                "What does global equity fund?",
+                "Incorporate shares of companies around the world.",
+                "The global banks.",
+                "The United States",
+                "Incorporate shares of companies around the world.",
                 2));
         questionList.add(7, new Question(7,
-                "Can rogue get sneak attack damage against undead?",
-                "Yes, Sneak Attack works against Undead.",
-                "No, undeads have resistance to sneak attack.",
-                "Only if you use a bludgeoning weapon.",
-                "Yes, Sneak Attack works against Undead.",
+                "Why is it good to save around 50% of an unexpected monetary gift?",
+                "You will treat all monetary gifts as disposable income.",
+                "You will regret it later, when you find something else to buy.",
+                "You shouldn't get used to spending more than what you can afford.",
+                "You shouldn't get used to spending more than what you can afford.",
                 1));
         questionList.add(8, new Question(8,
-                "If you have a creature between you and the target...",
-                "Target has cover +4 bonus to AC.",
-                "Target has half-cover +2 bonus to AC.",
-                "You have disadvantage.",
-                "Target has half-cover +2 bonus to AC.",
+                "What's the simplest way to invest?",
+                "Listening to financial experts.",
+                "Listening to your economics major friend, and experimenting with investing.",
+                "Through automatic lifecycle funds.",
+                "Through automatic lifecycle funds.",
                 2));
         questionList.add(9, new Question(9,
-                "Can you make an attack action from Prone condition?",
-                "Yes, but you have disadvantage on attack rolls.",
-                "No, you must stand up (half movement) and attack.",
-                "Only with a weapon with reach property.",
-                "Yes, but you have disadvantage on attack rolls.",
+                "How many times should you check your super throughout your life?",
+                "At least, once a year regardless.",
+                "Every time, you change jobs.",
+                "If the superfund company sends me a letter.",
+                "At least, once a year regardless.",
                 3));
 
         return questionList;
