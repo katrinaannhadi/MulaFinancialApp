@@ -159,6 +159,11 @@ public class ExpenseTrackerActivity extends AppCompatActivity implements Expense
         fragment2.setArguments(arguments2);
         transaction2.replace(R.id.lineFragment,fragment2);
         transaction2.commit();
+
+        FragmentManager fManager = getSupportFragmentManager();
+        FragmentTransaction fTransaction = fManager.beginTransaction();
+        ExpenseListFragment expenseFragment = ExpenseListFragment.newInstance("All Expenses");
+        fTransaction.replace(R.id.fragment_expense_list, expenseFragment).commit();
     }
 
     @Override

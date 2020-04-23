@@ -73,6 +73,7 @@ public class ExpensePieChartFragment extends Fragment {
             @Override
             public void onSelectPie(@NonNull IPieInfo pieInfo, boolean isFloatUp) {
                 Toast.makeText(ExpensePieChartFragment.this.getActivity(),String.format("%s : %.2f", pieInfo.getDesc(), pieInfo.getValue()), Toast.LENGTH_SHORT).show();
+                System.out.println(pieInfo.getDesc());
                 callback.onPieSelected(pieInfo.getDesc());
             }
         });
