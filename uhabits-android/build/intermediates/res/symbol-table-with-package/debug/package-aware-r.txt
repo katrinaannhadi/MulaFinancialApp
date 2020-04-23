@@ -2714,6 +2714,7 @@ id titleTotalContributions
 id titleTotalInterest
 id titleYears
 id title_add_expense
+id title_chart
 id title_expense_tracker
 id title_layout
 id title_template
