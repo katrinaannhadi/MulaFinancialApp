@@ -2,48 +2,22 @@ package org.mula.finance.Fragments;
 
 import android.animation.ArgbEvaluator;
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.github.mikephil.charting.charts.CandleStickChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.data.CandleData;
-import com.github.mikephil.charting.data.CandleDataSet;
-import com.github.mikephil.charting.data.CandleEntry;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import org.mula.finance.Models.Company;
-import org.mula.finance.Models.DailyPrice;
 import org.mula.finance.R;
-import org.mula.finance.activities.ExpenseTrackerActivity;
-import org.mula.finance.activities.category.CategoryAdapter;
-import org.mula.finance.activities.category.GoalAdapter;
+import org.mula.finance.Adapters.GoalAdapter;
 import org.mula.finance.activities.category.Model;
-import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 /**

@@ -7,6 +7,7 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -65,6 +66,9 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         homeFragment = new HomeFragment();
         calculatorFragment = new CalculatorFragment();
         videoFragment = new VideoFragment();
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         pref = this.getSharedPreferences("My Pref", 0);
         editor = pref.edit();

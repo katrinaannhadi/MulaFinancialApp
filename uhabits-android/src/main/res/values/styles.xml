@@ -16,7 +16,7 @@
         <item name="cardBackground">@drawable/card_light_background</item>
 
         <item name="colorPrimary">@color/mula_yellow_500</item>
-        <item name="colorPrimaryDark">@color/blue_grey_900</item>
+        <item name="colorPrimaryDark">@color/mula_purple_dark_primary</item>
         <item name="colorAccent">@color/mula_yellow_500</item>
         <item name="cardBgColor">@color/grey_50</item>
         <item name="windowBackgroundColor">@color/grey_200</item>

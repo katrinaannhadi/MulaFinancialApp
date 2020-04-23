@@ -45,8 +45,8 @@ import org.mula.finance.Models.DailyPrice;
 import org.mula.finance.Models.IntentLink;
 import org.mula.finance.activities.InvestmentCalculatorActivity;
 import org.mula.finance.activities.TaxCalculatorActivity;
+
 import org.mula.finance.R;
-import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

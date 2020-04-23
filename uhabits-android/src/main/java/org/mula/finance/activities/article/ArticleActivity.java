@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.mula.finance.Adapters.ArticleAdapter;
 import org.mula.finance.Models.Article;
 import org.mula.finance.R;
 

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="org.mula.finance">
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -16,47 +17,30 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/main_activity_title"
         android:supportsRtl="true"
-        tools:replace="android:label"
-        android:theme="@style/AppBaseTheme">
-
-        <activity android:name=".activities.category.ArticleSelectionActivity"
-            android:theme="@style/Mula.Purple"></activity>
-
-        <activity android:name=".activities.ExpenseTrackerActivity"
-            android:theme="@style/Mula.Purple"></activity>
-
-        <activity android:name=".activities.AddExpenseActivity"
-            android:theme="@style/Mula.Purple"></activity>
-
-        <activity android:name=".activities.article.ArticleDetailActivity"
-            android:theme="@style/Mula.Purple"></activity>
-
-        <activity android:name=".activities.article.ArticleActivity"
-            android:theme="@style/Mula.Purple"></activity>
-
-        <activity android:name=".activities.MainActivity"
-            android:theme="@style/Mula.Purple"></activity>
-
-        <meta-data
-            android:name="com.google.android.backup.api_key"
-            android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-
-        <meta-data
-            android:name="fontProviderRequests"
-            android:value="Rubik" />
-
+        android:theme="@style/Base.Mula"
+        tools:replace="android:label">
+        <activity android:name=".activities.video.VideoActivity"
+            android:theme="@style/Mula.Purple" />
         <activity
-            android:name=".activities.habits.list.ListHabitsActivity"
-            android:exported="true"
-            android:label="@string/main_activity_title"
-            android:launchMode="singleTop"
-            android:theme="@style/Mula.Purple"></activity>
-
-
-      <!--  <activity-alias
+            android:name=".activities.category.ArticleSelectionActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name=".activities.ExpenseTrackerActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name=".activities.AddExpenseActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name=".activities.article.ArticleDetailActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name=".activities.article.ArticleActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/Mula.Purple" />
+        <!--
+  <activity-alias
             android:name=".activities.habits.list.ListHabitsActivity"
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
@@ -66,8 +50,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity-alias> -->
-
+        </activity-alias>
+        -->
         <activity-alias
             android:name=".activities.MainActivity"
             android:label="@string/main_activity_title"
@@ -81,16 +65,35 @@
             </intent-filter>
         </activity-alias>
 
+        <activity
+            android:name=".activities.video.VideoFragment"
+            android:theme="@style/Mula.Purple" />
 
-        <activity android:name=".activities.InvestmentCalculatorActivity"
-            android:theme="@style/Mula.Purple"/>
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAI6aeWncbnMNo8E5GWeZ44dlc5cQ7tCROwFhOtiw" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="fontProviderRequests"
+            android:value="Rubik" />
 
-        <activity android:name=".activities.TaxCalculatorActivity"
-            android:theme="@style/Mula.Purple"/>
-
-        <activity android:name=".activities.QuizActivity"
-            android:theme="@style/Mula.Purple"/>
-
+        <activity
+            android:name=".activities.habits.list.ListHabitsActivity"
+            android:exported="true"
+            android:label="@string/main_activity_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name=".activities.InvestmentCalculatorActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name=".activities.TaxCalculatorActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
+            android:name=".activities.QuizActivity"
+            android:theme="@style/Mula.Purple" />
         <activity
             android:name=".activities.habits.show.ShowHabitActivity"
             android:label="@string/title_activity_show_habit"
@@ -99,7 +102,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.mula.finance.activities.habits.list.ListHabitsActivity" />
         </activity>
-
         <activity
             android:name=".activities.settings.SettingsActivity"
             android:label="@string/settings"
@@ -108,7 +110,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.mula.finance.activities.habits.list.ListHabitsActivity" />
         </activity>
-
         <activity
             android:name=".activities.intro.IntroActivity"
             android:label=""
@@ -124,7 +125,7 @@
             android:name=".notifications.SnoozeDelayPickerActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name=".widgets.CheckmarkWidgetProvider"
@@ -251,7 +252,7 @@
         <service
             android:name=".sync.SyncService"
             android:enabled="true"
-            android:exported="false"></service>
+            android:exported="false" />
     </application>
 
 </manifest>
