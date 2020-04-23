@@ -741,4 +741,116 @@ ViewHolder
 !/ 
 3
 %4 
+8 «   ù2020
+20B J.(0 2$+ 
+*0#0#*
+*0#0#0$0"HJ.00 2$+ 
+*0#0#*
+*0#0#0$0"HJ10 220&HJ50 HJ60 270'HR' 
+*00*
+*0000XÇR' 
+*00*
+*0000XÇR*00XÇR
+*00*00XÇR*00XÇR*00XÇR *00XÇR#*00XÇR$*00XÇR%*00XÇR&*00XÇ  ê
+org
+mula
+finance
+
+activities
+QuizStartActivity
+androidx
+	appcompat
+app
+AppCompatActivity
+
+AsyncTasks
+ScoreAsyncTaskDelegate
+ScoreListAsyncTaskDelegate
+calc
+java
+util
+	ArrayList
+Models
+
+IntentLink
+categoryList
+Category
+db
+	Databases
+ScoreDatabase
+mAdapter
+recyclerview
+widget
+RecyclerView
+Adapter
+
+ViewHolder
+mLayoutManager
+LayoutManager
+rv
+textAverage
+android
+TextView
+textTopCategory
+titleAverage
+titleTopCategory
+view
+View
+handleScoreListReturned
+kotlin
+Unit
+scores
+collections
+MutableList
+Score
+List
+handleScoreReturned
+onCreate
+savedInstanceState
+os
+Bundle
+retrieveScoreListFromDb
+	startQuiz
+number
+Int  
+ 
+ 
+
+
+ 
+
+
+
+ 
+	
+	
+ 
+	 
+
+
+ 
+
+ 
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+!
+
+" 
+&
+' 
+)
+* 
+,
+!- 
+. 
+!/ 
+3
+%4 
 8 

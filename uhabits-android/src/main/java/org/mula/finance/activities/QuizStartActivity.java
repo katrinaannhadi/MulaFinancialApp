@@ -66,9 +66,11 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
         CategoryAdapter categoryAdapter = new CategoryAdapter(calc);
 
         rv = findViewById(R.id.rv_quiz);
-        rv.setAdapter(categoryAdapter);
+        rv.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
         rv.setLayoutManager(mLayoutManager);
+
+        rv.setAdapter(categoryAdapter);
 
 
         db = db.getInstance(this);
