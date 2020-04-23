@@ -75,6 +75,10 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         lastDay = pref.getInt("LAST_DATE", 0);
         streak = pref.getInt("QUIZ_STREAK", 0);
 
+        if(lastDay != today){
+            editor.putInt("ANSWERED", 0).commit();
+        }
+
         swapMenuFragment(homeFragment);
 
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -101,6 +105,15 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
 
 
     }
+
+  /*  @Override
+    protected void onResume() {
+        super.onResume();
+        if(lastDay != today){
+            editor.putInt("ANSWERED", 0).commit();
+        }
+        showQuizPopup();
+    } */
 
     //swap fragment for the ui
     private void swapMenuFragment(Fragment fragment) {

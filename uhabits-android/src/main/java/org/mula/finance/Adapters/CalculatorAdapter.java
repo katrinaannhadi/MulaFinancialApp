@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.mula.finance.Models.IntentLink;
@@ -54,6 +56,7 @@ public class CalculatorAdapter extends RecyclerView.Adapter<CalculatorAdapter.Ca
         return calcViewHolder;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     public void onBindViewHolder(@NonNull CalculatorViewHolder calcViewHolder, int position){
 
@@ -61,16 +64,24 @@ public class CalculatorAdapter extends RecyclerView.Adapter<CalculatorAdapter.Ca
 
         Drawable icon = calcViewHolder.view.getResources().getDrawable(intentLink.getLinkDrawable());
         calcViewHolder.view.setBackground(icon);
-        //calcViewHolder.view.getBackground().setColorFilter(intentLink.getLinkColourTint(), PorterDuff.Mode.OVERLAY);
         calcViewHolder.textView.setText(intentLink.getLinkName());
         calcViewHolder.view.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Context c = view.getContext();
                 Intent intent = intentLink.getLinkIntent();
-                //TODO:// change once pop up menu is a thing
-                if(intentLink.getLinkName() == "Quiz"){
-                    intent.putExtra("Difficulty", 1);
+                switch(intentLink.getLinkName()){
+                    case "Credit":
+                        intent.putExtra("Difficulty", 1);
+                        break;
+                    case "Investment":
+                        intent.putExtra("Difficulty", 2);
+                        break;
+                    case "Savings":
+                        intent.putExtra("Difficulty", 3);
+                        break;
+                    default:
+                        break;
                 }
                 c.startActivity(intent);
             }
