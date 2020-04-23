@@ -169,15 +169,15 @@ public class CalculatorFragment extends Fragment {
         context = view.getContext();
 
         calc = new ArrayList<>();
-        List<Category> blank = new ArrayList<>();
+
 
         calc.add(new IntentLink("Investment",
                 new Intent(context, InvestmentCalculatorActivity.class),
-                R.drawable.image_investment, R.color.light_blue_300, blank));
+                R.drawable.image_investment, R.color.light_blue_300));
 
         calc.add(new IntentLink("Tax",
                 new Intent(context, TaxCalculatorActivity.class),
-                R.drawable.ic_investment, R.color.amber_50, blank));
+                R.drawable.ic_investment, R.color.amber_50));
 
         //calc.add(new IntentLink("Goals",
         //     new Intent(context, ListHabitsActivity.class),

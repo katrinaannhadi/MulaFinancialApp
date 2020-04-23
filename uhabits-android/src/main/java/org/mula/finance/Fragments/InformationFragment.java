@@ -2,33 +2,21 @@ package org.mula.finance.Fragments;
 
 import android.animation.ArgbEvaluator;
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import org.mula.finance.Adapters.CategoryAdapter;
 import org.mula.finance.Adapters.InformationAdapter;
-import org.mula.finance.AsyncTasks.ScoreAsyncTaskDelegate;
-import org.mula.finance.AsyncTasks.ScoreListAsyncTaskDelegate;
-import org.mula.finance.AsyncTasks.ScoreRetrieveAsyncTask;
 import org.mula.finance.Databases.ScoreDatabase;
 import org.mula.finance.Models.Category;
 import org.mula.finance.Models.IntentLink;
-import org.mula.finance.Models.Score;
-import org.mula.finance.activities.QuizActivity;
 import org.mula.finance.R;
-import org.mula.finance.activities.category.ArticleSelectionActivity;
-import org.mula.finance.Adapters.GoalAdapter;
 import org.mula.finance.activities.category.Model;
 
 import java.util.ArrayList;

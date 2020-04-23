@@ -2,12 +2,11 @@ package org.mula.finance.Models;
 
 import android.content.Intent;
 
-import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
 
 import java.util.List;
 
 //class to hold intents to different activities etc
-public class IntentLink extends ExpandableGroup<Category> {
+public class IntentLink {
 
 
 
@@ -16,8 +15,9 @@ public class IntentLink extends ExpandableGroup<Category> {
     private int drawable;
     private int colourTint;
 
-    public IntentLink (String name, Intent intent, int drawable, int colourTint, List<Category> items){
-        super(name, items);
+    private int quizCategory;
+
+    public IntentLink (String name, Intent intent, int drawable, int colourTint){
         this.name = name;
         this.intent = intent;
         this.drawable = drawable;
@@ -36,6 +36,14 @@ public class IntentLink extends ExpandableGroup<Category> {
 
     public int getLinkDrawable() {
         return drawable;
+    }
+
+    public int getQuizCategory() {
+        return quizCategory;
+    }
+
+    public void setQuizCategory(int quizCategory) {
+        this.quizCategory = quizCategory;
     }
 
     public int getLinkColourTint() {
