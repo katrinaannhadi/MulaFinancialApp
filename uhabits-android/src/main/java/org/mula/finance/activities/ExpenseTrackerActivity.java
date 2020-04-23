@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -13,6 +14,7 @@ import org.mula.finance.AsyncTasks.ExpenseAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.ExpenseRetrieveAsyncTask;
 import org.mula.finance.Databases.AppDatabase;
 import org.mula.finance.Fragments.ExpenseLineChartFragment;
+import org.mula.finance.Fragments.ExpenseListFragment;
 import org.mula.finance.Fragments.ExpensePieChartFragment;
 import org.mula.finance.Models.Expense;
 import org.mula.finance.R;
@@ -27,7 +29,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class ExpenseTrackerActivity extends AppCompatActivity implements ExpenseAsyncTaskDelegate {
+public class ExpenseTrackerActivity extends AppCompatActivity implements ExpenseAsyncTaskDelegate, ExpensePieChartFragment.OnExpensePieSelectedListener {
 
     private String[] categories;
     private final static String HEADING = "Previous 30 Days Of Expenses";
@@ -157,5 +159,21 @@ public class ExpenseTrackerActivity extends AppCompatActivity implements Expense
         fragment2.setArguments(arguments2);
         transaction2.replace(R.id.lineFragment,fragment2);
         transaction2.commit();
+    }
+
+    @Override
+    public void onAttachFragment(Fragment fragment){
+        if (fragment instanceof ExpensePieChartFragment){
+            ExpensePieChartFragment expenseFragment = (ExpensePieChartFragment) fragment;
+            expenseFragment.setOnExpensePieSelectedListener(this);
+        }
+    }
+
+    @Override
+    public void onPieSelected(String string){
+        FragmentManager fManager = getSupportFragmentManager();
+        FragmentTransaction fTransaction = fManager.beginTransaction();
+        ExpenseListFragment expenseFragment = ExpenseListFragment.newInstance(string);
+        fTransaction.replace(R.id.fragment_expense_list, expenseFragment).commit();
     }
 }

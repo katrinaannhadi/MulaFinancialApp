@@ -32,6 +32,13 @@ public class ExpensePieChartFragment extends Fragment {
     private String[] categories;
     private String title;
 
+    private OnExpensePieSelectedListener callback;
+
+    public void setOnExpensePieSelectedListener(OnExpensePieSelectedListener  callback){
+        this.callback = callback;
+    }
+
+
     public ExpensePieChartFragment(String title){
         this.title = title;
     }
@@ -66,6 +73,7 @@ public class ExpensePieChartFragment extends Fragment {
             @Override
             public void onSelectPie(@NonNull IPieInfo pieInfo, boolean isFloatUp) {
                 Toast.makeText(ExpensePieChartFragment.this.getActivity(),String.format("%s : %.2f", pieInfo.getDesc(), pieInfo.getValue()), Toast.LENGTH_SHORT).show();
+                callback.onPieSelected(pieInfo.getDesc());
             }
         });
 
@@ -75,6 +83,10 @@ public class ExpensePieChartFragment extends Fragment {
 
         textView.setText(title);
         return root;
+    }
+
+    public interface OnExpensePieSelectedListener {
+        public void onPieSelected(String string);
     }
 
 }

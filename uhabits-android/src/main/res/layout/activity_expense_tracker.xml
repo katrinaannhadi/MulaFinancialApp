@@ -59,12 +59,22 @@
         tools:layout="@layout/fragment_pie_chart" />
 
     <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_expense_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pieFragment"
+        tools:layout="@layout/fragment_pie_chart" />
+
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/lineFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pieFragment"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_expense_list"
         tools:layout="@layout/fragment_line_chart" />
 
 
