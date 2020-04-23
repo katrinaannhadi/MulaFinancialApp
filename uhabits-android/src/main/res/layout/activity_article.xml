@@ -10,6 +10,9 @@
     android:background="@color/mula_yellow_500"
     tools:targetApi="o">
 
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
     <ImageView
         android:id="@+id/lockup"
         android:layout_width="150dp"

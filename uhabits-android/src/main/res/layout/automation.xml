@@ -10,11 +10,8 @@
 
               android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        style="@style/Toolbar"
-        android:title="@string/app_name"
-        app:popupTheme="?toolbarPopupTheme"/>
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
 
     <LinearLayout
         android:id="@+id/formPanel"

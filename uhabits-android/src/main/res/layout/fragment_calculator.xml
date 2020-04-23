@@ -9,6 +9,7 @@
     tools:context=".Fragments.CalculatorFragment"
     >
 
+
     <com.github.mikephil.charting.charts.CandleStickChart
         android:id="@+id/candle_stick_chart"
         android:layout_width="match_parent"
