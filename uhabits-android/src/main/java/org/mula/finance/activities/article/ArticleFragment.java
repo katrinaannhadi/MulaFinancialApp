@@ -89,7 +89,7 @@ public class ArticleFragment extends Fragment {
         return v;
     }
     private void searchRestaurant(String name, String location){
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + name + " " + location));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + name ));
         startActivity(intent);
 
     }

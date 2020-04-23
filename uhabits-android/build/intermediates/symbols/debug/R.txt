@@ -936,7 +936,7 @@ int attr triggerReceiver 0x7f04035a
 int attr triggerSlack 0x7f04035b
 int attr ttcIndex 0x7f04035c
 int attr useCompatPadding 0x7f04035d
-int attr useHabitColorAsPrimary 0x7f04035e
+int attr useGoalColorAsPrimary 0x7f04035e
 int attr useMaterialThemeColors 0x7f04035f
 int attr viewInflaterClass 0x7f040360
 int attr visibilityMode 0x7f040361

@@ -8,7 +8,7 @@
     <attr name="cardBgColor" format="reference"/>
     <attr name="headerBackgroundColor" format="reference"/>
     <attr name="highlightedBackgroundColor" format="reference"/>
-    <attr name="useHabitColorAsPrimary" format="boolean"/>
+    <attr name="useGoalColorAsPrimary" format="boolean"/>
     <attr name="aboutScreenColor" format="reference"/>
 
     <attr name="highContrastTextColor" format="reference"/>

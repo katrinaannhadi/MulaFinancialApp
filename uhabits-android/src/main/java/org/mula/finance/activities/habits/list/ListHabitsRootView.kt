@@ -38,7 +38,8 @@ class ListHabitsRootView @Inject constructor(
     val listView: HabitCardListView = habitCardListViewFactory.create()
     val llEmpty = EmptyListView(context)
     val tbar = buildToolbar()
-    val bmenu = buildBottomNav()
+    //Decided to take bottom nav out of goals tracker
+//    val bmenu = buildBottomNav()
     val progressBar = TaskProgressBar(context, runner)
     val hintView: HintView
     val header = HeaderView(context, preferences, midnightTimer)
@@ -49,7 +50,8 @@ class ListHabitsRootView @Inject constructor(
         hintView = HintView(context, hintList)
 
         addView(RelativeLayout(context).apply {
-            background = sres.getDrawable(R.attr.windowBackgroundColor)
+//            background = sres.getDrawable(R.attr.windowBackgroundColor)
+            background = sres.getDrawable(R.attr.colorAccent)
             addAtTop(tbar)
             addBelow(header, tbar)
             addBelow(listView, header, height = MATCH_PARENT)
@@ -57,13 +59,14 @@ class ListHabitsRootView @Inject constructor(
             addBelow(progressBar, header) {
                 it.topMargin = dp(-6.0f).toInt()
             }
-            addAtBottom(bmenu)
+            // take bottom nav out
+//            addAtBottom(bmenu)
 
-//            addAtBottom(hintView)
-//            if (SDK_INT < LOLLIPOP) {
-//                addBelow(ShadowView(context), tbar)
-//                addBelow(ShadowView(context), header)
-//            }
+            addAtBottom(hintView)
+            if (SDK_INT < LOLLIPOP) {
+                addBelow(ShadowView(context), tbar)
+                addBelow(ShadowView(context), header)
+            }
         }, MATCH_PARENT, MATCH_PARENT)
 
         listAdapter.setListView(listView)
@@ -73,10 +76,10 @@ class ListHabitsRootView @Inject constructor(
     override fun getToolbar(): Toolbar {
         return tbar
     }
-
-    override fun getBottomNav(): BottomNavigationView {
-        return bmenu;
-    }
+// take bottom nav out
+//    override fun getBottomNav(): BottomNavigationView {
+//        return bmenu;
+//    }
 
     override fun onModelChange() {
         updateEmptyView()

@@ -47,7 +47,7 @@ class EditSettingRootView(
 
     override fun getToolbarColor(): Int {
         val res = StyledResources(context)
-        if (!res.getBoolean(R.attr.useHabitColorAsPrimary))
+        if (!res.getBoolean(R.attr.useGoalColorAsPrimary))
             return super.getToolbarColor()
 
         return res.getColor(R.attr.aboutScreenColor)

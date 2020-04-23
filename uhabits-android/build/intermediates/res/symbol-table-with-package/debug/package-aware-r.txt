@@ -937,7 +937,7 @@ attr triggerReceiver
 attr triggerSlack
 attr ttcIndex
 attr useCompatPadding
-attr useHabitColorAsPrimary
+attr useGoalColorAsPrimary
 attr useMaterialThemeColors
 attr viewInflaterClass
 attr visibilityMode

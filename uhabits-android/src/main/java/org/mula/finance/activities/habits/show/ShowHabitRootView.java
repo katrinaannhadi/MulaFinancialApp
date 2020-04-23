@@ -83,7 +83,7 @@ public class ShowHabitRootView extends BaseRootView
     public int getToolbarColor()
     {
         StyledResources res = new StyledResources(getContext());
-        if (!res.getBoolean(R.attr.useHabitColorAsPrimary))
+        if (!res.getBoolean(R.attr.useGoalColorAsPrimary))
             return super.getToolbarColor();
 
         return PaletteUtils.getColor(getContext(), habit.getColor());

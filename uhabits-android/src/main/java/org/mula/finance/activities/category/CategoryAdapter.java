@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import org.mula.finance.Fragments.HomeFragment;
 import org.mula.finance.R;
 import org.mula.finance.activities.article.ArticleActivity;
 
@@ -27,6 +28,7 @@ public class CategoryAdapter extends PagerAdapter {
         this.models = models;
         this.context = context;
     }
+
 
     @Override
     public int getCount() {
