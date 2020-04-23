@@ -2070,7 +2070,10 @@ drawable ic_repeat_white
 drawable ic_search
 drawable ic_spend
 drawable ic_super
+drawable image_credit
 drawable image_investment
+drawable image_investment2
+drawable image_savings
 drawable indicator_dot_grey
 drawable indicator_dot_white
 drawable intro_icon_1
@@ -2667,6 +2670,8 @@ id text_quiz_average
 id text_score
 id text_test
 id text_video
+id text_x_axis
+id text_y_axis
 id textinput_counter
 id textinput_error
 id textinput_helper_text

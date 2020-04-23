@@ -60,9 +60,9 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
 
         calc = new ArrayList<>();
 
-        calc.add(0, new IntentLink("Credit", new Intent(this, QuizActivity.class), R.drawable.image_investment, Color.YELLOW));
-        calc.add(1, new IntentLink("Investment", new Intent(this, QuizActivity.class), R.drawable.image_investment, Color.YELLOW));
-        calc.add(2, new IntentLink("Savings", new Intent(this, QuizActivity.class), R.drawable.image_investment, Color.YELLOW));
+        calc.add(0, new IntentLink("Credit", new Intent(this, QuizActivity.class), R.drawable.image_credit, Color.YELLOW));
+        calc.add(1, new IntentLink("Investment", new Intent(this, QuizActivity.class), R.drawable.image_investment2, Color.YELLOW));
+        calc.add(2, new IntentLink("Savings", new Intent(this, QuizActivity.class), R.drawable.image_savings, Color.YELLOW));
 
         CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);
 
