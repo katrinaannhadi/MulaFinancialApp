@@ -126,4 +126,44 @@ public final class ExpenseDao_Impl implements ExpenseDao {
       _statement.release();
     }
   }
+
+  @Override
+  public List<Expense> getCategoryList(final String category) {
+    final String _sql = "SELECT * FROM expense WHERE category = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    if (category == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, category);
+    }
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
+      final int _cursorIndexOfCategory = CursorUtil.getColumnIndexOrThrow(_cursor, "category");
+      final int _cursorIndexOfValue = CursorUtil.getColumnIndexOrThrow(_cursor, "value");
+      final int _cursorIndexOfDescription = CursorUtil.getColumnIndexOrThrow(_cursor, "description");
+      final List<Expense> _result = new ArrayList<Expense>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final Expense _item;
+        _item = new Expense();
+        _item.id = _cursor.getInt(_cursorIndexOfId);
+        if (_cursor.isNull(_cursorIndexOfDate)) {
+          _item.date = null;
+        } else {
+          _item.date = _cursor.getLong(_cursorIndexOfDate);
+        }
+        _item.category = _cursor.getString(_cursorIndexOfCategory);
+        _item.value = _cursor.getString(_cursorIndexOfValue);
+        _item.description = _cursor.getString(_cursorIndexOfDescription);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
 }

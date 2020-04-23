@@ -8,7 +8,8 @@
     tools:context=".activities.TaxCalculatorActivity">
 
     <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
+        android:id="@+id/toolbar"
+        android:text="MULA"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_tax"
@@ -28,47 +29,74 @@
 
 
         <TextView
+            android:id="@+id/Enter"
+            android:layout_width="211dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Enter the calculations"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraint"/>
+
+        <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/rubik_bold"
+            android:lineHeight="40sp"
             android:text="Taxable Income"
-            android:textColor="@color/light_green_300"
-            android:textSize="18sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/EditText1"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textAppearance="@style/TextAppearance.Mula.Body2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radgroup" />
+
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/rubik_bold"
+            android:lineHeight="40sp"
             android:text="Income tax payable:"
-            android:textColor="@color/light_green_300"
-            android:textSize="18sp"
+            android:textAppearance="@style/TextAppearance.Mula.Body2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/EditText1" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/rubik_bold"
+            android:lineHeight="40sp"
             android:text="Your income after tax"
-            android:textColor="@color/light_green_300"
-            android:textSize="18sp"
+            android:textAppearance="@style/TextAppearance.Mula.Body2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
+            android:fontFamily="@font/rubik_bold"
+            android:lineHeight="40sp"
             android:text="Your HECs Debt:"
-            android:textColor="@color/light_green_300"
-            android:textSize="18sp"
+            android:textAppearance="@style/TextAppearance.Mula.Body2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -78,9 +106,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
+            android:fontFamily="@font/rubik_bold"
+            android:lineHeight="40sp"
             android:text="HECS Payable"
-            android:textColor="@color/light_green_300"
-            android:textSize="18sp"
+            android:textAppearance="@style/TextAppearance.Mula.Body2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -89,39 +120,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/Enter">
 
             <RadioButton
                 android:id="@+id/radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Yearly" />
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="Yearly"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Fortnightly" />
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="Fortnightly"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Weekly" />
+                android:fontFamily="@font/rubik_bold"
+                android:lineHeight="40sp"
+                android:text="Weekly"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
         </RadioGroup>
 
         <EditText
             android:id="@+id/EditText1"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/rubik_bold"
             android:hint="Enter Taxable Income"
             android:inputType="phone"
+            android:lineHeight="40sp"
+            android:textColor="@color/mula_purple_bright_accent"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radgroup" />
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
             android:id="@+id/textViewR2"
@@ -129,7 +175,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:textColor="@color/light_green_300"
-            android:textSize="18sp"
+            android:textSize="22sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView2" />
@@ -141,7 +187,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:textColor="@color/light_green_300"
-            android:textSize="18sp"
+            android:textSize="22sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView3" />
@@ -153,8 +199,12 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:fontFamily="@font/rubik_bold"
             android:hint="Enter HECs Debt"
             android:inputType="phone"
+            android:lineHeight="40sp"
+            android:textColor="@color/mula_purple_bright_accent"
+            android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView5" />
@@ -164,9 +214,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:fontFamily="@font/rubik_bold"
+            android:lineHeight="40sp"
             android:text="HECS"
-            android:textColor="@color/light_green_300"
-            android:textSize="18sp"
+            android:textAppearance="@style/TextAppearance.Mula.Body2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/EditText2"
             app:layout_constraintStart_toStartOf="parent" />
 

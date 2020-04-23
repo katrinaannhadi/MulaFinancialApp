@@ -20,4 +20,5 @@ public class Expense {
 
     @ColumnInfo(name = "description")
     public String description;
+
 }

@@ -2040,6 +2040,7 @@ drawable ic_background_dark
 drawable ic_background_dark2
 drawable ic_background_light
 drawable ic_background_purple
+drawable ic_buffet
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_colorpicker_swatch_selected
@@ -2053,8 +2054,10 @@ drawable ic_grand
 drawable ic_home_black_24dp
 drawable ic_investment
 drawable ic_investment_pink
+drawable ic_investopedia
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
+drawable ic_khan
 drawable ic_menu_arrow_down_black_24dp
 drawable ic_menu_arrow_up_black_24dp
 drawable ic_mtrl_checked_circle
@@ -2132,6 +2135,7 @@ id BOTTOM_START
 id CTRL
 id EditText1
 id EditText2
+id Enter
 id EnterAmount
 id FUNCTION
 id META
@@ -2251,9 +2255,11 @@ id bottom_separator
 id bounce
 id bt_calculate
 id bt_refresh
+id buffet
 id button
 id button2
 id buttonDiscard
+id buttonInvestopedia
 id buttonOverlay
 id buttonPanel
 id buttonPickColor
@@ -2293,7 +2299,9 @@ id color_picker
 id color_picker_checkmark
 id color_picker_swatch
 id confirm_button
+id constraint
 id constraint_daily_quiz
+id constraint_expense_list
 id constraint_home
 id constraint_investment
 id constraint_start_quiz
@@ -2369,6 +2377,7 @@ id forever
 id formPanel
 id fragment
 id fragment_container_view_tag
+id fragment_expense_list
 id fragment_layout
 id frame
 id frameLayout
@@ -2415,12 +2424,14 @@ id imageView
 id indicator_container
 id info
 id innerFrame
+id investopedia
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id ivSearch
 id jumpToEnd
 id jumpToStart
+id khan
 id label
 id labeled
 id largeLabel
@@ -2552,6 +2563,7 @@ id rounded
 id rtl
 id rvList
 id rv_calculator
+id rv_expenses
 id rv_quiz
 id save_non_transition_alpha
 id save_overlay_view
@@ -2650,11 +2662,13 @@ id textView4
 id textView5
 id textViewR2
 id textViewR3
+id text_amount
 id text_calculator
 id text_category
 id text_date
 id text_date2
 id text_date3
+id text_description
 id text_enter_hecs
 id text_high_score
 id text_input_end_icon
@@ -2823,6 +2837,7 @@ layout bottom_nav
 layout checkmark_stackview_widget
 layout chunk_calculator
 layout chunk_category
+layout chunk_expense
 layout color_picker_dialog
 layout color_picker_swatch
 layout custom_dialog
@@ -2858,6 +2873,7 @@ layout fragment_article
 layout fragment_article_selection_viewpager
 layout fragment_calculator
 layout fragment_daily_quiz
+layout fragment_expense_list
 layout fragment_home
 layout fragment_information
 layout fragment_intro

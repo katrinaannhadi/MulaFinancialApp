@@ -21,6 +21,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/constraint"
         tools:layout_editor_absoluteX="88dp"
         tools:layout_editor_absoluteY="-27dp">
 
@@ -29,13 +30,13 @@
             android:layout_width="211dp"
             android:layout_height="87dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="50dp"
             android:fontFamily="@font/rubik_bold"
             android:text="Enter the calculations"
             android:textColor="@color/mula_purple_dark_primary"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/constraint" />
 
 
         <TextView
@@ -351,8 +352,8 @@
 
         <Button
             android:id="@+id/bt_calculate"
-            android:layout_width="115dp"
-            android:layout_height="38dp"
+            android:layout_width="129dp"
+            android:layout_height="46dp"
             android:layout_marginTop="48dp"
             android:text="Calculate"
             app:layout_constraintEnd_toEndOf="parent"

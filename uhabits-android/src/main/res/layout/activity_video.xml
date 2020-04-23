@@ -1,39 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:background="@color/mula_yellow_500"
+    tools:targetApi="o">
 
     <TextView
         android:id="@+id/text_video"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/grid_4"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="end"
+        android:padding="@dimen/grid_1"
+        android:paddingTop="@dimen/grid_1"
+        android:text="Learning through Videos"
+        android:textAppearance="@style/TextAppearance.Mula.Headline4"
+        android:textColor="@color/mula_blue_dark_primary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingPrefix" /> />
 
+
+    <ImageView
+        android:id="@+id/khan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_khan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_video" />
     <Button
         android:id="@+id/buttonVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="play video"
+        android:text="play playlist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_video" />
+        app:layout_constraintTop_toBottomOf="@+id/khan" />
+
+    <ImageView
+        android:id="@+id/buffet"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_buffet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonVideo" />
 
     <Button
         android:id="@+id/buttonPlaylist"
@@ -43,5 +70,27 @@
         android:text="play playlist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonVideo" />
+        app:layout_constraintTop_toBottomOf="@+id/buffet" />
+
+    <ImageView
+        android:id="@+id/investopedia"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_investopedia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPlaylist" />
+
+    <Button
+        android:id="@+id/buttonInvestopedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="play playlist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/investopedia" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

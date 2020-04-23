@@ -18,9 +18,9 @@ import org.mula.finance.activities.habits.edit.views.TargetPanel;
 public class EditHabitDialog_ViewBinding implements Unbinder {
   private EditHabitDialog target;
 
-  private View view7f0a007f;
+  private View view7f0a0081;
 
-  private View view7f0a0084;
+  private View view7f0a0087;
 
   @UiThread
   public EditHabitDialog_ViewBinding(final EditHabitDialog target, View source) {
@@ -32,7 +32,7 @@ public class EditHabitDialog_ViewBinding implements Unbinder {
     target.frequencyPanel = Utils.findRequiredViewAsType(source, R.id.frequencyPanel, "field 'frequencyPanel'", FrequencyPanel.class);
     target.targetPanel = Utils.findRequiredViewAsType(source, R.id.targetPanel, "field 'targetPanel'", TargetPanel.class);
     view = Utils.findRequiredView(source, R.id.buttonDiscard, "method 'onButtonDiscardClick'");
-    view7f0a007f = view;
+    view7f0a0081 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -40,7 +40,7 @@ public class EditHabitDialog_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.buttonSave, "method 'onSaveButtonClick'");
-    view7f0a0084 = view;
+    view7f0a0087 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,9 +61,9 @@ public class EditHabitDialog_ViewBinding implements Unbinder {
     target.frequencyPanel = null;
     target.targetPanel = null;
 
-    view7f0a007f.setOnClickListener(null);
-    view7f0a007f = null;
-    view7f0a0084.setOnClickListener(null);
-    view7f0a0084 = null;
+    view7f0a0081.setOnClickListener(null);
+    view7f0a0081 = null;
+    view7f0a0087.setOnClickListener(null);
+    view7f0a0087 = null;
   }
 }

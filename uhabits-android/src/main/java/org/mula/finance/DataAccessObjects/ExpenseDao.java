@@ -13,6 +13,9 @@ public interface ExpenseDao {
     @Query("SELECT * FROM expense")
     List<Expense> getAll();
 
+    @Query("SELECT * FROM expense WHERE category = :category")
+    List<Expense> getCategoryList(String category);
+
     @Insert
     void insert(Expense... expenses);
 

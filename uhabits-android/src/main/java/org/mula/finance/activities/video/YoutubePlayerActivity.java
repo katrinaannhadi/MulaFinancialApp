@@ -14,10 +14,13 @@ import org.mula.finance.R;
 public class YoutubePlayerActivity extends YouTubeBaseActivity
         implements YouTubePlayer.OnInitializedListener {
 
+
     private static final String TAG = "YoutubeActivity";
     static final String GOOGLE_API_KEY = "AIzaSyBmb_Zr5HP6FUiuGCIiwbW3fhdgy9XZGPE";
     static final String YOUTUBE_VIDEO_ID = "gnWj97CEjeo";
     static final String YOUTUBE_PLAYLIST = "PLhxFuaI_pG0HjklS6iFXPuzCQnyqWxhT-";
+    static final String YOUTUBE_PLAYLIST_2 = "PLECECA66C0CE68B1E";
+    static final String YOUTUBE_PLAYLIST_3 = "PLEAWiihj06OL80BfkpXVh2AQ";
 
 
     @Override
