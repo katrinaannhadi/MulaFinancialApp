@@ -60,6 +60,7 @@ import java.util.List;
 import java.util.Locale;
 
 import static android.provider.UserDictionary.Words.LOCALE;
+import static java.time.format.DateTimeFormatter.ofPattern;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -93,7 +94,8 @@ public class CalculatorFragment extends Fragment {
     private CandleDataSet set1;
     private XAxis xAxis;
 
-    private DateTimeFormatter format;
+    private DateTimeFormatter toDate;
+    private DateTimeFormatter toString;
 
 
 
@@ -135,7 +137,8 @@ public class CalculatorFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_calculator, container, false);
         Log.d(TAG, "HomeFragment: SUCCESS");
 
-        //format = new DateTimeFormatterBuilder().parseCaseInsensitive().appendPattern("yy-MM-dd").toFormatter(Locale.ENGLISH);
+        toDate = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        toString = DateTimeFormatter.ofPattern("MM-dd HH");
 
 
         candleStickChart = view.findViewById(R.id.candle_stick_chart);
@@ -252,10 +255,10 @@ public class CalculatorFragment extends Fragment {
                 Collection<String> xAxisValues = company.getCompanyStockPrices().keySet();
                 ArrayList<String> xValues = new ArrayList<>(xAxisValues);
 
-               /* for(int i = 0; i < xValues.size(); i++){
-                   LocalDateTime date = LocalDateTime.parse(xValues.get(i));
-                   xValues.set(i, date.format(format));
-                } */
+               for(int i = 0; i < xValues.size(); i++){
+                   LocalDateTime date = LocalDateTime.parse(xValues.get(i), toDate);
+                   xValues.set(i, date.format(toString));
+                }
                 xAxis = candleStickChart.getXAxis();
                 xAxis.setValueFormatter(new IndexAxisValueFormatter(xValues));
 

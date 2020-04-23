@@ -231,7 +231,7 @@ public class Article {
                 "Investment",
                 R.drawable.ic_investment_pink,
                 "snippet",
-                "gnore experts and invest the simple way.\n" +
+                "Ignore experts and invest the simple way.\n" +
                         "\n" +
                         "Experts are always going on about choosing stocks. But there’s a much simpler way to invest.\n" +
                         "\n" +
