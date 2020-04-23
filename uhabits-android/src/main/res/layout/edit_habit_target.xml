@@ -13,7 +13,7 @@
 
     <TextView
         style="@style/dialogFormLabel"
-        android:fontFamily="@font/rubik"
+        android:fontFamily="@font/rubik_bold"
         android:text="@string/target"
         android:textColor="@color/mula_purple_dark_primary"
         android:textSize="18sp" />
@@ -28,10 +28,11 @@
             style="@style/dialogFormInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
             android:hint="@string/count"
             android:inputType="numberDecimal"
             android:text="@string/default_count"
-            />
+            android:textColor="@color/mula_purple_dark_primary" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -44,8 +45,11 @@
             style="@style/dialogFormInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
             android:hint="@string/unit"
             android:inputType="text"
-            app:example="@string/example_units"/>
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp"
+            app:example="@string/example_units" />
     </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>

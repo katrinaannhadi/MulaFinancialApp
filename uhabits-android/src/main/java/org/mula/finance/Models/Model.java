@@ -1,4 +1,4 @@
-package org.mula.finance.activities.category;
+package org.mula.finance.Models;
 
 public class Model {
 

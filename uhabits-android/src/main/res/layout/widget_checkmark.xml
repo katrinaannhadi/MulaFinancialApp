@@ -10,6 +10,7 @@
     android:layout_height="match_parent"
     xmlns:habit="http://isoron.org/android"
     android:gravity="center"
+    android:background="@color/mula_yellow_500"
     android:orientation="vertical">
 
     <org.mula.finance.activities.common.views.RingView
@@ -35,11 +36,11 @@
         android:layout_weight="0"
         android:breakStrategy="balanced"
         android:ellipsize="end"
-        android:fontFamily="@font/rubik"
+        android:fontFamily="@font/rubik_bold"
         android:gravity="center"
         android:maxLines="2"
         android:scrollHorizontally="true"
-        android:textColor="@color/white"
+        android:textColor="@color/mula_purple_dark_primary"
         android:textSize="18sp" />
 
 </LinearLayout>

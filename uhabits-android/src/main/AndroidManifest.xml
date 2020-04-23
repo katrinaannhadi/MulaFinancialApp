@@ -28,7 +28,7 @@
             android:name=".activities.video.VideoActivity"
             android:theme="@style/Mula.Purple" />
         <activity
-            android:name=".activities.category.ArticleSelectionActivity"
+            android:name=".activities.article.ArticleSelectionActivity"
             android:theme="@style/Mula.Purple" />
         <activity
             android:name=".activities.ExpenseTrackerActivity"

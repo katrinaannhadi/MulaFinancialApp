@@ -15,9 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:fontFamily="@font/rubik"
-        android:textColor="?mediumContrastTextColor"
-        android:textSize="@dimen/regularTextSize"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="18sp"
         tools:text="Have you worked out today?" />
 
     <LinearLayout
@@ -41,10 +41,10 @@
             android:id="@+id/frequencyLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik"
+            android:fontFamily="@font/rubik_bold"
             android:text="@string/every_day"
-            android:textColor="?mediumContrastTextColor"
-            android:textSize="@dimen/smallTextSize" />
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/reminderIcon"
@@ -61,10 +61,10 @@
             android:id="@+id/reminderLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik"
+            android:fontFamily="@font/rubik_bold"
             android:paddingTop="1dp"
-            android:textColor="?mediumContrastTextColor"
-            android:textSize="@dimen/smallTextSize" />
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
 
     </LinearLayout>
 </merge>

@@ -2082,7 +2082,6 @@ drawable ic_super
 drawable ic_tax
 drawable image_credit
 drawable image_investment
-drawable image_investment2
 drawable image_savings
 drawable indicator_dot_grey
 drawable indicator_dot_white

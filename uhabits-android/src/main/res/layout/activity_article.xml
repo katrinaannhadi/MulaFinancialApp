@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:clipChildren="false"
     android:orientation="vertical"
-    android:background="@color/purple_200"
+    android:background="@color/mula_purple_200"
     tools:targetApi="o">
 
 

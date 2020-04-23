@@ -3,7 +3,6 @@ package org.mula.finance.Fragments;
 import android.animation.ArgbEvaluator;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Build;
@@ -40,18 +39,13 @@ import com.github.mikephil.charting.utils.EntryXComparator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import org.mula.finance.Adapters.CalculatorAdapter;
 import org.mula.finance.Adapters.CalculatorCategoryAdapter;
-import org.mula.finance.Adapters.InformationAdapter;
-import org.mula.finance.Models.Category;
 import org.mula.finance.Models.Company;
 import org.mula.finance.Models.DailyPrice;
 import org.mula.finance.Models.IntentLink;
-import org.mula.finance.activities.InvestmentCalculatorActivity;
-import org.mula.finance.activities.TaxCalculatorActivity;
 
 import org.mula.finance.R;
-import org.mula.finance.activities.category.Model;
+import org.mula.finance.Models.Model;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

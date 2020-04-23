@@ -21,8 +21,6 @@ import org.mula.finance.Databases.ScoreDatabase;
 import org.mula.finance.Models.IntentLink;
 import org.mula.finance.Models.Score;
 import org.mula.finance.R;
-import org.mula.finance.activities.category.CategoryAdapter;
-import org.mula.finance.activities.category.Model;
 
 import java.util.ArrayList;
 import java.util.List;

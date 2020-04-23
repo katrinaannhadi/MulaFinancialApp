@@ -12,7 +12,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import org.mula.finance.Adapters.InformationAdapter;
 import org.mula.finance.R;
-import org.mula.finance.activities.category.Model;
+import org.mula.finance.Models.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +63,7 @@ public class InformationFragment extends Fragment  {
         viewPager.setPadding(130, 0, 130, 0);
 
         Integer[] colors_temp = {
-                getResources().getColor(R.color.mula_purple_200),
+                getResources().getColor(R.color.purple_50),
                 getResources().getColor(R.color.mula_purple_500),
                 getResources().getColor(R.color.mula_purple_600)
 

@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/rubik_bold"
         android:text="TextView"
@@ -42,9 +42,11 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:fontFamily="@font/rubik_bold"
+            android:buttonTint="@color/mula_purple_dark_primary"
+            android:fontFamily="@font/rubik"
             android:text="RadioButton"
-            android:textColor="@color/mula_purple_dark_primary" />
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/radio_answer_2"
@@ -54,9 +56,11 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:fontFamily="@font/rubik_bold"
+            android:buttonTint="@color/mula_purple_dark_primary"
+            android:fontFamily="@font/rubik"
             android:text="RadioButton"
-            android:textColor="@color/mula_purple_dark_primary" />
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/radio_answer_3"
@@ -66,9 +70,11 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:fontFamily="@font/rubik_bold"
+            android:buttonTint="@color/mula_purple_dark_primary"
+            android:fontFamily="@font/rubik"
             android:text="RadioButton"
-            android:textColor="@color/mula_purple_dark_primary" />
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="24sp" />
     </RadioGroup>
 
     <Button

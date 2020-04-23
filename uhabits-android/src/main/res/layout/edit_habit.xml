@@ -21,12 +21,13 @@
             <org.mula.finance.activities.habits.edit.views.NameDescriptionPanel
                 android:id="@+id/namePanel"
                 android:layout_width="match_parent"
-                android:layout_height="178dp" />
+                android:layout_height="200dp" />
 
             <org.mula.finance.activities.habits.edit.views.FrequencyPanel
                 android:id="@+id/frequencyPanel"
                 android:layout_width="match_parent"
-                android:layout_height="100dp" />
+                android:layout_height="100dp"
+                android:foregroundTint="@color/colorPrimary" />
 
             <org.mula.finance.activities.habits.edit.views.TargetPanel
                 android:id="@+id/targetPanel"

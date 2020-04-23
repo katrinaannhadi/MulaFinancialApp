@@ -119,5 +119,15 @@ public class ArticleActivity extends AppCompatActivity {
         intent.putExtra("Category", ArticleCategory);
         startActivity(intent);
     }
+
+    // Changing back button to go to article selection
+//    @Override
+//    public void onBackPressed() {
+//        Intent intent = new Intent(this, ArticleSelectionActivity.class);
+//        startActivity(intent);
+//    }
+
+
+
 }
 

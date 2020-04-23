@@ -6,17 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/mula_yellow_500"
+    android:background="@color/mula_purple_500"
     tools:context=".Fragments.InformationFragment"
     >
+
 
     <TextView
         android:id="@+id/choose"
         android:layout_width="258dp"
         android:layout_height="158dp"
-        android:layout_marginStart="@dimen/grid_4"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/rubik_bold"
         android:gravity="end"
         android:padding="@dimen/grid_1"
@@ -24,15 +24,13 @@
         android:text="Test By Quiz"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.Mula.Headline3"
-        android:textColor="@color/mula_purple_dark_primary"
+        android:textColor="@android:color/white"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingPrefix,RtlCompat" />
-
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_start_quiz"
@@ -48,7 +46,7 @@
             android:layout_marginTop="32dp"
             android:fontFamily="@font/rubik_bold"
             android:text="TextView"
-            android:textColor="@color/mula_purple_dark_primary"
+            android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +60,7 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/rubik_bold"
             android:text="TextView"
-            android:textColor="@color/mula_purple_dark_primary"
+            android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -72,14 +70,14 @@
             android:id="@+id/text_percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="50dp"
             android:fontFamily="@font/rubik_bold"
             android:text="TextView"
-            android:textColor="@color/mula_purple_dark_primary"
+            android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_high_score"
             app:layout_constraintTop_toBottomOf="@+id/text_score" />
 
         <TextView
@@ -87,23 +85,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:layout_marginEnd="50dp"
             android:fontFamily="@font/rubik_bold"
             android:text="TextView"
-            android:textColor="@color/mula_purple_dark_primary"
+            android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_percentage"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:background="@drawable/widget_background"
         android:id="@+id/rv_quiz"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
+        android:outlineAmbientShadowColor="@color/mula_purple_dark_primary"
         android:paddingLeft="30dp"
-        android:paddingRight="30dp"/>
+        android:paddingRight="30dp" />
 
 </LinearLayout>

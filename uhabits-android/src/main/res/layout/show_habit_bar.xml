@@ -12,9 +12,10 @@
             android:id="@+id/numericalSpinner"
             android:layout_width="wrap_content"
             android:layout_height="22dp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/mula_purple_dark_primary"
             android:entries="@array/strengthIntervalNames"
             android:theme="@style/SmallSpinner" />
 
@@ -22,9 +23,10 @@
             android:id="@+id/boolSpinner"
             android:layout_width="wrap_content"
             android:layout_height="22dp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/mula_purple_dark_primary"
             android:entries="@array/strengthIntervalNamesWithoutDay"
             android:theme="@style/SmallSpinner" />
 

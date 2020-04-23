@@ -1,6 +1,5 @@
 package org.mula.finance.Adapters;
 
-import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,8 +13,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import org.mula.finance.Fragments.HomeFragment;
 import org.mula.finance.R;
 import org.mula.finance.activities.ExpenseTrackerActivity;
-import org.mula.finance.activities.article.ArticleActivity;
-import org.mula.finance.activities.category.Model;
+import org.mula.finance.Models.Model;
 import org.mula.finance.activities.habits.list.ListHabitsActivity;
 
 import java.util.List;

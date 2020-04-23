@@ -1,4 +1,4 @@
-package org.mula.finance.activities.category;
+package org.mula.finance.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import org.mula.finance.Fragments.HomeFragment;
+import org.mula.finance.Models.Model;
 import org.mula.finance.R;
 import org.mula.finance.activities.article.ArticleActivity;
 
