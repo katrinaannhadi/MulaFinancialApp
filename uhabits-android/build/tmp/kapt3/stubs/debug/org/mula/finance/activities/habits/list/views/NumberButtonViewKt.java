@@ -18,7 +18,7 @@ public final class NumberButtonViewKt {
     private static final android.graphics.Typeface NORMAL_TYPEFACE = null;
     
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String toShortString(double $this$toShortString) {
+    public static final java.lang.String toShortString(double $receiver) {
         return null;
     }
 }
