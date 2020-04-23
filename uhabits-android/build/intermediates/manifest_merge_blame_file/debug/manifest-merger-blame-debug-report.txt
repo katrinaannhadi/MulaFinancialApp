@@ -114,8 +114,8 @@
 66-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:58:13-43
 67            android:targetActivity="org.mula.finance.activities.MainActivity"
 67-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:59:13-62
-68            android:theme="@style/Mula.Purple" >
-68-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:60:13-47
+68            android:theme="@style/AppBaseTheme" >
+68-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:60:13-48
 69            <intent-filter android:label="@string/main_activity_title" >
 69-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:61:13-65:29
 69-->/Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:61:28-71

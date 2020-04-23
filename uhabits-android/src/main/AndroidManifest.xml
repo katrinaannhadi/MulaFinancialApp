@@ -57,7 +57,7 @@
             android:label="@string/main_activity_title"
             android:launchMode="singleTop"
             android:targetActivity=".activities.MainActivity"
-            android:theme="@style/Mula.Purple">
+            android:theme="@style/AppBaseTheme">
             <intent-filter android:label="@string/main_activity_title">
                 <action android:name="android.intent.action.MAIN" />
 

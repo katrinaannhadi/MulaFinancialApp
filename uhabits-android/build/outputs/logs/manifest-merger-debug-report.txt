@@ -192,7 +192,7 @@ ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialA
 	android:targetActivity
 		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:59:13-62
 	android:theme
-		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:60:13-47
+		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:60:13-48
 	android:name
 		ADDED from /Users/katrinaann/Documents/Programming/GitHubProjects/MulaFinancialApp/uhabits-android/src/main/AndroidManifest.xml:56:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER

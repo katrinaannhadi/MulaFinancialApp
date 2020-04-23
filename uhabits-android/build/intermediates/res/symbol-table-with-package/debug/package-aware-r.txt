@@ -2820,6 +2820,7 @@ layout activity_video
 layout article_list_row
 layout automation
 layout bottom_nav
+layout bottom_nav_goals
 layout checkmark_stackview_widget
 layout chunk_calculator
 layout chunk_category

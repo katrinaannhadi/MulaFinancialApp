@@ -52,8 +52,8 @@ class ListHabitsRootView @Inject constructor(
         addView(RelativeLayout(context).apply {
 //            background = sres.getDrawable(R.attr.windowBackgroundColor)
             background = sres.getDrawable(R.attr.colorAccent)
-            addAtTop(tbar)
-            addBelow(header, tbar)
+//            addAtTop(tbar)
+            addAtTop(header)
             addBelow(listView, header, height = MATCH_PARENT)
             addBelow(llEmpty, header, height = MATCH_PARENT)
             addBelow(progressBar, header) {
@@ -62,11 +62,13 @@ class ListHabitsRootView @Inject constructor(
             // take bottom nav out
 //            addAtBottom(bmenu)
 
-            addAtBottom(hintView)
-            if (SDK_INT < LOLLIPOP) {
-                addBelow(ShadowView(context), tbar)
-                addBelow(ShadowView(context), header)
-            }
+            addAtBottom(tbar)
+
+//            addAtBottom(hintView)
+//            if (SDK_INT < LOLLIPOP) {
+//                addBelow(ShadowView(context), tbar)
+//                addBelow(ShadowView(context), header)
+//            }
         }, MATCH_PARENT, MATCH_PARENT)
 
         listAdapter.setListView(listView)
