@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
+
 import org.mula.finance.Models.Article;
 import org.mula.finance.R;
 
@@ -54,6 +56,7 @@ public class ArticleFragment extends Fragment {
         if(category == 1){
             mArticle = Article.getArticleList1().get(position);
         }
+        //TODO TURN BACK ON
         if(category == 2){
             mArticle = Article.getArticleList2().get(position);
         }
@@ -68,7 +71,12 @@ public class ArticleFragment extends Fragment {
         articleTitle.setText(mArticle.getArticleTitle());
         articleCategory.setText(mArticle.getArticleCategory());
         articleFull.setText(String.valueOf(mArticle.getArticleFull()));
-        image.setImageResource(mArticle.getImageID());
+
+        Glide.with(image)
+                .load(mArticle.getImageURL())
+                .placeholder(R.drawable.image_investment)
+                .centerCrop()
+                .into(image);
         search.setOnClickListener(new View.OnClickListener() {
 
             @Override

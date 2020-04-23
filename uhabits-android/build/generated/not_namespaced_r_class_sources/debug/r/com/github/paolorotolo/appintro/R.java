@@ -450,11 +450,11 @@ public final class R {
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f0800e9;
         public static final int abc_textfield_search_material = 0x7f0800ea;
         public static final int ic_arrow_forward_white_24px = 0x7f080120;
-        public static final int ic_done_white_24px = 0x7f080133;
-        public static final int ic_navigate_next_white_24dp = 0x7f080149;
-        public static final int indicator_dot_grey = 0x7f08015a;
-        public static final int indicator_dot_white = 0x7f08015b;
-        public static final int notification_template_icon_bg = 0x7f080171;
+        public static final int ic_done_white_24px = 0x7f08012d;
+        public static final int ic_navigate_next_white_24dp = 0x7f08013d;
+        public static final int indicator_dot_grey = 0x7f080146;
+        public static final int indicator_dot_white = 0x7f080147;
+        public static final int notification_template_icon_bg = 0x7f08015d;
     }
     public static final class id {
         private id() {}

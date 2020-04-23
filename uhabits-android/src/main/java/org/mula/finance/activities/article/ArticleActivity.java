@@ -64,7 +64,9 @@ public class ArticleActivity extends AppCompatActivity {
             mRecyclerView.setAdapter(mAdapter);
             Log.d(TAG, "Category 1 adapter is " + mArticles);
 
-        } else if (articleCategory == 2) {
+        }
+        //TODO TURN BACK ON
+        else if (articleCategory == 2) {
             articleArrayListSize = Article.getArticleList2().size();
             categoryHeader.setText("Super");
             ArticleAdapter.RecyclerViewClickListener listener = new ArticleAdapter.RecyclerViewClickListener() {

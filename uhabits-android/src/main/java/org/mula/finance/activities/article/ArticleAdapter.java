@@ -1,5 +1,6 @@
 package org.mula.finance.activities.article;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 
 import org.mula.finance.Models.Article;
 import org.mula.finance.R;
@@ -18,10 +21,15 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.Restaura
     private ArrayList<Article> mArticles;
     private RecyclerViewClickListener mListener;
     private static final String TAG = " 3 ARTICLE ADAPTER ";
+    public static final int PERMISSION_WRITE = 0;
+    Context context;
+
 
     public ArticleAdapter(ArrayList<Article> articles, RecyclerViewClickListener listener) {
         mArticles = articles;
         mListener = listener;
+        this.context = context;
+
     }
 
 
@@ -31,8 +39,9 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.Restaura
 
     public static class RestaurantViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView articleTitle, articleSnippet;
-        public ImageView articleImage;
+        public ImageView articleImage, download;
         private RecyclerViewClickListener mListener;
+
 
         public RestaurantViewHolder(View v, RecyclerViewClickListener listener) {
             super(v);
@@ -59,10 +68,19 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.Restaura
     //Replace the contents of a view (invoked by the layout manager
     @Override
     public void onBindViewHolder(RestaurantViewHolder holder, int position){
+
         Article article = mArticles.get(position);
+        Glide.with(holder.articleImage)
+        .load(article.getImageURL())
+        .placeholder(R.drawable.image_investment)
+        .centerCrop()
+        .into(holder.articleImage);
+
         holder.articleTitle.setText(article.getArticleTitle());
         holder.articleSnippet.setText(article.getArticleSnippet());
-        holder.articleImage.setImageResource(article.getImageID());
+//        holder.articleImage.setImageResource(article.getImageID());
+
+
     }
     //Return the size of our dataset
     @Override

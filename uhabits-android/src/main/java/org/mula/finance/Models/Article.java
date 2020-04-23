@@ -13,30 +13,30 @@ public class Article {
     //name, type of cuisine, location, rating
     private String articleTitle;
     private String articleCategory;
-    private int imageID;
     private String articleSnippet;
     private String articleFull;
+    private String imageURL;
 
 
     public Article() {
     }
 
-    public Article(int articleID, String articleTitle, String articleCategory, int imageID, String articleSnippet, String articleFull) {
+    public Article(int articleID, String articleTitle, String articleCategory, String articleSnippet, String articleFull, String imageURL) {
         this.articleID = articleID;
         this.articleTitle = articleTitle;
         this.articleCategory = articleCategory;
-        this.imageID = imageID;
         this.articleSnippet = articleSnippet;
         this.articleFull = articleFull;
+        this.imageURL = imageURL;
     }
 
     public Article(Parcel source) {
         articleID = source.readInt();
         articleTitle = source.readString();
         articleCategory = source.readString();
-        imageID = source.readInt();
         articleSnippet = source.readString();
         articleFull = source.readString();
+        imageURL = source.readString();
 
     }
 
@@ -64,13 +64,6 @@ public class Article {
         this.articleCategory = articleCategory;
     }
 
-    public int getImageID() {
-        return imageID;
-    }
-
-    public void setImageID(int imageID) {
-        this.imageID = imageID;
-    }
 
     public String getArticleSnippet() {
         return articleSnippet;
@@ -87,13 +80,19 @@ public class Article {
     public void setArticleFull(String articleFull) {
         this.articleFull = articleFull;
     }
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String image) {
+        this.imageURL = image;
+    }
 
     public static ArrayList<Article> getArticleList1() {
         ArrayList<Article> articles = new ArrayList<>();
         articles.add(new Article(0,
                 "How to choose the best bank and bank accounts with the highest interest?",
                 "Savings",
-                R.drawable.ic_savings1,
                 "Check your banks for online account options!",
                 "Zero fees and high interest rates are impossible, right? Actually, no!\n" +
                         "\n" +
@@ -109,11 +108,11 @@ public class Article {
                         "\n" +
                         "Or you can keep one and a half months of living expenses in your checking account and put everything else into your savings account.\n" +
                         "\n" +
-                        "If having numerous accounts sounds like too much, then simply opt for a no-fees checking account at a local bank and a high interest rate savings account at an online bank."));
+                        "If having numerous accounts sounds like too much, then simply opt for a no-fees checking account at a local bank and a high interest rate savings account at an online bank.",
+                "https://source.unsplash.com/FyD3OWBuXnY"));
         articles.add(new Article(1,
                 "How much do you spend and how do you direct your money to where it needs to be?",
                 "Savings",
-                R.drawable.ic_savings2,
                 "Breaking down your expenditure into a plan, can help you save!",
                 "Remember the last time you felt guilty about buying something, but bought it anyway? Next time you’ll know better after you learn how to spend consciously.\n" +
                         "\n" +
@@ -141,11 +140,11 @@ public class Article {
                         "\n" +
                         "Changing from one extreme behaviour takes a while, so tweak your spending rather than, for example, saving $495 a week if you were previously spending $500 a week. Choose one or two major problem areas and work on those, rather than trying to carve out 5 percent from numerous areas.\n" +
                         "\n" +
-                        "Overdraft fees, for instance, can add up to over $1,000 per year. Erasing that alone will make a massive difference."));
+                        "Overdraft fees, for instance, can add up to over $1,000 per year. Erasing that alone will make a massive difference.",
+                "https://source.unsplash.com/_wZaegHzdQc"));
         articles.add(new Article(2,
                 "How to automate your money",
                 "Savings",
-                R.drawable.ic_savings3,
                 "Don’t let people tell you how to save and spend your money.\n" +
                         "\n" +
                         "You don’t need to scrimp and save on all the “right” or “acceptable” things. Instead, pick what’s really important for you to splurge or save on. For instance, if owning a collection of limited-edition sneakers is more important to you than dining out every week, scrimp on the dining and spend on the shoes!",
@@ -183,11 +182,11 @@ public class Article {
                         "\n" +
                         "But how exactly can you link all your accounts? Simply automate all transfers and payments:\n" +
                         "\n" +
-                        "Say you get paid on the first of the month. On the second, automatically send a portion of your paycheck to your super and all that’s left over into your checking account. On the fifth, automatically transfer money to your savings account from your checking account. On the seventh, automatically pay off your bills and your credit card. "));
+                        "Say you get paid on the first of the month. On the second, automatically send a portion of your paycheck to your super and all that’s left over into your checking account. On the fifth, automatically transfer money to your savings account from your checking account. On the seventh, automatically pay off your bills and your credit card. ",
+                "https://source.unsplash.com/na8l3EPqpvY"));
         articles.add(new Article(3,
                 "Why Saving Money Is Important",
                 "Savings",
-                R.drawable.ic_savings4,
                 "If you don’t earn much and you can barely pay your bills, the idea of saving money might seem laughable. When you only have $5 left at the end of the month, why even bother to try saving? Because everyone has to start somewhere, and if you work at it, your financial situation is likely to improve over time. Saving money is worth the effort. It gives you peace of mind, it gives you options, and the more you save, the easier it becomes to accumulate additional savings.",
                 "Peace of Mind\n"+
                         "\n" +
@@ -214,7 +213,7 @@ public class Article {
                         "The Bottom Line\n" +
                         "\n" +
                         "Saving money is incredibly important. It gives you peace of mind, expands your options for decisions that have a major effect on your quality of life, and eventually gives you the option to retire. Most people who are wealthy got there through a combination of their own hard work and smart savings and investment decisions. You can become one of those people, too."
-        ));
+                        ,"https://source.unsplash.com/VO5w2Ida70s"));
         return articles;
     }
 
@@ -223,15 +222,14 @@ public class Article {
         articles.add(new Article(0,
                 "How super works?",
                 "Retirement",
-                R.drawable.ic_super1,
                 "Throughout your working life, check your super at least annually. Check your fund has the correct personal details and tax file number\n" +
                         "\n" +
                         "(TFN). Review your employer's contributions, and your account fees, investment options and insurance. If you’re not satisfied or don’t understand any details about your fund, call them and ask questions.",
-                "You pay tax at reduced rate/or when you take it out."));
+                "You pay tax at reduced rate/or when you take it out.",
+                "https://source.unsplash.com/cEukkv42O40"));
         articles.add(new Article(1,
                 "How much super can I access under the Coronavirus Economic Response Package?",
                 "Retirement",
-                R.drawable.ic_super2,
                 "The temporary measure will allow super account holders to access up to $10,000 of their money in this financial year, and a further $10,000 after 1 July, 2020 (until 30 June 2021).",
                 "\n" +
                         "The temporary measure will allow super account holders to access up to $10,000 of their money in this financial year, and a further $10,000 after 1 July, 2020 (until 30 June 2021). These funds would not be taxed after they are withdrawn, according to details listed in the Bill. However, anyone who believes that they will need both these amounts need to apply within six months of the 20 April start of the scheme.\n" +
@@ -242,11 +240,11 @@ public class Article {
                         "\n" +
                         "“Eligible individuals will be able to apply online (from 20 April, 2020) through myGov to access up to $10,000 of their superannuation before 1 July 2020. They will also be able to access up to a further $10,000 from 1 July 2020 until 24 September 2020.”\n" +
                         "\n" +
-                        "The ATO also states that “individuals will not need to pay tax on amounts released and the money they withdraw will not affect Centrelink or Veterans’ Affairs payments”."));
+                        "The ATO also states that “individuals will not need to pay tax on amounts released and the money they withdraw will not affect Centrelink or Veterans’ Affairs payments”.",
+                "https://source.unsplash.com/-TRcaFMV5vk"));
         articles.add(new Article(2,
                 "What insurance options does the superannuation fund offer?",
                 "Retirement",
-                R.drawable.ic_super3,
                 "Many superannuation funds offer a level of personal insurance cover and the premiums can be cost-effective for some.",
                 "Many superannuation funds offer a level of personal insurance cover and the premiums can be cost-effective for some workers, although it is worth knowing that the level of default cover may be limited should you need to make a claim in the future, and exclusions can apply. It is best to check the PDS and contact your super fund for further details. The types of insurance that may be included in your superannuation fund are:\n" +
                         "\n" +
@@ -254,16 +252,17 @@ public class Article {
                         "\n" +
                         "Total and Permanent Disability insurance –  pays you a lump sum if you become totally and permanently disabled.  The definition of total and permanent disability varies between insurance companies but it typically means that you are disabled to the extent that you will probably be unable to work again.\n" +
                         "\n" +
-                        "Income Protection insurance – insures you for a set level of your income for a certain length of time in the event that you cannot work due to illness or injury. "));
+                        "Income Protection insurance – insures you for a set level of your income for a certain length of time in the event that you cannot work due to illness or injury. ",
+                "https://source.unsplash.com/loeqHoa1uWY"));
         articles.add(new Article(3,
                 "Does the superannuation fund have a good selection of investment options?",
                 "Retirement",
-                R.drawable.ic_super4,
                 "Superannuation is an investment structure designed to give you a nest egg of savings for your retirement.",
                 "\n" +
                         "Superannuation is an investment structure designed to give you a nest egg of savings for your retirement. It is the underlying investments that you choose to hold within that structure that will determine the performance of your investment. \n" +
                         "\n" +
-                        "Those investments could range from cash, bonds, property, Australian shares or international shares, or could be a mixture of all these asset classes. Consider professional superannuation advice on what asset classes would suit your situation, and ensure that your superannuation fund of choice has something suitable."));
+                        "Those investments could range from cash, bonds, property, Australian shares or international shares, or could be a mixture of all these asset classes. Consider professional superannuation advice on what asset classes would suit your situation, and ensure that your superannuation fund of choice has something suitable.",
+                "https://source.unsplash.com/-TRcaFMV5vk"));
         return articles;
     }
 
@@ -272,7 +271,6 @@ public class Article {
         articles.add(new Article(0,
                 "How to Invest Simply?",
                 "Investment",
-                R.drawable.ic_invest1,
                 "snippet",
                 "gnore experts and invest the simple way.\n" +
                         "\n" +
@@ -294,11 +292,11 @@ public class Article {
                         "\n" +
                         "As you can see, in your twenties, more of your assets are in stocks. This is because you can afford to take the risk at this age. As you get older, the balance moves accordingly, and lifecycle funds make things easier by automatically adjusting for you.\n" +
                         "\n" +
-                        "The great thing about lifestyle funds is that you only have to own one fund."));
+                        "The great thing about lifestyle funds is that you only have to own one fund.",
+                        "https://source.unsplash.com/7aBrZmwEQtg"));
         articles.add(new Article(1,
                 "How to Start Investing in Stocks: A Beginner's Guide",
                 "Investment",
-                R.drawable.ic_invest2,
                 "Investing is a way to set aside money while you are busy with life and have that money work for you so that you can fully reap the rewards of your labor in the future.",
                 "Investing is a way to set aside money while you are busy with life and have that money work for you so that you can fully reap the rewards of your labor in the future. Investing is a means to a happier ending. Legendary investor Warren Buffett defines investing as …the process of laying out money now to receive more money in the future. The goal of investing is to put your money to work in one or more types of investment vehicles in the hopes of growing your money over time.\n"+
                 "\n" +
@@ -312,20 +310,20 @@ public class Article {
                 "\n" +
                 "Investing, however, also comes with the risk for losses.\n" +
                 "\n" +
-                "Investing in the stock market is the most common way for beginners to gain investment experience."));
+                "Investing in the stock market is the most common way for beginners to gain investment experience.",
+                "https://source.unsplash.com/UXEJDX4SqdE"));
         articles.add(new Article(
                 2,
                 "What Kind of Investor Are You?",
                 "Investment",
-                R.drawable.ic_invest3,
                 "Before you commit your money, you need to answer the question, what kind of investor am I? ",
                 "Before you commit your money, you need to answer the question, what kind of investor am I? When opening a brokerage account, an online broker like Charles Schwab or Fidelity will ask you about your investment goals and how much risk you're willing to take on.\n" +
                         "\n" +
-                        "Some investors want to take an active hand in managing their money's growth, and some prefer to set it and forget it. More traditional online brokers, like the two mentioned above, allow you to invest in stocks, bonds, exchange traded funds (ETFs), index funds, and mutual funds. "));
+                        "Some investors want to take an active hand in managing their money's growth, and some prefer to set it and forget it. More traditional online brokers, like the two mentioned above, allow you to invest in stocks, bonds, exchange traded funds (ETFs), index funds, and mutual funds. ",
+                "https://source.unsplash.com/XzUMBNmQro0"));
         articles.add(new Article(3,
                 "Investing - Commissions and Fees",
                 "Investment",
-                R.drawable.ic_invest4,
                 "As economists like to say, there's no free lunch.",
                 "\n" +
                         "As economists like to say, there's no free lunch. Though recently many brokers have been racing to lower or eliminate commissions on trades, and ETFs offer index investing to everyone who can trade with a bare-bones brokerage account, all brokers have to make money from their customers one way or another. \n" +
@@ -337,7 +335,8 @@ public class Article {
                         "Remember, a trade is an order to purchase or sell shares in one company. If you want to purchase five different stocks at the same time, this is seen as five separate trades, and you will be charged for each one.\n" +
                         "\n" +
                         "Now, imagine that you decide to buy the stocks of those five companies with your $1,000. To do this, you will incur $50 in trading costs—assuming the fee is $10—which is equivalent to 5% of your $1,000. If you were to fully invest the $1,000, your account would be reduced to $950 after trading costs. This represents a 5% loss before your investments even have a chance to earn.\n" +
-                        "Should you sell these five stocks, you would once again incur the costs of the trades, which would be another $50. To make the round trip (buying and selling) on these five stocks would cost you $100, or 10% of your initial deposit amount of $1,000. If your investments do not earn enough to cover this, you have lost money by just entering and exiting positions."));
+                        "Should you sell these five stocks, you would once again incur the costs of the trades, which would be another $50. To make the round trip (buying and selling) on these five stocks would cost you $100, or 10% of your initial deposit amount of $1,000. If your investments do not earn enough to cover this, you have lost money by just entering and exiting positions.",
+                "https://source.unsplash.com/OlSGcrLSYkw"));
         return articles;
     }
     public static ArrayList<Article> getArticleList4() {
@@ -345,7 +344,6 @@ public class Article {
         articles.add(new Article(0,
                 "How to use credit cards smartly?",
                 "Credit Card",
-                R.drawable.ic_credit1_v1,
                 "Be smart with unexpected gifts.\n" +
                         "\n" +
                         "The next time you receive an unexpected monetary gift or bonus, such as a payrise, save 50 percent and spend the rest in whichever way you want. This way, you won’t get used to spending more than you can afford.",
@@ -366,11 +364,10 @@ public class Article {
                         "Next, it’s worth contacting your credit card company and requesting they waive your annual fees and service charges and reduce your annual percentage rate. Surprisingly, many are willing to do so.\n" +
                         "\n" +
                         "Remember to seek out the best benefits you can from credit card companies. Some credit cards give you access to concierge services that may be able to book sold out tickets for shows, help you book your next travel adventure or even give additional travel insurance so that you and your loved ones are covered in case of an emergency."
-        ));
+                        ,"https://source.unsplash.com/_wZaegHzdQc"));
         articles.add(new Article(1,
                 "Visa vs. MasterCard: What's the Difference?",
                 "Credit Card",
-                R.drawable.ic_credit2,
                 "Visa vs. MasterCard: An Overview",
                 "The electronic payments industry is dominated by four companies. Visa, MasterCard, American Express, and Discover are responsible for handling the majority of the world’s card payments.1 Visa and MasterCard present unique offerings since neither company is involved with extending credit or issuing any cards. \n" +
                         "\n" +
@@ -378,11 +375,11 @@ public class Article {
                         "\n" +
                         "Credit cards often dominate the headlines, with approximately $1 trillion in outstanding revolving credit balances as of Q4 2019.4 Consumers are easily familiar with debit cards, which along with credit cards and other forms of non-cash payments generate around $174.2 billion in transaction volume—representing $97.04 trillion in value—annually.\n" +
                         "\n" +
-                        "As the financial technology market evolves, more and more prepaid card offerings are also being brought to market, generating around $200 billion in annual volume."));
+                        "As the financial technology market evolves, more and more prepaid card offerings are also being brought to market, generating around $200 billion in annual volume.",
+                        "https://source.unsplash.com/pjwbiuwXy00"));
         articles.add(new Article(2,
                 "The Pros of Opening a Credit Card",
                 "Credit Card",
-                R.drawable.ic_credit3,
                 "Opening a credit card means getting access to a revolving line of credit from the issuing bank. ",
                 "Opening a credit card means getting access to a revolving line of credit from the issuing bank. The account comes with a predetermined credit limit based on the issuer’s assessment of your creditworthiness. As long as your outstanding balance stays within that limit, you can continue racking up charges.\n" +
                         "\n" +
@@ -400,11 +397,11 @@ public class Article {
                         "\n" +
                         "Credit cards report your payment history to the credit bureaus each month. If you’re able to hit your due dates consistently, you can do wonders for your credit score. You’ll do even better if you keep your credit utilization—the size of your balance in relation to your credit limit—fairly low. A utilization rate of under 30% for each account is considered ideal.\n" +
                         "\n" +
-                        "The length of your credit history has a direct relationship to your credit score. The longer you hold onto an account, the better it’ll be for your score."));
+                        "The length of your credit history has a direct relationship to your credit score. The longer you hold onto an account, the better it’ll be for your score.",
+                "https://source.unsplash.com/na8l3EPqpvY"));
         articles.add(new Article(3,
                 "What You Risk When You Open a Credit Card",
                 "Credit Card",
-                R.drawable.ic_credit4,
                 "As convenient as it is to have an extra source of funds at your disposal, credit cards also carry significant potential risks.",
                 "As convenient as it is to have an extra source of funds at your disposal, credit cards also carry significant potential risks. Most cards are an unsecured form of credit, meaning your debt isn’t backed up by any form of collateral. Because card issuers can’t recoup their expenses if you fail to pay down your balance, they tend to charge higher interest rates than other loans.\n" +
                         "\n" +
@@ -418,7 +415,8 @@ public class Article {
                         "\n" +
                         "Your payment history and borrowing amount are the two biggest factors in your credit score.\n" +
                         "\n" +
-                        "Secured credit cards are an option for borrowers with a poor credit history. "));
+                        "Secured credit cards are an option for borrowers with a poor credit history. ",
+                        "https://source.unsplash.com/ECxwQjLRwLA"));
         return articles;
     }
 }
