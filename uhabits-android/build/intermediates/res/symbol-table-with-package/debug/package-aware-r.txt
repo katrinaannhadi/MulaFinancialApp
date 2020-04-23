@@ -2527,7 +2527,11 @@ id progress_circular
 id progress_horizontal
 id questionLabel
 id quiz_constraint_layout
+id radgroup
 id radio
+id radioButton
+id radioButton2
+id radioButton3
 id radio_answer_1
 id radio_answer_2
 id radio_answer_3
@@ -2621,7 +2625,6 @@ id stretch
 id submenuarrow
 id submit_area
 id subtitleCard
-id switch1
 id switchWidget
 id tabMode
 id tag_accessibility_actions
@@ -2653,6 +2656,7 @@ id text_category
 id text_date
 id text_date2
 id text_date3
+id text_enter_hecs
 id text_high_score
 id text_input_end_icon
 id text_input_start_icon
@@ -2818,6 +2822,7 @@ layout bottom_nav
 layout checkmark_stackview_widget
 layout chunk_calculator
 layout chunk_category
+layout chunk_expense
 layout color_picker_dialog
 layout color_picker_swatch
 layout custom_dialog
@@ -2853,6 +2858,7 @@ layout fragment_article
 layout fragment_article_selection_viewpager
 layout fragment_calculator
 layout fragment_daily_quiz
+layout fragment_expense_list
 layout fragment_home
 layout fragment_information
 layout fragment_intro

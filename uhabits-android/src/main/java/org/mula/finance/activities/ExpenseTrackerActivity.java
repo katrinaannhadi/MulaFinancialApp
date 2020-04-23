@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import org.mula.finance.AsyncTasks.ExpenseAsyncTaskDelegate;
+import org.mula.finance.AsyncTasks.ExpenseRetrieveAsyncTask;
 import org.mula.finance.Databases.AppDatabase;
 import org.mula.finance.Fragments.ExpenseLineChartFragment;
 import org.mula.finance.Fragments.ExpensePieChartFragment;
@@ -25,12 +27,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class ExpenseTrackerActivity extends AppCompatActivity {
+public class ExpenseTrackerActivity extends AppCompatActivity implements ExpenseAsyncTaskDelegate {
 
     private String[] categories;
     private final static String HEADING = "Previous 30 Days Of Expenses";
     private HashMap<String, Double> pieChartValueMap;
     private HashMap<Integer, Double> lineChartValueMap;
+    private AppDatabase db;
+    private List<Expense> expenses;
+
+    private ExpensePieChartFragment expensePieChartFragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,45 +47,30 @@ public class ExpenseTrackerActivity extends AppCompatActivity {
 
         getValues();
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        Bundle arguments = new Bundle();
-        for(String category : categories){
-            arguments.putDouble(category, pieChartValueMap.get(category));
-        }
-        ExpensePieChartFragment fragment = new ExpensePieChartFragment(HEADING);
-        fragment.setArguments(arguments);
-        transaction.replace(R.id.pieFragment,fragment);
-        transaction.commit();
-
-        FragmentManager fragmentManager2 = getSupportFragmentManager();
-        FragmentTransaction transaction2 = fragmentManager2.beginTransaction();
-        Bundle arguments2 = new Bundle();
-        arguments2.putSerializable("keyValues", lineChartValueMap);
-        ExpenseLineChartFragment fragment2 = new ExpenseLineChartFragment();
-        fragment2.setArguments(arguments2);
-        transaction2.replace(R.id.lineFragment,fragment2);
-        transaction2.commit();
     }
 
+
     public void getValues(){
-        AppDatabase db = AppDatabase.getInstance(getApplicationContext());
-        List<Expense> expenses = db.expenseDao().getAll();
-        removeInvalidDates(expenses);
-        getPieChartValues(expenses);
-        getLineChartValues(expenses);
+        db = AppDatabase.getInstance(getApplicationContext());
+        retrieveExpenses();
     }
 
     private void removeInvalidDates(List<Expense> expenses){
-        Date thirtyDaysAgo = getThirtyDaysAgo();
-        List<Expense> toRemove = new ArrayList<>();
-        for(Expense e : expenses){
-            Date expenseDate = new Date(e.date);
-            if(!expenseDate.equals(thirtyDaysAgo) && !expenseDate.after(thirtyDaysAgo)){
-                toRemove.add(e);
+        try {
+            Date thirtyDaysAgo = getThirtyDaysAgo();
+            List<Expense> toRemove = new ArrayList<>();
+            for(Expense e : expenses){
+                Date expenseDate = new Date(e.date);
+                if(!expenseDate.equals(thirtyDaysAgo) && !expenseDate.after(thirtyDaysAgo)){
+                    toRemove.add(e);
+                }
             }
+            expenses.removeAll(toRemove);
+
+        } catch (NullPointerException e){
+
         }
-        expenses.removeAll(toRemove);
+
     }
 
     private void getLineChartValues(List<Expense> expenses) {
@@ -105,12 +96,16 @@ public class ExpenseTrackerActivity extends AppCompatActivity {
     }
 
     private void getPieChartValues(List<Expense> expenses) {
-        pieChartValueMap = new HashMap<>();
-        for(String category : categories){
-            pieChartValueMap.put(category, Double.valueOf(0));
-        }
-        for(Expense e : expenses){
-            pieChartValueMap.put(e.category, Double.valueOf(e.value) + pieChartValueMap.get(e.category));
+        try {
+            pieChartValueMap = new HashMap<>();
+            for (String category : categories) {
+                pieChartValueMap.put(category, Double.valueOf(0));
+            }
+            for (Expense e : expenses) {
+                pieChartValueMap.put(e.category, Double.valueOf(e.value) + pieChartValueMap.get(e.category));
+            }
+        } catch (NullPointerException e){
+
         }
     }
 
@@ -127,5 +122,40 @@ public class ExpenseTrackerActivity extends AppCompatActivity {
     public void launchAddExpenseActivity(View view) {
         Intent intent = new Intent(this, AddExpenseActivity.class);
         startActivity(intent);
+    }
+
+    public void retrieveExpenses(){
+        ExpenseRetrieveAsyncTask retrieve = new ExpenseRetrieveAsyncTask();
+        retrieve.setAppDatabase(db);
+        retrieve.setDelegate(this);
+        retrieve.execute();
+
+    }
+
+    @Override
+    public void handleExpensesReturned(List<Expense> expense){
+        this.expenses = expense;
+        removeInvalidDates(expenses);
+        getPieChartValues(expenses);
+        getLineChartValues(expenses);
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        Bundle arguments = new Bundle();
+        for(String category : categories){
+            arguments.putDouble(category, pieChartValueMap.get(category));
+        }
+        ExpensePieChartFragment fragment = new ExpensePieChartFragment(HEADING);
+        fragment.setArguments(arguments);
+        transaction.replace(R.id.pieFragment,fragment);
+        transaction.commit();
+
+        FragmentManager fragmentManager2 = getSupportFragmentManager();
+        FragmentTransaction transaction2 = fragmentManager2.beginTransaction();
+        Bundle arguments2 = new Bundle();
+        arguments2.putSerializable("keyValues", lineChartValueMap);
+        ExpenseLineChartFragment fragment2 = new ExpenseLineChartFragment();
+        fragment2.setArguments(arguments2);
+        transaction2.replace(R.id.lineFragment,fragment2);
+        transaction2.commit();
     }
 }

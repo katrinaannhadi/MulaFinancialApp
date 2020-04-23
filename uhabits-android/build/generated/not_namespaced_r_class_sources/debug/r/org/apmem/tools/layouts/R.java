@@ -22,7 +22,7 @@ public final class R {
         private id() {}
 
         public static final int ltr = 0x7f0a013e;
-        public static final int rtl = 0x7f0a01a4;
+        public static final int rtl = 0x7f0a01a8;
     }
     public static final class styleable {
         private styleable() {}
