@@ -35,7 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //Information Fragment
-public class InformationFragment extends Fragment implements ScoreAsyncTaskDelegate, ScoreListAsyncTaskDelegate {
+public class InformationFragment extends Fragment  {
 
     private View view;
     private RecyclerView rv;
@@ -47,9 +47,6 @@ public class InformationFragment extends Fragment implements ScoreAsyncTaskDeleg
     private TextView titleAverage, titleTopCategory, textAverage, textTopCategory;
     private ScoreDatabase db;
 
-    private Button goalsButton;
-    private Button expenseButton;
-
     ViewPager viewPager;
     InformationAdapter mInformationAdapter;
     List<Model> mInformation;
@@ -58,12 +55,9 @@ public class InformationFragment extends Fragment implements ScoreAsyncTaskDeleg
     private static final String TAG = " 2 ARTICLE SELECTION ";
 
 
-
-
     public InformationFragment() {
         // Required empty public constructor
     }
-
 
 
     @Override
@@ -82,9 +76,9 @@ public class InformationFragment extends Fragment implements ScoreAsyncTaskDeleg
         context = view.getContext();
 
         mInformation = new ArrayList<>();
-        mInformation.add(new Model(R.drawable.ic_piggy_bank, "Educate Yourself", "Finance shouldn't be hard! Read on for hot tips and trendy articles.",1));
-        mInformation.add(new Model(R.drawable.ic_super, "Need a Challenge", "Have some fun and test yourself with our quiz!",2));
-        mInformation.add(new Model(R.drawable.ic_super, "Visual Learner", "We got your back. Sit back and watch informational videos on finance curated by the team!",2));
+        mInformation.add(new Model(R.drawable.ic_piggy_bank, "Educate Yourself", "Finance shouldn't be hard! Read on for hot tips and trendy articles.", 1));
+        mInformation.add(new Model(R.drawable.ic_super, "Need a Challenge", "Have some fun and test yourself with our quiz!", 2));
+        mInformation.add(new Model(R.drawable.ic_super, "Visual Learner", "We got your back. Sit back and watch informational videos on finance curated by the team!", 2));
         mInformationAdapter = new InformationAdapter(mInformation, this);
 
         viewPager = view.findViewById(R.id.viewPager);
@@ -102,12 +96,11 @@ public class InformationFragment extends Fragment implements ScoreAsyncTaskDeleg
         colors = colors_temp;
 
 
-
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-                if (position < (mInformationAdapter.getCount() -1) && position < (colors.length - 1)) {
+                if (position < (mInformationAdapter.getCount() - 1) && position < (colors.length - 1)) {
                     viewPager.setBackgroundColor(
 
                             (Integer) argbEvaluator.evaluate(
@@ -116,9 +109,7 @@ public class InformationFragment extends Fragment implements ScoreAsyncTaskDeleg
                                     colors[position + 1]
                             )
                     );
-                }
-
-                else {
+                } else {
                     viewPager.setBackgroundColor(colors[colors.length - 1]);
                 }
             }
@@ -178,158 +169,7 @@ public class InformationFragment extends Fragment implements ScoreAsyncTaskDeleg
 
         return view;
     }
-
-    @Override
-    public void handleScoreReturned(List<Score> scores){
-        int num = 0;
-    }
-
-    @Override
-    public void handleScoreListReturned(List<Score> scores){
-        try{
-
-            int topCategory = 0;
-            int highScore = 0;
-
-            for(int i = 0; i < scores.size(); i++){
-                if(highScore < scores.get(i).getScore()){
-                    topCategory = scores.get(i).getCategory();
-                    highScore = scores.get(i).getScore();
-                }
-            }
-
-
-            try {
-                textAverage.setText(Integer.toString(highScore));
-            } catch (ArithmeticException e){
-                textAverage.setText(0);
-            }
-
-            switch (topCategory){
-                case 1:
-                    textTopCategory.setText("Credit");
-                    break;
-                case 2:
-                    textTopCategory.setText("Investment");
-                    break;
-                case 3:
-                    textTopCategory.setText("Tax");
-                    break;
-                default:
-                    textTopCategory.setText("N/A");
-                    break;
-            }
-
-        }catch(NullPointerException e) {
-
-        }
-
-    }
-
-    public void retrieveScoreListFromDb(){
-        ScoreRetrieveAsyncTask retrieveAsyncTask = new ScoreRetrieveAsyncTask();
-        retrieveAsyncTask.setScoreDatabase(db);
-        retrieveAsyncTask.setDelegate(infoFragment);
-        retrieveAsyncTask.execute();
-    }
-
-    private void startQuiz(int number){
-        Context c = view.getContext();
-        Intent intent = new Intent(c, QuizActivity.class);
-        intent.putExtra("Difficulty", number);
-        c.startActivity(intent);
-    }
 }
 
-//TODO GET RID OF THIS PART DOWN
 
-//    private View view;
-//    private Button goalsButton;
-//    private Button expenseButton;
-//
-//    private Context context;
-//    private MediaPlayer mp;
-//    ViewPager viewPager;
-//    GoalAdapter mGoalAdapter;
-//    List<Model> mGoals;
-//    Integer[] colors = null;
-//    ArgbEvaluator argbEvaluator = new ArgbEvaluator();
-//    private static final String TAG = " 2 ARTICLE SELECTION ";
-
-
-
-//    public HomeFragment() {
-//        // Required empty public constructor
-//    }
-
-//
-//    public static HomeFragment newInstance() {
-//        HomeFragment fragment = new HomeFragment();
-//        Bundle args = new Bundle();
-//        return fragment;
-//    }
-
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        if (getArguments() != null) {
-//
-//        }
-//    }
-
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        view = inflater.inflate(R.layout.fragment_article_selection_viewpager, container, false);
-//        context = view.getContext();
-//
-//        mGoals = new ArrayList<>();
-//        mGoals.add(new Model(R.drawable.ic_piggy_bank, "Smash your Goals", "Use our goal tracker to keep track of smart financial habits, get reminders and more!",1));
-//        mGoals.add(new Model(R.drawable.ic_super, "Track your Expenses", "Use our expense tracker to help you achieve your financial goals!",2));
-//        mGoalAdapter = new GoalAdapter(mGoals, this);
-//
-//        viewPager = view.findViewById(R.id.viewPager);
-//        viewPager.setAdapter(mGoalAdapter);
-//        viewPager.setPadding(130, 0, 130, 0);
-//
-//        Integer[] colors_temp = {
-//                getResources().getColor(R.color.mula_yellow_500),
-//                getResources().getColor(R.color.green_300),
-//
-//        };
-//
-//        colors = colors_temp;
-//
-//
-//
-//        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-//            @Override
-//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-//
-//                if (position < (mGoalAdapter.getCount() -1) && position < (colors.length - 1)) {
-//                    viewPager.setBackgroundColor(
-//
-//                            (Integer) argbEvaluator.evaluate(
-//                                    positionOffset,
-//                                    colors[position],
-//                                    colors[position + 1]
-//                            )
-//                    );
-//                }
-//
-//                else {
-//                    viewPager.setBackgroundColor(colors[colors.length - 1]);
-//                }
-//            }
-//
-//            @Override
-//            public void onPageSelected(int position) {
-//
-//            }
-//
-//            @Override
-//            public void onPageScrollStateChanged(int state) {
-//
-//            }
-//        });
 

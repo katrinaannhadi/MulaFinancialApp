@@ -30,10 +30,6 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements DailyQuizFragment.OnFragmentInteractionListener {
 
-
-
-
-
     //keep
     private View popupView;
 

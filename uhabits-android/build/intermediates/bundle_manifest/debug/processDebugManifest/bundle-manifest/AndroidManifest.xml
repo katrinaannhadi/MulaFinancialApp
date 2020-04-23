@@ -27,6 +27,9 @@
         android:testOnly="true"
         android:theme="@style/Base.Mula" >
         <activity
+            android:name="org.mula.finance.activities.QuizStartActivity"
+            android:theme="@style/Mula.Purple" />
+        <activity
             android:name="org.mula.finance.activities.video.VideoActivity"
             android:theme="@style/Mula.Purple" />
         <activity

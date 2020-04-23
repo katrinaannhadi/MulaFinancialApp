@@ -19,7 +19,11 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Mula"
         tools:replace="android:label">
-        <activity android:name=".activities.video.VideoActivity"
+
+        <activity android:name=".activities.QuizStartActivity"
+            android:theme="@style/Mula.Purple"></activity>
+        <activity
+            android:name=".activities.video.VideoActivity"
             android:theme="@style/Mula.Purple" />
         <activity
             android:name=".activities.category.ArticleSelectionActivity"
@@ -88,6 +92,7 @@
         <activity
             android:name=".activities.InvestmentCalculatorActivity"
             android:theme="@style/Mula.Purple" />
+
         <activity
             android:name=".activities.TaxCalculatorActivity"
             android:theme="@style/Mula.Purple" />

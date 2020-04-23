@@ -2815,12 +2815,12 @@ layout activity_expense_tracker
 layout activity_investment_calculator
 layout activity_main
 layout activity_quiz
+layout activity_quiz_start
 layout activity_taxcalc
 layout activity_video
 layout article_list_row
 layout automation
 layout bottom_nav
-layout bottom_nav_goals
 layout checkmark_stackview_widget
 layout chunk_calculator
 layout chunk_category
