@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
@@ -39,7 +40,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import org.mula.finance.Adapters.CalculatorAdapter;
-import org.mula.finance.Models.Category;
 import org.mula.finance.Models.Company;
 import org.mula.finance.Models.DailyPrice;
 import org.mula.finance.Models.IntentLink;
@@ -53,7 +53,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -82,6 +81,9 @@ public class CalculatorFragment extends Fragment {
 
     private DateTimeFormatter toDate;
     private DateTimeFormatter toString;
+
+    private TextView xAxisLabel;
+    private TextView yAxisLabel;
 
 
 
@@ -124,6 +126,11 @@ public class CalculatorFragment extends Fragment {
         candleStickChart = view.findViewById(R.id.candle_stick_chart);
         refreshButton = view.findViewById(R.id.button_refresh);
         refreshButton.setText("Refresh");
+
+        xAxisLabel = view.findViewById(R.id.text_x_axis);
+        xAxisLabel.setText("Date/Time");
+        yAxisLabel = view.findViewById(R.id.text_y_axis);
+        yAxisLabel.setText("Price");
 
         toDate = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         toString = DateTimeFormatter.ofPattern("MM-dd HH");
@@ -169,15 +176,15 @@ public class CalculatorFragment extends Fragment {
         context = view.getContext();
 
         calc = new ArrayList<>();
-        List<Category> blank = new ArrayList<>();
+
 
         calc.add(new IntentLink("Investment",
                 new Intent(context, InvestmentCalculatorActivity.class),
-                R.drawable.image_investment, R.color.light_blue_300, blank));
+                R.drawable.image_investment, R.color.light_blue_300));
 
         calc.add(new IntentLink("Tax",
                 new Intent(context, TaxCalculatorActivity.class),
-                R.drawable.ic_investment, R.color.amber_50, blank));
+                R.drawable.ic_investment, R.color.amber_50));
 
         //calc.add(new IntentLink("Goals",
         //     new Intent(context, ListHabitsActivity.class),
@@ -276,7 +283,7 @@ public class CalculatorFragment extends Fragment {
                     CandleData candleData = new CandleData(set1);
                     candleStickChart.setData(candleData);
                     candleStickChart.invalidate();
-                    candleStickChart.setVisibleXRangeMaximum(7);
+                    candleStickChart.setVisibleXRangeMaximum(4);
                     candleStickChart.moveViewToX(yValsCandleStick.size());
 
                 } else if (set1 == null) {
@@ -297,7 +304,7 @@ public class CalculatorFragment extends Fragment {
                     // set data
                     candleStickChart.setData(data);
                     candleStickChart.invalidate();
-                    candleStickChart.setVisibleXRangeMaximum(7);
+                    candleStickChart.setVisibleXRangeMaximum(4);
                     candleStickChart.moveViewToX(yValsCandleStick.size());
                 }
 

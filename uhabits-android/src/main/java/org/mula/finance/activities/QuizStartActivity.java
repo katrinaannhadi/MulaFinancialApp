@@ -1,25 +1,28 @@
 package org.mula.finance.activities;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-import org.mula.finance.Adapters.CategoryAdapter;
+import org.mula.finance.Adapters.CalculatorAdapter;
 import org.mula.finance.AsyncTasks.ScoreAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.ScoreListAsyncTaskDelegate;
 import org.mula.finance.AsyncTasks.ScoreRetrieveAsyncTask;
 import org.mula.finance.Databases.ScoreDatabase;
-import org.mula.finance.Models.Category;
 import org.mula.finance.Models.IntentLink;
 import org.mula.finance.Models.Score;
 import org.mula.finance.R;
+import org.mula.finance.activities.category.CategoryAdapter;
+import org.mula.finance.activities.category.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,13 +36,14 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
     private TextView titleTopCategory;
     private TextView textAverage;
     private TextView textTopCategory;
-    private ArrayList<Category> categoryList;
+    private ArrayList<IntentLink> categoryList;
     private ScoreDatabase db;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
 
 
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,24 +59,19 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
         titleTopCategory.setText("Top Category:");
 
         calc = new ArrayList<>();
-        ArrayList<Category> blank = new ArrayList<>();
-        categoryList = new ArrayList<>();
 
-        categoryList.add(new Category("Credit", 1, new Intent(this, QuizActivity.class)));
-        categoryList.add(new Category("Investment", 2, new Intent(this, QuizActivity.class)));
-        categoryList.add(new Category("Savings", 3, new Intent(this, QuizActivity.class)));
+        calc.add(0, new IntentLink("Credit", new Intent(this, QuizActivity.class), R.drawable.image_credit, Color.YELLOW));
+        calc.add(1, new IntentLink("Investment", new Intent(this, QuizActivity.class), R.drawable.image_investment2, Color.YELLOW));
+        calc.add(2, new IntentLink("Savings", new Intent(this, QuizActivity.class), R.drawable.image_savings, Color.YELLOW));
 
-
-        CategoryAdapter categoryAdapter = new CategoryAdapter(calc);
+        CalculatorAdapter calcAdapter = new CalculatorAdapter(calc);
 
         rv = findViewById(R.id.rv_quiz);
         rv.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
         rv.setLayoutManager(mLayoutManager);
 
-        rv.setAdapter(categoryAdapter);
-
-
+        rv.setAdapter(calcAdapter);
         db = db.getInstance(this);
 
         retrieveScoreListFromDb();
@@ -128,6 +127,7 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     public void retrieveScoreListFromDb(){
         ScoreRetrieveAsyncTask retrieveAsyncTask = new ScoreRetrieveAsyncTask();
         retrieveAsyncTask.setScoreDatabase(db);

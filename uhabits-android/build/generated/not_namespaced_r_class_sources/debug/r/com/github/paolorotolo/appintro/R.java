@@ -452,9 +452,9 @@ public final class R {
         public static final int ic_arrow_forward_white_24px = 0x7f080120;
         public static final int ic_done_white_24px = 0x7f08012e;
         public static final int ic_navigate_next_white_24dp = 0x7f080145;
-        public static final int indicator_dot_grey = 0x7f08014f;
-        public static final int indicator_dot_white = 0x7f080150;
-        public static final int notification_template_icon_bg = 0x7f080166;
+        public static final int indicator_dot_grey = 0x7f080152;
+        public static final int indicator_dot_white = 0x7f080153;
+        public static final int notification_template_icon_bg = 0x7f080169;
     }
     public static final class id {
         private id() {}
@@ -553,15 +553,15 @@ public final class R {
         public static final int text = 0x7f0a0208;
         public static final int text2 = 0x7f0a0209;
         public static final int textSpacerNoButtons = 0x7f0a020b;
-        public static final int time = 0x7f0a022d;
-        public static final int title = 0x7f0a0233;
-        public static final int title_template = 0x7f0a0242;
-        public static final int topPanel = 0x7f0a0247;
-        public static final int up = 0x7f0a0269;
-        public static final int useLogo = 0x7f0a026a;
-        public static final int view_pager = 0x7f0a026f;
-        public static final int withText = 0x7f0a0272;
-        public static final int wrap_content = 0x7f0a0274;
+        public static final int time = 0x7f0a022f;
+        public static final int title = 0x7f0a0235;
+        public static final int title_template = 0x7f0a0244;
+        public static final int topPanel = 0x7f0a0249;
+        public static final int up = 0x7f0a026b;
+        public static final int useLogo = 0x7f0a026c;
+        public static final int view_pager = 0x7f0a0271;
+        public static final int withText = 0x7f0a0274;
+        public static final int wrap_content = 0x7f0a0276;
     }
     public static final class integer {
         private integer() {}

@@ -68,9 +68,19 @@ public class CalculatorAdapter extends RecyclerView.Adapter<CalculatorAdapter.Ca
             public void onClick(View view){
                 Context c = view.getContext();
                 Intent intent = intentLink.getLinkIntent();
-                //TODO:// change once pop up menu is a thing
-                if(intentLink.getLinkName() == "Quiz"){
-                    intent.putExtra("Difficulty", 1);
+
+                switch(intentLink.getLinkName()){
+                    case "Credits":
+                        intent.putExtra("Difficulty", 1);
+                        break;
+                    case "Investment":
+                        intent.putExtra("Difficulty", 2);
+                        break;
+                    case "Savings":
+                        intent.putExtra("Difficulty", 3);
+                        break;
+                    default:
+                        break;
                 }
                 c.startActivity(intent);
             }

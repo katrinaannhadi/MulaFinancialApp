@@ -72,6 +72,7 @@ public class HomeFragment extends Fragment {
         mGoals.add(new Model(R.drawable.ic_goal2, "Track your Expenses", "Use our expense tracker to help you achieve your financial goals!",2));
         mGoalAdapter = new GoalAdapter(mGoals, this);
 
+
         viewPager = view.findViewById(R.id.viewPager);
         viewPager.setAdapter(mGoalAdapter);
         viewPager.setPadding(130, 0, 130, 0);
