@@ -117,9 +117,8 @@ public class CalculatorFragment extends Fragment {
         context = view.getContext();
 
         mCalculator = new ArrayList<>();
-        mCalculator.add(new Model(R.drawable.ic_learn1, "Educate Yourself", "Finance shouldn't be hard! Read on for hot tips and trendy articles.", 1));
-        mCalculator.add(new Model(R.drawable.ic_learn2, "Need a Challenge", "Have some fun and test yourself with our quiz!", 2));
-        mCalculator.add(new Model(R.drawable.ic_learn3, "Visual Learner", "We got your back. Sit back and watch informational videos on finance curated by the team!", 2));
+        mCalculator.add(new Model(R.drawable.ic_tax, "Tax Calculator", "Calculate your taxes.", 1));
+        mCalculator.add(new Model(R.drawable.ic_investment, "Investment Calculator", "Use the calculator to predict future investments", 2));
         mCalculatorCategoryAdapter = new CalculatorCategoryAdapter(mCalculator, this);
 
         viewPager = view.findViewById(R.id.viewPager);
@@ -127,8 +126,8 @@ public class CalculatorFragment extends Fragment {
         viewPager.setPadding(130, 0, 130, 0);
 
         Integer[] colors_temp = {
-                getResources().getColor(R.color.green_300),
-                getResources().getColor(R.color.green_500)
+                getResources().getColor(R.color.mula_turqoise_400),
+                getResources().getColor(R.color.mula_turqoise_400)
 
 
         };

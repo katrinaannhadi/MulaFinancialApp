@@ -2155,6 +2155,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id Stock
 id TOP_END
 id TOP_START
 id accelerate

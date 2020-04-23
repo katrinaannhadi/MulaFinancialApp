@@ -40,14 +40,19 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
         android:layout_centerInParent="true"
+
+        android:layout_marginTop="24dp"
         android:clipToPadding="false"
         android:foregroundGravity="center"
         android:overScrollMode="never"
-        app:layout_constraintBottom_toTopOf="@+id/candle_stick_chart"
-        app:layout_constraintTop_toBottomOf="@+id/choose"></androidx.viewpager.widget.ViewPager>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose">
+
+    </androidx.viewpager.widget.ViewPager>
 
 
 <!--    <androidx.recyclerview.widget.RecyclerView-->
@@ -58,20 +63,47 @@
 <!--        app:layout_constraintBottom_toBottomOf="parent"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/choose" />-->
 
+    <TextView
+        android:id="@+id/Stock"
+        android:layout_width="323dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/grid_4"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="end"
+        android:padding="@dimen/grid_1"
+        android:paddingTop="@dimen/grid_1"
+        android:text="Global Equity"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.Mula.Headline3"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/candle_stick_chart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        tools:ignore="MissingPrefix,RtlCompat" />
+
 
     <com.github.mikephil.charting.charts.CandleStickChart
         android:id="@+id/candle_stick_chart"
         android:layout_width="match_parent"
         android:layout_height="379dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/viewPager" />
+        app:layout_constraintTop_toBottomOf="@id/Stock" />
 
     <Button
         android:id="@+id/button_refresh"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/candle_stick_chart" />
