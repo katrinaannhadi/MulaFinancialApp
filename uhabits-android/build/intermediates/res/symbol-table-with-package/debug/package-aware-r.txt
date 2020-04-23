@@ -2274,8 +2274,6 @@ id buttonPlaylist
 id buttonSave
 id buttonVideo
 id button_continue
-id button_expense
-id button_goals
 id button_refresh
 id button_submit
 id cancel_action
@@ -2308,8 +2306,8 @@ id color_picker_swatch
 id confirm_button
 id constraint
 id constraint_daily_quiz
+id constraint_expense
 id constraint_expense_list
-id constraint_home
 id constraint_investment
 id constraint_start_quiz
 id constraint_tax
@@ -2687,7 +2685,6 @@ id text_question
 id text_quiz_average
 id text_score
 id text_test
-id text_video
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2881,13 +2878,9 @@ layout fragment_article_selection_viewpager
 layout fragment_calculator
 layout fragment_daily_quiz
 layout fragment_expense_list
-layout fragment_home
-layout fragment_information
 layout fragment_intro
-layout fragment_investment_calculator
 layout fragment_line_chart
 layout fragment_pie_chart
-layout fragment_video
 layout frequency_stackview_widget
 layout habit_checkbox_list_item
 layout history_stackview_widget

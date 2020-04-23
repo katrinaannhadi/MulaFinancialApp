@@ -8,11 +8,15 @@
               xmlns:app="http://isoron.org/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:orientation="horizontal">
+              android:orientation="horizontal"
+                android:background="@color/mula_yellow_500">
 
     <TextView
         style="@style/dialogFormLabel"
-        android:text="@string/target"/>
+        android:fontFamily="@font/rubik"
+        android:text="@string/target"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="18sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"

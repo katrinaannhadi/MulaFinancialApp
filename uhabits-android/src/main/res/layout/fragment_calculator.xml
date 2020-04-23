@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/mula_turqoise_400"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mula_turqoise_400"
     tools:context=".Fragments.CalculatorFragment"
     >
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid_4"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="end"
+        android:padding="@dimen/grid_1"
+        android:paddingTop="@dimen/grid_1"
+        android:text="Calculators"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.Mula.Headline3"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingPrefix,RtlCompat" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose" />
 
 
     <com.github.mikephil.charting.charts.CandleStickChart
@@ -17,7 +55,7 @@
         android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/rv_calculator" />
 
     <Button
         android:id="@+id/button_refresh"
@@ -27,12 +65,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/candle_stick_chart" />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_calculator"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_refresh" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

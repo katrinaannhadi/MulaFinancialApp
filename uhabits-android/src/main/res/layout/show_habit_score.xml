@@ -25,7 +25,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:text="@string/score"/>
+            android:text="@string/score"
+            android:fontFamily="@font/rubik_bold"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="20sp" />
 
         <org.mula.finance.activities.common.views.ScoreChart
             android:id="@+id/scoreView"

@@ -9,14 +9,18 @@
     <TextView
         android:id="@+id/title"
         style="@style/CardHeader"
-        android:text="@string/overview"/>
+        android:text="@string/overview"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:id="@+id/llOverview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
 
         <FrameLayout
             android:layout_width="0dp"
@@ -43,13 +47,18 @@
             <TextView
                 android:id="@+id/scoreLabel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
                 android:text="@string/score"
-                android:textColor="?mediumContrastTextColor"/>
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -62,13 +71,18 @@
             <TextView
                 android:id="@+id/monthDiffLabel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
                 android:text="@string/month"
-                android:textColor="?mediumContrastTextColor"/>
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -81,13 +95,18 @@
             <TextView
                 android:id="@+id/yearDiffLabel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
                 android:text="@string/year"
-                android:textColor="?mediumContrastTextColor"/>
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -100,13 +119,18 @@
             <TextView
                 android:id="@+id/totalCountLabel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik"
                 android:text="@string/total"
-                android:textColor="?mediumContrastTextColor"/>
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </LinearLayout>

@@ -28,7 +28,7 @@ public class YoutubePlayerActivity extends YouTubeBaseActivity
         super.onCreate(savedInstanceState);
         //TODO check the root whether it's correct
         //inflates the xml and assigns the view that is created to the layout variable and passes the view to set content view
-        ConstraintLayout layout = (ConstraintLayout) getLayoutInflater().inflate(R.layout.fragment_video,null);
+        ConstraintLayout layout = (ConstraintLayout) getLayoutInflater().inflate(R.layout.activity_video,null);
         setContentView(layout);
 
         //adding the youtube player view widget to the layout

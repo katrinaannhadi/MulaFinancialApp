@@ -12,9 +12,13 @@
         android:id="@+id/text_lineChart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/rubik_bold"
         android:gravity="center_horizontal"
+        android:hint="Line Chart Test"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,9 +27,15 @@
         android:id="@+id/text_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/rubik_bold"
         android:gravity="center_horizontal"
+        android:hint="Text test"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_lineChart" />
 
     <com.github.mikephil.charting.charts.LineChart

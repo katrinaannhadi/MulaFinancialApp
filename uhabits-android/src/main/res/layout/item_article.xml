@@ -25,27 +25,31 @@
 
             <TextView
                 android:id="@+id/title"
-                android:textColor="#262626"
-                android:layout_below="@id/image"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="16dp"
-                android:text="Brochure"
-                android:textSize="16sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text="Brochure"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/title"
-                android:layout_marginTop="7dp"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
                 android:layout_marginRight="16dp"
-                android:maxLines="10"
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
+                android:fontFamily="@font/rubik"
+                android:maxLines="10"
                 android:text="Description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="18sp" />
 
         </RelativeLayout>
 

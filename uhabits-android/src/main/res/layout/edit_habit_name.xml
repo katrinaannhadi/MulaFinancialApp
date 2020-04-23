@@ -7,12 +7,14 @@
     xmlns:app1="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/mula_yellow_500"
     android:minWidth="300dp">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/mula_purple_dark_primary"
         app1:layout_constraintEnd_toStartOf="@+id/buttonPickColor"
         app1:layout_constraintHorizontal_weight="6"
         app1:layout_constraintStart_toStartOf="parent"
@@ -21,11 +23,13 @@
         <EditText
             android:id="@+id/tvName"
             style="@style/dialogFormInput"
-            android:layout_width="match_parent"
+            android:layout_width="409dp"
             android:layout_height="wrap_content"
             android:ellipsize="start"
             android:gravity="center_vertical"
-            android:hint="@string/name">
+            android:hint="@string/name"
+            android:textColor="@color/mula_purple_bright_accent"
+            android:textSize="18sp">
 
             <requestFocus />
         </EditText>
@@ -49,6 +53,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/question"
+        android:textColorHint="@color/mula_purple_dark_primary"
         app1:layout_constraintEnd_toEndOf="parent"
         app1:layout_constraintStart_toStartOf="parent"
         app1:layout_constraintTop_toBottomOf="@id/tilName">
@@ -58,7 +63,10 @@
             style="@style/dialogFormInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/mula_purple_bright_accent"
+            android:textSize="18sp"
             app:example="@string/example_question_numerical" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -66,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/notes"
+        android:textColorHint="@color/mula_purple_dark_primary"
         app1:layout_constraintBottom_toBottomOf="parent"
         app1:layout_constraintEnd_toEndOf="parent"
         app1:layout_constraintStart_toStartOf="parent"
@@ -75,8 +84,10 @@
             android:id="@+id/tvDescription"
             style="@style/dialogFormInputMultiline"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="top"
+            android:textColor="@color/mula_purple_bright_accent"
+            android:textSize="18sp"
             app:example="@string/example_notes" />
     </com.google.android.material.textfield.TextInputLayout>
 

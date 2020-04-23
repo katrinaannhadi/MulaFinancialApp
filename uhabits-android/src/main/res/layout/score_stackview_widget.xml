@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/mula_yellow_500">
     <StackView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/scoreStackWidgetView"
         android:layout_width="match_parent"
@@ -11,9 +12,10 @@
         android:id="@+id/scoreStackWidgetEmptyView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/score_stack_widget"
+        android:fontFamily="@font/rubik_bold"
         android:gravity="center"
+        android:text="@string/frequency_stack_widget"
         android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:textSize="16sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </FrameLayout>

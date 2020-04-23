@@ -7,7 +7,8 @@
               android:orientation="horizontal"
               android:gravity="center"
               android:layout_width="wrap_content"
-              android:layout_height="wrap_content">
+              android:layout_height="wrap_content"
+                android:background="@color/mula_yellow_500">
 
     <NumberPicker
         android:id="@+id/picker"

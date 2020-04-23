@@ -10,17 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import org.mula.finance.Fragments.HomeFragment;
 import org.mula.finance.Fragments.InformationFragment;
 import org.mula.finance.R;
-import org.mula.finance.activities.ExpenseTrackerActivity;
-import org.mula.finance.activities.QuizActivity;
 import org.mula.finance.activities.QuizStartActivity;
 import org.mula.finance.activities.article.ArticleActivity;
 import org.mula.finance.activities.category.Model;
-import org.mula.finance.activities.habits.list.ListHabitsActivity;
 import org.mula.finance.activities.video.VideoActivity;
-import org.mula.finance.activities.video.VideoFragment;
 
 import java.util.List;
 

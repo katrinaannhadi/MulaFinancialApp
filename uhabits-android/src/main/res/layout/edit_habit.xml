@@ -5,7 +5,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/mula_yellow_500">
 
     <LinearLayout
         android:id="@+id/container"
@@ -20,22 +21,22 @@
             <org.mula.finance.activities.habits.edit.views.NameDescriptionPanel
                 android:id="@+id/namePanel"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="178dp" />
 
             <org.mula.finance.activities.habits.edit.views.FrequencyPanel
                 android:id="@+id/frequencyPanel"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="100dp" />
 
             <org.mula.finance.activities.habits.edit.views.TargetPanel
                 android:id="@+id/targetPanel"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="100dp" />
 
             <org.mula.finance.activities.habits.edit.views.ReminderPanel
                 android:id="@+id/reminderPanel"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="100dp" />
 
         </LinearLayout>
 

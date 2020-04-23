@@ -9,7 +9,8 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".activities.settings.SettingsActivity"
-             tools:ignore="MergeRootFrame">
+             tools:ignore="MergeRootFrame"
+                android:background="@color/mula_yellow_500">
 
     <include layout="@layout/toolbar"
         android:id="@+id/toolbar"/>

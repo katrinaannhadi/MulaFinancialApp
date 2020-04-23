@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/grid_0_5"
-    android:background="@color/mula_yellow_500"
+    android:background="@color/mula_purple_200"
     android:transitionName="@{course.name}"
     >
 
@@ -19,7 +19,7 @@
         app:layout_constraintDimensionRatio="4:3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivSearch"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/article_full"
         app:srcCompat="@drawable/ic_compass"
-        app:tint="@color/colorPrimaryDark" />
+        app:tint="@color/mula_purple_dark_primary" />
 
 
     <TextView

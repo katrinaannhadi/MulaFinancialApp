@@ -7,7 +7,7 @@
     android:layout_width="match_parent">
 
 
-<androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -16,24 +16,27 @@
     android:background="@color/mula_yellow_500"
     tools:targetApi="o">
 
-    <TextView
-        android:id="@+id/text_video"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/grid_4"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="24dp"
-        android:gravity="end"
-        android:padding="@dimen/grid_1"
-        android:paddingTop="@dimen/grid_1"
-        android:text="Learning through Videos"
-        android:textAppearance="@style/TextAppearance.Mula.Headline4"
-        android:textColor="@color/mula_blue_dark_primary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="MissingPrefix" /> />
+        <TextView
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_4"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="end"
+            android:padding="@dimen/grid_1"
+            android:paddingTop="@dimen/grid_1"
+            android:text="Learn through Video"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.Mula.Headline3"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingPrefix,RtlCompat" />
 
 
     <ImageView
@@ -43,7 +46,7 @@
         android:src="@drawable/ic_khan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_video" />
+        app:layout_constraintTop_toBottomOf="@id/choose" />
     <Button
         android:id="@+id/buttonVideo"
         android:layout_width="wrap_content"
@@ -75,7 +78,7 @@
     <ImageView
         android:id="@+id/investopedia"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="176dp"
         android:src="@drawable/ic_investopedia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

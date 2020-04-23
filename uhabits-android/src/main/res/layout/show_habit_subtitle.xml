@@ -9,15 +9,16 @@
     tools:orientation="vertical"
     tools:layout_width="match_parent"
     tools:layout_height="wrap_content">
+
     <TextView
         android:id="@+id/questionLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/rubik"
         android:textColor="?mediumContrastTextColor"
         android:textSize="@dimen/regularTextSize"
-        tools:text="Have you worked out today?"
-        />
+        tools:text="Have you worked out today?" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,6 +41,7 @@
             android:id="@+id/frequencyLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
             android:text="@string/every_day"
             android:textColor="?mediumContrastTextColor"
             android:textSize="@dimen/smallTextSize" />
@@ -59,6 +61,7 @@
             android:id="@+id/reminderLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
             android:paddingTop="1dp"
             android:textColor="?mediumContrastTextColor"
             android:textSize="@dimen/smallTextSize" />

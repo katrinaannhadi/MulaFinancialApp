@@ -5,19 +5,22 @@
     android:id="@+id/constraint_daily_quiz"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:src="@android:drawable/screen_background_light_transparent"
     tools:context=".Fragments.DailyQuizFragment"
     >
+
 
     <TextView
         android:id="@+id/text_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:fontFamily="@font/rubik_bold"
         android:text="TextView"
+        android:textColor="@color/mula_purple_dark_primary"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,6 +29,7 @@
         android:id="@+id/group_options"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_question">
@@ -34,26 +38,37 @@
             android:id="@+id/radio_answer_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="RadioButton" />
+            android:fontFamily="@font/rubik_bold"
+            android:text="RadioButton"
+            android:textColor="@color/mula_purple_dark_primary" />
 
         <RadioButton
             android:id="@+id/radio_answer_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="RadioButton" />
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="RadioButton"
+            android:textColor="@color/mula_purple_dark_primary" />
 
         <RadioButton
             android:id="@+id/radio_answer_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="RadioButton" />
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="RadioButton"
+            android:textColor="@color/mula_purple_dark_primary" />
     </RadioGroup>
 
     <Button

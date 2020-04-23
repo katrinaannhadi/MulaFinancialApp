@@ -21,7 +21,6 @@ import org.mula.finance.Fragments.DailyQuizFragment;
 import org.mula.finance.Fragments.HomeFragment;
 import org.mula.finance.Fragments.InformationFragment;
 import org.mula.finance.R;
-import org.mula.finance.activities.video.VideoFragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -63,7 +62,6 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         infoFragment = new InformationFragment();
         homeFragment = new HomeFragment();
         calculatorFragment = new CalculatorFragment();
-        videoFragment = new VideoFragment();
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

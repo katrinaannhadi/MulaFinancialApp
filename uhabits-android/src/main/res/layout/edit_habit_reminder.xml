@@ -6,6 +6,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+            android:background="@color/mula_yellow_500"
               android:orientation="vertical">
 
     <LinearLayout
@@ -14,11 +15,17 @@
 
         <TextView
             style="@style/dialogFormLabel"
-            android:text="@string/reminder"/>
+            android:fontFamily="@font/rubik"
+            android:text="@string/reminder"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvReminderTime"
-            style="@style/dialogFormSpinner"/>
+            style="@style/dialogFormSpinner"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -28,10 +35,16 @@
 
         <TextView
             style="@style/dialogFormLabel"
-            android:text=""/>
+            android:fontFamily="@font/rubik"
+            android:text=""
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvReminderDays"
-            style="@style/dialogFormSpinner"/>
+            style="@style/dialogFormSpinner"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>

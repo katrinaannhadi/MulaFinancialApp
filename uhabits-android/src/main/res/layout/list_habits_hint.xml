@@ -11,15 +11,17 @@
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:animateLayoutChanges="true"
-    android:background="@color/mula_purple_500"
+    android:background="@color/mula_purple_dark_primary"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik"
         android:text="@string/hint_title"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/hintContent"

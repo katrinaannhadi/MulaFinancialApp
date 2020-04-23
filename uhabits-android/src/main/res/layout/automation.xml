@@ -22,7 +22,10 @@
 
             <TextView
                 style="@style/dialogFormLabel"
-                android:text="@string/action"/>
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/action"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="24sp" />
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/actionSpinner"
@@ -38,7 +41,10 @@
 
             <TextView
                 style="@style/dialogFormLabel"
-                android:text="@string/habit"/>
+                android:fontFamily="@font/rubik_bold"
+                android:text="@string/habit"
+                android:textColor="@color/mula_purple_dark_primary"
+                android:textSize="24sp" />
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/habitSpinner"
