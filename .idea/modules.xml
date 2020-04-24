@@ -5,8 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/MulaFinancialApp.iml" filepath="$PROJECT_DIR$/MulaFinancialApp.iml" group="MulaFinancialApp" />
       <module fileurl="file://$PROJECT_DIR$/android-base/android-base.iml" filepath="$PROJECT_DIR$/android-base/android-base.iml" group="MulaFinancialApp/android-base" />
       <module fileurl="file://$PROJECT_DIR$/android-pickers/android-pickers.iml" filepath="$PROJECT_DIR$/android-pickers/android-pickers.iml" group="MulaFinancialApp/android-pickers" />
-      <module fileurl="file://$PROJECT_DIR$/uhabits-android/uhabits-android.iml" filepath="$PROJECT_DIR$/uhabits-android/uhabits-android.iml" group="MulaFinancialApp/uhabits-android" />
-      <module fileurl="file://$PROJECT_DIR$/uhabits-core/uhabits-core.iml" filepath="$PROJECT_DIR$/uhabits-core/uhabits-core.iml" group="MulaFinancialApp/uhabits-core" />
+      <module fileurl="file://$PROJECT_DIR$/mula-base/mula-base.iml" filepath="$PROJECT_DIR$/mula-base/mula-base.iml" group="MulaFinancialApp/mula-base" />
+      <module fileurl="file://$PROJECT_DIR$/mula-main/mula-main.iml" filepath="$PROJECT_DIR$/mula-main/mula-main.iml" group="MulaFinancialApp/mula-main" />
     </modules>
   </component>
 </project>

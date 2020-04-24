@@ -2,6 +2,8 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION as Integer
+    compileOptions.encoding = 'UTF-8' // write your encoding here
+
 
     defaultConfig {
         minSdkVersion MIN_SDK_VERSION as Integer
