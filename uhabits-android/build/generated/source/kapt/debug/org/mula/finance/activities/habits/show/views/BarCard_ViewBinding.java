@@ -17,7 +17,7 @@ import org.mula.finance.activities.common.views.BarChart;
 public class BarCard_ViewBinding implements Unbinder {
   private BarCard target;
 
-  private View view7f0a017f;
+  private View view7f0a0185;
 
   private View view7f0a0077;
 
@@ -33,7 +33,7 @@ public class BarCard_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.numericalSpinner, "field 'numericalSpinner' and method 'onNumericalItemSelected'");
     target.numericalSpinner = Utils.castView(view, R.id.numericalSpinner, "field 'numericalSpinner'", Spinner.class);
-    view7f0a017f = view;
+    view7f0a0185 = view;
     ((AdapterView<?>) view).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
       @Override
       public void onItemSelected(AdapterView<?> p0, View p1, int p2, long p3) {
@@ -73,8 +73,8 @@ public class BarCard_ViewBinding implements Unbinder {
     target.chart = null;
     target.title = null;
 
-    ((AdapterView<?>) view7f0a017f).setOnItemSelectedListener(null);
-    view7f0a017f = null;
+    ((AdapterView<?>) view7f0a0185).setOnItemSelectedListener(null);
+    view7f0a0185 = null;
     ((AdapterView<?>) view7f0a0077).setOnItemSelectedListener(null);
     view7f0a0077 = null;
   }

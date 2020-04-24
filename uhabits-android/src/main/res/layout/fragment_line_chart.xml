@@ -4,37 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="700dp"
-    android:background="@color/mula_turqoise_400"
+    android:background="@color/mula_yellow_500"
     tools:context=".Fragments.LineChartFragment"
     >
 
-    <TextView
-        android:id="@+id/text_lineChart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/rubik_bold"
-        android:gravity="center_horizontal"
-        android:hint="This is a line chart"
-        android:textColor="@color/mula_purple_dark_primary"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/text_test"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/rubik_bold"
-        android:gravity="center_horizontal"
-        android:hint="Text test"
-        android:textColor="@color/mula_purple_dark_primary"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_lineChart" />
+
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/lineView"
@@ -42,7 +17,7 @@
         android:layout_height="400dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_test" />
+        app:layout_constraintTop_toBottomOf="@+id/text_lineChart" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

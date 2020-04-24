@@ -2124,6 +2124,7 @@ drawable selected_box_light
 drawable shadow
 drawable small_component_foreground
 drawable stripe
+drawable stroked_course_image_placeholder
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2291,6 +2292,7 @@ id center_vertical
 id center_view
 id chain
 id chains
+id channel_name
 id checkbox
 id checked
 id checkmarkStackWidgetEmptyView
@@ -2322,6 +2324,10 @@ id content
 id contentPanel
 id coordinator
 id cos
+id course_icon
+id course_image
+id course_instructor
+id course_item
 id custom
 id customFreqPanel
 id customPanel
@@ -2415,6 +2421,7 @@ id habitNotes
 id habitSpinner
 id headerShadow
 id hideable
+id highlight
 id hintContent
 id historyCard
 id historyChart
@@ -2546,6 +2553,7 @@ id picker2
 id pieFragment
 id pieView
 id pin
+id playlist_name
 id position
 id postLayout
 id progress_circular
@@ -2579,6 +2587,7 @@ id rtl
 id rvList
 id rv_expenses
 id rv_quiz
+id rv_video
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2623,6 +2632,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id space
 id spacer
 id spinner
 id spline
@@ -2693,7 +2703,6 @@ id text_pieChart
 id text_question
 id text_quiz_average
 id text_score
-id text_test
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2844,6 +2853,7 @@ layout activity_quiz
 layout activity_quiz_start
 layout activity_taxcalc
 layout activity_video
+layout activity_video2
 layout article_list_row
 layout automation
 layout bottom_nav
@@ -2896,6 +2906,7 @@ layout history_stackview_widget
 layout intro_layout
 layout intro_layout2
 layout item_article
+layout item_video
 layout list_habits_hint
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -3006,6 +3017,7 @@ menu list_habits_selection
 menu show_habit
 mipmap ic_launcher
 mipmap ic_launcher_foreground
+mipmap ic_launcher_logo
 plurals mtrl_badge_content_description
 raw hero_decorative_celebration_01
 raw navigation_backward_selection

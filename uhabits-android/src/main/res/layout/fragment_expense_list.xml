@@ -5,7 +5,7 @@
     android:id="@+id/constraint_expense_list"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/green_300"
+    android:background="@color/mula_yellow_500"
     tools:context=".Fragments.ExpenseListFragment">
 
     <TextView

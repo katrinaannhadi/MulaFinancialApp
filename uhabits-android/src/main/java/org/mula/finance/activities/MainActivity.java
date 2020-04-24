@@ -164,28 +164,28 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         }
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.bottom_nav_bar, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        if (id == R.id.navGoals) {
-            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.navCalculators) {
-            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
-        }
-        else if (id == R.id.navLearn) {
-            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
-        }
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//
+//        getMenuInflater().inflate(R.menu.bottom_nav_bar, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        int id = item.getItemId();
+//
+//        if (id == R.id.navGoals) {
+//            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
+//        } else if (id == R.id.navCalculators) {
+//            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
+//        }
+//        else if (id == R.id.navLearn) {
+//            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
+//        }
+//        return true;
+//    }
 
 
 

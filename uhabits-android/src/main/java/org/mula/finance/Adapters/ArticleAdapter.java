@@ -17,7 +17,7 @@ import org.mula.finance.R;
 import java.util.ArrayList;
 
 
-public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.RestaurantViewHolder> {
+public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder> {
     private ArrayList<Article> mArticles;
     private RecyclerViewClickListener mListener;
     private static final String TAG = " 3 ARTICLE ADAPTER ";
@@ -37,13 +37,13 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.Restaura
         void onClick(View view, int position);
     }
 
-    public static class RestaurantViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public static class ArticleViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView articleTitle, articleSnippet;
         public ImageView articleImage, download;
         private RecyclerViewClickListener mListener;
 
 
-        public RestaurantViewHolder(View v, RecyclerViewClickListener listener) {
+        public ArticleViewHolder(View v, RecyclerViewClickListener listener) {
             super(v);
             mListener = listener;
             v.setOnClickListener(this);
@@ -59,15 +59,15 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.Restaura
     }
 
     @Override
-    public ArticleAdapter.RestaurantViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ArticleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.article_list_row, parent, false);
-        return new RestaurantViewHolder(v, mListener);
+        return new ArticleViewHolder(v, mListener);
     }
 
 
     //Replace the contents of a view (invoked by the layout manager
     @Override
-    public void onBindViewHolder(RestaurantViewHolder holder, int position){
+    public void onBindViewHolder(ArticleViewHolder holder, int position){
 
         Article article = mArticles.get(position);
         Glide.with(holder.articleImage)

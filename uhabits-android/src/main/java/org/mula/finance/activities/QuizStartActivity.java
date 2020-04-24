@@ -47,8 +47,6 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_start);
 
-
-
         titleAverage = findViewById(R.id.text_quiz_average);
         titleTopCategory = findViewById(R.id.text_high_score);
         textAverage = findViewById(R.id.text_score);
