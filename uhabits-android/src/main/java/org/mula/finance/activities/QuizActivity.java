@@ -110,7 +110,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
     }
 
-    public void setQuestion(Question question, int score){
+    public void setQuestion(Question question){
         currentQuestion = question;
         scoreText.setText("Score: " + score);
         questionText.setText(" " + question.getQuestion()+ " ");
@@ -124,7 +124,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     @Override
     public void handleQuestionListReturned(List<Question> questionList) {
         currentQuestion = questionList.get(0);
-        setQuestion(currentQuestion, score);
+        setQuestion(currentQuestion);
         final List<Question> questions = questionList;
 
 
@@ -147,11 +147,11 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
                     if (questionNum < questions.size() - 2) {
                         questionNum++;
 
-                        setQuestion(questions.get(questionNum),score);
+                        setQuestion(questions.get(questionNum));
 
                     } else if (questionNum == questions.size() - 2) {
                         questionNum++;
-                        setQuestion(questions.get(questionNum),score);
+                        setQuestion(questions.get(questionNum));
 
                         continueBtn.setText("Finish Quiz");
                     } else {
