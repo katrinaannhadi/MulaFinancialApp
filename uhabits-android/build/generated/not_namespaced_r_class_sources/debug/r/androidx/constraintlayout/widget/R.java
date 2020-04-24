@@ -1032,19 +1032,19 @@ public final class R {
         public static final int text2 = 0x7f0a0214;
         public static final int textSpacerNoButtons = 0x7f0a0216;
         public static final int textSpacerNoTitle = 0x7f0a0217;
-        public static final int time = 0x7f0a0236;
-        public static final int title = 0x7f0a023c;
-        public static final int titleDividerNoCustom = 0x7f0a023e;
-        public static final int title_template = 0x7f0a024b;
-        public static final int top = 0x7f0a024f;
-        public static final int topPanel = 0x7f0a0250;
-        public static final int triangle = 0x7f0a025a;
-        public static final int unchecked = 0x7f0a026e;
-        public static final int uniform = 0x7f0a026f;
-        public static final int up = 0x7f0a0272;
-        public static final int visible = 0x7f0a0279;
-        public static final int wrap = 0x7f0a027c;
-        public static final int wrap_content = 0x7f0a027d;
+        public static final int time = 0x7f0a0238;
+        public static final int title = 0x7f0a023e;
+        public static final int titleDividerNoCustom = 0x7f0a0240;
+        public static final int title_template = 0x7f0a024d;
+        public static final int top = 0x7f0a0251;
+        public static final int topPanel = 0x7f0a0252;
+        public static final int triangle = 0x7f0a025c;
+        public static final int unchecked = 0x7f0a0270;
+        public static final int uniform = 0x7f0a0271;
+        public static final int up = 0x7f0a0274;
+        public static final int visible = 0x7f0a027b;
+        public static final int wrap = 0x7f0a027e;
+        public static final int wrap_content = 0x7f0a027f;
     }
     public static final class integer {
         private integer() {}

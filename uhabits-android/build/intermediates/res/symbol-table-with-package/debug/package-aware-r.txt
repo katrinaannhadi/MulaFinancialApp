@@ -2692,6 +2692,7 @@ id text_category
 id text_date
 id text_date2
 id text_date3
+id text_datetime
 id text_description
 id text_enter_hecs
 id text_high_score
@@ -2700,6 +2701,7 @@ id text_input_start_icon
 id text_lineChart
 id text_percentage
 id text_pieChart
+id text_price
 id text_question
 id text_quiz_average
 id text_score
