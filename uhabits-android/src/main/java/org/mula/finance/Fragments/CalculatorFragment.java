@@ -232,7 +232,7 @@ public class CalculatorFragment extends Fragment {
     }
 
     private void getStockPricesOnline(){
-        String url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&outputsize=compact&symbol=AXJO&interval=60min&apikey=FD82S5VDRDGNB16U";
+        String url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&outputsize=compact&symbol=DJIA&interval=60min&apikey=FD82S5VDRDGNB16U";
 
 
         Response.Listener<String> responseListener = // set data
@@ -313,7 +313,7 @@ public class CalculatorFragment extends Fragment {
                     CandleData candleData = new CandleData(set1);
                     candleStickChart.setData(candleData);
                     candleStickChart.invalidate();
-                    candleStickChart.setVisibleXRangeMaximum(7);
+                    candleStickChart.setVisibleXRangeMaximum(5);
                     candleStickChart.moveViewToX(yValsCandleStick.size());
 
                 } else if (set1 == null) {
@@ -334,7 +334,7 @@ public class CalculatorFragment extends Fragment {
                     // set data
                     candleStickChart.setData(data);
                     candleStickChart.invalidate();
-                    candleStickChart.setVisibleXRangeMaximum(7);
+                    candleStickChart.setVisibleXRangeMaximum(5);
                     candleStickChart.moveViewToX(yValsCandleStick.size());
                 }
 
