@@ -76,6 +76,13 @@ public class QuizStartActivity extends AppCompatActivity implements ScoreAsyncTa
 
 
     }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        retrieveScoreListFromDb();
+    }
+
     @Override
     public void handleScoreReturned(List<Score> scores){
         int num = 0;

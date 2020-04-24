@@ -38,9 +38,7 @@ public class VideoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video2);
 
         rv = findViewById(R.id.rv_video);
-        rv.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(this);
-        rv.setLayoutManager(mLayoutManager);
+
 
 //        Button btnPlayVideo = (Button) findViewById(R.id.buttonVideo);
 //        Button btnPlaylist = (Button) findViewById(R.id.buttonPlaylist);

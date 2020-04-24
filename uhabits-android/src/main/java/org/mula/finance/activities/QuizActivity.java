@@ -47,7 +47,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
     private QuestionDatabase db;
     private ScoreDatabase scoreDb;
 
-    private int score = 0;
+    private int score;
     private int questionNum = 0;
     private Question currentQuestion;
     private List<Question> questionList;
@@ -100,16 +100,18 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
         db = db.getInstance(this);
         scoreDb = scoreDb.getInstance(this);
+        score = 0;
 
         insertQuestionListInDatabase(getQuestionList());
         retrieveQuestionListFromDatabase(difficulty);
 
 
 
+
     }
 
     public void setQuestion(Question question, int score){
-
+        currentQuestion = question;
         scoreText.setText("Score: " + score);
         questionText.setText(" " + question.getQuestion()+ " ");
         optionA.setText(question.getOptionA());
@@ -134,15 +136,14 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
                 if (radioGroup.getCheckedRadioButtonId() == -1) {
                 } else {
                     RadioButton answer = findViewById(radioGroup.getCheckedRadioButtonId());
-                    if (currentQuestion.getAnswer().equals(answer.getText())) {
-
-                        score++;
+                    if (currentQuestion.getAnswer().contentEquals(answer.getText())) {
+                        score = score + 1;
+                        System.out.println("when does this work");
                     }
                     answer.setChecked(false);
                     Toast.makeText(getApplicationContext(), Integer.toString(questionNum), Toast.LENGTH_LONG).show();
 
                     // Below code is to make sure that the button text changes to finish quiz on final question, and to
-                    // record the final score in an ArrayList
                     if (questionNum < questions.size() - 2) {
                         questionNum++;
 
