@@ -4,12 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="700dp"
-    android:background="@color/mula_yellow_500"
-    tools:context=".Fragments.LineChartFragment"
-    >
-
-
-
+    android:background="@color/white"
+    tools:context=".Fragments.LineChartFragment">
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/lineView"
@@ -17,7 +13,7 @@
         android:layout_height="400dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_lineChart" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

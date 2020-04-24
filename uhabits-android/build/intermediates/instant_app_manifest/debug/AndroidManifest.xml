@@ -23,8 +23,9 @@
         android:backupAgent="org.mula.finance.HabitsBackupAgent"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher_logo"
-        android:label="@string/main_activity_title"
+        android:label="MULA"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Base.Mula" >
         <activity
             android:name="org.mula.finance.activities.QuizStartActivity"
@@ -92,7 +93,6 @@
         <activity
             android:name="org.mula.finance.activities.habits.list.ListHabitsActivity"
             android:exported="true"
-            android:label="@string/main_activity_title"
             android:launchMode="singleTop"
             android:theme="@style/Mula.Purple" />
         <activity

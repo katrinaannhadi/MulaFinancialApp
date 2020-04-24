@@ -15,12 +15,13 @@ public class YoutubePlayerActivity extends YouTubeBaseActivity
         implements YouTubePlayer.OnInitializedListener {
 
 
+
     private static final String TAG = "YoutubeActivity";
     static final String GOOGLE_API_KEY = "AIzaSyBmb_Zr5HP6FUiuGCIiwbW3fhdgy9XZGPE";
     static final String YOUTUBE_VIDEO_ID = "gnWj97CEjeo";
-    static final String YOUTUBE_PLAYLIST = "PLhxFuaI_pG0HjklS6iFXPuzCQnyqWxhT-";
-    static final String YOUTUBE_PLAYLIST_2 = "PLECECA66C0CE68B1E";
-    static final String YOUTUBE_PLAYLIST_3 = "PLEAWiihj06OL80BfkpXVh2AQ";
+    static final String YOUTUBE_PLAYLIST_1 = "PL9ECA8AEB409B3E4F";
+    static final String YOUTUBE_PLAYLIST_3 = "PLECECA66C0CE68B1E";
+    static final String YOUTUBE_PLAYLIST_2 = "PLEAWiihj06OL80BfkpXVh2AQ-AYe04xiU";
 
 
     @Override

@@ -4,16 +4,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
+    android:background="@color/mula_purple_200"
     android:layout_width="match_parent">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/root"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:clipChildren="false"
     android:orientation="vertical"
-    android:background="@color/mula_yellow_500"
     tools:targetApi="o">
 
         <TextView
@@ -39,60 +39,76 @@
             tools:ignore="MissingPrefix,RtlCompat" />
 
 
-    <ImageView
-        android:id="@+id/khan"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_khan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/choose" />
-    <Button
-        android:id="@+id/buttonVideo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="play playlist"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/khan" />
+        <ImageView
+            android:id="@+id/khan"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/ic_video1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/choose" />
 
-    <ImageView
-        android:id="@+id/buffet"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_buffet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonVideo" />
+        <Button
+            android:id="@+id/buttonVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="?attr/colorPrimary"
 
-    <Button
-        android:id="@+id/buttonPlaylist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="play playlist"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buffet" />
+            android:text="play playlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/khan" />
 
-    <ImageView
-        android:id="@+id/investopedia"
-        android:layout_width="300dp"
-        android:layout_height="176dp"
-        android:src="@drawable/ic_investopedia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonPlaylist" />
+        <ImageView
+            android:id="@+id/buffet"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/ic_video2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonVideo" />
 
-    <Button
-        android:id="@+id/buttonInvestopedia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="play playlist"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/investopedia" />
+        <Button
+            android:id="@+id/buttonPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="play playlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buffet" />
+
+        <ImageView
+            android:id="@+id/investopedia"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/ic_video3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonPlaylist" />
+
+        <Button
+            android:id="@+id/buttonInvestopedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="play playlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/investopedia" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

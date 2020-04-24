@@ -15,7 +15,7 @@
         android:allowBackup="true"
         android:backupAgent=".HabitsBackupAgent"
         android:icon="@mipmap/ic_launcher_logo"
-        android:label="@string/main_activity_title"
+        android:label="MULA"
         android:supportsRtl="true"
         android:theme="@style/Base.Mula"
         tools:replace="android:label">
@@ -85,7 +85,6 @@
         <activity
             android:name=".activities.habits.list.ListHabitsActivity"
             android:exported="true"
-            android:label="@string/main_activity_title"
             android:launchMode="singleTop"
             android:theme="@style/Mula.Purple" />
         <activity

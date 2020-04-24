@@ -284,6 +284,7 @@ public class BaseScreen
             selectionMenu.onCreate(activity.getMenuInflater(), mode, menu);
             return true;
         }
+        // do we need this?
 
         @Override
         public void onDestroyActionMode(@Nullable ActionMode mode)

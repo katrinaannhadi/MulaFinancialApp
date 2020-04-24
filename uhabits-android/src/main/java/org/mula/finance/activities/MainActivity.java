@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("MULA");
 
         pref = this.getSharedPreferences("My Pref", 0);
         editor = pref.edit();

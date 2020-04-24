@@ -45,7 +45,6 @@ public class ExpenseLineChartFragment extends Fragment {
 
         final View root = inflater.inflate(R.layout.fragment_line_chart, container, false);
 
-        final TextView textView = root.findViewById(R.id.text_lineChart);
 
         LineChart mLineChart = root.findViewById(R.id.lineView);
 
@@ -65,7 +64,7 @@ public class ExpenseLineChartFragment extends Fragment {
 
         LineDataSet set1 = new LineDataSet(entries, "Expenses");
         set1.setFillAlpha(110);
-        set1.setLineWidth(2f);
+        set1.setLineWidth(3f);
         set1.setDrawValues(false);
         set1.setCircleRadius(4f);
         set1.setCircleColors(Color.parseColor("#AA85C8F2"));
@@ -81,7 +80,7 @@ public class ExpenseLineChartFragment extends Fragment {
         leg1.setEnabled(true);
 
         Description des1 = mLineChart.getDescription();
-        des1.setTextSize(14f);
+        des1.setTextSize(20f);
         des1.setEnabled(false);
 
         XAxis xAxis = mLineChart.getXAxis();

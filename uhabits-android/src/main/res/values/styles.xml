@@ -51,6 +51,7 @@
         <item name="widgetShadowAlpha">0.25</item>
         <item name="widgetBackgroundAlpha">1</item>
         <item name="background">@drawable/ic_background_purple</item>
+        <item name="toolbarStyle">@style/ToolBarStyle</item>
 
 
         <item name="scrollableRecyclerViewStyle">@style/ScrollableRecyclerViewStyle</item>
@@ -85,6 +86,7 @@
 
         <!--Default styles-->
         <item name="bottomNavigationStyle">@style/Widget.Mula.BottomNavigationView</item>
+        <item name="toolbarStyle">@style/ToolBarStyle</item>
 
     </style>
 
@@ -209,7 +211,7 @@
         <item name="cardBackground">@drawable/card_amoled_background</item>
 
         <item name="colorPrimary">@color/black</item>
-        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorMulaDark">@color/mula_purple_dark_primary</item>
         <item name="cardBgColor">@color/black</item>
         <item name="windowBackgroundColor">@color/black</item>
         <item name="headerBackgroundColor">@color/black</item>
@@ -333,5 +335,10 @@
 
     <style name="ScrollableRecyclerViewStyle" parent="android:Widget">
         <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">#24191c</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppCompat.Headline</item>
     </style>
 </resources>

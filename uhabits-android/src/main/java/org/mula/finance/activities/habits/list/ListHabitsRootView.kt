@@ -57,7 +57,7 @@ class ListHabitsRootView @Inject constructor(
             addBelow(listView, header, height = MATCH_PARENT)
             addBelow(llEmpty, header, height = MATCH_PARENT)
             addBelow(progressBar, header) {
-                it.topMargin = dp(-6.0f).toInt()
+                it.topMargin = dp(-10.0f).toInt()
             }
             // take bottom nav out
 //            addAtBottom(bmenu)

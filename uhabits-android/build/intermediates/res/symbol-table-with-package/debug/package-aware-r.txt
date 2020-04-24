@@ -258,6 +258,7 @@ attr colorControlActivated
 attr colorControlHighlight
 attr colorControlNormal
 attr colorError
+attr colorMulaDark
 attr colorOnBackground
 attr colorOnError
 attr colorOnPrimary
@@ -2082,6 +2083,9 @@ drawable ic_search
 drawable ic_spend
 drawable ic_super
 drawable ic_tax
+drawable ic_video1
+drawable ic_video2
+drawable ic_video3
 drawable image_credit
 drawable image_investment
 drawable image_savings
@@ -2550,6 +2554,7 @@ id peekHeight
 id percent
 id picker
 id picker2
+id pie
 id pieFragment
 id pieView
 id pin
@@ -2698,7 +2703,6 @@ id text_enter_hecs
 id text_high_score
 id text_input_end_icon
 id text_input_start_icon
-id text_lineChart
 id text_percentage
 id text_pieChart
 id text_price
@@ -3961,6 +3965,7 @@ style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlay_Mula_Blue
 style ThemeOverlay_Mula_Blue_Dark
 style TimePickerDialog
+style ToolBarStyle
 style Toolbar
 style ToolbarShadow
 style Widget_AppCompat_ActionBar

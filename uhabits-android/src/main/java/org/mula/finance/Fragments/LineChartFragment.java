@@ -49,7 +49,6 @@ public class LineChartFragment extends Fragment {
 
         final View root = inflater.inflate(R.layout.fragment_line_chart, container, false);
 
-        final TextView textView = root.findViewById(R.id.text_lineChart);
 
         LineChart mLineChart = root.findViewById(R.id.lineView);
 
@@ -96,8 +95,8 @@ public class LineChartFragment extends Fragment {
 
             LineDataSet set1 = new LineDataSet(entries, "Total Contributions over Time");
             set1.setFillAlpha(110);
-            set1.setLineWidth(2f);
-            set1.setValueTextSize(10f);
+            set1.setLineWidth(4f);
+            set1.setValueTextSize(14f);
             set1.setCircleRadius(4f);
             set1.setCircleColors(Color.parseColor("#AA85C8F2"));
             set1.setColor(Color.parseColor("#AA85C8F2"));
@@ -105,8 +104,8 @@ public class LineChartFragment extends Fragment {
 
             LineDataSet set2 = new LineDataSet(entries2, "Interest on Principal");
             set2.setFillAlpha(110);
-            set2.setLineWidth(2f);
-            set2.setValueTextSize(10f);
+            set2.setLineWidth(4f);
+            set2.setValueTextSize(14f);
             set2.setCircleRadius(4f);
             set2.setCircleColors(Color.parseColor("#AAF2811D"));
             set2.setColor(Color.parseColor("#AAF2811D"));
@@ -114,8 +113,8 @@ public class LineChartFragment extends Fragment {
 
             LineDataSet set3 = new LineDataSet(entries3, "Interest on Contributions");
             set3.setFillAlpha(110);
-            set3.setLineWidth(2f);
-            set3.setValueTextSize(10f);
+            set3.setLineWidth(4f);
+            set3.setValueTextSize(14f);
             set3.setCircleRadius(4f);
             set3.setColor(Color.parseColor("#AAF26666"));
             set3.setCircleColors(Color.parseColor("#AAF26666"));

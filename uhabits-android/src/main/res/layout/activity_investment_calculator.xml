@@ -62,7 +62,7 @@
             android:layout_marginTop="8dp"
             android:autofillHints=""
             android:fontFamily="@font/rubik_bold"
-            android:hint="Enter Start Amount"
+            android:hint="Enter Start Amount E.g 1000"
             android:inputType="number"
             android:lineHeight="40sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -94,7 +94,7 @@
             android:layout_marginTop="16dp"
             android:autofillHints=""
             android:fontFamily="@font/rubik_bold"
-            android:hint="Enter any contributions"
+            android:hint="Enter any contributions E.g 110"
             android:inputType="number"
             android:lineHeight="40sp"
             android:textAppearance="@style/TextAppearance.Mula.Body1"
@@ -110,7 +110,7 @@
             android:layout_marginStart="52dp"
             android:fontFamily="@font/rubik_bold"
             android:lineHeight="40sp"
-            android:text="@string/ic_return_rate"
+            android:text="Annual interest rate (%)"
             android:textAppearance="@style/TextAppearance.Mula.Headline4"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
@@ -124,7 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/rubik_bold"
-            android:hint="Enter return rate"
+            android:hint="Enter return rate E.g. 10"
             android:inputType="number"
             android:lineHeight="40sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -154,7 +154,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/rubik_bold"
-            android:hint="Enter no.of compounds a year"
+            android:hint="Enter no.of compounds a year E.g.2"
             android:inputType="number"
             android:lineHeight="40sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -184,7 +184,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/rubik_bold"
-            android:hint="Enter number of years"
+            android:hint="Enter number of years E.g 12"
             android:inputType="number"
             android:lineHeight="40sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -372,6 +372,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_TotalInterest" />
 
+
+        <TextView
+            android:id="@+id/pie"
+            android:layout_width="211dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Total Value"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_refresh" />
+
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/pieFragment"
             android:layout_width="match_parent"
@@ -382,14 +396,27 @@
             app:layout_constraintTop_toBottomOf="@+id/bt_refresh"
             tools:layout="@layout/fragment_pie_chart" />
 
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="211dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Total Value Over Time"
+            android:textColor="@color/mula_purple_dark_primary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pieFragment" />
+
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/lineFragment"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="500dp"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pieFragment"
+            app:layout_constraintTop_toBottomOf="@+id/line"
             tools:layout="@layout/fragment_line_chart" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
