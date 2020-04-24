@@ -232,7 +232,7 @@ public class CalculatorFragment extends Fragment {
     }
 
     private void getStockPricesOnline(){
-        String url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&outputsize=compact&symbol=IBM&interval=60min&apikey=FD82S5VDRDGNB16U";
+        String url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&outputsize=compact&symbol=AXJO&interval=60min&apikey=FD82S5VDRDGNB16U";
 
 
         Response.Listener<String> responseListener = // set data

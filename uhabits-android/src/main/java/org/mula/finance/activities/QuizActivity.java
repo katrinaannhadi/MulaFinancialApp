@@ -55,6 +55,7 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
 
     private int difficulty;
     private List<Score> scoreCheck;
+    private TextView categoryTitle;
 
 
     @Override
@@ -72,6 +73,9 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         optionA = quizConstraintLayout.findViewById(R.id.radio_quiz_a);
         optionB = quizConstraintLayout.findViewById(R.id.radio_quiz_b);
         optionC = quizConstraintLayout.findViewById(R.id.radio_quiz_c);
+        categoryTitle = quizConstraintLayout.findViewById(R.id.category_header);
+
+
 
         mp = MediaPlayer.create(getApplicationContext(), R.raw.notification_high_intensity);
 
@@ -81,6 +85,18 @@ public class QuizActivity extends AppCompatActivity implements QuestionCategoryA
         //TODO:: change to category
         Intent quizIntent = getIntent();
         difficulty = quizIntent.getIntExtra("Difficulty", 1);
+
+        switch(difficulty){
+            case 1:
+                categoryTitle.setText("Credit");
+                break;
+            case 2:
+                categoryTitle.setText("Investment");
+                break;
+            case 3:
+                categoryTitle.setText("Savings");
+                break;
+        }
 
         db = db.getInstance(this);
         scoreDb = scoreDb.getInstance(this);
