@@ -45,7 +45,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
         }
 
         @Override
-        public void onClick(View view) { 
+        public void onClick(View view) {
             mListener.onClick(view, getAdapterPosition());
         }
     }
@@ -69,7 +69,8 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
 
     @Override
     public int getItemCount() {
-        return mVideos.size();
+        //return mVideos.size();
+        return 3;
     }
     //Return the size of our dataset
 //    @Override

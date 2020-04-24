@@ -13,7 +13,6 @@ import androidx.viewpager.widget.PagerAdapter;
 import org.mula.finance.Fragments.InformationFragment;
 import org.mula.finance.R;
 import org.mula.finance.activities.QuizStartActivity;
-import org.mula.finance.activities.article.ArticleActivity;
 import org.mula.finance.Models.Model;
 import org.mula.finance.activities.article.ArticleSelectionActivity;
 import org.mula.finance.activities.video.VideoActivity;

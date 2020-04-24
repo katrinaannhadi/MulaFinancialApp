@@ -60,7 +60,6 @@ public class CategoryAdapter extends PagerAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO TURN THIS BACK ON
                 Intent intent = new Intent(context, ArticleActivity.class);
                 intent.putExtra("Category", models.get(position).getId());
                 context.startActivity(intent);

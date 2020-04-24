@@ -12,8 +12,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android-base" />
             <option value="$PROJECT_DIR$/android-pickers" />
+            <option value="$PROJECT_DIR$/mula-base" />
             <option value="$PROJECT_DIR$/mula-main" />
-            <option value="$PROJECT_DIR$/uhabits-core" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

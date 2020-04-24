@@ -19,7 +19,7 @@ public  class ExpenseListRetrieveAsyncTask extends AsyncTask<String, Integer, Li
 
     @Override
     protected List<Expense> doInBackground(String... strings) {
-        //TODO TURN BACK ON
+
         return db.expenseDao().getCategoryList(strings[0]);
     }
 

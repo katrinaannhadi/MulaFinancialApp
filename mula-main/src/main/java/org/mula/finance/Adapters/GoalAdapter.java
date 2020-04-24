@@ -68,10 +68,6 @@ public class GoalAdapter extends PagerAdapter {
                     Intent intent = new Intent(context.getContext(), ExpenseTrackerActivity.class);
                     context.startActivity(intent);
                 }
-//                Intent intent = new Intent(context.getContext(), ListHabitsActivity.class);
-//                intent.putExtra("Category", models.get(position).getId());
-//                context.startActivity(intent);
-////                finish();
             }
         });
 

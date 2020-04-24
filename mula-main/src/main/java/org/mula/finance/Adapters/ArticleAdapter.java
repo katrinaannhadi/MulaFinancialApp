@@ -71,14 +71,12 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
         Article article = mArticles.get(position);
         Glide.with(holder.articleImage)
-        .load(article.getImageURL())
-        .placeholder(R.drawable.image_investment)
-        .centerCrop()
-        .into(holder.articleImage);
+                .load(article.getImageURL())
+                .placeholder(R.drawable.image_investment)
+                .centerCrop()
+                .into(holder.articleImage);
 
         holder.articleTitle.setText(article.getArticleTitle());
-//        holder.articleSnippet.setText(article.getArticleSnippet());
-//        holder.articleImage.setImageResource(article.getImageID());
 
 
     }

@@ -93,7 +93,7 @@ android {
         }
 
         dependencies {
-            implementation project(":uhabits-core")
+            implementation project(":mula-base")
             implementation project(":android-base")
             implementation project(":android-pickers")
 
@@ -135,7 +135,7 @@ android {
             androidTestImplementation 'androidx.test:rules:1.1.1'
             androidTestImplementation 'androidx.test.ext:junit:1.1.1'
             androidTestImplementation "com.google.guava:guava:24.1-android"
-            androidTestImplementation project(":uhabits-core")
+            androidTestImplementation project(":mula-base")
             kaptAndroidTest "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
 
             //dependencies from finacialliteracy app

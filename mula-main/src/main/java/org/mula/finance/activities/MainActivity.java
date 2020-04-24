@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
     private Fragment infoFragment;
     private Fragment calculatorFragment;
     private Fragment homeFragment;
-    private Fragment videoFragment;
 
     private BottomNavigationView bottomNav;
 
@@ -107,33 +106,18 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
 
     }
 
-  /*  @Override
-    protected void onResume() {
-        super.onResume();
-        if(lastDay != today){
-            editor.putInt("ANSWERED", 0).commit();
-        }
-        showQuizPopup();
-    } */
 
     //swap fragment for the ui
     private void swapMenuFragment(Fragment fragment) {
         FragmentManager fragmentManager =  getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-       /* if(fragment == homeFragment && today != lastDay){
-            Random ran = new Random();
-            int num = ran.nextInt(10);
-            editor.putInt("Article", num);
-            editor.commit();
-        } */
         fragmentTransaction.replace(R.id.fragment_layout, fragment);
         fragmentTransaction.commit();
     }
 
     @Override
     public void onFragmentInteraction(int num) {
-        // Question question = db.questionDao().getQuestion(num);
-        // quizPopup.setQuestion(question);
+
     }
 
     //swap fragment for quiz popup
@@ -165,29 +149,6 @@ public class MainActivity extends AppCompatActivity implements DailyQuizFragment
         }
 
     }
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//
-//        getMenuInflater().inflate(R.menu.bottom_nav_bar, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-//        int id = item.getItemId();
-//
-//        if (id == R.id.navGoals) {
-//            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
-//        } else if (id == R.id.navCalculators) {
-//            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
-//        }
-//        else if (id == R.id.navLearn) {
-//            Toast.makeText(getApplicationContext(), "You clicked goals", Toast.LENGTH_SHORT).show();
-//        }
-//        return true;
-//    }
-
 
 
 }

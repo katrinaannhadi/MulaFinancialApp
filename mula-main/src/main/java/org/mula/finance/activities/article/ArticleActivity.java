@@ -111,7 +111,7 @@ public class ArticleActivity extends AppCompatActivity {
 
         }
 
-        }
+    }
 
 
     private void launchDetailActivity ( int position, int ArticleCategory){
@@ -121,12 +121,7 @@ public class ArticleActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // Changing back button to go to article selection
-//    @Override
-//    public void onBackPressed() {
-//        Intent intent = new Intent(this, ArticleSelectionActivity.class);
-//        startActivity(intent);
-//    }
+
 
 
 
